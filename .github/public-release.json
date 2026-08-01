@@ -1,0 +1,1678 @@
+{
+  "schema_version": 1,
+  "generator": "build_public_release.py",
+  "content_file_count": 332,
+  "operational_file_count": 2,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "size": 187,
+      "sha256": "e39a14631cad136ba5e920a7d5f11b6334f6d364b6ea1bf6845d0eb255138db7"
+    },
+    {
+      "path": ".github/scripts/validate_public_tree.py",
+      "size": 11612,
+      "sha256": "6049e8b2a422dfe126916b15889236b41bbf2953fa3661f136e8ddac3a26d057"
+    },
+    {
+      "path": ".github/workflows/public-release-check.yml",
+      "size": 555,
+      "sha256": "a368673c989008da501a51532005c43f9955059bff8b9f310c855dbd537b761a"
+    },
+    {
+      "path": ".gitignore",
+      "size": 606,
+      "sha256": "7f4147e321849f3f5e73f192d7a0c597dc4820dfdd10b0c43de1daf0c8565fa5"
+    },
+    {
+      "path": "LICENSE.md",
+      "size": 2458,
+      "sha256": "b67435dd2a086b22353207c305b5821591863b2bc0fe61f37bc8a2237bd72d21"
+    },
+    {
+      "path": "README.md",
+      "size": 21236,
+      "sha256": "fb06ca2aa5804bac5e642427fa9b03e7ba3d40f09b2047f977f379914499dc9e"
+    },
+    {
+      "path": "公司与产业/README.md",
+      "size": 1118,
+      "sha256": "b86851adf0f9d7d58f6c3cd7eccfb38f379c7c548bd9899b3675a1117aa7fe0d"
+    },
+    {
+      "path": "公司与产业/公司与产品主表.md",
+      "size": 14315,
+      "sha256": "8c96786d9c9c1c0e97c74ea844561e04476b7d4a77775147c787b1dfd72031ff"
+    },
+    {
+      "path": "公司与产业/公开信号时间线.md",
+      "size": 23795,
+      "sha256": "bbf49c704a8d4778289656ad241d20270728dac50f71de06f5674090c6c97ca5"
+    },
+    {
+      "path": "技术路线/01_动作数据与重定向.md",
+      "size": 13832,
+      "sha256": "412070c727501665165b019dba7820a7e63c9dfece4061a344ba25b0768aa4b5"
+    },
+    {
+      "path": "技术路线/02_Locomotion与运动先验.md",
+      "size": 26043,
+      "sha256": "41eb36ce6428d69df59977e27b253147f59ffc84dd67327a6bbfa4f044e3bd17"
+    },
+    {
+      "path": "技术路线/03_动作跟踪与全身控制.md",
+      "size": 25259,
+      "sha256": "3761a3692676089b6164078b13befb04ca71cbcc933e68736188bf89148dec92"
+    },
+    {
+      "path": "技术路线/04_LocoManip.md",
+      "size": 23577,
+      "sha256": "fb663c88e5a3f0212f6735a9b3c9918183c12e066e328fea15719b6fd8640fcb"
+    },
+    {
+      "path": "技术路线/05_世界模型VLA与Agent.md",
+      "size": 23562,
+      "sha256": "08d6ff1e98b3a256c6ef5d0611d68c675ff18cae310d25f9b6bd3542bf4e31a3"
+    },
+    {
+      "path": "技术路线/06_工程与实机部署.md",
+      "size": 40580,
+      "sha256": "5c5fc698850343183fd4d125018caed1547de9266a35a098d6193b4b4c89d73e"
+    },
+    {
+      "path": "技术路线/README.md",
+      "size": 20690,
+      "sha256": "43d307a9e9d1f57940c5679dbaed0cf47ec75695513063ff5a2ae05cdc9c4782"
+    },
+    {
+      "path": "求职与岗位/2026-03_运动控制面经_谈薪技巧_薪资汇总.md",
+      "size": 15404,
+      "sha256": "84c753f35b01583901980c6e3d688dd51e0ed282fbf350ae79b4d5310efb3b4d"
+    },
+    {
+      "path": "求职与岗位/2026-07_具身秋招运动控制问答.md",
+      "size": 9288,
+      "sha256": "c78d20e6fc3825047623ba44f545f55a6e4e7e684cd79b8de721c0c14503f362"
+    },
+    {
+      "path": "求职与岗位/2026-07_招聘与内推信息.md",
+      "size": 16190,
+      "sha256": "a25e2503d2dfd06c12553270c4495c8a2240d523f2510ced72ba58257346aae7"
+    },
+    {
+      "path": "求职与岗位/README.md",
+      "size": 449,
+      "sha256": "a2c22914f269ceb943e72e54fa0a6fcc7e59ee432b045e45d5104ecdb7ba0c2f"
+    },
+    {
+      "path": "求职与岗位/图片/2026-03_Offer记录模板.png",
+      "size": 50746,
+      "sha256": "0794a4513417eee0beb8d9cd4631b80bc4094d651fe91983271d97f37a88937c"
+    },
+    {
+      "path": "求职与岗位/图片/2026-03_五险一金组成.png",
+      "size": 27625,
+      "sha256": "f790227d1357e0b5f115c42d96e7fdba481e254820ae18941f4df3fce9dda83d"
+    },
+    {
+      "path": "求职与岗位/图片/2026-03_医保个人账户示例.png",
+      "size": 87686,
+      "sha256": "5538731b7243bc35d83281772aa553dcc194ddcae0dac82d6279121935c06501"
+    },
+    {
+      "path": "求职与岗位/图片/2026-03_外部平台询问话术.png",
+      "size": 228496,
+      "sha256": "dcddf592bdb475ab00854726d37339141988aeec9ca6bb5fc12f634df312ee57"
+    },
+    {
+      "path": "求职与岗位/图片/2026-03_谈薪问题清单.png",
+      "size": 87173,
+      "sha256": "42c9dc41934ae401e4042fadde3e23369087a0e8f44b2a1d2dacb42ea6d94482"
+    },
+    {
+      "path": "求职与岗位/图片/2026-07_千觉机器人_HR投递二维码.jpg",
+      "size": 81481,
+      "sha256": "1aef5fa8aa190dceb51f23f0c271fd2ad40bf796cfe4c903193b2c5af06656b1"
+    },
+    {
+      "path": "求职与岗位/图片/2026-07_大咖机器人_四足运控强化学习工程师.png",
+      "size": 460615,
+      "sha256": "1452430e01548340aabab5b6dd904240f922f90eb759b6f3ad2c8497218333d3"
+    },
+    {
+      "path": "求职与岗位/图片/2026-07_大咖机器人_技术负责人微信.jpg",
+      "size": 161264,
+      "sha256": "f552892d0adda77bee572064c103dc48d43ec538f379cbb740688e6f598119a3"
+    },
+    {
+      "path": "求职与岗位/图片/2026-07_极智嘉_具身智能招聘.png",
+      "size": 8175229,
+      "sha256": "80092e80b862ee8b6f7e8006a47c18594a53a049773a3d352d1b3850d7e17f3f"
+    },
+    {
+      "path": "求职与岗位/图片/2026-07_银河通用_2027届校园招聘.png",
+      "size": 5626320,
+      "sha256": "508a25873acc59347512f02f6ba1e68308c2fc4134a8df480a525eb27d24d3cd"
+    },
+    {
+      "path": "求职与岗位/图片/个人名片.png",
+      "size": 1483704,
+      "sha256": "c434478617a62f5c0da16e32a3884fc5e886f44142af3a3bad86823ceeba67d8"
+    },
+    {
+      "path": "论文与项目/README.md",
+      "size": 63127,
+      "sha256": "1d77803e3b62b6853b08d8600bde2b236d0a3f44b433814e156b5cd835bd5234"
+    },
+    {
+      "path": "论文与项目/开源项目主表.md",
+      "size": 53173,
+      "sha256": "2a79d8694cd3096889d0b0fe4acaae6ac2849e169b584c4320fc548ff9e732e1"
+    },
+    {
+      "path": "论文与项目/许可/CC-BY-NC-SA-4.0.txt",
+      "size": 20849,
+      "sha256": "1349a4b6148492b44f629e64eed676612e234fe9a839e4f3b277c1482c8849f1"
+    },
+    {
+      "path": "论文与项目/许可/MIT.txt",
+      "size": 1078,
+      "sha256": "3c6b561761d77dc3cb6c0dc31f425a08ff7eff5431827d35d1b3c70865ed7230"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P001.md",
+      "size": 3529,
+      "sha256": "9fba08a108ca791c34f9c5256d3b255ae0e4cf677c975000ecf39318538e6859"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P002.md",
+      "size": 3664,
+      "sha256": "5f147586395d55669015f2f15b47dfb1da5349d2297631031740faa1fb95da9c"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P003.md",
+      "size": 3670,
+      "sha256": "439e5dd4d1082e3df580dd75afbc31dd4c6405b07e1725f7ecc197ec7557052b"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P004.md",
+      "size": 3393,
+      "sha256": "c67933d2c3f3878873f7b30ea649487786ae76f0b011299a87d5ffca136ed87e"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P005.md",
+      "size": 3685,
+      "sha256": "f02f49953d8b6b416d83e11f0f543d96f17ccde2f90673b0f93e3fe0d527d68e"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P006.md",
+      "size": 3500,
+      "sha256": "c305ccd1d170b1cb116e522b179cdcaa58e75601d2f1d2460f42b395a730bda5"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P007.md",
+      "size": 6540,
+      "sha256": "355d93db060054f8a42922cdaef5c369cfbdb494ad1f45f26e4fa2378bc2e6fa"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P008.md",
+      "size": 6276,
+      "sha256": "8a4d5a107ba1aeaedf809474bdbdf7a724a8ac5d11d8e560ab7e51643d325e8b"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P009.md",
+      "size": 6230,
+      "sha256": "92b5ae21419302a3008a6bd18bd437d89c70d73b64216406b220b6dd16387b3e"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P010.md",
+      "size": 3387,
+      "sha256": "a33c1def59277cf38c2be9a15e453f0f940e2f94917a321ade2df7b49074abcb"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P011.md",
+      "size": 3253,
+      "sha256": "b8edda801716e6f9591debb8201b9fba498ac611b85f17ed812ad4bd82d0574b"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P012.md",
+      "size": 6489,
+      "sha256": "f5dfafc67c3a76626308c5de4fcaaf9edd404f1ae62d84edd3a529e99ba56ea9"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P013.md",
+      "size": 6276,
+      "sha256": "dcc66dda9cd394d25a84d2ffa9143a0f098f8e95bba9877325814dadb304fa59"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P014.md",
+      "size": 7305,
+      "sha256": "4fe0a20372c430639950b8bc15e352fce6882e5b7ac12d185ad6ac06caea8504"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P015.md",
+      "size": 3159,
+      "sha256": "5ad1ff1ceb9291d685a8c042b7b81babc8826d21f9adbde2f55728f4fac6318a"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P016.md",
+      "size": 3209,
+      "sha256": "08462d5840a270a5880b6b3746cfa2b60b7e2014476b836a61772fccd51ad89f"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P017.md",
+      "size": 3536,
+      "sha256": "4f1a94f18b4081b8c66646716cc0a2d84b899009eb05f2ee89bcc2f4a81d847e"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P018.md",
+      "size": 3804,
+      "sha256": "b06b746ee52cd84d2202eb919361111ef0ae805ce838993c72aed6638bc8d5b8"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P019.md",
+      "size": 3827,
+      "sha256": "c4564ee789d9b30b586f4dc63cc5de691c583bef34448823af961fbafff0916a"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P020.md",
+      "size": 3699,
+      "sha256": "719c5ea1ea9756d1a4ab9d72a345a5a25bbf8fc4077706dbc8eab8ec230b0843"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P021.md",
+      "size": 3963,
+      "sha256": "377f2ca45cdcc47d44bccfbba0bb0de5355944cd738a7483e24765497d489c78"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P022.md",
+      "size": 4785,
+      "sha256": "0ab48f93f907a4efed37ab69d162cdadcdcc10015a08ce900ae2f9939d79b338"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P023.md",
+      "size": 3607,
+      "sha256": "f0a9a996ca774e34cfdfb399f98c7a8eb674af8658a8e73f8f41f5585c4aaf74"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P024.md",
+      "size": 4482,
+      "sha256": "380c176397529033bbd654f9e80f87d1d2ba2bf91f7cfaaf77cec8861acd1f0a"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P025.md",
+      "size": 3656,
+      "sha256": "4b8db98b529afe68711143b21f24985f40d9bdf0dd565ff962acdc5046056cfe"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P026.md",
+      "size": 4615,
+      "sha256": "704c8f7909f88f58e2188a5fd6e0edcaf1098474ea16bc882c2f84e006b4758c"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P027.md",
+      "size": 3744,
+      "sha256": "3449240d2b92d0d28f0640e11cba64a159ea4c422845e13e8584a1b65d97f5f6"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P028.md",
+      "size": 4254,
+      "sha256": "607a1fa38a3e37b299a238045885a70df107f87e8594b92b1fc88e8a08449ec7"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P029.md",
+      "size": 4912,
+      "sha256": "f9ae83b996ccb5bda1c5ba64010a1f3a85298a791f7596710c11f3610be7e8df"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P030.md",
+      "size": 4735,
+      "sha256": "e6fc9af1f84739dce927bcdbc079b798d5c732cc1f7eb76608086bf3217e00cd"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P031.md",
+      "size": 3454,
+      "sha256": "7fd2c9a6fa05c3e85dee290cce16a48b7992cae31a24de8f6d8445405e3eb484"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P032.md",
+      "size": 3722,
+      "sha256": "f3bbb9f0714ac4855c88dd12485319c46286d91f8f54b172049164f37c737cec"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P033.md",
+      "size": 3668,
+      "sha256": "379f89b3334c434f3adfe084a89fb2ae34687ae113bc3062a91a778380118227"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P034.md",
+      "size": 7699,
+      "sha256": "cca13341ee1fa83d3f4cdfbdeda4b02d684d8bb835755f20605611955006cd11"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P035.md",
+      "size": 6294,
+      "sha256": "d3d197e9db83966b071194e3194caab246553685dfd33d621295f67334b55e16"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P036.md",
+      "size": 3723,
+      "sha256": "96bfd3661df9a6f1aeb36a26b945e7b6a8822714c1a2dd1661d330b4172bfc16"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P037.md",
+      "size": 5273,
+      "sha256": "78958e59ccb701b54218244f30fd47152187579cde828b3648ebd6a5383badbb"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P038.md",
+      "size": 3834,
+      "sha256": "a3990c9e201f4971e0d5980468580b02f97014f609e03f703b054add394d22bf"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P039.md",
+      "size": 3756,
+      "sha256": "9ddda21a10850c7ab520f1d9a670bddd19afc16584a14148b7eb66f61c9c6538"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P040.md",
+      "size": 3645,
+      "sha256": "c5cbd0fabb7fbe8d40b921d39750953d2f9603e702a1491d5e8c4753a707e919"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P041.md",
+      "size": 3814,
+      "sha256": "58c8b0fc3a7deee3ad1197e1afb6772bbc7371aff60a110df5090bacdb2860fd"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P042.md",
+      "size": 3630,
+      "sha256": "72577c6a574c39abca41e91203746dc8a266c4eab1f0e373b7f721f7a0756438"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P043.md",
+      "size": 3565,
+      "sha256": "e0c2113ce7793a69e9312c38e4b4aa37cd4ff6ca71af96076c7c25b29fb51297"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P044.md",
+      "size": 4554,
+      "sha256": "4f105dd111c0b46958affd2510fbbd6339cbb29a65b226f4dd7b89eef6531030"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P045.md",
+      "size": 3748,
+      "sha256": "5d551db4c5660625e981488d34901818671f7bd6fa7b3ec82ee54f97b2d34cb6"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P046.md",
+      "size": 3694,
+      "sha256": "f0a2f48129f16e27aa5a4a95e63ca7f5cda160c85c7fe6de1a22888a6e715e8f"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P047.md",
+      "size": 3882,
+      "sha256": "2b9c825ba40ce28be7e81f0312a1cba583c2f76d8cdfc6932570553488e7e0d0"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P048.md",
+      "size": 3679,
+      "sha256": "1225eddc0ae7802e56ab717b9aaa48d69daa112986d70a84f82cb3add6ef6fcb"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P049.md",
+      "size": 3822,
+      "sha256": "9d31c1c4ebf13ae8e6d1caf1772580702344f789647371b299c79efe6411aa29"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P050.md",
+      "size": 3535,
+      "sha256": "6d04498705d1e905edece39bff3709de6a15e34e5a41b1da273d1a00a79202c6"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P051.md",
+      "size": 3556,
+      "sha256": "5b1c4618f080eaef6db78bc829ad5c9b7ad4ec8589964dabd969ff26ef080169"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P052.md",
+      "size": 3650,
+      "sha256": "3e95112144a6fe7d53de7416981597bc33738b507a760416d04607def6dd6a88"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P053.md",
+      "size": 3379,
+      "sha256": "b2d5926d9992e8995c0467f8e230f9e3a9ff9bef04ad54ff06eb94a78c955f18"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P054.md",
+      "size": 3478,
+      "sha256": "255b07d7038da921426c7ecc99631897e7cc3d823e55456682c7fff944bb0ed6"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P055.md",
+      "size": 3594,
+      "sha256": "e19bba304e76ff04a9df4d950f2822fa4f8d191c4b42d4dfc9f304f61c221b51"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P056.md",
+      "size": 3598,
+      "sha256": "ad808decf635d76a1af5dfa89163149cf2b150d90861c170cc932b88422b6d0e"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P057.md",
+      "size": 3584,
+      "sha256": "9504da472477971380f296578e0c4e3a32bebbad7c735b1d61e4ef535ded5fea"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P058.md",
+      "size": 3652,
+      "sha256": "bb0f7be0c96efa9b15b6a9d63d15da0e31f88a4cdc06e16d4a62bd7a6d6ae7e3"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P059.md",
+      "size": 3589,
+      "sha256": "72f6dc97d9a24f15d25eefafd78819848a2f38920ff523a8164ef27b8e0ea881"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P060.md",
+      "size": 5454,
+      "sha256": "f6850e4533c3b717bf86403a569aadf7c780d972f2649d35f8ccfbc5e637724c"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P061.md",
+      "size": 3532,
+      "sha256": "52e90c7278bd6a48ca2244461c4ce127a9f7a7bac0fa24389f9e52f71525dfa9"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P062.md",
+      "size": 3708,
+      "sha256": "834f4135e079216da5cc54b55a8961739251c438fa39537b4cfb6eabc907b8fd"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P063.md",
+      "size": 3445,
+      "sha256": "b470af218e4efbe01ce2b36bd82002629782e2390ef6e78c542119cd24661f9d"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P064.md",
+      "size": 3582,
+      "sha256": "5e49cebb180faf10ac900d7a870b066aa5b7f291cfef6fdbf21597efdea4c114"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P065.md",
+      "size": 3620,
+      "sha256": "79361d3a2ae11d3b4ab72ede61cf4cf037b06e186d06bc3f4651382443b50dcb"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P066.md",
+      "size": 3430,
+      "sha256": "91af36cdf68c8ce52227959844f89bb34bf9f4d79419a0c77add133f65f41586"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P067.md",
+      "size": 3596,
+      "sha256": "cecb3fb701b2f40ab0c6ccc1ccd46ca208372be13c16c3cbc9ab5253a6955448"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P068.md",
+      "size": 3771,
+      "sha256": "0d79ad2a759d6fe456c2dc9abbfd737196d45ccd20d8f637e7a23263a840968b"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P069.md",
+      "size": 3899,
+      "sha256": "74793f7abe9388c1a9ee1567c9af33b9235d581f3869d01b3c502945ea78dac2"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P070.md",
+      "size": 3825,
+      "sha256": "2395e7bff17bf7821922f68053d2928fc8fb3a5b1a634a68696a836ce249de59"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P071.md",
+      "size": 3663,
+      "sha256": "0dc77559cc2101971f2e47fc768444d2cc4e112f5dfae5d35bccbfdf76c3e7e7"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P072.md",
+      "size": 4135,
+      "sha256": "73cea36a071d781c7b9250373c7b3812965751578c589e1347fd71075ca8f460"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P073.md",
+      "size": 3562,
+      "sha256": "77ea1531e057d490e21418ae9886825b8b0a5f50613194782b0061c438ab1e3a"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P074.md",
+      "size": 3563,
+      "sha256": "25b1af2f85e8ef86a419ba655f687f04a1734192f596142d62b1f96f93c6bad0"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P075.md",
+      "size": 15628,
+      "sha256": "19e30d035dbf5971e7926a6e210000a6460484e82536035a4971af7ad9a631db"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P076.md",
+      "size": 4559,
+      "sha256": "593476616a05873b32a67343fc8cbdb193ef49f2d354bbbf7c9499fb60b1af36"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P077.md",
+      "size": 14809,
+      "sha256": "281ab37b529c63e5406c422f12ebaa5d2873a40dbfdde79a6cdae5b9d44b8314"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P078.md",
+      "size": 4568,
+      "sha256": "d0b1962528e1487d2fca61e8ae5ce3c267239ef26993c6a4d6ad151b3bf1208e"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P079.md",
+      "size": 15019,
+      "sha256": "3700e3d9136f41a81ac063069347f3b6c4c265a3caa6abf86df38214b751cbd6"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P080.md",
+      "size": 5133,
+      "sha256": "aea9a9fa8d406bcc6c5aaae3135353b2e1aeb283c059eaa61200578bc2cfea7a"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P081.md",
+      "size": 4150,
+      "sha256": "f4957cc54be08766c49005dee24a2a4ca68e584004909f2e408a1206e49cc5fe"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P082.md",
+      "size": 4122,
+      "sha256": "c3fbcacbb3318ea7917cea52fa3c34be0e1316d4e0825a0b24425593fafa4375"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P083.md",
+      "size": 3833,
+      "sha256": "6de16ecaeb7285208c601147221389a23ce5e67e36be0fd0c5c7762826f16913"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P084.md",
+      "size": 3671,
+      "sha256": "15feeb7083b6ece82958131a6a618e96896cf1a8de74bbec075a2676a24bc84b"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P085.md",
+      "size": 3643,
+      "sha256": "81e56e078e8da234c6dd571e4e073db7c7a890b9555ef5c1c91bd3de4c7b26e0"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P086.md",
+      "size": 3737,
+      "sha256": "94119f9de377a1f247c13ec8c5c84bf260cf6a58424760df20dd015971e9eb83"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P087.md",
+      "size": 3816,
+      "sha256": "4a64aa5e4ae01bb9369c79823eee8a095839208779ac928c455074b8375b0084"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P088.md",
+      "size": 4392,
+      "sha256": "03fc9ba8c36843895d1f85a0f8680d0944ee438fb785932b2313251f9f1ff989"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P089.md",
+      "size": 4246,
+      "sha256": "cfa260c31bc85e280f07daddea778837745fe1e37e419b96079cfbec7428a74b"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P090.md",
+      "size": 6166,
+      "sha256": "2ce0aca1d5264c5b9cb4f3b129f8be711bae4592df58ec032621572e3777c383"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P091.md",
+      "size": 5193,
+      "sha256": "747a2d3d9529d054749b949f08b4f7315dbb9414a0d74c256ae413358587a6b9"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P092.md",
+      "size": 3865,
+      "sha256": "5e2f322da62011de9f73bbb6160b56655e77da9442e491477ced624ad3d0a8fd"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P093.md",
+      "size": 3722,
+      "sha256": "e521c258f2dd78db0dddd48f93905728fb6cd5ff829729c42b0074a2b330dcd5"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P094.md",
+      "size": 3727,
+      "sha256": "36ddf819e320688f9cc1368ef3f092997f6408d3fb80cb06d4d6fc5b5715c8df"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P095.md",
+      "size": 3755,
+      "sha256": "7478bc2f4299575851a43d46c3ca939881b8bf748a08e55ffbe8d99f053d78df"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P096.md",
+      "size": 4875,
+      "sha256": "64d5f51be6a8bc92f2a6cc3f7eaa74f78dc7af938737507b9ab260aece3ee119"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P097.md",
+      "size": 3759,
+      "sha256": "8c6a23efd7f2c66ba33fb78e8f997cf16f759ce22fd8ccd6b3aa0095e5058659"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P098.md",
+      "size": 4158,
+      "sha256": "e11814976eac65d343d03f8aad8798ff83b4b1604bff031c7e9c055d23bd401b"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P099.md",
+      "size": 3666,
+      "sha256": "89693d7603ef89d336d7019000caf5f30c72cc5563c42b7cecfa60ff33407357"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P100.md",
+      "size": 3823,
+      "sha256": "ac4f26acce9331de9f184e7cecea632eb11e97662648f5d8aba0f7b0c1b08c88"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P101.md",
+      "size": 6368,
+      "sha256": "ac8367744b307e3d615feee2e1282299795ee202299bfcd1f281734eeefa928d"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P102.md",
+      "size": 3848,
+      "sha256": "d4eb19e7c4c87da935c0c40e01289b45244fa5f10e39f9730dd4dfa834d98664"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P103.md",
+      "size": 5782,
+      "sha256": "b9c411ef13170c0a8be4ee3e05fdaa7da8e2001f338766f5f6dd2eed1b466ed2"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P104.md",
+      "size": 6109,
+      "sha256": "0e8290318420e3e57361ec4dad133f1b5ffa675d3e71829068044964bbf70feb"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P105.md",
+      "size": 3645,
+      "sha256": "7bd9fac132c941172567336151659122bfbde6cce8eac669039e962994209300"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P106.md",
+      "size": 5080,
+      "sha256": "d740ad2a384c25ef5d5692c2ebb5b805c330f2ecd5f7444251116fa6ad446346"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P107.md",
+      "size": 3713,
+      "sha256": "65e1a68dcb1ea4c202e0f25d530d47db314ee655884a081cf9d0c7a32969b94f"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P108.md",
+      "size": 3557,
+      "sha256": "cc50a0cdf1a15ca5e03d8aead3318fad9009b2ba0312b58007a736d8b22a8818"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P109.md",
+      "size": 3687,
+      "sha256": "d6908ddcdfb4796a25babd9bea99768247a06805f0fa716af000263f82f7acaa"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P110.md",
+      "size": 3742,
+      "sha256": "279ab3306b2e13ec205f2f146d5355dc64a81f5d11abd4dc22f3154d15bb57f4"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P111.md",
+      "size": 3952,
+      "sha256": "b630f2df6e7b7875c19002d548892f02514945e70c5c2614226844d03eaaa156"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P112.md",
+      "size": 3549,
+      "sha256": "2f590aac80c57e90d54ff9413000bf66ef91c5312220071ba656bb0bc75b2716"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P113.md",
+      "size": 4265,
+      "sha256": "2f7fb5948bdcaff8691472dbd7829cb56b16b0210893cc18737bc1224cc8e5f8"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P114.md",
+      "size": 4001,
+      "sha256": "9f63d1a4160ffdf3dbd9e15dbfc6c9e3aae17927a88582175f1041bfc0fc00e7"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P115.md",
+      "size": 4247,
+      "sha256": "929e26462b0f7f25d5c5d9a46af628ddd037488733eee62961ce6ef1d52d47da"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P116.md",
+      "size": 4868,
+      "sha256": "53640182f389809f4d82cfbc40f1974ff65c7d87b56fcacc419678fca4e83d02"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P117.md",
+      "size": 4473,
+      "sha256": "7c7b6c80063ff009c2c56aa2f48c6178e2a121feaec494ad28809b2ee6bd530b"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P118.md",
+      "size": 5208,
+      "sha256": "3849e5ad0831bd7ad1d7dec3015982f615ebb4af6e76ada49a8f49200f7603db"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P119.md",
+      "size": 4084,
+      "sha256": "e3de85a96bc293238b083f043069c1093e981f511142f470500ddbf6149eecf2"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P120.md",
+      "size": 4359,
+      "sha256": "b7bdd47a7484489a6039eac1796bf0e4400ea576eb3e26ca21efe0330a4c301e"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P121.md",
+      "size": 4526,
+      "sha256": "5a07140860e43290a43346be7469fc43f409fdd7126542b5410324a3ddd434b1"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P122.md",
+      "size": 4773,
+      "sha256": "2c33d9ee95bc2cd1e85981e889d4683ef8d9060b676f4dbff14bff717d421273"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P123.md",
+      "size": 3605,
+      "sha256": "9fbe6098fcf3e881033345f40b91bb3af204bbe2ad9e4c817670806b2711d7f7"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P124.md",
+      "size": 4623,
+      "sha256": "2f8407919d687a8cbda7a2b41ed4147f6e1f13fde2c393c540e788b41f1b0f31"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P125.md",
+      "size": 6418,
+      "sha256": "0530e0f5caa8f2315302467d800c2bc50fcc6b201873f3874a83b8833ede35bc"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P126.md",
+      "size": 4267,
+      "sha256": "b7e2e92035038a96277b3f59aac3b7d61f559a666a51f91be354d5193ff489b9"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P127.md",
+      "size": 3793,
+      "sha256": "01de32a16a039f8c83212ff3c23f1c624373cd5441b2573792036e131f24683c"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P128.md",
+      "size": 3705,
+      "sha256": "84fd1de5afc37297b773209b07b6793f1ee706a75af7e8e8cf9828ba6c7355d3"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P129.md",
+      "size": 3671,
+      "sha256": "a4a1b0add192e4803b10ee18bed231ae6c0537fe3c35f6c237b76e0e95074cb8"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P130.md",
+      "size": 3545,
+      "sha256": "d7dd277ae72d2babeffd118cd01a3b2329b604476464ec064d31740587bc8571"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P131.md",
+      "size": 3529,
+      "sha256": "fa7afd66c1e2978c2487d2150506a598e11865ecd3bde6494f21f074eac89c59"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P132.md",
+      "size": 3879,
+      "sha256": "30f25a5c7c399a0a6b90ef393af225159c3d87ace19a982f7b54e51615940ab2"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P133.md",
+      "size": 4129,
+      "sha256": "1b179d1ab20ad34feb05de97266dfa0d14c4dd89b4d48ab688441f72381444a4"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P134.md",
+      "size": 7465,
+      "sha256": "b3eb9dfc3385c64ee98c4bf0b5a45646af59a11ceeba0747b8581c2f50c0187d"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P135.md",
+      "size": 3481,
+      "sha256": "9895af3811cb21b2ef5c1189a518dd579d785811638ce5379e68d23fd9087d58"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P136.md",
+      "size": 3389,
+      "sha256": "75c4ef8a60e04ce5b7f49d6d3dc56fe170c1c9a2ba822da8b758b58ca555b707"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P137.md",
+      "size": 3619,
+      "sha256": "66ca5590e0f68b861d7869593462be4ca81fc398bd252b1e25dc26c437e51549"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P138.md",
+      "size": 3695,
+      "sha256": "4bcd4b633e941684f4ec732ec467e5cf431199f96be86f2cb737d6a9afc73ba6"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P139.md",
+      "size": 3531,
+      "sha256": "c2ce8da36d3122f5d8c0372abfb636ce365b49e0cad5a9b0c32d65b8e3b5e011"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P140.md",
+      "size": 3468,
+      "sha256": "01ea6d80e097a9ec3f26cb54c9c6dcfbd179ba78f231ec77d2f61b0244164c28"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P141.md",
+      "size": 3481,
+      "sha256": "3f5b437f96d8f8970302ea72c5fc194fa00e12bc69e6058dbf12fefc9220684d"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P142.md",
+      "size": 3374,
+      "sha256": "65cecac05a2bf07fa86410522af302676f780d3783ad593b1de3b7cd875d67d8"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P143.md",
+      "size": 3390,
+      "sha256": "596c7efa9277ab6f12d0a2a0959832359f6d04fbaeb27c9a9ab9365580a62541"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P144.md",
+      "size": 3370,
+      "sha256": "4eac78586d9195103302802f858bf3feb76dd1323d7ca0b30c924e7dc8c8d2ec"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P145.md",
+      "size": 3391,
+      "sha256": "26aa947b47b0d8c26b65ac5419ad16267122daaf1a3f76bcaab81f664a70603a"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P146.md",
+      "size": 5281,
+      "sha256": "21877dc3fedfbeb0839f0cd8efb3e406f51a7851a84941303c29d407cce9a130"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/README.md",
+      "size": 372,
+      "sha256": "286d10373492551405d46290c05f38211f90e76bcadb7961ad3b55b5f4cef862"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P001_figure.png",
+      "size": 39760,
+      "sha256": "e1b4c7157af6da22719e26f02bb87333510e7aee3991fd3c16a46403af71fe4a"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P002_figure.png",
+      "size": 66746,
+      "sha256": "6634fb620f868ee6e32271205e1b279b3ace26d754346acde4ca207c974787ad"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P003_figure.png",
+      "size": 591154,
+      "sha256": "d870953a00eb76abf7dda99abeae010e55ec1e5b544de77a2d153ffaf977e79a"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P004_figure.png",
+      "size": 150144,
+      "sha256": "63a062276fe93ae733cdc87e33975713bb7dd42634035b42c6076433be1c335d"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P005_figure.png",
+      "size": 51014,
+      "sha256": "c27a2edfa211d6141b6a7133d71ec23a3edb88da972c2adb1e7d1d016a2b77d4"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P006_figure.png",
+      "size": 80615,
+      "sha256": "f9125dbab3a3255b6f8e44094dc216a26ef5d7924b22a3cc5db3e92b0ef4a01d"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P007_figure.png",
+      "size": 352485,
+      "sha256": "bee01e00f2037f25a438622c20c5a4935ba8264b4a09d1167657fddfeae1fc12"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P008_figure.png",
+      "size": 368246,
+      "sha256": "d531d79887cc490a5b4143526bccf8fd4c6d636b240fbaa4a36709329fa855fa"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P009_figure.png",
+      "size": 361595,
+      "sha256": "2bda1ffadbbe9dc2f80c4aa6397b835665bef30fe969d425819bbe43cee5fd4d"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P010_figure.png",
+      "size": 1309770,
+      "sha256": "0f60088a1f3ef1f9c36b53c95176383d0ba622d3e462a9861094ed837810aae2"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P011_figure.png",
+      "size": 100280,
+      "sha256": "4189ea2a8fb22163ee4ac7f7cab233f5862fb7d8c9abb5576eaa23c0d2362708"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P012_figure.png",
+      "size": 984103,
+      "sha256": "b69f25d6026469d3762c1313f2dfad21e43e91c76fb49763440b54f10df63bb3"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P013_figure.png",
+      "size": 233554,
+      "sha256": "4e9a0fea669287eaf2797e4be016c060346d8181f13d7bbfeb264dff9761e54c"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P014_figure.png",
+      "size": 365022,
+      "sha256": "bb833af2e833c3a8be3c92a19dea9968639373db7832539d1ca8ed38707a4026"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P015_figure.png",
+      "size": 113681,
+      "sha256": "29574b9f4fa7d15b62125e15011b27fa8af9f840bc90dd64aa6d8bbaa7e24013"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P017_figure.png",
+      "size": 193433,
+      "sha256": "4df766f0116b6f260dd8d7f40d500f377abc09ca1636ec752f0ec882d9eef86b"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P018_figure.png",
+      "size": 345107,
+      "sha256": "84fdd91f05668dfc94c8a0dfb6d4072f8fd38edc94ec623c5c745e9cdb426add"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P019_figure.png",
+      "size": 445803,
+      "sha256": "dfc548a4c9fa80f219ce7c845284be58e589e92fb6c25afb2bd6c48c28d3cf25"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P020_figure.png",
+      "size": 333629,
+      "sha256": "82fd02d8880b542c0f40842d6a6e08a5adf1ac4fc87e27b131b6cbf3d63fe492"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P021_figure.png",
+      "size": 24114,
+      "sha256": "ead82c958ae64c7dc4f9f39e1413e547b944105a2e0eaed2c5ab58234f8564df"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P022_figure.png",
+      "size": 46960,
+      "sha256": "81568acb1e1ac34a180732d679ba8c5b4e2d6c0732c338e912c08a497f79683f"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P023_figure.png",
+      "size": 412315,
+      "sha256": "0856fdf529c35e109b31820125f960090a30f7e6044ee25809eae8eb84c83c3b"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P024_figure.png",
+      "size": 124277,
+      "sha256": "4e2b89c2a5bc1fb9cbe4fe797bdb8679803b57dbe557847e4d9d4517c653ae32"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P025_figure.png",
+      "size": 375372,
+      "sha256": "c4c480ac71b2cd582724f22cfe47cf55e6255f7fe54dfe2a162791b30b476019"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P026_figure.png",
+      "size": 210769,
+      "sha256": "ce83d5b0356922a4a9bce75b34c8fbeb7001c689b5ffb64cd230dc0e96cdc9f4"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P027_figure.png",
+      "size": 135659,
+      "sha256": "11ce359aa36dcf8f26ccdcddfbb396eacffabdfed5013c84addaf0e75e30b2d3"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P028_figure.png",
+      "size": 135326,
+      "sha256": "3d73dbf8c09affbe855c0da682722ffe67188391b8703560db6825ff6b046b74"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P029_figure.png",
+      "size": 309676,
+      "sha256": "e513af64045e42a35e3911148bcc50957fb3c67efef21100aac6f8e1b46122ce"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P030_figure.png",
+      "size": 293642,
+      "sha256": "0916377bdebcee25be6cebd920f4439006cefd3aa6dd1f1fd62697b86b4f4fbe"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P031_figure.png",
+      "size": 105405,
+      "sha256": "2688884d4c0949e61891186614acad3c225a7ee6716d29cf0338fcb271298655"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P032_figure.png",
+      "size": 132283,
+      "sha256": "8784263d0f928b6f1defebf159bdaee9012bd973573abae7fa8f2c66c5680774"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P033_figure.png",
+      "size": 210580,
+      "sha256": "61c0d00967767a57273c26d3055ac8cc8015e7adb8c320a03605a8d607178431"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P034_figure.png",
+      "size": 550407,
+      "sha256": "9210da49fc9d1c5640e04e3e87569de24cb0d5c5c570f5434321704dd6bd1740"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P035_figure.png",
+      "size": 153839,
+      "sha256": "b233d0c3adf4a46929013c43c2982b5cfc9acbf5fae860f10128681f02a5b41a"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P036_figure.png",
+      "size": 219173,
+      "sha256": "d5d38731903af8ac70c7fb01e141e8b99773f4baf591af0c159d150fe47e2e88"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P037_figure.png",
+      "size": 240131,
+      "sha256": "34e504e591734072e07c0b6a584835b9d10e6ea56cfcc1bda5a8632c18a59a5a"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P038_figure.png",
+      "size": 307010,
+      "sha256": "0ab2aa71a0379b3c1d3613f7d672a70461560c530e7c5b4ba1d6a9bc12bbf463"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P039_figure.png",
+      "size": 165182,
+      "sha256": "1948062155b83c3489b28f74b2c5c09e57802e347c3cb927b36640bb961b458d"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P040_figure.png",
+      "size": 454005,
+      "sha256": "cb861ec9666139fafd19d2435fbe5b1896a224b1f2ac938e1a005b3cba5ff93e"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P041_figure.png",
+      "size": 1349195,
+      "sha256": "b856a7a21d00f094feb8008aeb2b37896ee8f257b62d294bd424bba4cd12d337"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P042_figure.png",
+      "size": 211484,
+      "sha256": "5277bb8a8cd9e82bcd576a4e9e8bb82eb39b7ac890af6fbc5e8c3d25dcfd2809"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P043_figure.png",
+      "size": 74619,
+      "sha256": "6b8f7981bb6ea53489f087e4aa5e1f344802041e1bbd69b3ec613249698e9dea"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P044_figure.png",
+      "size": 370215,
+      "sha256": "01a1db6325f041a8d0e3fe04aadfbc35b646521b31160e28212ce96d96b43fa7"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P045_figure.png",
+      "size": 272237,
+      "sha256": "08c52f642d9d5261e1e78097111b96195d8e71d841df3e93733fffeb45a282d0"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P046_figure.png",
+      "size": 196084,
+      "sha256": "d9263a8b58f236f16b6df9a376ecd39668f9b7fe53af2c75b3cd2c5a70566c2b"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P047_figure.png",
+      "size": 326820,
+      "sha256": "88c013e0129db7e4e4274c512a04f5a72386c609a77c3fb0df432a1715106147"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P048_figure.png",
+      "size": 199612,
+      "sha256": "2540682fb93e5930f83d8785eb904a502e67b17a21886d3d688fd666460eded4"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P049_figure.png",
+      "size": 225476,
+      "sha256": "cf77bff74a759b39fa49f7e01a9e3a16a70c9e85e7f6b1c8a6c15dfdfde2a84b"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P050_figure.png",
+      "size": 170285,
+      "sha256": "e3afeb92c560dd8e3b761e546da9d8e4e3d00f66c33cdef281efe62248400f32"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P051_figure.png",
+      "size": 84180,
+      "sha256": "6f6c471fe6bcb56894f5f8ce20496d715abc43d8a5dd5a9135fc34af184f8fbf"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P052_figure.png",
+      "size": 286884,
+      "sha256": "d2ca3aa0a3cbc594083813df8a49fbbf81fc9b996f2b9c26ef71a238e1b44598"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P053_figure.png",
+      "size": 264649,
+      "sha256": "d65e89acf91465133f8e102acd0e7fa292f2cddb12d4903381b1b211f35b1ac9"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P054_figure.png",
+      "size": 273098,
+      "sha256": "d2c75c021d3411e00bc9270777fa30ab07dbf4ff34ea25c62559c172cb31b80a"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P055_figure.png",
+      "size": 141888,
+      "sha256": "10faf1bbdc1cfbe0281da74a7d40188942efe915e66b4c1dde4ecb9f4f69d86e"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P056_figure.png",
+      "size": 211203,
+      "sha256": "7249eb5973a210b22cca55a5123a99471ea1aaad7e91ba69674ac7d1d6709353"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P057_figure.png",
+      "size": 98243,
+      "sha256": "4c3e10610c3a530c82438671f7bcd521ed6f219681efd02e1a5891ce8e83d6ad"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P058_figure.png",
+      "size": 179627,
+      "sha256": "429bdfd2c2cdbab2e3d5567070e9e5bcd79df57335685b8d779145ca63870738"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P059_figure.png",
+      "size": 158017,
+      "sha256": "0f56660a0323ca4ba48c35943c935b814b974684035fcf63ddc92f7de5557c36"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P060_figure.png",
+      "size": 120656,
+      "sha256": "8127f00da56b2476f8b34e4bc49c016f40704295d27d746122cf63b7062d2912"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P061_figure.png",
+      "size": 102281,
+      "sha256": "f8b549971b4f592ca1bcf08e54cf20badfd716c034ed68a118cdac843d10eee2"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P062_figure.png",
+      "size": 477808,
+      "sha256": "7ab53fbadb98d2ed1eaf3b7991a87b6164696bd3da1ba6d0523837a12346a72b"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P063_figure.png",
+      "size": 44917,
+      "sha256": "4012c1b2507f27af2b11049e8c8060a061518a74805c6e95c373d148b2eab15e"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P064_figure.png",
+      "size": 65590,
+      "sha256": "54dd6d835a6eed808c620ba4cd5630592fdec6ea1c2fa35f94f9fa06ffb24b6d"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P065_figure.png",
+      "size": 92347,
+      "sha256": "08fd22fc6821cb3e237a015b9d357990266d6125eda924432d5b11833bb8854a"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P066_figure.png",
+      "size": 163429,
+      "sha256": "b5e9abb9fce44bb53a8d08f8fa349a67b6f6057898b4bf10fa1ea24535a01f74"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P067_figure.png",
+      "size": 91119,
+      "sha256": "75e5feb5bd96658c5aaf22e0bf1a9752c7bface872ebf4c996322a1e969d4dc4"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P068_figure.png",
+      "size": 267247,
+      "sha256": "cd512651b03d36ea10fe35e070dab2af4a6efa071336121ffd18f750b544c716"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P069_figure.png",
+      "size": 249523,
+      "sha256": "ac73446ba34ebab03aeaf42ca7a6484b477da22160b316288e52bd8c89a21f06"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P070_figure.png",
+      "size": 172836,
+      "sha256": "381923cb3672af480dedc9103bedafa4f73e84a7b7707652e48d8a2883fc3d59"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P071_figure.png",
+      "size": 52643,
+      "sha256": "2e673f2e10417a1b0aa1ef593a74a5fabebb20f758e0f6226252393c4bdfd497"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P072_figure.png",
+      "size": 424469,
+      "sha256": "8cfbbff289b01c63c8ccaef66ec329e21234629ca626520b9729edfa84b49401"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P073_figure.png",
+      "size": 157159,
+      "sha256": "57b82867b89f80b023e55439a75e7600f747703c3e9d34046cf6c5a01688d134"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P074_figure.png",
+      "size": 285246,
+      "sha256": "9920e1b2712b6d00d033e7c4f3c4ddec19ea63617a31773ea7a250c98ca01d35"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P075_figure.png",
+      "size": 1053696,
+      "sha256": "68945487419edf325793d09c2f031300d26ab95cf41dd0d334d4c2ba44b281c6"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P075_figure_2.png",
+      "size": 153230,
+      "sha256": "ee14358ec11be94186125be5a87cba6af1cf5083711ad3fc5a3771101d525a55"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P075_figure_3.png",
+      "size": 103189,
+      "sha256": "bc86e43e9462923bc2258fd2c0b84266ba1854fceb5f68440eb276e2f400ad63"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P075_figure_4.png",
+      "size": 239402,
+      "sha256": "e2830f6e127461a3db760ad714dcb419117379dc397d9d30b5afc4f886680bac"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P076_figure.png",
+      "size": 205477,
+      "sha256": "25fe3f62a5e9f9a85f829354bc915b199436e777093f499870e27cee6ab3b7d4"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P077_figure.png",
+      "size": 75178,
+      "sha256": "63f09af0c401b90cbc9e166f499db8d49bb71e6ff2ba630202430040a4babd37"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P077_figure_2.png",
+      "size": 176868,
+      "sha256": "a03c96864156d1fe221bca8f0c22593ebfda1654a9427ef21675e04232de0e10"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P077_figure_3.png",
+      "size": 321230,
+      "sha256": "528c3333d52506bcedbda96b36a8537fb911bb75c816512a36b04f20d994d473"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P077_figure_4.png",
+      "size": 37822,
+      "sha256": "6c7fae1e687884021987da5c2fcb3678ab62fb063a1557d75935c06914d41c53"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P078_figure.png",
+      "size": 93917,
+      "sha256": "d9d9d5edb4453b036846e6d784a611d77291f464ea734a7f85f14a1b6d24db49"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P079_figure.png",
+      "size": 756278,
+      "sha256": "9231fd32a721281746a3986d1ebbaf83cf13f0be6bb6829448b2d6ee16c691d4"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P079_figure_2.png",
+      "size": 1340710,
+      "sha256": "52233a0037b1f32dee2ecbd523dab7dcaf65dea898bfe77fcc6dd56d8d50b9fb"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P079_figure_3.png",
+      "size": 774452,
+      "sha256": "f4314e9b174ad03a109f449d0acf40f4d98499fdd16da4da33bad6c1c261f3e2"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P079_figure_4.png",
+      "size": 1706464,
+      "sha256": "95acf562c76e351d12710f9069545321fcac2d9aa26eab9505486f01c923e531"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P080_figure.png",
+      "size": 267078,
+      "sha256": "61ba0726eb53e0851132293e702766c00c991183354efa5a6d4e3e23f8e9a712"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P081_figure.png",
+      "size": 275816,
+      "sha256": "eee8bfb6e6b82cdd351d01844c2251f1f731193491fb10f9ef582d3a8617af18"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P082_figure.png",
+      "size": 206762,
+      "sha256": "de1d1329f423720e9eb7de7e69f27cad30832cddfdacd5f4cb412ed56ed38439"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P083_figure.png",
+      "size": 241665,
+      "sha256": "c8ec18a1f80a257e329c0a64f194ef0d84899844235c2832fd468711603d09c2"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P084_figure.png",
+      "size": 113279,
+      "sha256": "afebf1d97f10a9bf3591f3f32933f0843ebbc28d548b93917817e1907d054438"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P085_figure.png",
+      "size": 252453,
+      "sha256": "b574a0112d15d979d3ad790969b6f3fbd22a16f6c72be2f739165b8774a43f31"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P086_figure.png",
+      "size": 198815,
+      "sha256": "2810380dafc70e81f47214813e12aae3c387d5a4fa190f97534dc7c30aea9829"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P087_figure.png",
+      "size": 115009,
+      "sha256": "61ff9548f746a5532402e4ea4a9b495e325b16eb58604e8f06cc71a810f42ce7"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P088_figure.png",
+      "size": 184360,
+      "sha256": "cf3e3f2cc93679a5455743a2910eafc208a19f1ae100d9f6f40d2357a46a71ce"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P089_figure.png",
+      "size": 174974,
+      "sha256": "d88163f1f798cc4660afe6375df2b3d24b13826e2a37a8e5903e0bd928557ebc"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P090_figure.png",
+      "size": 158579,
+      "sha256": "f236cc38225fff64ed894b359a6940ee1cccc0f9ac084be08640f2ae4fd3a580"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P091_figure.png",
+      "size": 296569,
+      "sha256": "adf34ebe0b5c5fe24cc4e6d1bbca3a0deeec6f4e84f1a4c6cb422bb785a24cad"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P092_figure.png",
+      "size": 131450,
+      "sha256": "c507279fe35504fed60d5095f9d45c9678fc03c3d4c194094a3b5d6acf0248c9"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P093_figure.png",
+      "size": 206038,
+      "sha256": "603b0a2ca31f3b30f286b8563473711a37fa453de2af4555ac6e2c90a91896dc"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P094_figure.png",
+      "size": 205305,
+      "sha256": "ade5c6c22eb7a3d754384ed6bb21a6c243c09c86a4f7e77d3e8b3e9633425ad3"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P095_figure.png",
+      "size": 262976,
+      "sha256": "87c5a8ec2d9b3a9d63db88695868ad6558eca5631394e3823ef3be98bed91903"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P096_figure.png",
+      "size": 388602,
+      "sha256": "9db4b485a6be367f8d61bfff604d635ea23cf2724321c743429a34580e409bbf"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P097_figure.png",
+      "size": 171857,
+      "sha256": "2bac635e25a3953f060c5950972336778e64f97bc918286e1587ec71a2495ce0"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P098_figure.png",
+      "size": 382591,
+      "sha256": "d7bf45d4031f959c63564ec20d3992dd27c1cb6bf90ea8895f9b7059c8d8d15b"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P099_figure.png",
+      "size": 1252470,
+      "sha256": "884086f89165acae9f60cdcd6f4038ca5f44bc170ba16e2e259894ef9a0e0d61"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P100_figure.png",
+      "size": 416852,
+      "sha256": "6c3d8fff08079b04234c810a6114171c8051f9ff905e0d607cccd833e7a745e8"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P101_figure.png",
+      "size": 232675,
+      "sha256": "cffe3717a26def5a92b5a23d4c3e64f48482a6d0a0099f2e97ca4f786f204059"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P102_figure.png",
+      "size": 614438,
+      "sha256": "fcf87e5c107d44e1d89c78de63891753cf334a41a71c29174d119ff8031c80c4"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P103_figure.png",
+      "size": 171027,
+      "sha256": "568fe3465a98e58e3388011500e14485a4c1a55d8310b9b5cf09fa01559cc983"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P104_figure.png",
+      "size": 392346,
+      "sha256": "067e45de54c1c147ebd04446f72bbceffffd17868e9ca9e1250f2a19d4168e23"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P105_figure.png",
+      "size": 1127428,
+      "sha256": "ef65bc7e7d3649d94a82784e1f9b1eea3678a5366fd4d59f3195edd4161f9054"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P106_figure.png",
+      "size": 149659,
+      "sha256": "25ee3044d3d83cc53e231caeaaf471c94623f1fd1c53d1344d07d881bbde728e"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P107_figure.png",
+      "size": 392235,
+      "sha256": "c3050ee05251f4952eafa33c3e70eb739a8eb808def248c6c203e23c8c2ba29c"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P108_figure.png",
+      "size": 396332,
+      "sha256": "5977d1fa49f1b54b8a5ee5b3eb496eef00c1bd1937cbcddd335faffeb99861c1"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P109_figure.png",
+      "size": 133444,
+      "sha256": "6b5695545c9841d2c898c5f7c618a28aae4e4a8cef9f14313eb184af090565a2"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P110_figure.png",
+      "size": 540557,
+      "sha256": "aeb44169b05ff1dc39dfbb8b6ae85e67db07fe1d2581ff608ea40756e0e5c2de"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P111_figure.png",
+      "size": 211605,
+      "sha256": "58887f2de803cf7ed65bafa1f6454e65e52bdd4ff3f172cb47710d7d41557840"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P112_figure.png",
+      "size": 410434,
+      "sha256": "3d0055f3fd4fdfa429381caab22a4dd4975dcb6f4ab332c53755211cf1117818"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P113_figure.png",
+      "size": 247781,
+      "sha256": "fb66a4ff05793e1312c08388c18bde0f09cfcada309bb498cdddba53f0cc9d33"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P114_figure.png",
+      "size": 781350,
+      "sha256": "5e3472d6ac6c63aa0ea553cd4cf09546ab0fc5a6f08b88679e70b1969e9b2481"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P115_figure.png",
+      "size": 309811,
+      "sha256": "81d3114c58a1185e212959bd49910204361532eb5008ef71c74ebbe53cfb7b1e"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P116_figure.png",
+      "size": 131719,
+      "sha256": "b013bb124568a8d89fadf76236c3201c9cb01e84d9df331722b98cc68f9817e3"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P117_figure.png",
+      "size": 1725007,
+      "sha256": "f4cacb2b857a818783dde7c4aa9fecb017d52eb683efbc2b92497fa49d2fe760"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P118_figure.png",
+      "size": 464911,
+      "sha256": "268c5cb3d90f5fdc837229fa72e055236da5c2c381967eeb51deb08d37b7d449"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P119_figure.png",
+      "size": 581711,
+      "sha256": "68962886ad1a151f51fc6e76a222af71a02553566999eaccc251304b9e428a6d"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P120_figure.png",
+      "size": 1463327,
+      "sha256": "451310c2de53caad5793471556249d89be9177018f4f4d3c25162612792cca3a"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P121_figure.png",
+      "size": 459183,
+      "sha256": "ab061e727baacbcc511cb8ce7a5e80cd25036a79556dc0732720e0ed1e29ee30"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P122_figure.png",
+      "size": 493052,
+      "sha256": "5f7e53a89b3df623dda6ce41d0bbfa7a528e483f90f7936cd74156860f5c26a2"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P123_figure.png",
+      "size": 315089,
+      "sha256": "93f76f286bc1227db951e4be251bb9bbbfcc588df43866a0739bc7b45bc13c98"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P124_figure.png",
+      "size": 1397378,
+      "sha256": "d904b78c96c9a5b7a3833025de21128bca5e5506733851c7aaf9693545b3f859"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P125_figure.png",
+      "size": 399346,
+      "sha256": "3172132dbe4745b6a3fc71300c97af03899b227d6a3198256928ce4ee8052141"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P126_figure.png",
+      "size": 286629,
+      "sha256": "0e42f93480bffb4063fd92e07a9ac58abb61c15bacbc61f8dce995bd24e9ba0b"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P127_figure.png",
+      "size": 126607,
+      "sha256": "11abde8880dd145dc2f2e4dd14c09d2b84568f41e0afcd9ef0fd38b9bb725c4b"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P128_figure.png",
+      "size": 485783,
+      "sha256": "477bd655399e8858c93b082a45eb50a0ea17cc1c8f0f923d38aca1619667da6c"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P129_figure.png",
+      "size": 140714,
+      "sha256": "88d41acc0616b79e081733efebc9cd06d52c2765fbba39c26e9b12b107cbe096"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P130_figure.png",
+      "size": 231102,
+      "sha256": "5e44f9f00deaa015938478b5eab8efd712fa262138e757aa90a41223bbb4f698"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P131_figure.png",
+      "size": 571491,
+      "sha256": "4cc90c05ea020bb446c2143956e0c1e537b384d4d03861cbf7e95f4cc8255be8"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P132_figure.png",
+      "size": 585701,
+      "sha256": "983a2ce65c7aa124fabb53a1448d1fdb1005a8b7239bbc874e4ddbbb561cc78a"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P133_figure.png",
+      "size": 560044,
+      "sha256": "6614cf20106e936afc21432874bcba3c823804001bb0c3d5ec699c31f3e6975a"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P134_figure.png",
+      "size": 432210,
+      "sha256": "6910b49be02dc3c108d03bd1c2900713eeca9ac7b774d4807e144656bdb2e693"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P136_figure.png",
+      "size": 212682,
+      "sha256": "f784e4277edb357a9557870c98afda53e7f9f649818831995992143888356534"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P137_figure.png",
+      "size": 92690,
+      "sha256": "a847f67edf8e584337c22a250c54f98e655b74b5da3993b004d65e6ed2068cd9"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P138_figure.png",
+      "size": 186513,
+      "sha256": "c570df1bad9a54f0e36051fd95506e5853f6f4fb07f898b17f5bb0189205bf39"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P139_figure.png",
+      "size": 332424,
+      "sha256": "5cb888829f991eea354e4db77081a17935b0ef948da796e81ef257a66c52f794"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P140_figure.png",
+      "size": 431594,
+      "sha256": "48d77283297d147dec07009ced3c26f58efaf6a7a0c948ba56e3d34e4b19b0e8"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P141_figure.png",
+      "size": 202706,
+      "sha256": "fd34b3ceee00db31e9480fbb5045307b85ce31ec02b509a825683155f33ad7bc"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P142_figure.png",
+      "size": 157299,
+      "sha256": "2aa2073bda79f899053b5bcd7e93ea026aae0764de88a232994135e8afe204da"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P143_figure.png",
+      "size": 240006,
+      "sha256": "62d46c56ae9e8453e677267108c216f208aaa75b587b67b817d9618e613581b6"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P145_figure.png",
+      "size": 989775,
+      "sha256": "6974a29a43068129c16f13e7e1dec79211044cb80521a46d6c8276c842665cca"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P146_figure.png",
+      "size": 1336247,
+      "sha256": "03442c8890f32cf969c7dad8134d11b1ee09a8d24b81ccc2b67c8551dc28115d"
+    }
+  ]
+}

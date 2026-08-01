@@ -1,0 +1,51 @@
+# macOS and archive metadata
+.DS_Store
+**/.DS_Store
+._*
+__MACOSX/
+Thumbs.db
+
+# Editor and local environment
+.idea/
+.vscode/
+.env
+.env.*
+*.swp
+*.swo
+*~
+
+# Python caches and virtual environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.venv/
+venv/
+
+# Generated or temporary working directories
+tmp/
+output/
+site/
+build/
+dist/
+*.tmp
+*.bak
+*.log
+
+# Source documents are kept outside the public knowledge base
+*.pdf
+*.doc
+*.docx
+*.ppt
+*.pptx
+*.xls
+*.xlsx
+*.zip
+*.7z
+
+# Full-directory snapshots belong in remote Git history, not the active tree
+/*备份*/
+/*_backup/
+/*-backup/
