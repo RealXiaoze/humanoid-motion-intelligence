@@ -31,8 +31,8 @@
     },
     {
       "path": "README.md",
-      "size": 21240,
-      "sha256": "218d5ff9b86c7b87511b5b62c78cfa263f481ce47d967ad5e9e804b351961518"
+      "size": 21241,
+      "sha256": "d1726ba803ecf7d390484ba4333b41bb390667f19285e8d8671f4fd13874aa2d"
     },
     {
       "path": "公司与产业/README.md",
@@ -41,8 +41,8 @@
     },
     {
       "path": "公司与产业/公司与产品主表.md",
-      "size": 14408,
-      "sha256": "71c72917b18aa9122f139af45fe3dab9ba1face08412c05a82d3e3f9e1e0f9c0"
+      "size": 14558,
+      "sha256": "641ef6bb952cceb965e28d90b2719921032405a0d8de328767fb3d20bba4a03e"
     },
     {
       "path": "公司与产业/公开信号时间线.md",
@@ -76,8 +76,8 @@
     },
     {
       "path": "技术路线/06_工程与实机部署.md",
-      "size": 40580,
-      "sha256": "5c5fc698850343183fd4d125018caed1547de9266a35a098d6193b4b4c89d73e"
+      "size": 40970,
+      "sha256": "16aafeaa12a9c1260f2cf325201ab45fd986e40c05ec4dbb7e4d68b47f43e74a"
     },
     {
       "path": "技术路线/README.md",
@@ -166,8 +166,8 @@
     },
     {
       "path": "论文与项目/开源项目主表.md",
-      "size": 53173,
-      "sha256": "2a79d8694cd3096889d0b0fe4acaae6ac2849e169b584c4320fc548ff9e732e1"
+      "size": 53580,
+      "sha256": "0f21d93d0bbceef1b5ddb9cc506adb924919256b9e6c28b9011d213730df7520"
     },
     {
       "path": "论文与项目/许可/CC-BY-NC-SA-4.0.txt",
