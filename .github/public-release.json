@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "generator": "build_public_release.py",
-  "content_file_count": 332,
+  "content_file_count": 334,
   "operational_file_count": 2,
   "files": [
     {
@@ -11,8 +11,8 @@
     },
     {
       "path": ".github/scripts/validate_public_tree.py",
-      "size": 11612,
-      "sha256": "6049e8b2a422dfe126916b15889236b41bbf2953fa3661f136e8ddac3a26d057"
+      "size": 11575,
+      "sha256": "6f82adc06949290649f2cd4ea76aedb14ec88967c1977affcfa54ab0c0cf6712"
     },
     {
       "path": ".github/workflows/public-release-check.yml",
@@ -101,8 +101,8 @@
     },
     {
       "path": "求职与岗位/README.md",
-      "size": 449,
-      "sha256": "a2c22914f269ceb943e72e54fa0a6fcc7e59ee432b045e45d5104ecdb7ba0c2f"
+      "size": 562,
+      "sha256": "1e5995036b4c31484494a3afa06017bc1a5a166beda942334d998d10358f53a8"
     },
     {
       "path": "求职与岗位/图片/2026-03_Offer记录模板.png",
@@ -158,6 +158,16 @@
       "path": "求职与岗位/图片/个人名片.png",
       "size": 1483704,
       "sha256": "c434478617a62f5c0da16e32a3884fc5e886f44142af3a3bad86823ceeba67d8"
+    },
+    {
+      "path": "求职与岗位/简历模板.docx",
+      "size": 58864,
+      "sha256": "77f4a92ea3a31cf4edb1350f27111746e139d0a1106edd6cf79a6d78f479d262"
+    },
+    {
+      "path": "求职与岗位/简历模板.pdf",
+      "size": 332672,
+      "sha256": "892bbdb095797b7e8b599489482bf3e9e691323cbd8fb42d76cf0908bcffe638"
     },
     {
       "path": "论文与项目/README.md",
