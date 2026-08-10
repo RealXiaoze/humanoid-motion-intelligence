@@ -31,8 +31,8 @@
     },
     {
       "path": "README.md",
-      "size": 21236,
-      "sha256": "fb06ca2aa5804bac5e642427fa9b03e7ba3d40f09b2047f977f379914499dc9e"
+      "size": 21241,
+      "sha256": "d1726ba803ecf7d390484ba4333b41bb390667f19285e8d8671f4fd13874aa2d"
     },
     {
       "path": "公司与产业/README.md",
@@ -41,13 +41,13 @@
     },
     {
       "path": "公司与产业/公司与产品主表.md",
-      "size": 14315,
-      "sha256": "8c96786d9c9c1c0e97c74ea844561e04476b7d4a77775147c787b1dfd72031ff"
+      "size": 14558,
+      "sha256": "641ef6bb952cceb965e28d90b2719921032405a0d8de328767fb3d20bba4a03e"
     },
     {
       "path": "公司与产业/公开信号时间线.md",
-      "size": 23795,
-      "sha256": "bbf49c704a8d4778289656ad241d20270728dac50f71de06f5674090c6c97ca5"
+      "size": 24583,
+      "sha256": "54fe9fde2c6f5c0b4f7a8a84e9b6efec10ff69469c97865414c6d40e7771613e"
     },
     {
       "path": "技术路线/01_动作数据与重定向.md",
@@ -76,8 +76,8 @@
     },
     {
       "path": "技术路线/06_工程与实机部署.md",
-      "size": 40580,
-      "sha256": "5c5fc698850343183fd4d125018caed1547de9266a35a098d6193b4b4c89d73e"
+      "size": 40970,
+      "sha256": "16aafeaa12a9c1260f2cf325201ab45fd986e40c05ec4dbb7e4d68b47f43e74a"
     },
     {
       "path": "技术路线/README.md",
@@ -166,8 +166,8 @@
     },
     {
       "path": "论文与项目/开源项目主表.md",
-      "size": 53173,
-      "sha256": "2a79d8694cd3096889d0b0fe4acaae6ac2849e169b584c4320fc548ff9e732e1"
+      "size": 53580,
+      "sha256": "0f21d93d0bbceef1b5ddb9cc506adb924919256b9e6c28b9011d213730df7520"
     },
     {
       "path": "论文与项目/许可/CC-BY-NC-SA-4.0.txt",
