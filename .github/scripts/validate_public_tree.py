@@ -11,7 +11,7 @@ from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parents[2]
 EXPORT_MANIFEST = ROOT / ".github" / "public-release.json"
-EXPECTED_CONTENT_FILES = 334
+EXPECTED_CONTENT_FILES = 333
 EXPECTED_OPERATIONAL_FILES = 2
 EXPECTED_PAPER_PAGES = 146
 EXPECTED_PAPER_IMAGES = 152
