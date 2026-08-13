@@ -34,7 +34,7 @@
 
 ## 完整条目
 
-本路线当前收录 **36** 篇论文/技术报告、**24** 个项目。
+本路线当前收录 **36** 篇论文/技术报告、**25** 个项目。
 
 ### 基础Locomotion
 
@@ -135,5 +135,6 @@
 | [AMP_mjlab](https://github.com/ccrpRepo/AMP_mjlab) | 在MJLab中提供G1平地和粗糙地形AMP任务、动作数据转换、行走跑步与跌倒恢复训练，以及ONNX导出；真实机器人接入依赖另一个wbc_fsm仓库中的MJAmp状态。 |
 | [BFM-Zero](https://github.com/LeCAR-Lab/BFM-Zero) | Forward-Backward无监督强化学习先建立覆盖多种行为的潜在策略，行为提示和条件对抗运动先验再限制动作分布。仓库把分阶段训练、专家数据与G1部署串在一起，开发者可以分别消融潜变量覆盖和先验约束。 |
 | [Generative Motion Prior](https://sites.google.com/view/humanoid-gmp) | 人体动作先重定向为机器人轨迹，条件VAE再在线生成未来参考，以冻结的关节和关键点监督训练速度策略。若AMP判别奖励难调，可沿这条路线比较分布判别与显式生成参考对自然步态的影响。 |
+| [Mini Pi Plus AMP](https://github.com/HighTorque-Robotics/Mini-Pi-Plus_AMP) | 高擎官方仓库提供Mini Pi Plus人形机器人的AMP运动训练与仿真工具：Isaac Lab GPU并行训练、AMP+PPO与镜像轨迹增强（pi_plus_amp_sym_flat，4096并行环境、50000迭代）、MuJoCo sim2sim验证、策略回放与AMP动画、TensorBoard日志及TorchScript导出，并附带三个示例权重；README明确面向研究与仿真，实机连接前需受控验证。 |
 | [PULSE](https://github.com/ZhengyiLuo/PULSE) | 在物理人体控制器之上学习潜在动作空间，再由高层策略组合潜变量完成目标任务；它把低层自然运动约束与任务学习分离，适合研究可复用技能表示而非直接机器人部署。 |
 | [UFO](https://github.com/Roboparty/UFO) | 用Forward-Backward与TeCH学习可提示的G1行为空间，并提供机器人感知的动作导入、目标定义、奖励和跟踪流程；仓库明确不自动完成重定向，也不能让不同本体直接共享同一检查点。 |

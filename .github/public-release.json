@@ -32,7 +32,7 @@
     {
       "path": "README.md",
       "size": 21241,
-      "sha256": "3bac5cc204c9aaa094d714f1f9ad988506d0eef2b0fa3c04e6b0a155d6eff081"
+      "sha256": "97bb5f16937ee187027f968ecb1eb5e06cf38513587bb98de38707d6abf8d070"
     },
     {
       "path": "公司与产业/README.md",
@@ -56,8 +56,8 @@
     },
     {
       "path": "技术路线/02_Locomotion与运动先验.md",
-      "size": 27558,
-      "sha256": "11507bd1b31af2a1b9289deb421ba77795a638a534e18d6b6165dd03756e6b1b"
+      "size": 28035,
+      "sha256": "93fdc5f3416a5639dbe03292e9edd286ec94105c311319d3e0e7353a0a6e8709"
     },
     {
       "path": "技术路线/03_动作跟踪与全身控制.md",
@@ -171,8 +171,8 @@
     },
     {
       "path": "论文与项目/开源项目主表.md",
-      "size": 54276,
-      "sha256": "a0695b5532bbc3a88db591b40498b37d7b6c2e861d3459d2c629fd137be66297"
+      "size": 54770,
+      "sha256": "a23f4a070d62554c0be4cbcf8f9a97dce27d95cb054f1cab7240c3645e5687e0"
     },
     {
       "path": "论文与项目/许可/CC-BY-NC-SA-4.0.txt",
