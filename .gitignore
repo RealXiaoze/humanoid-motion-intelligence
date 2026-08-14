@@ -34,10 +34,7 @@ dist/
 *.bak
 *.log
 
-# Source documents are kept outside the public knowledge base
-*.pdf
-*.doc
-*.docx
+# Source documents beyond PDF/DOC (kept outside the public knowledge base)
 *.ppt
 *.pptx
 *.xls

@@ -11,14 +11,15 @@ from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parents[2]
 EXPORT_MANIFEST = ROOT / ".github" / "public-release.json"
-EXPECTED_CONTENT_FILES = 332
+EXPECTED_CONTENT_FILES = 358
 EXPECTED_OPERATIONAL_FILES = 2
-EXPECTED_PAPER_PAGES = 146
-EXPECTED_PAPER_IMAGES = 152
+EXPECTED_PAPER_PAGES = 159
+EXPECTED_PAPER_IMAGES = 164
 PAGES_WITHOUT_EMBEDDED_FIGURES = {
     "P016.md",
     "P135.md",
     "P144.md",
+    "P152.md",
 }
 RUNTIME_IGNORED_DIRS = {".git", "__pycache__"}
 RUNTIME_IGNORED_SUFFIXES = {".pyc"}
@@ -49,11 +50,8 @@ FORBIDDEN_SUFFIXES = {
     ".7z",
     ".bak",
     ".csv",
-    ".doc",
-    ".docx",
     ".dmg",
     ".gz",
-    ".pdf",
     ".ppt",
     ".pptx",
     ".rar",
