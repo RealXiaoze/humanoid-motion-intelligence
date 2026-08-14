@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "generator": "build_public_release.py",
-  "content_file_count": 356,
+  "content_file_count": 358,
   "operational_file_count": 2,
   "files": [
     {
@@ -12,7 +12,7 @@
     {
       "path": ".github/scripts/validate_public_tree.py",
       "size": 11590,
-      "sha256": "ffce2287eebee551a65d863c642a3bc54a2ce1240e2ff01473edf6161eb8b68e"
+      "sha256": "d98e1faabe7b67c9567444fdbab6169e08dbc2f5de9f799b44e8933739916c08"
     },
     {
       "path": ".github/workflows/public-release-check.yml",
@@ -56,13 +56,13 @@
     },
     {
       "path": "技术路线/02_Locomotion与运动先验.md",
-      "size": 28035,
-      "sha256": "93fdc5f3416a5639dbe03292e9edd286ec94105c311319d3e0e7353a0a6e8709"
+      "size": 28481,
+      "sha256": "8b82575cd05d27030ed2042fe032801665adb940ee078b2a38cb4ba0ecf94bd0"
     },
     {
       "path": "技术路线/03_动作跟踪与全身控制.md",
-      "size": 28767,
-      "sha256": "b588e780288675a11a9ed4b97c7cb95297ec7f5857c560842fc86a0f32ee297e"
+      "size": 28440,
+      "sha256": "323511841a4058178062965b53fa159f710d0ee08f3bc096943d5268d66ad365"
     },
     {
       "path": "技术路线/04_LocoManip.md",
@@ -76,8 +76,8 @@
     },
     {
       "path": "技术路线/06_工程与实机部署.md",
-      "size": 40970,
-      "sha256": "16aafeaa12a9c1260f2cf325201ab45fd986e40c05ec4dbb7e4d68b47f43e74a"
+      "size": 41272,
+      "sha256": "94eeb06a1aa7cbf32d86ecf2ffd11428170ea6b1aac42b23e3990d816488eba1"
     },
     {
       "path": "技术路线/README.md",
@@ -166,13 +166,13 @@
     },
     {
       "path": "论文与项目/README.md",
-      "size": 67675,
-      "sha256": "7d96c93e2172da09de7c9ee9e72e1012b61519d3ff90628c694a79d88ef88b42"
+      "size": 68102,
+      "sha256": "dc6e8af459982d4c34572012c69b7b075a0243689d1ac465a379c8e8057ff47f"
     },
     {
       "path": "论文与项目/开源项目主表.md",
-      "size": 54770,
-      "sha256": "a23f4a070d62554c0be4cbcf8f9a97dce27d95cb054f1cab7240c3645e5687e0"
+      "size": 54745,
+      "sha256": "3be2ef909bc8fb75d8cca554eebe101e37fe4cf91efad66be1f8606463fbb370"
     },
     {
       "path": "论文与项目/许可/CC-BY-NC-SA-4.0.txt",
@@ -973,6 +973,11 @@
       "path": "论文与项目/论文逐篇解读/P158.md",
       "size": 4198,
       "sha256": "88919cafa88bff410cf9c39b19dab7606eca06f75d5a1c11c47d19dc5cd28801"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P159.md",
+      "size": 8556,
+      "sha256": "778a8ad0f9f66381ddbf6ab34351a495af3fef8cc9b3829e9048de74f41a6401"
     },
     {
       "path": "论文与项目/论文逐篇解读/README.md",
@@ -1793,6 +1798,11 @@
       "path": "论文与项目/论文逐篇解读/论文原图/P158_figure.png",
       "size": 21373,
       "sha256": "883f4f1f28106582b6a76bed1b5ca89d9f008c54e7d4235fdeb19f79e7370717"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P159_figure.png",
+      "size": 404358,
+      "sha256": "4b54c2b8bb24a25deccce94e1cb4d4db301575ccceb9b59fe2505114d0f1f2a4"
     }
   ]
 }
