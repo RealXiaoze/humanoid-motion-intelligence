@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "generator": "build_public_release.py",
-  "content_file_count": 359,
+  "content_file_count": 360,
   "operational_file_count": 2,
   "files": [
     {
@@ -12,7 +12,7 @@
     {
       "path": ".github/scripts/validate_public_tree.py",
       "size": 11590,
-      "sha256": "ac47babd34f839c6cd213cf3f4cbf34c384c038f1fba8ffd498093120d9a3cae"
+      "sha256": "01924a7c62fe5ad0fb9d364f67d0c060e5754e2e29008b6cfb03e3e3c4ea7277"
     },
     {
       "path": ".github/workflows/public-release-check.yml",
@@ -51,8 +51,8 @@
     },
     {
       "path": "技术路线/01_动作数据与重定向.md",
-      "size": 14247,
-      "sha256": "42a4f230868d90ff4712a5d5e39302303dbed60fa954236ed0e5fe8c1ce75929"
+      "size": 14624,
+      "sha256": "fbc5e15aa3516d030daa33f091f34b39866b7c55cd38662d4d02d0b18873f884"
     },
     {
       "path": "技术路线/02_Locomotion与运动先验.md",
@@ -78,6 +78,11 @@
       "path": "技术路线/06_工程与实机部署.md",
       "size": 41272,
       "sha256": "94eeb06a1aa7cbf32d86ecf2ffd11428170ea6b1aac42b23e3990d816488eba1"
+    },
+    {
+      "path": "技术路线/Ego第一人称数据采集设备选型.md",
+      "size": 12024,
+      "sha256": "8e87e75f58978bf74d208fd57f3ae3aa417e9b46fe209f2d639604d73b2169af"
     },
     {
       "path": "技术路线/README.md",
