@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "generator": "build_public_release.py",
-  "content_file_count": 358,
+  "content_file_count": 360,
   "operational_file_count": 2,
   "files": [
     {
@@ -12,7 +12,7 @@
     {
       "path": ".github/scripts/validate_public_tree.py",
       "size": 11590,
-      "sha256": "d98e1faabe7b67c9567444fdbab6169e08dbc2f5de9f799b44e8933739916c08"
+      "sha256": "01924a7c62fe5ad0fb9d364f67d0c060e5754e2e29008b6cfb03e3e3c4ea7277"
     },
     {
       "path": ".github/workflows/public-release-check.yml",
@@ -51,8 +51,8 @@
     },
     {
       "path": "技术路线/01_动作数据与重定向.md",
-      "size": 14247,
-      "sha256": "42a4f230868d90ff4712a5d5e39302303dbed60fa954236ed0e5fe8c1ce75929"
+      "size": 14624,
+      "sha256": "fbc5e15aa3516d030daa33f091f34b39866b7c55cd38662d4d02d0b18873f884"
     },
     {
       "path": "技术路线/02_Locomotion与运动先验.md",
@@ -80,6 +80,11 @@
       "sha256": "94eeb06a1aa7cbf32d86ecf2ffd11428170ea6b1aac42b23e3990d816488eba1"
     },
     {
+      "path": "技术路线/Ego第一人称数据采集设备选型.md",
+      "size": 12024,
+      "sha256": "8e87e75f58978bf74d208fd57f3ae3aa417e9b46fe209f2d639604d73b2169af"
+    },
+    {
       "path": "技术路线/README.md",
       "size": 20690,
       "sha256": "43d307a9e9d1f57940c5679dbaed0cf47ec75695513063ff5a2ae05cdc9c4782"
@@ -96,8 +101,8 @@
     },
     {
       "path": "求职与岗位/2026-07_招聘与内推信息.md",
-      "size": 16371,
-      "sha256": "fd45a5cf459086b63695d679bc0998cd72f3074b75f2b6fca3ba91e2554126fb"
+      "size": 17729,
+      "sha256": "8d23eadacbb253921f4f259695409b8fd0440e50ecc8f8221d2235a83526c8fb"
     },
     {
       "path": "求职与岗位/README.md",
@@ -153,6 +158,11 @@
       "path": "求职与岗位/图片/2026-07_银河通用_2027届校园招聘.png",
       "size": 5626320,
       "sha256": "508a25873acc59347512f02f6ba1e68308c2fc4134a8df480a525eb27d24d3cd"
+    },
+    {
+      "path": "求职与岗位/图片/2026-08_字节跳动_通用内推码.jpg",
+      "size": 47846,
+      "sha256": "9a74db8c5cbbd3aef3f9d38cbe213576e8658e39be489dd7101183df02a97a3b"
     },
     {
       "path": "求职与岗位/图片/个人名片.png",
