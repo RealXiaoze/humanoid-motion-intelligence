@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "generator": "build_public_release.py",
-  "content_file_count": 358,
+  "content_file_count": 359,
   "operational_file_count": 2,
   "files": [
     {
@@ -12,7 +12,7 @@
     {
       "path": ".github/scripts/validate_public_tree.py",
       "size": 11590,
-      "sha256": "d98e1faabe7b67c9567444fdbab6169e08dbc2f5de9f799b44e8933739916c08"
+      "sha256": "ac47babd34f839c6cd213cf3f4cbf34c384c038f1fba8ffd498093120d9a3cae"
     },
     {
       "path": ".github/workflows/public-release-check.yml",
@@ -96,8 +96,8 @@
     },
     {
       "path": "求职与岗位/2026-07_招聘与内推信息.md",
-      "size": 16371,
-      "sha256": "fd45a5cf459086b63695d679bc0998cd72f3074b75f2b6fca3ba91e2554126fb"
+      "size": 17729,
+      "sha256": "8d23eadacbb253921f4f259695409b8fd0440e50ecc8f8221d2235a83526c8fb"
     },
     {
       "path": "求职与岗位/README.md",
@@ -153,6 +153,11 @@
       "path": "求职与岗位/图片/2026-07_银河通用_2027届校园招聘.png",
       "size": 5626320,
       "sha256": "508a25873acc59347512f02f6ba1e68308c2fc4134a8df480a525eb27d24d3cd"
+    },
+    {
+      "path": "求职与岗位/图片/2026-08_字节跳动_通用内推码.jpg",
+      "size": 47846,
+      "sha256": "9a74db8c5cbbd3aef3f9d38cbe213576e8658e39be489dd7101183df02a97a3b"
     },
     {
       "path": "求职与岗位/图片/个人名片.png",
