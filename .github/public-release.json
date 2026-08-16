@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "generator": "build_public_release.py",
-  "content_file_count": 360,
+  "content_file_count": 366,
   "operational_file_count": 2,
   "files": [
     {
@@ -12,7 +12,7 @@
     {
       "path": ".github/scripts/validate_public_tree.py",
       "size": 11590,
-      "sha256": "01924a7c62fe5ad0fb9d364f67d0c060e5754e2e29008b6cfb03e3e3c4ea7277"
+      "sha256": "0de3af24a1bae19b9ae369115ffe6c071adc5a36848a3741f3fe6907b9cbc46a"
     },
     {
       "path": ".github/workflows/public-release-check.yml",
@@ -56,13 +56,13 @@
     },
     {
       "path": "技术路线/02_Locomotion与运动先验.md",
-      "size": 28481,
-      "sha256": "8b82575cd05d27030ed2042fe032801665adb940ee078b2a38cb4ba0ecf94bd0"
+      "size": 28977,
+      "sha256": "d8521175c1a3fff1e9509bfa2efa0fa231b606e5d6694f95666881a9fd2003e2"
     },
     {
       "path": "技术路线/03_动作跟踪与全身控制.md",
-      "size": 28440,
-      "sha256": "323511841a4058178062965b53fa159f710d0ee08f3bc096943d5268d66ad365"
+      "size": 28984,
+      "sha256": "b771e1029e325e811f407ba3e21f98d5c61e885cac46cba9cd99de23b5fb88bf"
     },
     {
       "path": "技术路线/04_LocoManip.md",
@@ -71,13 +71,13 @@
     },
     {
       "path": "技术路线/05_世界模型VLA与Agent.md",
-      "size": 23562,
-      "sha256": "08d6ff1e98b3a256c6ef5d0611d68c675ff18cae310d25f9b6bd3542bf4e31a3"
+      "size": 24079,
+      "sha256": "ad91e4b325e192184eb30bcc8dd41a599f7a2739f74fbfb9e75a0212bc923d7c"
     },
     {
       "path": "技术路线/06_工程与实机部署.md",
-      "size": 41272,
-      "sha256": "94eeb06a1aa7cbf32d86ecf2ffd11428170ea6b1aac42b23e3990d816488eba1"
+      "size": 41739,
+      "sha256": "4fee5931ae58ac14b58b5ea4582a2249bb5313afbcd0547068eff95181d99d99"
     },
     {
       "path": "技术路线/Ego第一人称数据采集设备选型.md",
@@ -101,13 +101,13 @@
     },
     {
       "path": "求职与岗位/2026-07_招聘与内推信息.md",
-      "size": 17729,
-      "sha256": "8d23eadacbb253921f4f259695409b8fd0440e50ecc8f8221d2235a83526c8fb"
+      "size": 18576,
+      "sha256": "6287171459a37d3b97fff9bbe6ec35821555753f26aaeb3bede493a290dd5ad6"
     },
     {
       "path": "求职与岗位/README.md",
-      "size": 503,
-      "sha256": "947206f6369f1a1d22af2a4dc81aca10bbaab6bf6f8b0e4a6b640cc204b92e59"
+      "size": 499,
+      "sha256": "9d17323fc88b1faf6a335a6b8210224b96c56d5202233db8921d3d350a1ad034"
     },
     {
       "path": "求职与岗位/图片/2026-03_Offer记录模板.png",
@@ -135,19 +135,9 @@
       "sha256": "42c9dc41934ae401e4042fadde3e23369087a0e8f44b2a1d2dacb42ea6d94482"
     },
     {
-      "path": "求职与岗位/图片/2026-07_千觉机器人_HR投递二维码.jpg",
-      "size": 81481,
-      "sha256": "1aef5fa8aa190dceb51f23f0c271fd2ad40bf796cfe4c903193b2c5af06656b1"
-    },
-    {
       "path": "求职与岗位/图片/2026-07_大咖机器人_四足运控强化学习工程师.png",
       "size": 460615,
       "sha256": "1452430e01548340aabab5b6dd904240f922f90eb759b6f3ad2c8497218333d3"
-    },
-    {
-      "path": "求职与岗位/图片/2026-07_大咖机器人_技术负责人微信.jpg",
-      "size": 161264,
-      "sha256": "f552892d0adda77bee572064c103dc48d43ec538f379cbb740688e6f598119a3"
     },
     {
       "path": "求职与岗位/图片/2026-07_极智嘉_具身智能招聘.png",
@@ -176,8 +166,8 @@
     },
     {
       "path": "论文与项目/README.md",
-      "size": 68102,
-      "sha256": "dc6e8af459982d4c34572012c69b7b075a0243689d1ac465a379c8e8057ff47f"
+      "size": 70050,
+      "sha256": "c4deeaa5a557e69da1b99a9968f3da391738c077aaac7324b0d24205f76ed5ee"
     },
     {
       "path": "论文与项目/开源项目主表.md",
@@ -941,8 +931,8 @@
     },
     {
       "path": "论文与项目/论文逐篇解读/P150.md",
-      "size": 9088,
-      "sha256": "6d72a02f88ab3369d18021c295af12509f2af39588ed133d28703d1c1bc11fc1"
+      "size": 9323,
+      "sha256": "cbbfef303c81b4daf03bd8c98d1b35c3f6e61883ed8f13ec7c75f904cfefbebd"
     },
     {
       "path": "论文与项目/论文逐篇解读/P151.md",
@@ -988,6 +978,26 @@
       "path": "论文与项目/论文逐篇解读/P159.md",
       "size": 8556,
       "sha256": "778a8ad0f9f66381ddbf6ab34351a495af3fef8cc9b3829e9048de74f41a6401"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P160.md",
+      "size": 4861,
+      "sha256": "d323d104e9b83733d9b6d419704b5877694eb1de707e630fb1b631ab78579b78"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P161.md",
+      "size": 5513,
+      "sha256": "15eea2855d97203fb285601e9d50d6bcc2fd4a98eee88a5563d67b5214299b36"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P162.md",
+      "size": 5247,
+      "sha256": "e5e07796a1a7a0922a121430829aca7bc3ba49f5d86d18c6a15a9713a98cce63"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P163.md",
+      "size": 5484,
+      "sha256": "68dfa31f8ffd8cd686256b7518781fb73c072c394b06ae22ee7b86368c01a95f"
     },
     {
       "path": "论文与项目/论文逐篇解读/README.md",
@@ -1813,6 +1823,26 @@
       "path": "论文与项目/论文逐篇解读/论文原图/P159_figure.png",
       "size": 404358,
       "sha256": "4b54c2b8bb24a25deccce94e1cb4d4db301575ccceb9b59fe2505114d0f1f2a4"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P160_figure.png",
+      "size": 520756,
+      "sha256": "8c3649e3fdec01656d597ffa54b306c2a19a2f2cb1a5f751d95d5903e47c9eb3"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P161_figure.png",
+      "size": 480772,
+      "sha256": "9db6a485ce4eb8d156c733d8df06c92f1772b2f03ea9ecaf228a74fa4fbb0fe6"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P162_figure.png",
+      "size": 526788,
+      "sha256": "bb1fc53dc3c42f533ee8ae5be763185a1da448a23ba9c589363854a352870fe8"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P163_figure.png",
+      "size": 893101,
+      "sha256": "b2e31ac3210322cb33f73eb7f1cb43819a997b744139e5073d623d2239097a9b"
     }
   ]
 }
