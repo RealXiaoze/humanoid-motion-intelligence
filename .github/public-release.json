@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "generator": "build_public_release.py",
-  "content_file_count": 366,
+  "content_file_count": 368,
   "operational_file_count": 2,
   "files": [
     {
@@ -12,7 +12,7 @@
     {
       "path": ".github/scripts/validate_public_tree.py",
       "size": 11590,
-      "sha256": "0de3af24a1bae19b9ae369115ffe6c071adc5a36848a3741f3fe6907b9cbc46a"
+      "sha256": "ec7426381b128ef2e514ef568288b3e8a524d7618153219dbf7cc0159fffb1fa"
     },
     {
       "path": ".github/workflows/public-release-check.yml",
@@ -32,7 +32,7 @@
     {
       "path": "README.md",
       "size": 21241,
-      "sha256": "97bb5f16937ee187027f968ecb1eb5e06cf38513587bb98de38707d6abf8d070"
+      "sha256": "9da99866ac590f601bcc4fc01d9cbb7e633fbf1211bd3bcc9a1a53f8d61bf0a2"
     },
     {
       "path": "公司与产业/README.md",
@@ -41,13 +41,13 @@
     },
     {
       "path": "公司与产业/公司与产品主表.md",
-      "size": 14657,
-      "sha256": "585ec209c2f58d0595131b4098c1a4065603e7ed1f20ecdbc4ce362cb4e50352"
+      "size": 16916,
+      "sha256": "3a616804b8d79baa7b2ae99df77dcd77e260e676934f92c93b0770d4c69d2855"
     },
     {
       "path": "公司与产业/公开信号时间线.md",
-      "size": 25115,
-      "sha256": "5f7ed55c52a2feeb1c1e5c4d2ab119b20b9731101624d9ed21a8fcfe081efc0a"
+      "size": 30003,
+      "sha256": "40bde839f1de27352597b2d6ea79db3e09bbb0e89aff44c7eac6eeb47bc98195"
     },
     {
       "path": "技术路线/01_动作数据与重定向.md",
@@ -101,8 +101,8 @@
     },
     {
       "path": "求职与岗位/2026-07_招聘与内推信息.md",
-      "size": 18576,
-      "sha256": "6287171459a37d3b97fff9bbe6ec35821555753f26aaeb3bede493a290dd5ad6"
+      "size": 25480,
+      "sha256": "167006ade19e7fe1b2acd3738967d822497066eb78499fce050e3a56efbcc5fa"
     },
     {
       "path": "求职与岗位/README.md",
@@ -148,6 +148,16 @@
       "path": "求职与岗位/图片/2026-07_银河通用_2027届校园招聘.png",
       "size": 5626320,
       "sha256": "508a25873acc59347512f02f6ba1e68308c2fc4134a8df480a525eb27d24d3cd"
+    },
+    {
+      "path": "求职与岗位/图片/2026-08_XVI_Robotics_招聘岗位.jpg",
+      "size": 3251237,
+      "sha256": "8f96c584c5cbd4ac10b26899b9c0553899bcdd4fac7ebe622cb23c715b050ff1"
+    },
+    {
+      "path": "求职与岗位/图片/2026-08_XVI_Robotics_申请方式.jpg",
+      "size": 554933,
+      "sha256": "94c6b8dce630d60a79ccfa97ac8a4318745e25756e40c4555fbcfd8e238fb3f1"
     },
     {
       "path": "求职与岗位/图片/2026-08_字节跳动_通用内推码.jpg",
