@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "generator": "build_public_release.py",
-  "content_file_count": 368,
+  "content_file_count": 369,
   "operational_file_count": 2,
   "files": [
     {
@@ -11,8 +11,8 @@
     },
     {
       "path": ".github/scripts/validate_public_tree.py",
-      "size": 11590,
-      "sha256": "ec7426381b128ef2e514ef568288b3e8a524d7618153219dbf7cc0159fffb1fa"
+      "size": 11605,
+      "sha256": "b8db5e191db25846c648acaf4a5d3918954f01066d53237bcfb972b5b55dfe1c"
     },
     {
       "path": ".github/workflows/public-release-check.yml",
@@ -31,8 +31,8 @@
     },
     {
       "path": "README.md",
-      "size": 21241,
-      "sha256": "9da99866ac590f601bcc4fc01d9cbb7e633fbf1211bd3bcc9a1a53f8d61bf0a2"
+      "size": 21408,
+      "sha256": "1939de4d5c0517ca1fc587de4eade4ef84a66f1a7580ac46385dadc477501bb2"
     },
     {
       "path": "公司与产业/README.md",
@@ -66,8 +66,8 @@
     },
     {
       "path": "技术路线/04_LocoManip.md",
-      "size": 23577,
-      "sha256": "fb663c88e5a3f0212f6735a9b3c9918183c12e066e328fea15719b6fd8640fcb"
+      "size": 24075,
+      "sha256": "ddad2047a60d1f9e2e714c591945f59e345030f05d6422bc45cce43e66d1e59c"
     },
     {
       "path": "技术路线/05_世界模型VLA与Agent.md",
@@ -86,8 +86,8 @@
     },
     {
       "path": "技术路线/README.md",
-      "size": 20690,
-      "sha256": "43d307a9e9d1f57940c5679dbaed0cf47ec75695513063ff5a2ae05cdc9c4782"
+      "size": 20990,
+      "sha256": "2a4351145317aab2a8f72b2e06b0d2aaf9edfd0c1500a79f8ed7910162e86378"
     },
     {
       "path": "求职与岗位/2026-03_运动控制面经_谈薪技巧_薪资汇总.md",
@@ -176,8 +176,8 @@
     },
     {
       "path": "论文与项目/README.md",
-      "size": 70050,
-      "sha256": "c4deeaa5a557e69da1b99a9968f3da391738c077aaac7324b0d24205f76ed5ee"
+      "size": 70529,
+      "sha256": "1a83a62f4eafc1d918fddd70df325979a6514862911d550e534518455014d31d"
     },
     {
       "path": "论文与项目/开源项目主表.md",
@@ -1008,6 +1008,11 @@
       "path": "论文与项目/论文逐篇解读/P163.md",
       "size": 5484,
       "sha256": "68dfa31f8ffd8cd686256b7518781fb73c072c394b06ae22ee7b86368c01a95f"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P164.md",
+      "size": 6891,
+      "sha256": "38b90c44cbd84c9561d5f06ef798d9ad98475a03b358a0d68df9bc77cdc80129"
     },
     {
       "path": "论文与项目/论文逐篇解读/README.md",
