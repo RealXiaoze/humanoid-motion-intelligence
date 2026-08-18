@@ -55,6 +55,7 @@ cd humanoid-motion-intelligence
 | 从零学习，或建立完整技术路线 | [技术路线总览与学习路径](技术路线/README.md) |
 | 查论文、方法和稳定ID | [论文总索引](论文与项目/README.md) |
 | 找代码、框架和复现入口 | [开源项目主表](论文与项目/开源项目主表.md) |
+| 找适合入门和作品构建的小型项目 | [【开源】小而美的运动控制项目（公开版）](https://my.feishu.cn/wiki/Q1jaw5rCliWddukCfYfcwjW0nJf) |
 | 观察公司产品与产业变化 | [公司与产业](公司与产业/README.md) |
 | 查看面经、招聘和内推信息 | [招聘与内推信息](求职与岗位/README.md) |
 
