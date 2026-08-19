@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "generator": "build_public_release.py",
-  "content_file_count": 369,
+  "content_file_count": 379,
   "operational_file_count": 2,
   "files": [
     {
@@ -11,8 +11,8 @@
     },
     {
       "path": ".github/scripts/validate_public_tree.py",
-      "size": 11605,
-      "sha256": "b8db5e191db25846c648acaf4a5d3918954f01066d53237bcfb972b5b55dfe1c"
+      "size": 11725,
+      "sha256": "63257f4b3839bf241d08556505c537281e1cac1a5a19ccad2a753b2fd06985e9"
     },
     {
       "path": ".github/workflows/public-release-check.yml",
@@ -51,8 +51,8 @@
     },
     {
       "path": "技术路线/01_动作数据与重定向.md",
-      "size": 14624,
-      "sha256": "fbc5e15aa3516d030daa33f091f34b39866b7c55cd38662d4d02d0b18873f884"
+      "size": 15504,
+      "sha256": "1c30aca4e017ea5e4710264da2e9a89732551b51e098610dd85c953669886453"
     },
     {
       "path": "技术路线/02_Locomotion与运动先验.md",
@@ -71,8 +71,8 @@
     },
     {
       "path": "技术路线/05_世界模型VLA与Agent.md",
-      "size": 24079,
-      "sha256": "ad91e4b325e192184eb30bcc8dd41a599f7a2739f74fbfb9e75a0212bc923d7c"
+      "size": 28101,
+      "sha256": "d5d1b71eefebb46ed0a7a1778a3dca4ad10bf5bf09ac7f878e84aca71b3d82b2"
     },
     {
       "path": "技术路线/06_工程与实机部署.md",
@@ -86,8 +86,18 @@
     },
     {
       "path": "技术路线/README.md",
-      "size": 20990,
-      "sha256": "2a4351145317aab2a8f72b2e06b0d2aaf9edfd0c1500a79f8ed7910162e86378"
+      "size": 21186,
+      "sha256": "340abc7cfb03903cb3e0f2a955a9026e4cd2409e9aaeb553c000ff39a94ed832"
+    },
+    {
+      "path": "技术路线/具身训练数据来源与本体依赖.md",
+      "size": 7757,
+      "sha256": "984cf60171beea0db429945623ada27aa12ecd53196a6bc4897ed469efd7ae0b"
+    },
+    {
+      "path": "技术路线/基础书籍与学习资料.md",
+      "size": 5667,
+      "sha256": "3df8d72e0591fa295f461b75c5248bc735b6683e1ba18055cf78f0cbcd103d9d"
     },
     {
       "path": "求职与岗位/2026-03_运动控制面经_谈薪技巧_薪资汇总.md",
@@ -176,13 +186,13 @@
     },
     {
       "path": "论文与项目/README.md",
-      "size": 70529,
-      "sha256": "1a83a62f4eafc1d918fddd70df325979a6514862911d550e534518455014d31d"
+      "size": 74232,
+      "sha256": "a76e8cf5b257b369eb0c60107b17d48fdd0ee29399c6cd48b090f3376acfc006"
     },
     {
       "path": "论文与项目/开源项目主表.md",
-      "size": 54745,
-      "sha256": "3be2ef909bc8fb75d8cca554eebe101e37fe4cf91efad66be1f8606463fbb370"
+      "size": 55456,
+      "sha256": "a59d20dd3298e411ae8d2555cbbcfb0a59ac1244dff9b301cf05d533e1e68cd9"
     },
     {
       "path": "论文与项目/许可/CC-BY-NC-SA-4.0.txt",
@@ -1013,6 +1023,46 @@
       "path": "论文与项目/论文逐篇解读/P164.md",
       "size": 6891,
       "sha256": "38b90c44cbd84c9561d5f06ef798d9ad98475a03b358a0d68df9bc77cdc80129"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P165.md",
+      "size": 4436,
+      "sha256": "1f7ca883ad2e638a0fd6b17965aaa92282d4da89d31d734956d31c3ce0963a08"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P166.md",
+      "size": 4317,
+      "sha256": "af962f7460362839044765d40d0684da584cea81081bd0a030a58e6045fb3bf8"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P167.md",
+      "size": 3648,
+      "sha256": "e16cb7b2daa343312d25ef37f201eef859bd2a21ef53db89bc441e21c4b4d4ae"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P168.md",
+      "size": 3623,
+      "sha256": "ae16600b7abdc6f1b22282abf14e92881e600dc1d256654a19364718cbfb415c"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P169.md",
+      "size": 3686,
+      "sha256": "ec7ae17f265e57198a84fb0272562f045579cc03d45c34a65dac069479e66564"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P170.md",
+      "size": 3410,
+      "sha256": "04165d466750d9885c25ef91c7f648e16bbc0a88a7dd47865847dd3ef49ef5e8"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P171.md",
+      "size": 3535,
+      "sha256": "897d88cb11b80acf363f89cfd5ea194a2af489c180e4c546f66cb57ace7e4c06"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P172.md",
+      "size": 4069,
+      "sha256": "b72018dd3fd80ae4cea4c78e1f4719c5bcbe8b913081ffa28db16322ef5a3e95"
     },
     {
       "path": "论文与项目/论文逐篇解读/README.md",
