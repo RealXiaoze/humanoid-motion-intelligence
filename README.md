@@ -73,7 +73,7 @@ cd humanoid-motion-intelligence
 | 目标本体动作重定向 | 处理人体与机器人之间的比例、零位、连杆坐标、关节限位、接触和动力学可行性 | [GMR](论文与项目/论文逐篇解读/P077.md)、[NMR](论文与项目/论文逐篇解读/P078.md)、[OmniRetarget](论文与项目/论文逐篇解读/P079.md)、[DDR](论文与项目/论文逐篇解读/P122.md)、[DynaRetarget](论文与项目/论文逐篇解读/P123.md) |
 | 人形训练数据构建 | 把少量示范、三维资产、视频先验或无本体采集扩展成可规模化训练的数据 | [GRAIL](论文与项目/论文逐篇解读/P118.md)、[BifrostUMI](论文与项目/论文逐篇解读/P124.md)、[HumanoidMimicGen](论文与项目/论文逐篇解读/P045.md) |
 
-代表项目包括[GMR](https://github.com/YanjieZe/GMR)、[GVHMR](https://github.com/zju3dv/GVHMR)、[OmniRetarget](https://github.com/amazon-far/holosoma)和[HumanoidMimicGen](https://humanoidmimicgen.github.io/)。完整页面收录**13篇论文/技术报告和12个项目**。
+代表项目包括[GMR](https://github.com/YanjieZe/GMR)、[GVHMR](https://github.com/zju3dv/GVHMR)、[OmniRetarget](https://github.com/amazon-far/holosoma)和[HumanoidMimicGen](https://humanoidmimicgen.github.io/)。完整页面收录**14篇论文/技术报告和12个项目**。
 
 ### 2. Locomotion与运动先验
 
@@ -85,7 +85,7 @@ cd humanoid-motion-intelligence
 | 感知与复杂地形 | 让本体历史、深度图或高度图参与状态估计、落脚选择和全身地形反应 | [DreamWaQ](论文与项目/论文逐篇解读/P125.md)、[Humanoid Parkour](论文与项目/论文逐篇解读/P016.md)、[Hiking in the Wild](论文与项目/论文逐篇解读/P132.md) |
 | 对抗先验与行为模型 | 用判别器、生成先验、潜变量或无监督技能表示约束动作分布并形成可提示行为 | [AMP](论文与项目/论文逐篇解读/P022.md)、[ASE](论文与项目/论文逐篇解读/P024.md)、[BFM-Zero](论文与项目/论文逐篇解读/P080.md)、[State-Dependent AMP](论文与项目/论文逐篇解读/P106.md) |
 
-代表项目包括[Humanoid-Gym](https://github.com/roboterax/humanoid-gym)、[BFM-Zero](https://github.com/LeCAR-Lab/BFM-Zero)、[Project Instinct](https://project-instinct.github.io/)和[Legged Lab DWAQ](https://gitee.com/chaomingsanhua/legged_lab)。完整页面收录**36篇论文/技术报告和25个项目**。
+代表项目包括[Humanoid-Gym](https://github.com/roboterax/humanoid-gym)、[BFM-Zero](https://github.com/LeCAR-Lab/BFM-Zero)、[Project Instinct](https://project-instinct.github.io/)和[Legged Lab DWAQ](https://gitee.com/chaomingsanhua/legged_lab)。完整页面收录**38篇论文/技术报告和25个项目**。
 
 ### 3. 动作跟踪与全身控制
 
@@ -97,7 +97,7 @@ cd humanoid-motion-intelligence
 | 跟踪增强与失配恢复 | 修正不可达参考，处理动力学偏差、碰撞扰动、在线适应和偏离参考后的恢复 | [BeyondMimic](论文与项目/论文逐篇解读/P034.md)、[Heracles](论文与项目/论文逐篇解读/P134.md)、[Any2Track](论文与项目/论文逐篇解读/P103.md) |
 | 人体驱动与遥操作 | 把人体信号、重定向、因果观测、通信延迟、真机反馈和安全约束组成实时闭环 | [H2O](论文与项目/论文逐篇解读/P029.md)、[OmniH2O](论文与项目/论文逐篇解读/P030.md)、[TWIST](论文与项目/论文逐篇解读/P088.md)、[TWIST2](论文与项目/论文逐篇解读/P089.md) |
 
-代表项目包括[BeyondMimic](https://github.com/HybridRobotics/whole_body_tracking)、[HoloMotion](https://github.com/HorizonRobotics/HoloMotion)、[OmniH2O](https://omni.human2humanoid.com/)、[MimicKit](https://github.com/xbpeng/MimicKit)和[engineai_rl_lab](https://github.com/engineai-robotics/engineai_rl_lab)。完整页面收录**35篇论文/技术报告和26个项目**。
+代表项目包括[BeyondMimic](https://github.com/HybridRobotics/whole_body_tracking)、[HoloMotion](https://github.com/HorizonRobotics/HoloMotion)、[OmniH2O](https://omni.human2humanoid.com/)、[MimicKit](https://github.com/xbpeng/MimicKit)和[engineai_rl_lab](https://github.com/engineai-robotics/engineai_rl_lab)。完整页面收录**36篇论文/技术报告和25个项目**。
 
 ### 4. LocoManip与物理交互
 
@@ -109,7 +109,7 @@ cd humanoid-motion-intelligence
 | 接触力控与负载适应 | 处理外力、柔顺响应、接触切换、未知负载和人体安全交互 | [FACET](论文与项目/论文逐篇解读/P084.md)、[Thor](论文与项目/论文逐篇解读/P112.md)、[GentleHumanoid](论文与项目/论文逐篇解读/P083.md) |
 | 全身协同与技能接口 | 联合腿、腰、手和物体状态，并向遥操作、规划器或上层模型提供统一身体接口 | [OmniContact](论文与项目/论文逐篇解读/P138.md)、[CoorDex](论文与项目/论文逐篇解读/P139.md)、[OpenHLM](论文与项目/论文逐篇解读/P141.md) |
 
-代表项目包括[DoorMan](https://doorman-humanoid.github.io/)、[OmniContact](https://github.com/Ingrid789/OmniContact_sim2sim)、[CoorDex](https://github.com/Skevinci/coordex)和[Thor](https://baai-aether.github.io/baai-thor/)。完整页面收录**28篇论文/技术报告和21个项目**。
+代表项目包括[DoorMan](https://doorman-humanoid.github.io/)、[OmniContact](https://github.com/Ingrid789/OmniContact_sim2sim)、[CoorDex](https://github.com/Skevinci/coordex)和[Thor](https://baai-aether.github.io/baai-thor/)。完整页面收录**29篇论文/技术报告和21个项目**。
 
 ### 5. 世界模型、VLA与Agent
 
@@ -121,7 +121,7 @@ cd humanoid-motion-intelligence
 | 物理世界建模与预测 | 预测动作条件下的未来视觉、潜在状态、物体变化或动力学，用于规划、训练和评测 | [DreamDojo](论文与项目/论文逐篇解读/P114.md)、[HAIC](论文与项目/论文逐篇解读/P049.md)、[WorldArena](论文与项目/论文逐篇解读/P116.md) |
 | 记忆、规划与任务调度 | 维护空间和任务上下文，把长程目标拆成技能图，并依据执行反馈重新规划 | [HoloAgent-0](论文与项目/论文逐篇解读/P082.md)、[SceneBot](论文与项目/论文逐篇解读/P094.md)、[FALCON](论文与项目/论文逐篇解读/P044.md) |
 
-代表项目包括[Isaac-GR00T](https://github.com/NVIDIA/Isaac-GR00T)、[HoloAgent](https://github.com/HorizonRobotics/HoloAgent)、[GE-2 / GE-Sim 2.0](https://github.com/AgibotTech/GE-Sim-V2)和[GO-2](https://www.agibot.com/article/231/detail/56.html)。完整页面收录**30篇论文/技术报告和15个项目**。
+代表项目包括[Isaac-GR00T](https://github.com/NVIDIA/Isaac-GR00T)、[HoloAgent](https://github.com/HorizonRobotics/HoloAgent)、[GE-2 / GE-Sim 2.0](https://github.com/AgibotTech/GE-Sim-V2)和[GO-2](https://www.agibot.com/article/231/detail/56.html)。完整页面收录**38篇论文/技术报告和17个项目**。
 
 ### 6. 工程与实机部署
 
@@ -134,11 +134,11 @@ cd humanoid-motion-intelligence
 | Sim2Real、安全与部署 | 怎样处理动力学偏差、系统辨识、模型导出、控制时序、硬件通信、安全过滤和故障回退 | [PACE](论文与项目/论文逐篇解读/P146.md)、[ASAP](论文与项目/论文逐篇解读/P033.md)、[SafeWBC](论文与项目/论文逐篇解读/P142.md)、[ros2_control](https://github.com/ros-controls/ros2_control) |
 | 数据集、Benchmark与标准 | 怎样定义数据许可、任务协议、评价指标、回归测试和公开证据边界 | [工程与实机部署完整索引](技术路线/06_工程与实机部署.md#数据集benchmark与标准) |
 
-完整页面收录**16篇论文/技术报告和72个项目**。项目数量较多，是因为本体接口、仿真器、控制库、数据工具和部署工程都在这一层汇合。
+完整页面收录**17篇论文/技术报告和73个项目**。项目数量较多，是因为本体接口、仿真器、控制库、数据工具和部署工程都在这一层汇合。
 
 ## 新手学习顺序
 
-完整学习要求和每阶段通过标准见[技术路线总览与学习路径](技术路线/README.md)。下面保留最关键的顺序与最小产物，避免只读论文却没有形成可验证闭环。
+完整学习要求和每阶段通过标准见[技术路线总览与学习路径](技术路线/README.md)。下面保留最关键的顺序与最小产物，避免只读论文却没有形成可验证闭环。[基础书籍与学习资料](技术路线/基础书籍与学习资料.md)是遇到坐标、动力学、规划、状态估计或强化学习问题时的查阅入口，不要在开始项目前按书单从头读到尾。
 
 | 阶段 | 核心任务 | 最小产物 |
 |---|---|---|
@@ -146,8 +146,8 @@ cd humanoid-motion-intelligence
 | 2. 机器人模型与反馈控制 | 理解FK/IK、雅可比、刚体动力学、接触、PD、阻抗/导纳和控制频率 | 在MuJoCo中完成单关节跟踪和静态姿态保持，并分析增益与时序失稳 |
 | 3. 仿真训练闭环 | 追踪任务注册、观测、动作、奖励、Actor、Critic、保存和推理入口 | 跑通Humanoid-Gym或同类基线，保存配置、随机种子、曲线和评估视频 |
 | 4. PPO与基础Locomotion | 理解任务奖励、优势估计、PPO裁剪、课程学习、随机化和训练特权信息 | 固定测试条件，只改变一组观测、奖励或随机化并完成受控消融 |
-| 5. 数据、重定向与Mimic | 建立“原始动作→本体重定向→参考轨迹→Tracker→关节目标”链路 | 对一段来源清楚的动作报告足滑、碰撞、限位和跟踪失败 |
-| 6. 做深运动控制基座 | 在自主运动/地形/行为先验，或参考跟踪/人体驱动中选择一个核心问题 | 用相邻论文基线、明确改动、固定指标和失败案例证明方法收益 |
+| 5. 选择一条运动基座主线 | 自主运动主线继续研究地形感知、状态估计与AMP/行为先验；参考跟踪主线先完成动作数据与重定向，再进入Tracker、恢复和人体驱动 | 自主运动完成一项受控消融；参考跟踪完成一段动作从重定向到关节目标的闭环，并报告失败片段 |
+| 6. 按目标扩展系统 | 根据目标建设规模化动作/交互数据管线，或把运动基座接入LocoManip、VLA/WAM/Agent；这些分别是上游数据、任务层和高层扩展，不是第三条运动基座 | 明确扩展模块的输入输出、上下游接口和独立收益，用端到端任务与失败案例验证 |
 | 7. Sim2Real与测试闭环 | 核对关节映射、模型参数、PD、延迟、导出、通信、安全状态机和日志时钟 | 建立覆盖速度、地面、扰动、载荷、延迟与模型偏差的回归测试矩阵 |
 
 最终作品不要求覆盖全部路线，但应包含问题边界、可复现环境、控制闭环、基线与改动、实验与消融、失败分析、部署证据和结果表达。完成标志不是“成功运行作者命令”，而是更换动作、本体、控制参数或测试场景以后，仍能判断应该修改哪一层以及如何验证。
@@ -157,9 +157,9 @@ cd humanoid-motion-intelligence
 | 文件 | 主要内容 |
 |---|---|
 | [技术路线总览与学习路径](技术路线/README.md) | 系统能力栈、训练更新闭环、路线关系、七阶段学习顺序、最小作品和通过标准 |
-| [论文与技术报告总索引](论文与项目/README.md) | 158篇论文按最终系统作用分类，可按稳定`Pxxx`编号进入独立解读 |
-| [开源项目主表](论文与项目/开源项目主表.md) | 171个项目的研发位置、关键实现、开源边界与开发价值 |
-| [公司与产品主表](公司与产业/公司与产品主表.md) | 按国家或地区整理的113家公司/机构及其公开产品与平台 |
+| [论文与技术报告总索引](论文与项目/README.md) | 172篇论文与技术报告按最终系统作用分类，可按稳定`Pxxx`编号进入独立解读 |
+| [开源项目主表](论文与项目/开源项目主表.md) | 173个项目的研发位置、关键实现、开源边界与开发价值 |
+| [公司与产品主表](公司与产业/公司与产品主表.md) | 按国家或地区整理的114家公司/机构及其公开产品与平台 |
 | [公开信号时间线](公司与产业/公开信号时间线.md) | 只记录带日期的公司成立、产品发布与融资事实 |
 | [运动控制面经、谈薪与薪资汇总](求职与岗位/2026-03_运动控制面经_谈薪技巧_薪资汇总.md) | 运动控制面试、项目表达、谈薪与匿名薪资样本入口 |
 | [具身秋招运动控制问答](求职与岗位/2026-07_具身秋招运动控制问答.md) | 秋招阶段关于方向选择、项目准备和岗位判断的集中问答 |
