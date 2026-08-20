@@ -1,10 +1,17 @@
 # 人形机器人运动智能知识库
 
+<p align="center">
+  <a href="https://github.com/RealXiaoze/humanoid-motion-intelligence/stargazers"><img src="https://img.shields.io/github/stars/RealXiaoze/humanoid-motion-intelligence?style=flat-square&label=Stars&color=0969da" alt="GitHub Stars"></a>
+  <a href="https://github.com/RealXiaoze/humanoid-motion-intelligence/forks"><img src="https://img.shields.io/github/forks/RealXiaoze/humanoid-motion-intelligence?style=flat-square&label=Forks&color=0969da" alt="GitHub Forks"></a>
+  <a href="LICENSE.md"><img src="https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-2da44e?style=flat-square" alt="CC BY-NC-SA 4.0 License"></a>
+  <img src="https://komarev.com/ghpvc/?username=RealXiaoze-humanoid-motion-intelligence&label=Visitors&color=555&style=flat-square" alt="Repository Visitors">
+</p>
+
 > 出品：具身智能研究室
 
 这个知识库围绕人形机器人运动智能的完整研发链组织内容，帮助读者把单篇论文、开源项目、公司动态和岗位要求放回同一张问题地图中。
 
-## 使用方法
+## 🚀 使用方法
 
 建议先将仓库克隆到本地，让Agent能够检索完整目录、论文解读和项目记录：
 
@@ -48,7 +55,7 @@ cd humanoid-motion-intelligence
 
 使用Agent时，建议要求它在结论中注明引用的页面、稳定ID和原始来源。涉及论文结果、项目能力、公司动态和招聘状态的判断，应以原始材料为准。
 
-## 先从这里进入
+## 🧭 先从这里进入
 
 | 你现在想解决什么 | 直接入口 |
 |---|---|
@@ -59,7 +66,7 @@ cd humanoid-motion-intelligence
 | 观察公司产品与产业变化 | [公司与产业](公司与产业/README.md) |
 | 查看面经、招聘和内推信息 | [招聘与内推信息](求职与岗位/README.md) |
 
-## 技术路线核心内容
+## 🗺️ 技术路线核心内容
 
 六条路线是知识库的资料分类，不等于六个并列的个人研究方向。对人形机器人运动控制而言，核心是形成通用全身运动控制基座：一条主线根据任务命令、地形和行为提示自主产生运动，另一条主线根据参考动作或人体信号完成全身跟踪。动作数据位于上游，LocoManip与世界模型/VLA/Agent位于下游，工程与实机部署横向支撑所有环节。
 
@@ -152,7 +159,7 @@ cd humanoid-motion-intelligence
 
 最终作品不要求覆盖全部路线，但应包含问题边界、可复现环境、控制闭环、基线与改动、实验与消融、失败分析、部署证据和结果表达。完成标志不是“成功运行作者命令”，而是更换动作、本体、控制参数或测试场景以后，仍能判断应该修改哪一层以及如何验证。
 
-## 重点文件索引
+## 📚 重点文件索引
 
 | 文件 | 主要内容 |
 |---|---|
@@ -172,7 +179,7 @@ cd humanoid-motion-intelligence
 - 招聘、薪资和产品信息会变化，使用前请检查页面日期和原始来源。
 - 发现错误时，请提供具体页面、稳定ID和原始来源；转载与图片使用请先阅读[许可与版权边界](LICENSE.md)。
 
-## 联系与纠错
+## 📬 联系与纠错
 
 - 微信：`yzz010329`
 - GitHub：[提交Issue](https://github.com/RealXiaoze/humanoid-motion-intelligence/issues)
