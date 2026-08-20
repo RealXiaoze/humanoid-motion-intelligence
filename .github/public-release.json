@@ -41,43 +41,43 @@
     },
     {
       "path": "公司与产业/公司与产品主表.md",
-      "size": 16916,
-      "sha256": "3a616804b8d79baa7b2ae99df77dcd77e260e676934f92c93b0770d4c69d2855"
+      "size": 17452,
+      "sha256": "56e5d66b97962bdbb49d404964611f7be93d69da6cf375ffbfb754d358797863"
     },
     {
       "path": "公司与产业/公开信号时间线.md",
-      "size": 30003,
-      "sha256": "40bde839f1de27352597b2d6ea79db3e09bbb0e89aff44c7eac6eeb47bc98195"
+      "size": 30488,
+      "sha256": "3ca78e59c11c9918b6de8ec5dd676d260cf2daaf47de48107141589325bb2380"
     },
     {
       "path": "技术路线/01_动作数据与重定向.md",
-      "size": 15504,
-      "sha256": "1c30aca4e017ea5e4710264da2e9a89732551b51e098610dd85c953669886453"
+      "size": 16120,
+      "sha256": "d9ffe933fe2387b8b26729bf4a4faea282910598e6fa7bff01351a29993b0abb"
     },
     {
       "path": "技术路线/02_Locomotion与运动先验.md",
-      "size": 28977,
-      "sha256": "d8521175c1a3fff1e9509bfa2efa0fa231b606e5d6694f95666881a9fd2003e2"
+      "size": 29466,
+      "sha256": "e9b044f9eb35c1b425e0ac08baa947b1051206fd645a824bcdd26fc1244bcd66"
     },
     {
       "path": "技术路线/03_动作跟踪与全身控制.md",
-      "size": 28984,
-      "sha256": "b771e1029e325e811f407ba3e21f98d5c61e885cac46cba9cd99de23b5fb88bf"
+      "size": 29565,
+      "sha256": "e58b7fce572d2c296d53e4b96d4bd5ff85497641b2d48c46e91980de95482797"
     },
     {
       "path": "技术路线/04_LocoManip.md",
-      "size": 24488,
-      "sha256": "bede63858a22301a8e9ef1d9fafdeabc9d26fb3d764cb6277d87cdb273cbf4d7"
+      "size": 25014,
+      "sha256": "c80f510d4be2cea27b660d3a28a81749601c70ad80566c2336c5d28ced5bf8fd"
     },
     {
       "path": "技术路线/05_世界模型VLA与Agent.md",
-      "size": 29380,
-      "sha256": "e63782341f73f7bf747753db74c3086e8a452308281fe2ef353aa3e208001538"
+      "size": 29924,
+      "sha256": "842ba837819d02706a42e553bac5e302b4292917bde5807516f0e5703cd6d866"
     },
     {
       "path": "技术路线/06_工程与实机部署.md",
-      "size": 41739,
-      "sha256": "4fee5931ae58ac14b58b5ea4582a2249bb5313afbcd0547068eff95181d99d99"
+      "size": 42174,
+      "sha256": "e44914389ff2b0cfc2bef5ce381c832861ada5881c276eb4d9da3edaad7f872c"
     },
     {
       "path": "技术路线/Ego第一人称数据采集设备选型.md",
@@ -86,8 +86,8 @@
     },
     {
       "path": "技术路线/README.md",
-      "size": 21035,
-      "sha256": "79755e6fd53a83f9beff1c50fe346f371543130847f0752b1d11ef38f1f93bff"
+      "size": 16981,
+      "sha256": "3400d120311d5928e2fb7d4873e2c7fc49fd0150ac64c03565480d8082925fe8"
     },
     {
       "path": "技术路线/具身训练数据来源与本体依赖.md",
@@ -186,13 +186,13 @@
     },
     {
       "path": "论文与项目/README.md",
-      "size": 75556,
-      "sha256": "9187e1c72d700a2e3b6268a27b2eda75ffc3522e15fa0c0ab14d0bc9cbcd1d74"
+      "size": 75886,
+      "sha256": "579a1cc5263bc0bd71fd21658c5d88641675bd33455647743c42c113af886a5e"
     },
     {
       "path": "论文与项目/开源项目主表.md",
-      "size": 55784,
-      "sha256": "0b0f6d4f3fc8508660318530c4d1fa5a7d7ddbdef55f3b16fd7c4de50122955e"
+      "size": 56114,
+      "sha256": "a93efac5eea3f43c80eb2ba27892133b1e27f46db4c8c37760815bab89175ae0"
     },
     {
       "path": "论文与项目/许可/CC-BY-NC-SA-4.0.txt",
