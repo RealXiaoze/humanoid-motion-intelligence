@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "generator": "build_public_release.py",
-  "content_file_count": 385,
+  "content_file_count": 387,
   "operational_file_count": 2,
   "files": [
     {
@@ -12,7 +12,7 @@
     {
       "path": ".github/scripts/validate_public_tree.py",
       "size": 11725,
-      "sha256": "6f6e588dc6e968bc08a99407797fc02bc1ed9aae910514dc26bce1a3c6cf0ee1"
+      "sha256": "d761028f0c437cc0bff24f5b438bb9d1d16e7d6b24d6fb206359f16d9ed222d4"
     },
     {
       "path": ".github/workflows/public-release-check.yml",
@@ -61,8 +61,8 @@
     },
     {
       "path": "技术路线/03_动作跟踪与全身控制.md",
-      "size": 29565,
-      "sha256": "e58b7fce572d2c296d53e4b96d4bd5ff85497641b2d48c46e91980de95482797"
+      "size": 30025,
+      "sha256": "7cf5c3dc6f9f8dd7826dc799aaa69795e4c5d3297eb9f0536e88601b525a3adf"
     },
     {
       "path": "技术路线/04_LocoManip.md",
@@ -186,8 +186,8 @@
     },
     {
       "path": "论文与项目/README.md",
-      "size": 75886,
-      "sha256": "579a1cc5263bc0bd71fd21658c5d88641675bd33455647743c42c113af886a5e"
+      "size": 76327,
+      "sha256": "da32829b9298f37924bac3d3b9d4f5201e27813f60e104f735a6b589838f32e2"
     },
     {
       "path": "论文与项目/开源项目主表.md",
@@ -1080,6 +1080,11 @@
       "sha256": "e65d0a187061a88150d51ee5061e2aab223554b7a57f3c5f93118b8967164f23"
     },
     {
+      "path": "论文与项目/论文逐篇解读/P176.md",
+      "size": 8017,
+      "sha256": "1fb065b8ede66a8c44fd27e1aae87a25e6f022bb181e146400c2b61936ada5ce"
+    },
+    {
       "path": "论文与项目/论文逐篇解读/README.md",
       "size": 372,
       "sha256": "286d10373492551405d46290c05f38211f90e76bcadb7961ad3b55b5f4cef862"
@@ -1938,6 +1943,11 @@
       "path": "论文与项目/论文逐篇解读/论文原图/P175_figure.png",
       "size": 210657,
       "sha256": "b70d1dde993de4590d58c5837401f2f1c3838e51bfc18a734d67f40e4aa53cbb"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P176_figure.png",
+      "size": 867369,
+      "sha256": "2330f48016c83505224cc2a1894c7734b56c2216eeeed0f7ab4a342cfa04dc4c"
     }
   ]
 }
