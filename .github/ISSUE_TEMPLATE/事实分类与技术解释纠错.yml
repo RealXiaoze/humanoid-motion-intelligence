@@ -1,0 +1,32 @@
+name: 事实、分类与技术解释纠错
+description: 报告事实错误、分类问题或机制解释偏差
+title: "[纠错] "
+body:
+  - type: input
+    id: location
+    attributes:
+      label: 页面与稳定ID
+      description: 请提供页面路径、Pxxx/Rxxx编号和具体段落。
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: 当前内容及问题
+      description: 说明哪里错误、过度推断、分类不当或无法由证据支持。
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: 建议修正
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: 可核验来源
+      description: 优先提供论文原文、官方代码、官方项目页或公司公告。
+      placeholder: https://...
+    validations:
+      required: true

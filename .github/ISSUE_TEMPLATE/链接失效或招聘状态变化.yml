@@ -1,0 +1,44 @@
+name: 链接失效或招聘状态变化
+description: 报告404链接、项目迁移、岗位关闭或投递渠道变化
+title: "[状态变化] "
+body:
+  - type: input
+    id: location
+    attributes:
+      label: 页面位置
+      description: 请提供页面路径、稳定ID或公司名称。
+    validations:
+      required: true
+  - type: input
+    id: old_link
+    attributes:
+      label: 当前链接
+      placeholder: https://...
+    validations:
+      required: true
+  - type: dropdown
+    id: change
+    attributes:
+      label: 变化类型
+      options:
+        - 确认404或410
+        - 项目或页面迁移
+        - 招聘岗位关闭
+        - 投递方式或内推码变化
+        - 其他状态变化
+    validations:
+      required: true
+  - type: input
+    id: replacement
+    attributes:
+      label: 替代官方来源
+      description: 没有替代来源时填写“未发现”。
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 核验过程
+      description: 说明访问结果、日期和判断依据；单次超时或403不等同于失效。
+    validations:
+      required: true

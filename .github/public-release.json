@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "generator": "build_public_release.py",
-  "content_file_count": 388,
-  "operational_file_count": 2,
+  "content_file_count": 389,
+  "operational_file_count": 6,
   "files": [
     {
       "path": ".gitattributes",
@@ -10,9 +10,29 @@
       "sha256": "e39a14631cad136ba5e920a7d5f11b6334f6d364b6ea1bf6845d0eb255138db7"
     },
     {
+      "path": ".github/ISSUE_TEMPLATE/事实分类与技术解释纠错.yml",
+      "size": 908,
+      "sha256": "ecba6e467d7cbb1dcf72bebdc8d325a08d2f0ed179db8f96e21d7d17555de3f3"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/开源项目候选或复现结果.yml",
+      "size": 1356,
+      "sha256": "f1c28f51bac27b7c82915ee4bed3e9ce9eaac05a97db2e3bf91119bbc24480fa"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/论文或技术报告候选.yml",
+      "size": 1344,
+      "sha256": "e392242188b4d91bf9692822f25b65d78a8792d8b94b8aefe4d20897bc4e16a9"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/链接失效或招聘状态变化.yml",
+      "size": 1171,
+      "sha256": "f3b618aa1ab0db3f19111a0b6a7aef9e1ee169d87efc81b08f96e02e07224b76"
+    },
+    {
       "path": ".github/scripts/validate_public_tree.py",
-      "size": 11725,
-      "sha256": "bedc42d16dd792f0bf3eb1f7ecd09c643315f8350c6eeb9ede0328bf1cbe3132"
+      "size": 13512,
+      "sha256": "16e76ebe3ecccf200e8206ed43ac6ebe6943156232d7121875feda58968ae6a8"
     },
     {
       "path": ".github/workflows/public-release-check.yml",
@@ -25,14 +45,19 @@
       "sha256": "9fa9f6c4e36968049528bbc18517192d6b067b75278bd5b2d6037494fa37d350"
     },
     {
+      "path": "AGENTS.md",
+      "size": 1990,
+      "sha256": "ac6c2988f18f4f754b685825bc3b601b9b7bb3f44689d60e6fbc8b34c1b1f14d"
+    },
+    {
       "path": "LICENSE.md",
       "size": 2458,
       "sha256": "b67435dd2a086b22353207c305b5821591863b2bc0fe61f37bc8a2237bd72d21"
     },
     {
       "path": "README.md",
-      "size": 22735,
-      "sha256": "c72cdab80f05a78b16f40a73b6d4b947003b02588282ae94717ab90041aa0785"
+      "size": 22952,
+      "sha256": "49ff059740187aec904ac5b331586bc7e65d3d369ecd55bb0d219bb069c9cda8"
     },
     {
       "path": "公司与产业/README.md",
@@ -96,8 +121,13 @@
     },
     {
       "path": "技术路线/基础书籍与学习资料.md",
-      "size": 5667,
-      "sha256": "3df8d72e0591fa295f461b75c5248bc735b6683e1ba18055cf78f0cbcd103d9d"
+      "size": 5986,
+      "sha256": "a0b75429a99c21bb79dd4eee8c010561b2c386c233f639c7d0d475107f414bd1"
+    },
+    {
+      "path": "技术路线/强化学习开发者必备开源资料.md",
+      "size": 8851,
+      "sha256": "33ef04748513b56f0b52a31887743528c0adf77595fbe1b59218ecc0d4c37d87"
     },
     {
       "path": "求职与岗位/2026-03_运动控制面经_谈薪技巧_薪资汇总.md",
@@ -110,14 +140,14 @@
       "sha256": "c78d20e6fc3825047623ba44f545f55a6e4e7e684cd79b8de721c0c14503f362"
     },
     {
-      "path": "求职与岗位/2026-07_招聘与内推信息.md",
+      "path": "求职与岗位/2026_招聘与内推信息.md",
       "size": 27436,
       "sha256": "395bb2c80634af87b4c05eb83bdbfd60e292a7bc0b88b8e8da3bd7433be1a8b8"
     },
     {
       "path": "求职与岗位/README.md",
-      "size": 499,
-      "sha256": "9d17323fc88b1faf6a335a6b8210224b96c56d5202233db8921d3d350a1ad034"
+      "size": 496,
+      "sha256": "11f00de94be77408a075ebd2f7aa5a9c924dcdf41eae4edb1005adb42d10df8b"
     },
     {
       "path": "求职与岗位/图片/2026-03_Offer记录模板.png",
@@ -178,11 +208,6 @@
       "path": "求职与岗位/图片/个人名片.png",
       "size": 1483704,
       "sha256": "c434478617a62f5c0da16e32a3884fc5e886f44142af3a3bad86823ceeba67d8"
-    },
-    {
-      "path": "求职与岗位/深蓝学院求职宝典.pdf",
-      "size": 81897261,
-      "sha256": "529e37044838d8b87d1c8ab508197e1465ad66f479421d059405904e1e63a534"
     },
     {
       "path": "求职与岗位/简历模板.pdf",

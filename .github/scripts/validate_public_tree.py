@@ -11,10 +11,19 @@ from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parents[2]
 EXPORT_MANIFEST = ROOT / ".github" / "public-release.json"
-EXPECTED_CONTENT_FILES = 388
-EXPECTED_OPERATIONAL_FILES = 2
+EXPECTED_CONTENT_FILES = 389
+EXPECTED_OPERATIONAL_FILES = 6
 EXPECTED_PAPER_PAGES = 176
 EXPECTED_PAPER_IMAGES = 172
+EXPECTED_PROJECTS = 194
+EXPECTED_TRACK_COUNTS = {
+    "### 1. 动作数据与重定向": (14, 13),
+    "### 2. Locomotion与运动先验": (38, 30),
+    "### 3. 动作跟踪与全身控制": (37, 27),
+    "### 4. LocoManip与物理交互": (30, 23),
+    "### 5. 世界模型、VLA与Agent": (40, 21),
+    "### 6. 工程与实机部署": (17, 80),
+}
 PAGES_WITHOUT_EMBEDDED_FIGURES = {
     "P016.md",
     "P135.md",
@@ -36,6 +45,7 @@ ALLOWED_TOP_LEVEL = {
     ".gitattributes",
     ".github",
     ".gitignore",
+    "AGENTS.md",
     "README.md",
     "LICENSE.md",
     "公司与产业",
@@ -47,6 +57,10 @@ ALLOWED_GITHUB_FILES = {
     Path(".github/public-release.json"),
     Path(".github/scripts/validate_public_tree.py"),
     Path(".github/workflows/public-release-check.yml"),
+    Path(".github/ISSUE_TEMPLATE/论文或技术报告候选.yml"),
+    Path(".github/ISSUE_TEMPLATE/开源项目候选或复现结果.yml"),
+    Path(".github/ISSUE_TEMPLATE/事实分类与技术解释纠错.yml"),
+    Path(".github/ISSUE_TEMPLATE/链接失效或招聘状态变化.yml"),
 }
 FORBIDDEN_PARTS = {
     "99_维护与协作",
@@ -294,12 +308,35 @@ def check_markdown(files: list[Path], errors: list[str]) -> None:
         errors.append(f"存在未被论文页面引用的图片：{orphaned}")
 
 
+def check_readme_counts(errors: list[str]) -> None:
+    readme = (ROOT / "README.md").read_text(encoding="utf-8")
+    headings = list(EXPECTED_TRACK_COUNTS)
+    for index, heading in enumerate(headings):
+        start = readme.find(heading)
+        end = (
+            readme.find(headings[index + 1], start)
+            if index + 1 < len(headings)
+            else readme.find("## 新手学习顺序", start)
+        )
+        papers, projects = EXPECTED_TRACK_COUNTS[heading]
+        expected = f"完整页面收录**{papers}篇论文/技术报告和{projects}个项目**"
+        if start == -1 or end == -1 or expected not in readme[start:end]:
+            errors.append(f"README路线数量与公开数据不一致：{heading}；expected={expected}")
+    for expected in (
+        f"{EXPECTED_PAPER_PAGES}篇论文与技术报告按最终系统作用分类",
+        f"{EXPECTED_PROJECTS}个项目的研发位置、关键实现、开源边界与开发价值",
+    ):
+        if expected not in readme:
+            errors.append(f"README总数与公开数据不一致：expected={expected}")
+
+
 def main() -> None:
     errors: list[str] = []
     files = collect_files(errors)
     check_paths(files, errors)
     check_export_manifest(files, errors)
     check_markdown(files, errors)
+    check_readme_counts(errors)
     if errors:
         print("\n".join(f"ERROR: {error}" for error in errors))
         raise SystemExit(1)

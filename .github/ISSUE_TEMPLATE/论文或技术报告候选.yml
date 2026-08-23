@@ -1,0 +1,43 @@
+name: 论文或技术报告候选
+description: 推荐尚未收录的论文或官方技术报告
+title: "[论文候选] "
+body:
+  - type: markdown
+    attributes:
+      value: 请提供原始来源和它相对现有条目的新增价值。Issue只作为候选入口，内容会在核验后决定是否入库。
+  - type: input
+    id: title
+    attributes:
+      label: 原始标题
+      placeholder: 论文或技术报告的完整标题
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: 官方来源
+      description: 优先填写论文原文、作者项目页或机构官方技术页
+      placeholder: https://...
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 核心技术问题
+      description: 它解决了什么真实矛盾，输入和最终输出是什么？
+    validations:
+      required: true
+  - type: textarea
+    id: difference
+    attributes:
+      label: 与现有条目的差异
+      description: 请说明它新增了什么机制、证据、机器人平台或部署结果。
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 代码、项目页与实机证据
+      description: 没有相应来源时可填写“未发现”。
+    validations:
+      required: true
