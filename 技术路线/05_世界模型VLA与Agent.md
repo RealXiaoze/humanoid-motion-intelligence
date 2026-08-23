@@ -42,7 +42,7 @@
 
 ## 完整条目
 
-本路线当前收录 **40** 篇论文/技术报告、**18** 个项目。
+本路线当前收录 **40** 篇论文/技术报告、**21** 个项目。
 
 ### 动作生成与通用策略
 
@@ -85,12 +85,15 @@
 | [Diffusion Policy](https://github.com/real-stanford/diffusion_policy) | 一段未来动作被表示为条件扩散轨迹，视觉与本体观测引导多步去噪，控制器只执行滚动窗口前端。它为多峰操作动作提供清晰基线，复现时应单独测去噪步数、时域长度和闭环频率。 |
 | [DreamZero](https://github.com/dreamzero0/dreamzero) | World Action Model同时预测未来视觉与机器人动作，DROID和AgiBot检查点接入训练、后训练与评测流程，推理由WebSocket服务解耦。这个结构可以单独测量视频预测是否真的改善动作选择，而不是只提升画面质量。 |
 | [DROID Policy Learning](https://github.com/droid-dataset/droid_policy_learning) | 在robomimic基础上增加DROID的RLDS数据读取、训练和评测流程，并保留可选真实机器人控制接口；它把大规模异构真实示范转成可训练批次，是复现DROID策略学习的数据层入口。 |
+| [HEX](https://github.com/Open-X-Humanoid/HEX) | 不同人形的状态先对齐到共享身体部位槽位，统一本体预测器学习跨本体协调和时序动力学，视觉语言线索再经残差门控与流匹配动作头生成手臂、手和腰动作；腿部由低层RL全身控制器执行高层命令，明确了VLA与运动控制之间的接口。 |
 | [Isaac-GR00T / GR00T N1.7](https://github.com/NVIDIA/Isaac-GR00T) | N1.7以Cosmos-Reason2-2B视觉语言主干和扩散动作头接收图像、语言与机器人状态，并用跨本体相对末端动作表示连接人类视频和机器人数据。仓库提供LeRobot后训练、推理及ONNX/TensorRT导出，可直接检查VLA适配新本体的工程成本。 |
 | [Octo](https://github.com/octo-models/octo) | 用Transformer与扩散动作头从多机器人数据学习通用策略，支持RGB、语言和目标图像等条件，并用模块化注意力扩展传感器与动作维度；适合作为跨本体预训练和下游微调的研究基线。 |
 | [openpi](https://github.com/Physical-Intelligence/openpi) | 仓库同时维护流匹配式π0、快速自回归π0-FAST和π0.5，并提供检查点、数据配置、微调与推理服务。接入新机器人时最关键的工作是动作归一化、数据字段映射和推理频率对齐。 |
 | [OpenVLA](https://github.com/openvla/openvla) | 预训练模型以视觉和语言生成机器人动作，仓库同时开放RLDS数据混合、LoRA或全参数微调和推理部署入口。接入新本体时，可以沿相机标定、指令格式和动作空间三处拆开评估适配成本。 |
+| [Pelican-VLA 0.5](https://github.com/Open-X-Humanoid/Pelican-VLA05) | 共享Qwen3-VL主干联合视觉语言理解、未来帧和动作预测，固定容量瓶颈Token把与接触相关的视觉信息送入动作通路；当前版本重点验证注意力层面的跨场景与跨本体泛化，并明确承认从表征到可靠动作仍有缺口。 |
 | [UnifoLM-VLA-0](https://github.com/unitreerobotics/unifolm-vla) | LeRobot数据先转换为HDF5和RLDS，视觉语言主干与机器人状态共同生成动作块；仓库公开多数据集训练、LIBERO评测、服务端推理和G1客户端部署入口，把数据准备、后训练与真机执行连成一条链。 |
 | [WholeBodyVLA](https://github.com/OpenDriveLab/WholebodyVLA) | 从无动作标注的第一视角视频学习统一潜在动作，将视觉和语言解码为双臂关节动作与运动命令，再交给面向移动操作的低层策略执行；当前仓库仅提供论文资源与研究索引。 |
+| [XR-1](https://github.com/Open-X-Humanoid/XR-1) | 三阶段流程先学习统一视觉—运动离散表征，再在异构视觉与机器人数据上预训练，最后按具体本体微调动作策略；官方实现统一LeRobot 2.1数据加载、跨数据集训练、权重和Franka/UR/AgileX部署脚本，并给出天工2.0适配入口。 |
 
 ### 物理世界建模与预测
 

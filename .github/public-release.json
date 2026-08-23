@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "generator": "build_public_release.py",
-  "content_file_count": 385,
+  "content_file_count": 388,
   "operational_file_count": 2,
   "files": [
     {
@@ -12,7 +12,7 @@
     {
       "path": ".github/scripts/validate_public_tree.py",
       "size": 11725,
-      "sha256": "6f6e588dc6e968bc08a99407797fc02bc1ed9aae910514dc26bce1a3c6cf0ee1"
+      "sha256": "bedc42d16dd792f0bf3eb1f7ecd09c643315f8350c6eeb9ede0328bf1cbe3132"
     },
     {
       "path": ".github/workflows/public-release-check.yml",
@@ -41,8 +41,8 @@
     },
     {
       "path": "公司与产业/公司与产品主表.md",
-      "size": 17452,
-      "sha256": "56e5d66b97962bdbb49d404964611f7be93d69da6cf375ffbfb754d358797863"
+      "size": 17478,
+      "sha256": "27b16da60e23ce90eb7b7c9adefa2f763beaf8cf67ebc0a9eade2ade3f5c1ff7"
     },
     {
       "path": "公司与产业/公开信号时间线.md",
@@ -51,33 +51,33 @@
     },
     {
       "path": "技术路线/01_动作数据与重定向.md",
-      "size": 16120,
-      "sha256": "d9ffe933fe2387b8b26729bf4a4faea282910598e6fa7bff01351a29993b0abb"
+      "size": 16436,
+      "sha256": "5b0798e374109db6b7602cc60d368df79ff05ed1adbc6cd330f5f541a7002db9"
     },
     {
       "path": "技术路线/02_Locomotion与运动先验.md",
-      "size": 29466,
-      "sha256": "e9b044f9eb35c1b425e0ac08baa947b1051206fd645a824bcdd26fc1244bcd66"
+      "size": 31124,
+      "sha256": "1e57241a27762cebf77c9b830863ca199ff25ad7cf4f197ed3b7fbb9f0f8f697"
     },
     {
       "path": "技术路线/03_动作跟踪与全身控制.md",
-      "size": 29565,
-      "sha256": "e58b7fce572d2c296d53e4b96d4bd5ff85497641b2d48c46e91980de95482797"
+      "size": 30647,
+      "sha256": "050a04660376e87660cfa5db1913f718b8efee3a6864913a805f8cbf976c1169"
     },
     {
       "path": "技术路线/04_LocoManip.md",
-      "size": 25014,
-      "sha256": "c80f510d4be2cea27b660d3a28a81749601c70ad80566c2336c5d28ced5bf8fd"
+      "size": 25679,
+      "sha256": "06592e2244caa311a017e75f65080dcae930c23b72b22ff7ad372364a1ac538d"
     },
     {
       "path": "技术路线/05_世界模型VLA与Agent.md",
-      "size": 29924,
-      "sha256": "842ba837819d02706a42e553bac5e302b4292917bde5807516f0e5703cd6d866"
+      "size": 30986,
+      "sha256": "e496703316042837041ee8906af5d585b4ba779c426d56117eee96749be37c60"
     },
     {
       "path": "技术路线/06_工程与实机部署.md",
-      "size": 42174,
-      "sha256": "e44914389ff2b0cfc2bef5ce381c832861ada5881c276eb4d9da3edaad7f872c"
+      "size": 44673,
+      "sha256": "e3e01c553aa8e8c2170dde42571f1148eb41c3817312dbdcaac5672abb9192dd"
     },
     {
       "path": "技术路线/Ego第一人称数据采集设备选型.md",
@@ -180,19 +180,24 @@
       "sha256": "c434478617a62f5c0da16e32a3884fc5e886f44142af3a3bad86823ceeba67d8"
     },
     {
+      "path": "求职与岗位/深蓝学院求职宝典.pdf",
+      "size": 81897261,
+      "sha256": "529e37044838d8b87d1c8ab508197e1465ad66f479421d059405904e1e63a534"
+    },
+    {
       "path": "求职与岗位/简历模板.pdf",
       "size": 332672,
       "sha256": "892bbdb095797b7e8b599489482bf3e9e691323cbd8fb42d76cf0908bcffe638"
     },
     {
       "path": "论文与项目/README.md",
-      "size": 75886,
-      "sha256": "579a1cc5263bc0bd71fd21658c5d88641675bd33455647743c42c113af886a5e"
+      "size": 76327,
+      "sha256": "da32829b9298f37924bac3d3b9d4f5201e27813f60e104f735a6b589838f32e2"
     },
     {
       "path": "论文与项目/开源项目主表.md",
-      "size": 56114,
-      "sha256": "a93efac5eea3f43c80eb2ba27892133b1e27f46db4c8c37760815bab89175ae0"
+      "size": 63037,
+      "sha256": "e3a576cd892f622b2f0709e0823f08592bbf8658e48de17b1997a3ef5d005155"
     },
     {
       "path": "论文与项目/许可/CC-BY-NC-SA-4.0.txt",
@@ -1080,6 +1085,11 @@
       "sha256": "e65d0a187061a88150d51ee5061e2aab223554b7a57f3c5f93118b8967164f23"
     },
     {
+      "path": "论文与项目/论文逐篇解读/P176.md",
+      "size": 8017,
+      "sha256": "1fb065b8ede66a8c44fd27e1aae87a25e6f022bb181e146400c2b61936ada5ce"
+    },
+    {
       "path": "论文与项目/论文逐篇解读/README.md",
       "size": 372,
       "sha256": "286d10373492551405d46290c05f38211f90e76bcadb7961ad3b55b5f4cef862"
@@ -1938,6 +1948,11 @@
       "path": "论文与项目/论文逐篇解读/论文原图/P175_figure.png",
       "size": 210657,
       "sha256": "b70d1dde993de4590d58c5837401f2f1c3838e51bfc18a734d67f40e4aa53cbb"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P176_figure.png",
+      "size": 867369,
+      "sha256": "2330f48016c83505224cc2a1894c7734b56c2216eeeed0f7ab4a342cfa04dc4c"
     }
   ]
 }
