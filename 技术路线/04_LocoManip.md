@@ -42,7 +42,7 @@
 
 ## 完整条目
 
-本路线当前收录 **30** 篇论文/技术报告、**24** 个项目。
+本路线当前收录 **30** 篇论文/技术报告、**30** 个项目。
 
 ### 视觉闭环与交互状态建模
 
@@ -128,14 +128,20 @@
 
 | 项目 | 定位 |
 | --- | --- |
+| [aloha-agilex](https://github.com/agilexrobotics/aloha-agilex) | 移动、双臂或灵巧手状态与任务观测进入操作策略，输出底盘、手臂或全身动作并通过接触结果闭环。 |
 | [CEER](https://robotproject8.github.io/ceer_page/) | 把上层任务压缩为基座速度、高度与双手目标等紧凑命令，再由全身策略执行移动操作并维持接触稳定；已公开的是定制G1策略的最小Sim2Sim部署路径，不包含训练管线。 |
 | [CoorDex](https://github.com/Skevinci/coordex) | 身体先验、手部先验和协同残差被拆成可检查模块，并开放三项Isaac Lab任务与对应权重。想验证高自由度控制瓶颈时，可比较关节动作、单一latent与双先验残差，不必先重训全部策略。 |
+| [DemoGrasp](https://github.com/BeingBeyond/DemoGrasp) | 移动、双臂或灵巧手状态与任务观测进入操作策略，输出底盘、手臂或全身动作并通过接触结果闭环。 |
+| [DemoHLM](https://github.com/BeingBeyond/DemoHLM) | 移动、双臂或灵巧手状态与任务观测进入操作策略，输出底盘、手臂或全身动作并通过接触结果闭环。 |
 | [HANDOFF](https://github.com/lzyang2000/HANDOFF) | 将上层移动操作意图压缩成基座速度、根高度和双腕目标等十维命令，再把运动跟踪、行走与AMP恢复教师蒸馏为MoE策略；训练、检查点、Sim2Sim和真机代码均可检查。 |
 | [HDMI](https://github.com/LeCAR-Lab/HDMI) | 将单目视频恢复成人体－物体参考，在Isaac Lab中用可组合MDP配置训练残差策略，并以动作蒸馏和在线适配处理真机差异；仓库公开从数据处理、训练到G1部署的路径。 |
 | [HumanX](https://wyhuai.github.io/human-x/) | 互联网视频先恢复人体与物体的四维交互，物理化转换生成机器人参考，XMimic再在不编写任务奖励的条件下训练G1技能。它连接的是视频交互数据与控制策略，当前只能依据论文研究方法边界，尚不能复现代码链路。 |
 | [Mobile ALOHA](https://github.com/MarkFzp/mobile-aloha) | 操作者通过两套主臂同步控制双臂和移动底盘，相机、关节与底盘状态被记录为示范；ACT、Diffusion Policy或VINN再从移动与静态ALOHA数据学习动作序列，使系统自主执行需要边移动边操作的长程任务。 |
 | [OmniContact](https://github.com/Ingrid789/OmniContact_sim2sim) | 搬运、推拉、滑动和踢球被统一成关键身体轨迹与时序接触组成的Contact Flow，并提供ONNX策略的MuJoCo直跑与摇杆热切换。研究技能组合时，可先替换流生成器而保持低层跟踪器不变。 |
+| [open_manipulator](https://github.com/ROBOTIS-GIT/open_manipulator) | 移动、双臂或灵巧手状态与任务观测进入操作策略，输出底盘、手臂或全身动作并通过接触结果闭环。 |
 | [OpenHLM](https://huggingface.co/OpenHLM) | 语言、相机像素和全身关节动作放在同一训练接口，并开放约298 GB数据与模型权重。它更适合研究手臂数据能否补全全身策略的异构共训练，而不是把静态操作结果直接当作移动操作证据。 |
 | [OpenWBT](https://github.com/GalaxyGeneralRobotics/OpenWBT) | 头显和手柄提供视角、手部目标与行走命令，上肢通过逆运动学生成手臂目标，下肢策略负责移动和姿态调整；同一部署入口覆盖MuJoCo、Isaac Sim和真实Unitree G1，使全身遥操作链能够分层检查。 |
 | [SkillBlender](https://github.com/Humanoid-SkillBlender/SkillBlender) | 以目标条件的低层技能原语和混合器组合行走、伸手与操作，并提供H1、G1、H1-2任务、权重和部署代码；其价值在于研究高层状态或视觉命令如何连续调用全身技能。 |
+| [troncamp-mani](https://github.com/limxdynamics/troncamp-mani) | 移动、双臂或灵巧手状态与任务观测进入操作策略，输出底盘、手臂或全身动作并通过接触结果闭环。 |
 | [UMI on Legs](https://github.com/real-stanford/umi-on-legs) | 手持UMI示范训练视觉操作策略，由策略输出世界坐标下的未来夹爪轨迹；仿真训练的操作中心全身控制器根据轨迹协调四足底盘与机械臂，iPhone里程计提供机体位姿，使固定工作台策略能够在移动本体上执行。 |
+| [UniTacHand](https://github.com/BeingBeyond/UniTacHand) | 移动、双臂或灵巧手状态与任务观测进入操作策略，输出底盘、手臂或全身动作并通过接触结果闭环。 |

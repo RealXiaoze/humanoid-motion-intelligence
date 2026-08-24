@@ -11,18 +11,18 @@ from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parents[2]
 EXPORT_MANIFEST = ROOT / ".github" / "public-release.json"
-EXPECTED_CONTENT_FILES = 411
+EXPECTED_CONTENT_FILES = 433
 EXPECTED_OPERATIONAL_FILES = 6
 EXPECTED_PAPER_PAGES = 178
 EXPECTED_PAPER_IMAGES = 174
-EXPECTED_PROJECTS = 206
+EXPECTED_PROJECTS = 430
 EXPECTED_TRACK_COUNTS = {
-    "### 1. 动作数据与重定向": (14, 13),
-    "### 2. Locomotion与运动先验": (38, 33),
-    "### 3. 动作跟踪与全身控制": (37, 27),
-    "### 4. LocoManip与物理交互": (30, 24),
-    "### 5. 世界模型、VLA与Agent": (42, 23),
-    "### 6. 工程与实机部署": (17, 86),
+    "### 1. 动作数据与重定向": (14, 28),
+    "### 2. Locomotion与运动先验": (38, 49),
+    "### 3. 动作跟踪与全身控制": (37, 44),
+    "### 4. LocoManip与物理交互": (30, 30),
+    "### 5. 世界模型、VLA与Agent": (42, 91),
+    "### 6. 工程与实机部署": (17, 188),
 }
 PAGES_WITHOUT_EMBEDDED_FIGURES = {
     "P016.md",

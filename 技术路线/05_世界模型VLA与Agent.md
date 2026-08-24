@@ -7,18 +7,68 @@
 **读完后应该能够**：
 
 - 分清上层模型输出的是关节动作、动作块、轨迹、末端目标还是技能调用。
-- 区分动作生成、物理预测、记忆、任务规划和执行反馈在系统中的职责。
-- 判断论文证据证明的是上层推理、低层执行还是持续学习，避免把演示混写成完整闭环。
+- 区分严格世界模型、改变决策的世界代理模块和只提供训练资源的相邻基础设施。
+- 按环境记忆、后果预测、交互数据、动作选择和安全验证追踪完整闭环。
+- 判断证据停留在离线预测、仿真闭环、真机验证还是受控更新，避免把演示混写成持续学习。
 
 ## 本页导航
 
-[内部路线](#怎么区分内部路线) · [代表工作](#代表工作) · [完整条目](#完整条目) · [动作生成与通用策略](#动作生成与通用策略) · [物理世界建模与预测](#物理世界建模与预测) · [记忆、规划与任务调度](#记忆规划与任务调度)
+[内部路线](#怎么区分内部路线) · [系统边界](#先判断它在系统中是什么) · [能力闭环](#五类能力怎样形成闭环) · [使用层级](#世界模型怎样进入机器人系统) · [证据阶梯](#证据应该证明到哪一层) · [代表工作](#代表工作) · [完整条目](#完整条目)
 
 ## 怎么区分内部路线
 
 - **动作生成与通用策略**：从视觉、语言、机器人状态或任务条件生成动作块、动作Token、连续轨迹或身体技能，并明确下游控制接口。
 - **物理世界建模与预测**：学习动作条件下的未来视觉、潜在状态、物体变化或动力学，用于规划、数据生成、策略训练与功能评测。
 - **记忆、规划与任务调度**：维护任务与空间上下文，把长程目标分解为技能图或子目标，并根据执行反馈更新记忆、检测失败和重新规划。
+
+## 先判断它在系统中是什么
+
+判断一项工作时，先看它是否使用当前观测或状态与候选动作预测后果，以及预测是否真正改变动作选择。不要仅凭名称中出现`World Model`、生成视频或接入仿真器就判断它已经形成机器人世界模型。
+
+| 层次 | 最低判断条件 | 常见产物 | 不能直接推断什么 |
+| --- | --- | --- | --- |
+| 严格世界模型 | 输入当前状态/观测与动作，预测未来状态、观测、奖励、代价或分布，并能区分不同动作的后果 | 动力学模型、动作条件视频或潜在状态预测 | 预测准确不等于已经改善真实机器人决策 |
+| 世界代理模块 | 不完整生成未来世界，但通过记忆、可供性、技能可行性、价值或风险判断改变决策 | 空间记忆、奖励模型、动作验证器、异常检测器 | 承担一项世界建模职责不等于具备完整世界模型 |
+| 相邻基础设施 | 提供资产、任务、数据、仿真或评测，通常不直接参与在线动作选择 | 物理仿真器、数字孪生、数据引擎、Benchmark | 能够生成数据不等于具备动作条件预测或闭环规划 |
+
+## 五类能力怎样形成闭环
+
+```text
+当前观测、机器人状态与任务目标
+              ↓
+环境建图与空间记忆：保存对象、关系、可供性、遮挡和任务状态
+              ↓
+动力学建模与后果预测：比较候选动作将怎样改变机器人与环境
+              ↓
+仿真环境与训练数据：提供交互世界、合成轨迹、失败样本与校准
+              ↓
+任务规划与动作选择：拆分任务、生成或排序动作、必要时重新规划
+              ↓
+身体控制器与真机执行：Tracker / Locomotion / WBC / MPC / 技能库
+              ↓
+策略测试与安全验证：成功判断、风险监测、异常检测与安全回退
+              ↓
+成功、失败、接管和恢复日志 → 数据筛选、训练、回归评测与再部署
+```
+
+仿真环境与训练数据也会回接记忆、预测、规划和评测，而不是只能单向向下流动；只有在输出参与动作比较、策略训练或闭环复测时，才产生可核验的决策价值。五类能力可以按任务组合，并非每套系统都必须同时采用生成式世界模型。
+
+## 世界模型怎样进入机器人系统
+
+- **L1：推理阶段指导**。部署时预测候选动作后果、判断技能可行性、选择轨迹或触发重新规划。
+- **L2：训练阶段优化**。生成或筛选数据、学习奖励与价值、进行想象Rollout，最终训练独立策略。
+- **L3：真实反馈驱动的共同演化**。真机日志经过筛选、训练、回归评测和安全闸门后更新模型或策略，再受控部署。
+
+同一项目可以跨越多个层级，但必须分别提供证据。训练时使用世界模型，不代表部署时仍在线调用；根据新观测重新推理也不等于模型参数已经学习。
+
+## 证据应该证明到哪一层
+
+1. **离线预测**：在固定数据集上验证未来状态、视频、奖励或风险预测，尚未进入控制闭环。
+2. **仿真闭环**：预测结果真实参与动作选择、策略训练或重规划，并在统一任务中比较基线。
+3. **真机定量验证**：在配对条件下测量任务成功率、规划收益、风险识别、延迟和失败类型。
+4. **受控更新闭环**：真实失败进入数据与模型更新，并通过固定回归集、安全检查和版本回退再次部署。
+
+视觉质量、预测误差和演示视频只能支持部分结论。机器人世界模型还应检查动作敏感性、长时漂移、物理一致性、候选排序、不确定性、分布外检测、推理预算以及对下游任务的实际增益。
 
 ## 代表工作
 
@@ -42,7 +92,7 @@
 
 ## 完整条目
 
-本路线当前收录 **42** 篇论文/技术报告、**23** 个项目。
+本路线当前收录 **42** 篇论文/技术报告、**91** 个项目。
 
 ### 动作生成与通用策略
 
@@ -82,19 +132,55 @@
 
 | 项目 | 定位 |
 | --- | --- |
+| [ABot-Manipulation](https://github.com/amap-cvlab/ABot-Manipulation) | ABot-M0.5联合处理移动与操作任务，让世界表征、动作预测和评测在同一系统中连接；仓库开放推理、预训练模型和评测入口，用于检查移动操作是否真正形成统一动作接口。 |
+| [ACoT-VLA](https://github.com/AgibotTech/ACoT-VLA) | 模型在动作生成前组织与任务执行相关的中间动作推理，使长时操作中的目标、状态变化和动作选择更容易关联；仓库开放模型和实验入口。 |
 | [ACT](https://github.com/tonyzhaozh/act) | 以条件变分自编码器和Transformer一次预测动作块，再用时间集成平滑连续控制，减少长任务中的逐步误差累积；低成本双臂数据采集与真实部署代码使其成为模仿学习常用基线。 |
+| [Being-H0](https://github.com/BeingBeyond/Being-H0) | 相机、语言和机器人状态进入策略模型生成动作块，再经本体接口送入真机或仿真执行并回收任务结果。 |
+| [DeepThinkVLA](https://github.com/OpenBMB/DeepThinkVLA) | 模型在视觉与语言输入到动作输出之间加入与任务执行相关的推理过程，使复杂操作中的目标、状态和动作序列能够显式关联。 |
 | [Diffusion Policy](https://github.com/real-stanford/diffusion_policy) | 一段未来动作被表示为条件扩散轨迹，视觉与本体观测引导多步去噪，控制器只执行滚动窗口前端。它为多峰操作动作提供清晰基线，复现时应单独测去噪步数、时域长度和闭环频率。 |
 | [DreamZero](https://github.com/dreamzero0/dreamzero) | World Action Model同时预测未来视觉与机器人动作，DROID和AgiBot检查点接入训练、后训练与评测流程，推理由WebSocket服务解耦。这个结构可以单独测量视频预测是否真的改善动作选择，而不是只提升画面质量。 |
 | [DROID Policy Learning](https://github.com/droid-dataset/droid_policy_learning) | 在robomimic基础上增加DROID的RLDS数据读取、训练和评测流程，并保留可选真实机器人控制接口；它把大规模异构真实示范转成可训练批次，是复现DROID策略学习的数据层入口。 |
+| [FluxVLA Engine](https://github.com/FluxVLA/FluxVLA) | 以统一配置和标准接口连接LeRobot数据、VLA模型组装、分布式训练、仿真评测、推理优化与机器人部署；内置多种VLM或策略适配、LIBERO与RoboCasa数据入口以及真实双臂示例，适合检查同一模型怎样从数据进入真机控制。 |
+| [fourier-lerobot](https://github.com/FFTAI/fourier-lerobot) | 相机、语言和机器人状态进入策略模型生成动作块，再经本体接口送入真机或仿真执行并回收任务结果。 |
+| [GalaxeaDP](https://github.com/OpenGalaxea/GalaxeaDP) | 把相机观测、机器人状态和任务条件映射为连续动作块，用扩散策略完成双臂或移动操作；项目适合作为GalaxeaVLA之外的模仿学习基线。 |
+| [GalaxeaVLA](https://github.com/OpenGalaxea/GalaxeaVLA) | 语言、视觉和机器人状态经过VLA生成移动底盘与双臂动作，用于在星海图本体上执行多步骤移动操作任务；仓库提供模型、数据或部署入口。 |
+| [GigaBrain-0](https://github.com/open-gigaai/giga-brain-0) | 图像、点云、文本和本体状态进入统一模型，输出结构化任务规划与运动规划；仓库用于检查GigaWorld生成数据怎样进入GigaBrain训练和机器人任务执行链路。 |
+| [GigaWorld-Policy](https://github.com/open-gigaai/giga-world-policy) | 以动作和环境变化的联合表征训练机器人策略，使世界模型不仅生成未来画面，也为动作选择提供表征；适合研究GigaWorld世界生成能力怎样转成可执行控制信号。 |
+| [gr00t-agilex](https://github.com/agilexrobotics/gr00t-agilex) | 相机、语言和机器人状态进入策略模型生成动作块，再经本体接口送入真机或仿真执行并回收任务结果。 |
+| [GraspVLA](https://github.com/PKU-EPIC/GraspVLA) | 视觉与语言目标经过空间理解和抓取策略生成六自由度末端动作，用于在开放物体与场景中完成抓取；项目连接视觉语言理解、抓取候选与机器人执行。 |
 | [HEX](https://github.com/Open-X-Humanoid/HEX) | 不同人形的状态先对齐到共享身体部位槽位，统一本体预测器学习跨本体协调和时序动力学，视觉语言线索再经残差门控与流匹配动作头生成手臂、手和腰动作；腿部由低层RL全身控制器执行高层命令，明确了VLA与运动控制之间的接口。 |
+| [HY-Embodied](https://github.com/Tencent-Hunyuan/HY-Embodied) | 仓库汇总HY-Embodied系列模型、数据、训练和评测入口，使读者能够从统一位置追踪VLA、世界模型和跨本体版本之间的关系。 |
+| [HY-Embodied-0.5-VLA](https://github.com/Tencent-Hunyuan/Hy-Embodied-0.5-VLA) | 模型接收视觉、语言和机器人状态并生成动作序列，面向多任务操作和后训练；仓库提供模型与推理入口，用于分析HY具身模型的动作接口。 |
+| [HY-Embodied-0.5-X](https://github.com/Tencent-Hunyuan/HY-Embodied-0.5-X) | 通过共享多模态表征和统一动作接口学习不同机器人数据，使模型能够在多个本体和任务间迁移；仓库用于检查跨本体训练、适配和评测流程。 |
 | [Isaac-GR00T / GR00T N1.7](https://github.com/NVIDIA/Isaac-GR00T) | N1.7以Cosmos-Reason2-2B视觉语言主干和扩散动作头接收图像、语言与机器人状态，并用跨本体相对末端动作表示连接人类视频和机器人数据。仓库提供LeRobot后训练、推理及ONNX/TensorRT导出，可直接检查VLA适配新本体的工程成本。 |
+| [JALA](https://github.com/BeingBeyond/JALA) | 相机、语言和机器人状态进入策略模型生成动作块，再经本体接口送入真机或仿真执行并回收任务结果。 |
+| [lerobot-agilex](https://github.com/agilexrobotics/lerobot-agilex) | 相机、语言和机器人状态进入策略模型生成动作块，再经本体接口送入真机或仿真执行并回收任务结果。 |
+| [LingBot-VLA 1.0](https://github.com/Robbyant/lingbot-vla) | 语言、图像和机器人状态经过具身模型生成动作块，仓库开放训练、后训练、评测和部署入口；它适合追溯LingBot-VLA从首版到2.0的接口变化，而不应再作为当前版本能力的唯一依据。 |
+| [LingBot-VLA 2.0](https://github.com/Robbyant/lingbot-vla-v2) | 把单臂、双臂、半人形、人形与第一视角数据映射到统一状态动作向量，稀疏MoE动作专家学习共享与本体特有模式，当前与未来感知查询分别接收深度和视频教师信号；仓库开放预训练权重、训练配置、数据映射、后训练和评测入口。 |
 | [Octo](https://github.com/octo-models/octo) | 用Transformer与扩散动作头从多机器人数据学习通用策略，支持RGB、语言和目标图像等条件，并用模块化注意力扩展传感器与动作维度；适合作为跨本体预训练和下游微调的研究基线。 |
+| [OpenDM](https://github.com/dexmal/opendm) | DM0.5根据语言、图像和机器人状态生成动作序列，面向开放指令、长时任务、动态干扰和多本体控制；OpenDM开放基础及任务权重、训练和推理脚本、数据注册示例，以及LIBERO、RoboTwin和SO101后训练流程。 |
 | [openpi](https://github.com/Physical-Intelligence/openpi) | 仓库同时维护流匹配式π0、快速自回归π0-FAST和π0.5，并提供检查点、数据配置、微调与推理服务。接入新机器人时最关键的工作是动作归一化、数据字段映射和推理频率对齐。 |
+| [openpi-agilex](https://github.com/agilexrobotics/openpi-agilex) | 相机、语言和机器人状态进入策略模型生成动作块，再经本体接口送入真机或仿真执行并回收任务结果。 |
 | [OpenVLA](https://github.com/openvla/openvla) | 预训练模型以视觉和语言生成机器人动作，仓库同时开放RLDS数据混合、LoRA或全参数微调和推理部署入口。接入新本体时，可以沿相机标定、指令格式和动作空间三处拆开评估适配成本。 |
 | [Pelican-VLA 0.5](https://github.com/Open-X-Humanoid/Pelican-VLA05) | 共享Qwen3-VL主干联合视觉语言理解、未来帧和动作预测，固定容量瓶颈Token把与接触相关的视觉信息送入动作通路；当前版本重点验证注意力层面的跨场景与跨本体泛化，并明确承认从表征到可靠动作仍有缺口。 |
+| [real-time-chunking-kinetix](https://github.com/Physical-Intelligence/real-time-chunking-kinetix) | 相机、语言和机器人状态进入策略模型生成动作块，再经本体接口送入真机或仿真执行并回收任务结果。 |
+| [Rethink_VLA](https://github.com/BeingBeyond/Rethink_VLA) | 相机、语言和机器人状态进入策略模型生成动作块，再经本体接口送入真机或仿真执行并回收任务结果。 |
 | [Riemann-1.0](https://riemann-dynamics.github.io/Riemann-1.0-Website/) | 同一因果模型在策略模式下根据真实视觉与本体状态生成动作块，在模拟模式下根据给定动作预测未来视觉；三阶段训练把无动作第一视角视频、UMI与机器人轨迹逐步对齐到目标本体。 |
+| [robotera_vla](https://github.com/roboterax/robotera_vla) | 相机、语言和机器人状态进入策略模型生成动作块，再经本体接口送入真机或仿真执行并回收任务结果。 |
+| [RynnVLA-001](https://github.com/alibaba-damo-academy/RynnVLA-001) | 把语言任务、视觉观测和机器人状态映射为动作序列，构成Rynn系列早期的通用操作基线；保留该版本有助于比较002在数据、结构和长时任务上的改动。 |
+| [RynnVLA-002](https://github.com/alibaba-damo-academy/RynnVLA-002) | RynnVLA-002在视觉、语言和机器人状态条件下预测动作，面向跨任务和跨本体操作；项目用于检查Rynn系列从模型结构、训练数据到策略评测的更新。 |
+| [Spirit-v1.5](https://github.com/Spirit-AI-Team/spirit-v1.5) | 模型根据视觉、语言和机器人状态生成操作动作，面向多任务和真实场景泛化；仓库提供Spirit-v1.5的模型与研究入口。 |
+| [tron2_openpi](https://github.com/limxdynamics/tron2_openpi) | 相机、语言和机器人状态进入策略模型生成动作块，再经本体接口送入真机或仿真执行并回收任务结果。 |
 | [UnifoLM-VLA-0](https://github.com/unitreerobotics/unifolm-vla) | LeRobot数据先转换为HDF5和RLDS，视觉语言主干与机器人状态共同生成动作块；仓库公开多数据集训练、LIBERO评测、服务端推理和G1客户端部署入口，把数据准备、后训练与真机执行连成一条链。 |
+| [unitree_lerobot](https://github.com/unitreerobotics/unitree_lerobot) | 相机、语言和机器人状态进入策略模型生成动作块，再经本体接口送入真机或仿真执行并回收任务结果。 |
+| [video-prediction-policy](https://github.com/roboterax/video-prediction-policy) | 相机、语言和机器人状态进入策略模型生成动作块，再经本体接口送入真机或仿真执行并回收任务结果。 |
+| [VIPA-VLA](https://github.com/BeingBeyond/VIPA-VLA) | 相机、语言和机器人状态进入策略模型生成动作块，再经本体接口送入真机或仿真执行并回收任务结果。 |
+| [WALL-X](https://github.com/X-Square-Robot/WALL-X) | 语言、视觉和机器人状态经过统一模型生成操作动作，面向多任务与跨本体执行；仓库开放训练或推理入口，构成X Square具身模型主线。 |
 | [WholeBodyVLA](https://github.com/OpenDriveLab/WholebodyVLA) | 从无动作标注的第一视角视频学习统一潜在动作，将视觉和语言解码为双臂关节动作与运动命令，再交给面向移动操作的低层策略执行；当前仓库仅提供论文资源与研究索引。 |
+| [X-Tokenizer](https://github.com/X-Square-Robot/X-Tokenizer) | 把不同机器人或任务的连续动作编码为可由序列模型处理的Token，并解码回可执行动作；它为WALL系列跨本体训练提供动作表示基础。 |
+| [Xiaomi-Robotics-0](https://github.com/XiaomiRobotics/Xiaomi-Robotics-0) | 视觉、语言和本体状态经过统一模型生成机器人动作，用于建立小米机器人团队的通用操作基线；保留首版便于比较后续版本在数据、结构和任务覆盖上的变化。 |
+| [Xiaomi-Robotics-1](https://github.com/XiaomiRobotics/Xiaomi-Robotics-1) | 在首版基础上扩展训练数据、操作任务和泛化评测，使视觉语言模型输出更稳定的机器人动作序列；项目用于追踪同一团队模型迭代而非只看单次演示。 |
+| [Xiaomi-Robotics-U0](https://github.com/XiaomiRobotics/Xiaomi-Robotics-U0) | 通过统一观测与动作接口吸收不同任务或本体数据，使单一模型能够在多种机器人操作任务间迁移；项目重点在统一表示和后训练接口。 |
 | [XR-1](https://github.com/Open-X-Humanoid/XR-1) | 三阶段流程先学习统一视觉—运动离散表征，再在异构视觉与机器人数据上预训练，最后按具体本体微调动作策略；官方实现统一LeRobot 2.1数据加载、跨数据集训练、权重和Franka/UR/AgileX部署脚本，并给出天工2.0适配入口。 |
 
 ### 物理世界建模与预测
@@ -124,13 +210,33 @@
 
 | 项目 | 定位 |
 | --- | --- |
+| [1xgpt](https://github.com/1x-technologies/1xgpt) | 当前观测与动作条件进入生成或预测模型，输出未来状态、视频或交互结果，为策略训练、评测或规划提供数据。 |
+| [ABot-PhysWorld](https://github.com/amap-cvlab/ABot-PhysWorld) | 通过视频、动作与状态联合训练模型理解接触、位移和环境变化，并提供训练和数据入口；它位于合成数据、未来预测和动作学习之间。 |
+| [ABot-World](https://github.com/amap-cvlab/ABot-World) | 模型接收场景条件与交互输入持续滚动生成未来世界，用于建立能够被机器人策略反复交互的视觉环境；仓库开放推理入口和模型资料，可用于分析长序列生成中的一致性与误差积累。 |
+| [AgiBotWorldChallengeICRA2026-WorldModelBaseline](https://github.com/AgibotTech/AgiBotWorldChallengeICRA2026-WorldModelBaseline) | 当前观测与动作条件进入生成或预测模型，输出未来状态、视频或交互结果，为策略训练、评测或规划提供数据。 |
+| [Being-VL-0.5](https://github.com/BeingBeyond/Being-VL-0.5) | 当前观测与动作条件进入生成或预测模型，输出未来状态、视频或交互结果，为策略训练、评测或规划提供数据。 |
 | [DreamDojo](https://github.com/NVIDIA/DreamDojo) | 四万四千小时第一视角视频先建立潜在动作表示，机器人数据后训练再把它转成可交互策略并蒸馏到十帧每秒运行。开放的数据、模型与推理入口让人类视频预训练对机器人控制的增益可以分阶段核对。 |
+| [EnerVerse-AC](https://github.com/AgibotTech/EnerVerse-AC) | 根据机器人场景和动作条件生成未来视觉变化，用于构造操作数据和研究动作结果预测；它是Genie-Envisioner与GE-Sim-V2之前的重要历史入口。 |
 | [GE-2 / GE-Sim 2.0](https://github.com/AgibotTech/GE-Sim-V2) | 当前图像、本体状态和候选动作进入生成模型，系统滚动预测未来视频与状态，独立策略服务据此完成闭环评测。它承担学习式策略试验和数据回流，物理接触精度仍由其他验证环节负责。 |
-| [GigaWorld-0](https://giga-world-0.github.io/) | 把视频外观、视角和动作建模与三维高斯场景、系统辨识及规划模块连接，形成服务VLA训练的数据生成流程；已开放训练、推理和模型配置，可核查世界建模如何产出机器人可用数据。 |
+| [Genie-Envisioner](https://github.com/AgibotTech/Genie-Envisioner) | 从场景和动作条件生成机器人交互视频，为策略训练、数据扩充和未来预测提供可控环境；仓库连接GE-Sim系列与早期EnerVerse-AC路线。 |
+| [GigaWorld-0](https://github.com/open-gigaai/giga-world-0) | 把视频外观、视角和动作建模与三维高斯场景、系统辨识及规划模块连接，形成服务VLA训练的数据生成流程；已开放训练、推理和模型配置，可核查世界建模如何产出机器人可用数据。 |
+| [GigaWorld-1](https://github.com/open-gigaai/giga-world-1) | GigaWorld-1继续研究机器人动作条件下的未来环境生成、交互一致性和世界模型评测，为具身数据生成与策略训练提供可控环境变化。 |
+| [Kairos](https://github.com/kairos-agi/kairos) | Kairos以通用视频、人类行为和真机交互数据逐级训练持续世界表征，并在统一模型中预测未来视觉状态与可执行动作；仓库开放推理代码和多组模型权重，并提供RoboTwin与LIBERO评测入口。 |
 | [LDA-1B](https://github.com/jiangranlv/LDA-1B) | 官方仓库开放LDA-1B模型、部分训练与评测入口、配置和检查点，用同一多模态扩散Transformer联合处理动作块和未来视觉潜变量；适合检查策略、正向动力学、逆向动力学与视觉预测怎样共享主干。 |
+| [LingBot-VA](https://github.com/Robbyant/lingbot-va) | 视频潜变量流与机器人动作流在双流Transformer中交替建模，模型既预测动作也预测动作条件下的未来画面；仓库开放权重、RoboTwin与LIBERO后训练数据、训练和推理脚本，可检查世界预测怎样与策略输出共享表示但保持独立输出。 |
+| [LingBot-Video](https://github.com/Robbyant/lingbot-video) | 稠密与MoE视频模型从文本或图像条件生成未来视频，并通过大规模视频预训练学习场景变化与运动模式；仓库开放推理代码、模型权重和提示词重写器，可作为世界动态表征或人类视频预训练研究入口。 |
+| [LingBot-World 1.0](https://github.com/Robbyant/lingbot-world) | 根据文本、初始画面或动作条件生成未来视频，用视频预训练表达机器人动作后的环境变化；它构成LingBot-World 2.0之前的技术入口，可用于比较离线视频生成与后续长时交互世界模型的差异。 |
+| [LingBot-World 2.0](https://github.com/Robbyant/lingbot-world-v2) | 因果视频模型根据初始画面、文本与交互控制持续生成世界演化，KV缓存与蒸馏版本面向实时推理，Pilot和Director两个Agent分别组织角色行为与环境事件；它提供可交互环境模拟能力，不直接输出机器人关节动作。 |
 | [Matrix-Game 3.5](https://github.com/Riemann-Dynamics/Matrix-Game-3.5) | 根据文本、初始画面、可选主体参考图和相机轨迹持续生成未来视频；Warped PRoPE编码相机几何，Patch Memory保存静态场景，参考Token维护动态主体，再通过渐进蒸馏获得少步因果生成器。 |
+| [MotuBrain](https://github.com/shengshu-ai/MotuBrain) | MotuBrain把视频、动作和语言统一建模，并面向多本体适配、长程任务和实时闭环；公开仓库主要承载技术报告、图示和发布材料，适合了解系统定位。 |
+| [Motus](https://github.com/thu-ml/Motus) | Motus在统一架构中学习视频世界变化、语言条件和机器人动作，使同一模型既表达未来环境也支持动作预测；仓库开放模型与实验入口，用于检查世界模型怎样扩展到机器人策略。 |
+| [OpenDW](https://github.com/dexmal/opendw) | DW0.5接收语言、图像或视频、机器人类型、状态和动作，用共享骨干及视频、动作、价值专家联合预测未来画面、动作与状态价值；仓库开放权重、推理与训练代码，并给出RoboTwin式数据格式和动作条件回放入口。 |
+| [RoboTransfer](https://github.com/HorizonRobotics/RoboTransfer) | 当前观测与动作条件进入生成或预测模型，输出未来状态、视频或交互结果，为策略训练、评测或规划提供数据。 |
+| [RynnWorld-4D](https://github.com/alibaba-damo-academy/RynnWorld-4D) | 模型联合表达三维空间结构和时间演化，用于预测机器人动作后的场景变化与对象运动；适合作为空间理解、世界生成和规划之间的研究入口。 |
 | [UnifoLM-WMA-0](https://github.com/unitreerobotics/unifolm-world-model-action) | 视觉观测和动作条件进入世界模型预测未来状态，动作模块再把预测与任务条件转成机器人控制序列；官方仓库提供数据处理、训练、推理、权重和G1部署入口，用于检查世界预测怎样接回真实动作闭环。 |
+| [WALL-WM](https://github.com/X-Square-Robot/WALL-WM) | 联合建模场景视频、机器人状态与动作，预测执行后的环境变化，为动作选择和策略训练提供世界表征；仓库公开模型结构与训练评测入口。 |
 | [WorldArena](https://github.com/tsinghua-fib-lab/WorldArena) | 十六项感知指标与功能任务把“视频生成更像”拆成可测能力，2.0又跨RoboTwin、LIBERO和真实ALOHA检查这些指标能否转化为策略收益。把新模型接入数据引擎、策略排序和动作规划三条路径，可以检验视觉质量是否真正转成控制收益。 |
+| [X-WAM](https://github.com/sharinka0715/X-WAM) | 模型联合学习视频世界变化与机器人动作，在共享表征中支持跨本体操作和未来预测；项目用于检查世界模型输出怎样与动作头连接。 |
 
 ### 记忆、规划与任务调度
 
@@ -148,5 +254,17 @@
 
 | 项目 | 定位 |
 | --- | --- |
+| [ABot-Navigation](https://github.com/amap-cvlab/ABot-Navigation) | 视觉与语言指令经过场景理解和导航策略生成移动决策，仓库提供Benchmark、评测和方法入口；它用于检验高层语言目标怎样接到底盘导航，而不是机械臂操作。 |
+| [embodied-skill-kit](https://github.com/Open-X-Humanoid/embodied-skill-kit) | 语言任务和多模态环境状态进入任务规划模块，生成技能调用或导航操作步骤，并根据执行反馈重新组织任务。 |
+| [genisom_vln](https://github.com/zsibot/genisom_vln) | 语言任务和多模态环境状态进入任务规划模块，生成技能调用或导航操作步骤，并根据执行反馈重新组织任务。 |
 | [GO-2](https://www.agibot.com/article/231/detail/56.html) | Action CoT生成宏观动作意图，低频语义规划器持续细化计划，高频动作跟随器用残差修正现场偏差。公开材料界定了规划到执行的接口，具体控制输出仍缺少代码和权重验证。 |
 | [HoloAgent](https://github.com/HorizonRobotics/HoloAgent) | AgentOS把语言任务展开为受监控的技能图，三维空间记忆支撑检索、执行反馈和失败恢复；当前仓库已开放机器人无关ROS 2核心、导航与感知节点、HTTP/ROS桥接、Unitree和HexFellow适配及录制工具，但模型和数据分发、无硬件快速启动与HoloAgent-1仍未完成。 |
+| [MiniCPM-Robot](https://github.com/OpenBMB/MiniCPM-Robot) | 将小型多模态模型用于机器人视觉跟踪、目标理解和动作决策，并提供Jetson、ROS 2及机器人SDK集成入口；项目强调本地断网运行和工程部署。 |
+| [Pelican-VL](https://github.com/Open-X-Humanoid/pelican-vl) | Pelican-VL从视觉和语言输入形成空间理解、任务推理与高层动作目标，为下层VLA、技能或运动控制模块提供计划；项目开放多尺度模型入口。 |
+| [robocup_demo](https://github.com/BoosterRobotics/robocup_demo) | 语言任务和多模态环境状态进入任务规划模块，生成技能调用或导航操作步骤，并根据执行反馈重新组织任务。 |
+| [RxBrain-1.0](https://github.com/Tencent-Hunyuan/Hy-Embodied-RxBrain-1.0) | 视觉与语言输入形成场景理解和任务计划，再向下层操作或导航策略发出目标；项目用于区分高层认知、策略动作与低层控制三种职责。 |
+| [RynnBrain](https://github.com/alibaba-damo-academy/RynnBrain) | 视觉和语言输入先形成场景与任务表示，再输出任务步骤或技能调用，为下层VLA、导航和操作策略提供高层目标；仓库用于理解Rynn体系中大脑层与动作层的接口。 |
+| [RynnEC](https://github.com/alibaba-damo-academy/RynnEC) | 项目研究机器人怎样从多模态观测形成环境理解、任务分解和下一步决策，并把结果交给导航或操作模块执行；适合定位认知规划层与低层策略之间的接口。 |
+| [RynnValue](https://github.com/alibaba-damo-academy/RynnValue) | 模型对候选动作或执行轨迹进行价值判断，为策略选择、失败筛选和后训练提供反馈信号；它解决的是动作好坏的评估，不直接生成完整机器人控制命令。 |
+| [tron1-agent](https://github.com/limxdynamics/tron1-agent) | 语言任务和多模态环境状态进入任务规划模块，生成技能调用或导航操作步骤，并根据执行反馈重新组织任务。 |
+| [UrbanVLA](https://github.com/GalaxyGeneralRobotics/UrbanVLA) | 将第一视角视觉、语言指令与机器人状态映射为移动决策，使机器人在室外或半开放城市环境中完成目标导向导航。 |
