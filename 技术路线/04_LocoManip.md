@@ -42,7 +42,7 @@
 
 ## 完整条目
 
-本路线当前收录 **30** 篇论文/技术报告、**23** 个项目。
+本路线当前收录 **30** 篇论文/技术报告、**24** 个项目。
 
 ### 视觉闭环与交互状态建模
 
@@ -136,5 +136,6 @@
 | [Mobile ALOHA](https://github.com/MarkFzp/mobile-aloha) | 操作者通过两套主臂同步控制双臂和移动底盘，相机、关节与底盘状态被记录为示范；ACT、Diffusion Policy或VINN再从移动与静态ALOHA数据学习动作序列，使系统自主执行需要边移动边操作的长程任务。 |
 | [OmniContact](https://github.com/Ingrid789/OmniContact_sim2sim) | 搬运、推拉、滑动和踢球被统一成关键身体轨迹与时序接触组成的Contact Flow，并提供ONNX策略的MuJoCo直跑与摇杆热切换。研究技能组合时，可先替换流生成器而保持低层跟踪器不变。 |
 | [OpenHLM](https://huggingface.co/OpenHLM) | 语言、相机像素和全身关节动作放在同一训练接口，并开放约298 GB数据与模型权重。它更适合研究手臂数据能否补全全身策略的异构共训练，而不是把静态操作结果直接当作移动操作证据。 |
+| [OpenWBT](https://github.com/GalaxyGeneralRobotics/OpenWBT) | 头显和手柄提供视角、手部目标与行走命令，上肢通过逆运动学生成手臂目标，下肢策略负责移动和姿态调整；同一部署入口覆盖MuJoCo、Isaac Sim和真实Unitree G1，使全身遥操作链能够分层检查。 |
 | [SkillBlender](https://github.com/Humanoid-SkillBlender/SkillBlender) | 以目标条件的低层技能原语和混合器组合行走、伸手与操作，并提供H1、G1、H1-2任务、权重和部署代码；其价值在于研究高层状态或视觉命令如何连续调用全身技能。 |
 | [UMI on Legs](https://github.com/real-stanford/umi-on-legs) | 手持UMI示范训练视觉操作策略，由策略输出世界坐标下的未来夹爪轨迹；仿真训练的操作中心全身控制器根据轨迹协调四足底盘与机械臂，iPhone里程计提供机体位姿，使固定工作台策略能够在移动本体上执行。 |

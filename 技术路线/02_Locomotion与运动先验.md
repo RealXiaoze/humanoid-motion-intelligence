@@ -42,7 +42,7 @@
 
 ## 完整条目
 
-本路线当前收录 **38** 篇论文/技术报告、**30** 个项目。
+本路线当前收录 **38** 篇论文/技术报告、**33** 个项目。
 
 ### 基础Locomotion
 
@@ -66,13 +66,16 @@
 
 | 项目 | 定位 |
 | --- | --- |
-| [Booster Gym](https://github.com/BoosterRobotics/booster_gym) | T1策略从Isaac Gym并行训练，经JIT导出后进入MuJoCo、Webots和真机共用的部署入口。训练、机器人资产与部署代码分仓组织，使关节顺序、观测契约和控制周期能够沿完整链路逐项核对。 |
+| [Booster Gym](https://github.com/BoosterRobotics/booster_gym) | T1策略从Isaac Gym并行训练，经模型导出后进入MuJoCo、Webots和真机部署；新流水线进一步把K1的Isaac Lab训练、机器人资产与部署代码分仓组织，使关节顺序、观测契约和控制周期能够沿完整链路逐项核对。 |
+| [DeepRobotics RL Training](https://github.com/DeepRoboticsLab/RL_Training) | Isaac Lab环境分别注册Lite3和M20粗糙地形速度跟踪任务及DR02平地AMP任务，统一RSL-RL训练、回放、键盘命令和多GPU入口；策略部署明确交给配套部署仓库，不把训练环境误写成完整实机控制栈。 |
 | [Humanoid-Gym](https://github.com/roboterax/humanoid-gym) | 从Isaac Gym速度跟踪训练延伸到MuJoCo Sim2Sim和XBot实机接口，观测、奖励、关节目标与随机化都能沿链路追踪。第一次做人形行走时，可用它定位问题是在策略、模型适配还是部署循环。 |
 | [InternRobotics运动控制开源生态](https://github.com/InternRobotics) | 组织内的HIMLoco、OpenHomie等仓库分别覆盖感知行走和同构外骨骼Loco-Manip，可沿各自代码库比较训练框架、遥操作接口与真机部署边界，不能把组织主页当作单一算法实现。 |
 | [legged_gym](https://github.com/leggedrobotics/legged_gym) | GPU并行地形、速度指令、关节位置动作、噪声与动力学随机化构成了经典腿式Sim2Real最小闭环。算法开发者可先固定环境和执行器网络，只改一组观测或奖励，判断收益究竟来自方法还是工程配置。 |
 | [ModelBasedFootstepPlanning-IROS2024](https://github.com/hojae-io/ModelBasedFootstepPlanning-IROS2024) | 线性倒立摆模型先根据速度目标生成可行落脚参考，无模型策略再学习跟踪落脚与全身状态；仓库同时提供LIPM分析、MIT Humanoid训练、策略回放和ONNX导出，适合检查模型规划怎样成为强化学习策略的结构化输入。 |
 | [roboparty_train](https://github.com/Roboparty/roboparty_train) | 以两个Git子模块组织Roboparty训练生态，串起GMR动作准备、AMP与BeyondMimic训练、跑酷任务、ONNX导出和MuJoCo Sim2Sim；适合从工程目录理解数据、算法与部署前验证的分工。 |
 | [SafeFall](https://safefall.github.io/) | 用GRU从近期本体状态判断跌倒是否已不可避免，仅在触发后切换到损伤感知缓解策略，以减少无谓干预并控制落地姿态；官方页面有G1实验，代码仍处待发布状态。 |
+| [TITA RL](https://github.com/DDTRobot/tita_rl) | Isaac Gym环境训练TITA及TITATIT四足或轮足策略，模型导出ONNX并转换为TensorRT引擎；配套sim2sim2real工作区在Webots和ROS 2中连接相同推理与硬件接口，形成从训练到Jetson Orin NX实机的入口。 |
+| [TRON1 RL Isaac Gym](https://github.com/limxdynamics/tron1-rl-isaacgym) | 在legged_gym结构中按机器人型号注册点足、轮足和双足TRON1环境，配置观测、奖励、随机化与PPO训练并导出策略；训练结果需继续进入MuJoCo、Gazebo或ROS部署仓库检查跨引擎与实机表现。 |
 | [Unitree RL Gym](https://github.com/unitreerobotics/unitree_rl_gym) | 这是Unitree官方保留的Isaac Gym时代训练链路，本体配置、PPO训练、MuJoCo Sim2Sim和实机入口仍可沿代码追踪。它主要服务旧工程维护和新旧仿真栈对照，不应与Isaac Lab版本混用。 |
 | [Unitree RL Lab](https://github.com/unitreerobotics/unitree_rl_lab) | Unitree将Go2、H1和G1的Isaac Lab任务接到策略导出、MuJoCo验证与实机SDK。机器人配置和部署接口处在同一仓库，能直接检查训练关节命令与真机控制协议是否一致。 |
 | [Unitree RL Mjlab](https://github.com/unitreerobotics/unitree_rl_mjlab) | MJLab和MuJoCo组成不依赖Omniverse的轻量训练路线，现有任务同时覆盖速度行走与动作模仿。策略回放和真机接口让开发者可以用同一模型核对训练、Sim2Sim与部署差异。 |

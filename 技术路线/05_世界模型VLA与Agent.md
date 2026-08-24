@@ -37,12 +37,12 @@
 | --- | --- |
 | [GE-2 / GE-Sim 2.0](https://github.com/AgibotTech/GE-Sim-V2) | 当前图像、本体状态和候选动作进入生成模型，系统滚动预测未来视频与状态，独立策略服务据此完成闭环评测。它承担学习式策略试验和数据回流，物理接触精度仍由其他验证环节负责。 |
 | [GO-2](https://www.agibot.com/article/231/detail/56.html) | Action CoT生成宏观动作意图，低频语义规划器持续细化计划，高频动作跟随器用残差修正现场偏差。公开材料界定了规划到执行的接口，具体控制输出仍缺少代码和权重验证。 |
-| [HoloAgent](https://github.com/HorizonRobotics/HoloAgent) | AgentOS把语言任务展开为受监控的技能图，三维空间记忆负责保存环境变化并在失败后触发重规划。当前开放的导航组件已经露出记忆更新、技能调用和异常恢复之间的接口，新能力仍有一部分停留在发布路线图。 |
+| [HoloAgent](https://github.com/HorizonRobotics/HoloAgent) | AgentOS把语言任务展开为受监控的技能图，三维空间记忆支撑检索、执行反馈和失败恢复；当前仓库已开放机器人无关ROS 2核心、导航与感知节点、HTTP/ROS桥接、Unitree和HexFellow适配及录制工具，但模型和数据分发、无硬件快速启动与HoloAgent-1仍未完成。 |
 | [Isaac-GR00T / GR00T N1.7](https://github.com/NVIDIA/Isaac-GR00T) | N1.7以Cosmos-Reason2-2B视觉语言主干和扩散动作头接收图像、语言与机器人状态，并用跨本体相对末端动作表示连接人类视频和机器人数据。仓库提供LeRobot后训练、推理及ONNX/TensorRT导出，可直接检查VLA适配新本体的工程成本。 |
 
 ## 完整条目
 
-本路线当前收录 **40** 篇论文/技术报告、**21** 个项目。
+本路线当前收录 **42** 篇论文/技术报告、**23** 个项目。
 
 ### 动作生成与通用策略
 
@@ -69,6 +69,7 @@
 | 2026 | [Being-H0.5：用共享动作语言连接人手与不同机器人本体](../论文与项目/论文逐篇解读/P166.md) · [原文](https://arxiv.org/abs/2601.12993) | 人类视频、遥操作与不同机器人动作维度不一致，直接拼接会让模型把本体差异当成任务规律。Being-H0.5用统一动作槽位和分路专家共享任务结构，同时保留各本体的动作输出边界。 | 是 · [代码](https://github.com/BeingBeyond/Being-H) |
 | 2026 | [VITRA：把无标注人类活动视频加工成VLA预训练片段](../论文与项目/论文逐篇解读/P167.md) · [原文](https://arxiv.org/abs/2510.21571) | 公开人类视频覆盖大量操作，却缺少机器人控制标签。VITRA从视频中提取手和物体的视觉运动轨迹，把轨迹作为跨人手与机器人末端的中间表示，再用机器人数据完成动作空间适配。 | 是 · [代码](https://github.com/microsoft/VITRA) |
 | 2026 | [EgoVLA：用手腕位姿和MANO手部参数连接人类视频与机器人动作](../论文与项目/论文逐篇解读/P168.md) · [原文](https://arxiv.org/abs/2507.12440) | 第一视角人类视频与机器人数据的视觉外观和动作表示不同。EgoVLA把人手运动恢复成统一腕部与MANO动作，再与机器人样本共同训练，使模型先学习任务和手物关系后再输出机器人动作。 | 是 · [代码](https://github.com/catburgg/EgoVLA) |
+| 2026 | [Riemann-1.0：在同一因果模型中学习机器人动作与未来视觉](../论文与项目/论文逐篇解读/P177.md) · [原文](https://riemann-dynamics.github.io/Riemann-1.0-Website/paper/Riemann-1.0.pdf) | 第一视角视频、UMI示范和机器人轨迹的数据规模与动作监督不同。Riemann-1.0用同一套因果Action/Video DiT学习未来视觉与可执行动作，并通过本体专属动作头保留不同机器人的动作空间。 | 否 |
 | 2025 | [DreamPolicy：面向可扩展人形运动控制的统一世界模型策略](../论文与项目/论文逐篇解读/P018.md) · [原文](https://arxiv.org/abs/2505.18780) | 为每类地形单独训练策略难以扩展，直接混合专家又会产生冲突。地形条件自回归扩散模型从专家数据生成未来身体状态，统一目标条件策略跟踪该状态并用转移判别器维持运动分布。 | 否 |
 | 2025 | [π0.5：具备开放世界泛化能力的视觉语言动作模型](../论文与项目/论文逐篇解读/P059.md) · [原文](https://arxiv.org/abs/2504.16054) | 训练场景内的VLA容易依赖固定环境和短技能，进入新家庭后任务分解与执行同时失效；分阶段预训练把网页语义、多源机器人数据和长程移动操作对齐，再后训练连续动作头。 | 部分 · [代码](https://github.com/Physical-Intelligence/openpi) |
 | 2025 | [Phantom：先把人类示范改造成目标机器人看到的训练画面](../论文与项目/论文逐篇解读/P169.md) · [原文](https://arxiv.org/abs/2503.00779) | 人类视频中的手臂外观与机器人不同，直接训练会在部署时遇到视觉域差异。Phantom先恢复人手动作并映射到目标机器人，再移除人臂、渲染机器人替身，使训练图像和测试时机器人视角更接近。 | 是 · [代码](https://github.com/MarionLepert/phantom) |
@@ -91,6 +92,7 @@
 | [openpi](https://github.com/Physical-Intelligence/openpi) | 仓库同时维护流匹配式π0、快速自回归π0-FAST和π0.5，并提供检查点、数据配置、微调与推理服务。接入新机器人时最关键的工作是动作归一化、数据字段映射和推理频率对齐。 |
 | [OpenVLA](https://github.com/openvla/openvla) | 预训练模型以视觉和语言生成机器人动作，仓库同时开放RLDS数据混合、LoRA或全参数微调和推理部署入口。接入新本体时，可以沿相机标定、指令格式和动作空间三处拆开评估适配成本。 |
 | [Pelican-VLA 0.5](https://github.com/Open-X-Humanoid/Pelican-VLA05) | 共享Qwen3-VL主干联合视觉语言理解、未来帧和动作预测，固定容量瓶颈Token把与接触相关的视觉信息送入动作通路；当前版本重点验证注意力层面的跨场景与跨本体泛化，并明确承认从表征到可靠动作仍有缺口。 |
+| [Riemann-1.0](https://riemann-dynamics.github.io/Riemann-1.0-Website/) | 同一因果模型在策略模式下根据真实视觉与本体状态生成动作块，在模拟模式下根据给定动作预测未来视觉；三阶段训练把无动作第一视角视频、UMI与机器人轨迹逐步对齐到目标本体。 |
 | [UnifoLM-VLA-0](https://github.com/unitreerobotics/unifolm-vla) | LeRobot数据先转换为HDF5和RLDS，视觉语言主干与机器人状态共同生成动作块；仓库公开多数据集训练、LIBERO评测、服务端推理和G1客户端部署入口，把数据准备、后训练与真机执行连成一条链。 |
 | [WholeBodyVLA](https://github.com/OpenDriveLab/WholebodyVLA) | 从无动作标注的第一视角视频学习统一潜在动作，将视觉和语言解码为双臂关节动作与运动命令，再交给面向移动操作的低层策略执行；当前仓库仅提供论文资源与研究索引。 |
 | [XR-1](https://github.com/Open-X-Humanoid/XR-1) | 三阶段流程先学习统一视觉—运动离散表征，再在异构视觉与机器人数据上预训练，最后按具体本体微调动作策略；官方实现统一LeRobot 2.1数据加载、跨数据集训练、权重和Franka/UR/AgileX部署脚本，并给出天工2.0适配入口。 |
@@ -111,6 +113,7 @@
 | 2018 | [PlaNet：基于像素输入的潜在动力学规划](../论文与项目/论文逐篇解读/P063.md) · [原文](https://arxiv.org/abs/1811.04551) | 从像素直接规划需要预测与控制相关的未来而非重建全部图像细节；RSSM结合确定性记忆和随机潜变量，观测模型学习潜在动力学，CEM在模型中搜索动作序列并滚动执行。 | 是 |
 | 2026 | [WAM-TTT：用无标注人类视频在部署前调整世界动作模型](../论文与项目/论文逐篇解读/P173.md) · [原文](https://arxiv.org/abs/2607.06988) | 世界动作模型遇到新任务时缺少与机器人动作配对的数据。WAM-TTT用配对人机示范元训练快速记忆，再在部署前只观看无标注人类视频更新轻量权重，以视觉变化引导冻结动作模型生成机器人动作。 | 否 |
 | 2026 | [LDA-1B：让不同质量的具身数据共同训练视觉预测与机器人动作](../论文与项目/论文逐篇解读/P174.md) · [原文](https://arxiv.org/abs/2602.12215) | 机器人示范、人类视频和仿真轨迹的监督完整度不同。LDA-1B按数据可用字段分配策略、正向动力学、逆向动力学和视觉预测任务，让无动作视频也能训练世界变化表示，再用目标本体数据生成可执行动作块。 | 部分 · [代码](https://github.com/jiangranlv/LDA-1B) |
+| 2026 | [Matrix-Game 3.5：用三维Patch记忆维持长时交互视频的一致性](../论文与项目/论文逐篇解读/P178.md) · [原文](https://matrix-game-v3-5.github.io/paper/Matrix-Game-3.5.pdf) | 相机可控视频模型长时间自回归时容易遗忘离开视野的场景，并在重新观察时产生几何漂移和动态主体重影。Matrix-Game 3.5把历史静态Patch回投三维并重投影到新视角，同时用参考Token单独维持动态主体。 | 部分 · [代码](https://github.com/Riemann-Dynamics/Matrix-Game-3.5) |
 | 2025 | [V-JEPA 2：面向理解、预测与规划的自监督视频模型](../论文与项目/论文逐篇解读/P067.md) · [原文](https://arxiv.org/abs/2506.09985) | 海量无动作视频能学到物体和运动规律，却不能直接决定机器人控制；掩码潜在预测先获得视频表征，再用少量机器人数据训练动作条件世界模型，并以模型预测控制选择可执行动作。 | 是 · [代码](https://github.com/facebookresearch/vjepa2) |
 | 2025 | [GR00T-Dreams：面向人形机器人学习的合成轨迹生成](../论文与项目/论文逐篇解读/P068.md) · [原文](https://developer.nvidia.com/blog/enhance-robot-learning-with-synthetic-trajectory-data-generated-by-world-foundation-models/) | 人形真实轨迹稀缺，纯视频生成又缺少可靠动作标签。世界基础模型先生成任务变化与未来视觉，逆动力学模型补动作，再经仿真或策略筛选形成训练轨迹，关键瓶颈是标签误差回流。 | 部分 |
 | 2024 | [Denoising World Model Locomotion：基于去噪世界模型的复杂地形人形运动控制](../论文与项目/论文逐篇解读/P017.md) · [原文](https://arxiv.org/abs/2408.14472) | 噪声和遮挡使本体历史无法直接提供控制所需状态；循环编码器以特权真值做去噪重建并与PPO联合优化，策略从潜变量立即输出关节目标，属于学习式状态估计而非向前滚动规划的世界模型。 | 部分 |
@@ -125,6 +128,7 @@
 | [GE-2 / GE-Sim 2.0](https://github.com/AgibotTech/GE-Sim-V2) | 当前图像、本体状态和候选动作进入生成模型，系统滚动预测未来视频与状态，独立策略服务据此完成闭环评测。它承担学习式策略试验和数据回流，物理接触精度仍由其他验证环节负责。 |
 | [GigaWorld-0](https://giga-world-0.github.io/) | 把视频外观、视角和动作建模与三维高斯场景、系统辨识及规划模块连接，形成服务VLA训练的数据生成流程；已开放训练、推理和模型配置，可核查世界建模如何产出机器人可用数据。 |
 | [LDA-1B](https://github.com/jiangranlv/LDA-1B) | 官方仓库开放LDA-1B模型、部分训练与评测入口、配置和检查点，用同一多模态扩散Transformer联合处理动作块和未来视觉潜变量；适合检查策略、正向动力学、逆向动力学与视觉预测怎样共享主干。 |
+| [Matrix-Game 3.5](https://github.com/Riemann-Dynamics/Matrix-Game-3.5) | 根据文本、初始画面、可选主体参考图和相机轨迹持续生成未来视频；Warped PRoPE编码相机几何，Patch Memory保存静态场景，参考Token维护动态主体，再通过渐进蒸馏获得少步因果生成器。 |
 | [UnifoLM-WMA-0](https://github.com/unitreerobotics/unifolm-world-model-action) | 视觉观测和动作条件进入世界模型预测未来状态，动作模块再把预测与任务条件转成机器人控制序列；官方仓库提供数据处理、训练、推理、权重和G1部署入口，用于检查世界预测怎样接回真实动作闭环。 |
 | [WorldArena](https://github.com/tsinghua-fib-lab/WorldArena) | 十六项感知指标与功能任务把“视频生成更像”拆成可测能力，2.0又跨RoboTwin、LIBERO和真实ALOHA检查这些指标能否转化为策略收益。把新模型接入数据引擎、策略排序和动作规划三条路径，可以检验视觉质量是否真正转成控制收益。 |
 
@@ -145,4 +149,4 @@
 | 项目 | 定位 |
 | --- | --- |
 | [GO-2](https://www.agibot.com/article/231/detail/56.html) | Action CoT生成宏观动作意图，低频语义规划器持续细化计划，高频动作跟随器用残差修正现场偏差。公开材料界定了规划到执行的接口，具体控制输出仍缺少代码和权重验证。 |
-| [HoloAgent](https://github.com/HorizonRobotics/HoloAgent) | AgentOS把语言任务展开为受监控的技能图，三维空间记忆负责保存环境变化并在失败后触发重规划。当前开放的导航组件已经露出记忆更新、技能调用和异常恢复之间的接口，新能力仍有一部分停留在发布路线图。 |
+| [HoloAgent](https://github.com/HorizonRobotics/HoloAgent) | AgentOS把语言任务展开为受监控的技能图，三维空间记忆支撑检索、执行反馈和失败恢复；当前仓库已开放机器人无关ROS 2核心、导航与感知节点、HTTP/ROS桥接、Unitree和HexFellow适配及录制工具，但模型和数据分发、无硬件快速启动与HoloAgent-1仍未完成。 |

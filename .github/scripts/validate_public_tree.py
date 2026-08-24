@@ -11,18 +11,18 @@ from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parents[2]
 EXPORT_MANIFEST = ROOT / ".github" / "public-release.json"
-EXPECTED_CONTENT_FILES = 389
+EXPECTED_CONTENT_FILES = 411
 EXPECTED_OPERATIONAL_FILES = 6
-EXPECTED_PAPER_PAGES = 176
-EXPECTED_PAPER_IMAGES = 172
-EXPECTED_PROJECTS = 194
+EXPECTED_PAPER_PAGES = 178
+EXPECTED_PAPER_IMAGES = 174
+EXPECTED_PROJECTS = 206
 EXPECTED_TRACK_COUNTS = {
     "### 1. 动作数据与重定向": (14, 13),
-    "### 2. Locomotion与运动先验": (38, 30),
+    "### 2. Locomotion与运动先验": (38, 33),
     "### 3. 动作跟踪与全身控制": (37, 27),
-    "### 4. LocoManip与物理交互": (30, 23),
-    "### 5. 世界模型、VLA与Agent": (40, 21),
-    "### 6. 工程与实机部署": (17, 80),
+    "### 4. LocoManip与物理交互": (30, 24),
+    "### 5. 世界模型、VLA与Agent": (42, 23),
+    "### 6. 工程与实机部署": (17, 86),
 }
 PAGES_WITHOUT_EMBEDDED_FIGURES = {
     "P016.md",
@@ -48,7 +48,10 @@ ALLOWED_TOP_LEVEL = {
     "AGENTS.md",
     "README.md",
     "LICENSE.md",
+    "具身智能公司的开源项目",
+    "强化学习开发者必备开源资料",
     "公司与产业",
+    "数据集",
     "技术路线",
     "求职与岗位",
     "论文与项目",
