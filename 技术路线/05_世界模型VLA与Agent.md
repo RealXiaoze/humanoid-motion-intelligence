@@ -92,7 +92,7 @@
 
 ## 完整条目
 
-本路线当前收录 **42** 篇论文/技术报告、**91** 个项目。
+本路线当前收录 **43** 篇论文/技术报告、**101** 个项目。
 
 ### 动作生成与通用策略
 
@@ -120,6 +120,7 @@
 | 2026 | [VITRA：把无标注人类活动视频加工成VLA预训练片段](../论文与项目/论文逐篇解读/P167.md) · [原文](https://arxiv.org/abs/2510.21571) | 公开人类视频覆盖大量操作，却缺少机器人控制标签。VITRA从视频中提取手和物体的视觉运动轨迹，把轨迹作为跨人手与机器人末端的中间表示，再用机器人数据完成动作空间适配。 | 是 · [代码](https://github.com/microsoft/VITRA) |
 | 2026 | [EgoVLA：用手腕位姿和MANO手部参数连接人类视频与机器人动作](../论文与项目/论文逐篇解读/P168.md) · [原文](https://arxiv.org/abs/2507.12440) | 第一视角人类视频与机器人数据的视觉外观和动作表示不同。EgoVLA把人手运动恢复成统一腕部与MANO动作，再与机器人样本共同训练，使模型先学习任务和手物关系后再输出机器人动作。 | 是 · [代码](https://github.com/catburgg/EgoVLA) |
 | 2026 | [Riemann-1.0：在同一因果模型中学习机器人动作与未来视觉](../论文与项目/论文逐篇解读/P177.md) · [原文](https://riemann-dynamics.github.io/Riemann-1.0-Website/paper/Riemann-1.0.pdf) | 第一视角视频、UMI示范和机器人轨迹的数据规模与动作监督不同。Riemann-1.0用同一套因果Action/Video DiT学习未来视觉与可执行动作，并通过本体专属动作头保留不同机器人的动作空间。 | 否 |
+| 2026 | [EATR-Stereo：让人形VLA按身体状态使用双目辅助证据](../论文与项目/论文逐篇解读/P181.md) · [原文](https://arxiv.org/abs/2608.17453) | 头戴双目可以补充遮挡视野，但直接拼接或替换视觉Token会破坏预训练VLA的主视角分布。EATR-Stereo保留原始主视角Token，以跨视图辅助Token吸收第二视角，再根据机器人身体历史逐Token调节辅助证据。 | 否 |
 | 2025 | [DreamPolicy：面向可扩展人形运动控制的统一世界模型策略](../论文与项目/论文逐篇解读/P018.md) · [原文](https://arxiv.org/abs/2505.18780) | 为每类地形单独训练策略难以扩展，直接混合专家又会产生冲突。地形条件自回归扩散模型从专家数据生成未来身体状态，统一目标条件策略跟踪该状态并用转移判别器维持运动分布。 | 否 |
 | 2025 | [π0.5：具备开放世界泛化能力的视觉语言动作模型](../论文与项目/论文逐篇解读/P059.md) · [原文](https://arxiv.org/abs/2504.16054) | 训练场景内的VLA容易依赖固定环境和短技能，进入新家庭后任务分解与执行同时失效；分阶段预训练把网页语义、多源机器人数据和长程移动操作对齐，再后训练连续动作头。 | 部分 · [代码](https://github.com/Physical-Intelligence/openpi) |
 | 2025 | [Phantom：先把人类示范改造成目标机器人看到的训练画面](../论文与项目/论文逐篇解读/P169.md) · [原文](https://arxiv.org/abs/2503.00779) | 人类视频中的手臂外观与机器人不同，直接训练会在部署时遇到视觉域差异。Phantom先恢复人手动作并映射到目标机器人，再移除人臂、渲染机器人替身，使训练图像和测试时机器人视角更接近。 | 是 · [代码](https://github.com/MarionLepert/phantom) |
@@ -137,9 +138,12 @@
 | [ACT](https://github.com/tonyzhaozh/act) | 以条件变分自编码器和Transformer一次预测动作块，再用时间集成平滑连续控制，减少长任务中的逐步误差累积；低成本双臂数据采集与真实部署代码使其成为模仿学习常用基线。 |
 | [Being-H0](https://github.com/BeingBeyond/Being-H0) | 相机、语言和机器人状态进入策略模型生成动作块，再经本体接口送入真机或仿真执行并回收任务结果。 |
 | [DeepThinkVLA](https://github.com/OpenBMB/DeepThinkVLA) | 模型在视觉与语言输入到动作输出之间加入与任务执行相关的推理过程，使复杂操作中的目标、状态和动作序列能够显式关联。 |
+| [DIAL](https://github.com/xpeng-robotics/DIAL) | 小鹏机器人官方公开的机器人学习研究项目，具体数据、模型与动作接口以仓库和论文材料为准。 |
 | [Diffusion Policy](https://github.com/real-stanford/diffusion_policy) | 一段未来动作被表示为条件扩散轨迹，视觉与本体观测引导多步去噪，控制器只执行滚动窗口前端。它为多峰操作动作提供清晰基线，复现时应单独测去噪步数、时域长度和闭环频率。 |
+| [DiT4DiT](https://github.com/Mondo-Robotics/DiT4DiT) | 将视频生成DiT的中间去噪特征与流匹配动作头联合训练，使视觉未来表征直接服务机器人动作预测；仓库开放训练与评测代码，模型权重另由官方数据卡提供。 |
 | [DreamZero](https://github.com/dreamzero0/dreamzero) | World Action Model同时预测未来视觉与机器人动作，DROID和AgiBot检查点接入训练、后训练与评测流程，推理由WebSocket服务解耦。这个结构可以单独测量视频预测是否真的改善动作选择，而不是只提升画面质量。 |
 | [DROID Policy Learning](https://github.com/droid-dataset/droid_policy_learning) | 在robomimic基础上增加DROID的RLDS数据读取、训练和评测流程，并保留可选真实机器人控制接口；它把大规模异构真实示范转成可训练批次，是复现DROID策略学习的数据层入口。 |
+| [flexiv_trainer](https://github.com/flexivrobotics/flexiv_trainer) | 面向非夕机器人组织数据、训练和Physical AI技能开发流程，把机器人接口接到策略训练与验证。 |
 | [FluxVLA Engine](https://github.com/FluxVLA/FluxVLA) | 以统一配置和标准接口连接LeRobot数据、VLA模型组装、分布式训练、仿真评测、推理优化与机器人部署；内置多种VLM或策略适配、LIBERO与RoboCasa数据入口以及真实双臂示例，适合检查同一模型怎样从数据进入真机控制。 |
 | [fourier-lerobot](https://github.com/FFTAI/fourier-lerobot) | 相机、语言和机器人状态进入策略模型生成动作块，再经本体接口送入真机或仿真执行并回收任务结果。 |
 | [GalaxeaDP](https://github.com/OpenGalaxea/GalaxeaDP) | 把相机观测、机器人状态和任务条件映射为连续动作块，用扩散策略完成双臂或移动操作；项目适合作为GalaxeaVLA之外的模仿学习基线。 |
@@ -157,6 +161,7 @@
 | [lerobot-agilex](https://github.com/agilexrobotics/lerobot-agilex) | 相机、语言和机器人状态进入策略模型生成动作块，再经本体接口送入真机或仿真执行并回收任务结果。 |
 | [LingBot-VLA 1.0](https://github.com/Robbyant/lingbot-vla) | 语言、图像和机器人状态经过具身模型生成动作块，仓库开放训练、后训练、评测和部署入口；它适合追溯LingBot-VLA从首版到2.0的接口变化，而不应再作为当前版本能力的唯一依据。 |
 | [LingBot-VLA 2.0](https://github.com/Robbyant/lingbot-vla-v2) | 把单臂、双臂、半人形、人形与第一视角数据映射到统一状态动作向量，稀疏MoE动作专家学习共享与本体特有模式，当前与未来感知查询分别接收深度和视频教师信号；仓库开放预训练权重、训练配置、数据映射、后训练和评测入口。 |
+| [magicbot-gen1_pi0_demo](https://github.com/MagiclabRobotics/magicbot-gen1_pi0_demo) | 展示pi0类策略接入MagicBot Gen1的模型、观测与执行接口，为VLA到真机动作链路提供示例。 |
 | [Octo](https://github.com/octo-models/octo) | 用Transformer与扩散动作头从多机器人数据学习通用策略，支持RGB、语言和目标图像等条件，并用模块化注意力扩展传感器与动作维度；适合作为跨本体预训练和下游微调的研究基线。 |
 | [OpenDM](https://github.com/dexmal/opendm) | DM0.5根据语言、图像和机器人状态生成动作序列，面向开放指令、长时任务、动态干扰和多本体控制；OpenDM开放基础及任务权重、训练和推理脚本、数据注册示例，以及LIBERO、RoboTwin和SO101后训练流程。 |
 | [openpi](https://github.com/Physical-Intelligence/openpi) | 仓库同时维护流匹配式π0、快速自回归π0-FAST和π0.5，并提供检查点、数据配置、微调与推理服务。接入新机器人时最关键的工作是动作归一化、数据字段映射和推理频率对齐。 |
@@ -167,16 +172,19 @@
 | [Rethink_VLA](https://github.com/BeingBeyond/Rethink_VLA) | 相机、语言和机器人状态进入策略模型生成动作块，再经本体接口送入真机或仿真执行并回收任务结果。 |
 | [Riemann-1.0](https://riemann-dynamics.github.io/Riemann-1.0-Website/) | 同一因果模型在策略模式下根据真实视觉与本体状态生成动作块，在模拟模式下根据给定动作预测未来视觉；三阶段训练把无动作第一视角视频、UMI与机器人轨迹逐步对齐到目标本体。 |
 | [robotera_vla](https://github.com/roboterax/robotera_vla) | 相机、语言和机器人状态进入策略模型生成动作块，再经本体接口送入真机或仿真执行并回收任务结果。 |
+| [RTR](https://github.com/tars-robotics/RTR) | 在连续潜空间学习高频动作块，并以Reuse-then-Refine处理异步推理时新旧动作块的边界，使接触操作保持连续执行。 |
 | [RynnVLA-001](https://github.com/alibaba-damo-academy/RynnVLA-001) | 把语言任务、视觉观测和机器人状态映射为动作序列，构成Rynn系列早期的通用操作基线；保留该版本有助于比较002在数据、结构和长时任务上的改动。 |
 | [RynnVLA-002](https://github.com/alibaba-damo-academy/RynnVLA-002) | RynnVLA-002在视觉、语言和机器人状态条件下预测动作，面向跨任务和跨本体操作；项目用于检查Rynn系列从模型结构、训练数据到策略评测的更新。 |
 | [Spirit-v1.5](https://github.com/Spirit-AI-Team/spirit-v1.5) | 模型根据视觉、语言和机器人状态生成操作动作，面向多任务和真实场景泛化；仓库提供Spirit-v1.5的模型与研究入口。 |
 | [tron2_openpi](https://github.com/limxdynamics/tron2_openpi) | 相机、语言和机器人状态进入策略模型生成动作块，再经本体接口送入真机或仿真执行并回收任务结果。 |
 | [UnifoLM-VLA-0](https://github.com/unitreerobotics/unifolm-vla) | LeRobot数据先转换为HDF5和RLDS，视觉语言主干与机器人状态共同生成动作块；仓库公开多数据集训练、LIBERO评测、服务端推理和G1客户端部署入口，把数据准备、后训练与真机执行连成一条链。 |
+| [UniT](https://github.com/xpeng-robotics/UniT) | 小鹏机器人官方公开的统一机器人学习研究项目，用于研究多模态输入与机器人任务输出的连接方式。 |
 | [unitree_lerobot](https://github.com/unitreerobotics/unitree_lerobot) | 相机、语言和机器人状态进入策略模型生成动作块，再经本体接口送入真机或仿真执行并回收任务结果。 |
 | [video-prediction-policy](https://github.com/roboterax/video-prediction-policy) | 相机、语言和机器人状态进入策略模型生成动作块，再经本体接口送入真机或仿真执行并回收任务结果。 |
 | [VIPA-VLA](https://github.com/BeingBeyond/VIPA-VLA) | 相机、语言和机器人状态进入策略模型生成动作块，再经本体接口送入真机或仿真执行并回收任务结果。 |
 | [WALL-X](https://github.com/X-Square-Robot/WALL-X) | 语言、视觉和机器人状态经过统一模型生成操作动作，面向多任务与跨本体执行；仓库开放训练或推理入口，构成X Square具身模型主线。 |
 | [WholeBodyVLA](https://github.com/OpenDriveLab/WholebodyVLA) | 从无动作标注的第一视角视频学习统一潜在动作，将视觉和语言解码为双臂关节动作与运动命令，再交给面向移动操作的低层策略执行；当前仓库仅提供论文资源与研究索引。 |
+| [wuji-openpi](https://github.com/wuji-technology/wuji-openpi) | 扩展OpenPI以支持双臂与双Wuji Hand配置，连接ROS2 MCAP示范、LeRobot数据转换、pi0或pi0.5监督微调、策略服务和真机推理。 |
 | [X-Tokenizer](https://github.com/X-Square-Robot/X-Tokenizer) | 把不同机器人或任务的连续动作编码为可由序列模型处理的Token，并解码回可执行动作；它为WALL系列跨本体训练提供动作表示基础。 |
 | [Xiaomi-Robotics-0](https://github.com/XiaomiRobotics/Xiaomi-Robotics-0) | 视觉、语言和本体状态经过统一模型生成机器人动作，用于建立小米机器人团队的通用操作基线；保留首版便于比较后续版本在数据、结构和任务覆盖上的变化。 |
 | [Xiaomi-Robotics-1](https://github.com/XiaomiRobotics/Xiaomi-Robotics-1) | 在首版基础上扩展训练数据、操作任务和泛化评测，使视觉语言模型输出更稳定的机器人动作序列；项目用于追踪同一团队模型迭代而非只看单次演示。 |
@@ -234,6 +242,7 @@
 | [RoboTransfer](https://github.com/HorizonRobotics/RoboTransfer) | 当前观测与动作条件进入生成或预测模型，输出未来状态、视频或交互结果，为策略训练、评测或规划提供数据。 |
 | [RynnWorld-4D](https://github.com/alibaba-damo-academy/RynnWorld-4D) | 模型联合表达三维空间结构和时间演化，用于预测机器人动作后的场景变化与对象运动；适合作为空间理解、世界生成和规划之间的研究入口。 |
 | [UnifoLM-WMA-0](https://github.com/unitreerobotics/unifolm-world-model-action) | 视觉观测和动作条件进入世界模型预测未来状态，动作模块再把预测与任务条件转成机器人控制序列；官方仓库提供数据处理、训练、推理、权重和G1部署入口，用于检查世界预测怎样接回真实动作闭环。 |
+| [VideoWorld](https://github.com/ByteDance-Seed/VideoWorld) | 从无标注视频学习潜在动态和行为表示，为从视觉变化中获得动作先验提供上游模型案例。 |
 | [WALL-WM](https://github.com/X-Square-Robot/WALL-WM) | 联合建模场景视频、机器人状态与动作，预测执行后的环境变化，为动作选择和策略训练提供世界表征；仓库公开模型结构与训练评测入口。 |
 | [WorldArena](https://github.com/tsinghua-fib-lab/WorldArena) | 十六项感知指标与功能任务把“视频生成更像”拆成可测能力，2.0又跨RoboTwin、LIBERO和真实ALOHA检查这些指标能否转化为策略收益。把新模型接入数据引擎、策略排序和动作规划三条路径，可以检验视觉质量是否真正转成控制收益。 |
 | [X-WAM](https://github.com/sharinka0715/X-WAM) | 模型联合学习视频世界变化与机器人动作，在共享表征中支持跨本体操作和未来预测；项目用于检查世界模型输出怎样与动作头连接。 |
@@ -256,10 +265,12 @@
 | --- | --- |
 | [ABot-Navigation](https://github.com/amap-cvlab/ABot-Navigation) | 视觉与语言指令经过场景理解和导航策略生成移动决策，仓库提供Benchmark、评测和方法入口；它用于检验高层语言目标怎样接到底盘导航，而不是机械臂操作。 |
 | [embodied-skill-kit](https://github.com/Open-X-Humanoid/embodied-skill-kit) | 语言任务和多模态环境状态进入任务规划模块，生成技能调用或导航操作步骤，并根据执行反馈重新组织任务。 |
+| [Fast-in-Slow](https://github.com/CHEN-H01/Fast-in-Slow) | 以慢速推理系统组织任务并由快速策略执行操作，研究长时决策与实时动作之间的双系统接口。 |
 | [genisom_vln](https://github.com/zsibot/genisom_vln) | 语言任务和多模态环境状态进入任务规划模块，生成技能调用或导航操作步骤，并根据执行反馈重新组织任务。 |
 | [GO-2](https://www.agibot.com/article/231/detail/56.html) | Action CoT生成宏观动作意图，低频语义规划器持续细化计划，高频动作跟随器用残差修正现场偏差。公开材料界定了规划到执行的接口，具体控制输出仍缺少代码和权重验证。 |
 | [HoloAgent](https://github.com/HorizonRobotics/HoloAgent) | AgentOS把语言任务展开为受监控的技能图，三维空间记忆支撑检索、执行反馈和失败恢复；当前仓库已开放机器人无关ROS 2核心、导航与感知节点、HTTP/ROS桥接、Unitree和HexFellow适配及录制工具，但模型和数据分发、无硬件快速启动与HoloAgent-1仍未完成。 |
 | [MiniCPM-Robot](https://github.com/OpenBMB/MiniCPM-Robot) | 将小型多模态模型用于机器人视觉跟踪、目标理解和动作决策，并提供Jetson、ROS 2及机器人SDK集成入口；项目强调本地断网运行和工程部署。 |
+| [OpenLoong-Brain](https://github.com/loongOpen/OpenLoong-Brain) | 提供面向人形机器人的大规模技能调度框架，把任务指令连接到可执行技能和机器人接口。 |
 | [Pelican-VL](https://github.com/Open-X-Humanoid/pelican-vl) | Pelican-VL从视觉和语言输入形成空间理解、任务推理与高层动作目标，为下层VLA、技能或运动控制模块提供计划；项目开放多尺度模型入口。 |
 | [robocup_demo](https://github.com/BoosterRobotics/robocup_demo) | 语言任务和多模态环境状态进入任务规划模块，生成技能调用或导航操作步骤，并根据执行反馈重新组织任务。 |
 | [RxBrain-1.0](https://github.com/Tencent-Hunyuan/Hy-Embodied-RxBrain-1.0) | 视觉与语言输入形成场景理解和任务计划，再向下层操作或导航策略发出目标；项目用于区分高层认知、策略动作与低层控制三种职责。 |

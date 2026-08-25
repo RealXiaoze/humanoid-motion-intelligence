@@ -42,7 +42,7 @@
 
 ## 完整条目
 
-本路线当前收录 **30** 篇论文/技术报告、**30** 个项目。
+本路线当前收录 **31** 篇论文/技术报告、**35** 个项目。
 
 ### 视觉闭环与交互状态建模
 
@@ -80,6 +80,7 @@
 | --- | --- | --- | --- |
 | 2026 | [SplitAdapter：基于因子化适配的负载感知人形移动操作](../论文与项目/论文逐篇解读/P110.md) · [原文](https://arxiv.org/abs/2606.03297) | 单一历史潜变量会混淆物体负载与机器人自身动力学变化；两个编码器分别建模外部对象和本体适应，分离世界模型与层级FiLM只调制对应策略层，使冻结搬运基座可在线校正。 | 否 |
 | 2026 | [WT-UMI：把接触力纳入全身示范、规划与柔顺执行](../论文与项目/论文逐篇解读/P140.md) · [原文](https://arxiv.org/abs/2606.13232) | 只记录末端位姿的示范缺少接触力，策略难判断何时贴合、推压或释放。WT-UMI同步采集人体与机器人触觉，以力监督规划目标位姿和接触轨迹，再由触觉导纳控制闭环修正。 | 否 |
+| 2026 | [HTD：从解耦身体控制、触觉示范到接触感知策略](../论文与项目/论文逐篇解读/P180.md) · [原文](https://arxiv.org/abs/2604.13015) | 接触丰富的人形操作既要维持移动和平衡又要感知接触结果。HTD以解耦腿腰控制基座支撑双臂和灵巧手，并通过训练期未来力与触觉潜变量预测改善行为克隆策略的接触表征。 | 部分 · [代码](https://github.com/chrisyrniu/humanoid-touch-dream) |
 | 2025 | [FALCON：力自适应人形移动操作学习](../论文与项目/论文逐篇解读/P044.md) · [原文](https://arxiv.org/abs/2505.06776) | 搬运或推拉时物体外力会改变平衡，而固定上下身策略无法随负载调整。双Agent共享身体状态并在力课程中相互适应，以本体历史隐式推断作用力，在无专用力传感器下协调腿和手。 | 部分 · [代码](https://github.com/LeCAR-Lab/FALCON) |
 | 2025 | [GentleHumanoid：面向富接触人机与物体交互的上半身柔顺学习](../论文与项目/论文逐篇解读/P083.md) · [原文](https://arxiv.org/abs/2511.04679) | 严格上身跟踪在被人推拉或接触物体时会产生过大反力；多连杆虚拟弹簧生成可调顺应参考，策略学习在任务阈值内让步并恢复，同时保留下肢平衡和安全力限制。 | 否 |
 | 2025 | [FACET：基于阻抗参考跟踪的腿式机器人力自适应控制](../论文与项目/论文逐篇解读/P084.md) · [原文](https://arxiv.org/abs/2505.06883) | 固定阻抗难覆盖不同外力和接触阶段，直接学习力响应又缺少可解释目标。短时质量－弹簧－阻尼模型从当前状态生成参考，策略跟踪该响应以获得可调柔顺，但主要证据来自四足。 | 否 |
@@ -94,13 +95,17 @@
 | 项目 | 定位 |
 | --- | --- |
 | [CHIP](https://nvlabs.github.io/CHIP/) | 利用后见式扰动把外力造成的位移重新定义为可跟踪目标，使策略在顺应与恢复之间自适应调节等效刚度；项目页给出人形实验，但代码仍处待发布状态，不能作为现成训练基线。 |
+| [dexrobot_ecosystem](https://github.com/DexRobot/dexrobot_ecosystem) | 整合灵巧手底层控制、运动学、URDF、Isaac Sim、MuJoCo和ROS兼容层，连接真实硬件、仿真与操作算法开发。 |
 | [FACET](https://facet.pages.dev/) | 把虚拟质量－弹簧－阻尼系统的短时响应作为强化学习跟踪目标，让机器人在外力和接触下产生可控阻抗行为；主要量化和实机验证来自四足平台，人形移动操作属于方法迁移方向。 |
 | [GentleHumanoid](https://gentle-humanoid.axell.top/) | 用多连杆虚拟弹簧生成可调柔顺参考，并由策略跟踪不同刚度和受力阈值下的身体响应，使G1在接触任务中兼顾姿态与顺应；官方材料有真机证据，但未发布实现代码。 |
+| [humanoid-touch-dream](https://github.com/chrisyrniu/humanoid-touch-dream) | 连接解耦身体控制、VR遥操作、多视角与触觉同步数据、HTD行为克隆和真机执行的系统项目入口；Touch Dreaming在训练期预测未来力与触觉潜变量，部署时只保留动作策略。 |
+| [linkerhand-sim](https://github.com/linker-bot/linkerhand-sim) | 提供LinkerHand仿真环境，用于抓取、控制和操作策略在真机前的验证。 |
 | [SoFTA / Hold My Beer](https://github.com/LeCAR-Lab/SoFTA) | 将下肢平衡与上肢末端稳定分成不同控制带宽：较慢的下肢策略维持行走，较快的上肢策略补偿基座运动；公开训练配置和真机示例便于研究手持物任务中的频率解耦。 |
 | [SoftMimic](https://gmargo11.github.io/softmimic/) | 先用逆运动学把刚性示范扩增为动力学可行的柔顺响应，再训练策略跟踪响应分布而非单条参考；公开仓库覆盖动作增广、训练、模型和部署，适合研究示范驱动的接触顺应。 |
 | [SplitAdapter](https://splitadapter.github.io/) | 把负载与物体变化、机器人自身动力学分别编码，再由分离世界模型和分层FiLM调节策略，降低两类变化相互混淆；方法针对G1负载操作的在线适应，但当前只有项目页和真机结果。 |
 | [Thor](https://baai-aether.github.io/baai-thor/) | 上肢、腰部和下肢在共享全局观测下分工控制，随外力变化的躯干倾斜奖励负责协调承重与步态。公开G1实验说明了负载响应目标，奖励细节和训练实现尚未开放，复现时需自行补齐。 |
 | [WT-UMI](https://wt-umi.github.io/WTUMI/) | 同一套可穿戴触觉接口既采人体示范也装在人形上，力监督规划器输出末端位姿片段与接触力轨迹，触觉导纳再闭环执行。视觉模仿在柔性物体或共抬任务中失效时，可从缺失接触模态切入。 |
+| [wuji-mjlab](https://github.com/wuji-technology/wuji-mjlab) | 基于mjlab训练Wuji Hand的手内物体旋转策略，公开PPO训练和Sim2Real部署入口，用于检查灵巧手接触控制从仿真到真机的完整链路。 |
 
 ### 全身协同与技能接口
 
@@ -136,6 +141,7 @@
 | [HANDOFF](https://github.com/lzyang2000/HANDOFF) | 将上层移动操作意图压缩成基座速度、根高度和双腕目标等十维命令，再把运动跟踪、行走与AMP恢复教师蒸馏为MoE策略；训练、检查点、Sim2Sim和真机代码均可检查。 |
 | [HDMI](https://github.com/LeCAR-Lab/HDMI) | 将单目视频恢复成人体－物体参考，在Isaac Lab中用可组合MDP配置训练残差策略，并以动作蒸馏和在线适配处理真机差异；仓库公开从数据处理、训练到G1部署的路径。 |
 | [HumanX](https://wyhuai.github.io/human-x/) | 互联网视频先恢复人体与物体的四维交互，物理化转换生成机器人参考，XMimic再在不编写任务奖励的条件下训练G1技能。它连接的是视频交互数据与控制策略，当前只能依据论文研究方法边界，尚不能复现代码链路。 |
+| [JAKA_Lumi](https://github.com/JAKARobotics/JAKA_Lumi) | 公开JAKA Lumi机器人平台相关开发内容，用于机械臂、移动平台与感知任务的系统集成。 |
 | [Mobile ALOHA](https://github.com/MarkFzp/mobile-aloha) | 操作者通过两套主臂同步控制双臂和移动底盘，相机、关节与底盘状态被记录为示范；ACT、Diffusion Policy或VINN再从移动与静态ALOHA数据学习动作序列，使系统自主执行需要边移动边操作的长程任务。 |
 | [OmniContact](https://github.com/Ingrid789/OmniContact_sim2sim) | 搬运、推拉、滑动和踢球被统一成关键身体轨迹与时序接触组成的Contact Flow，并提供ONNX策略的MuJoCo直跑与摇杆热切换。研究技能组合时，可先替换流生成器而保持低层跟踪器不变。 |
 | [open_manipulator](https://github.com/ROBOTIS-GIT/open_manipulator) | 移动、双臂或灵巧手状态与任务观测进入操作策略，输出底盘、手臂或全身动作并通过接触结果闭环。 |

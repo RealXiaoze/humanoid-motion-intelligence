@@ -42,7 +42,7 @@ cd humanoid-motion-intelligence
 
 ### 使用要求
 
-要求Agent在结论中注明引用页面、稳定`Pxxx/Rxxx/Dxxx`编号和原始来源，并区分论文结论、项目README声明、公司自述和分析推断。“有代码”“有演示”不等于完整可复现或稳定真机部署。
+要求Agent在结论中注明引用页面、论文或数据集的稳定编号和原始来源；引用开源项目时使用项目名称与官方链接，不向读者展示内部项目编号。同时区分论文结论、项目README声明、公司自述和分析推断。“有代码”“有演示”不等于完整可复现或稳定真机部署。
 
 ## 🗺️ 技术路线核心内容
 
@@ -58,7 +58,7 @@ cd humanoid-motion-intelligence
 | 目标本体动作重定向 | 处理人体与机器人之间的比例、零位、连杆坐标、关节限位、接触和动力学可行性 | [GMR](论文与项目/论文逐篇解读/P077.md)、[NMR](论文与项目/论文逐篇解读/P078.md)、[OmniRetarget](论文与项目/论文逐篇解读/P079.md)、[DDR](论文与项目/论文逐篇解读/P122.md)、[DynaRetarget](论文与项目/论文逐篇解读/P123.md) |
 | 人形训练数据构建 | 把少量示范、三维资产、视频先验或无本体采集扩展成可规模化训练的数据 | [GRAIL](论文与项目/论文逐篇解读/P118.md)、[BifrostUMI](论文与项目/论文逐篇解读/P124.md)、[HumanoidMimicGen](论文与项目/论文逐篇解读/P045.md) |
 
-代表项目包括[GMR](https://github.com/YanjieZe/GMR)、[GVHMR](https://github.com/zju3dv/GVHMR)、[OmniRetarget](https://github.com/amazon-far/holosoma)和[HumanoidMimicGen](https://humanoidmimicgen.github.io/)。完整页面收录**14篇论文/技术报告和28个项目**。
+代表项目包括[GMR](https://github.com/YanjieZe/GMR)、[GVHMR](https://github.com/zju3dv/GVHMR)、[OmniRetarget](https://github.com/amazon-far/holosoma)和[HumanoidMimicGen](https://humanoidmimicgen.github.io/)。完整页面收录**15篇论文/技术报告和43个项目**。
 
 ### 2. Locomotion与运动先验
 
@@ -70,7 +70,7 @@ cd humanoid-motion-intelligence
 | 感知与复杂地形 | 让本体历史、深度图或高度图参与状态估计、落脚选择和全身地形反应 | [DreamWaQ](论文与项目/论文逐篇解读/P125.md)、[Humanoid Parkour](论文与项目/论文逐篇解读/P016.md)、[Hiking in the Wild](论文与项目/论文逐篇解读/P132.md) |
 | 对抗先验与行为模型 | 用判别器、生成先验、潜变量或无监督技能表示约束动作分布并形成可提示行为 | [AMP](论文与项目/论文逐篇解读/P022.md)、[ASE](论文与项目/论文逐篇解读/P024.md)、[BFM-Zero](论文与项目/论文逐篇解读/P080.md)、[State-Dependent AMP](论文与项目/论文逐篇解读/P106.md) |
 
-代表项目包括[Humanoid-Gym](https://github.com/roboterax/humanoid-gym)、[BFM-Zero](https://github.com/LeCAR-Lab/BFM-Zero)、[Project Instinct](https://project-instinct.github.io/)和[Legged Lab DWAQ](https://gitee.com/chaomingsanhua/legged_lab)。完整页面收录**38篇论文/技术报告和49个项目**。
+代表项目包括[Humanoid-Gym](https://github.com/roboterax/humanoid-gym)、[BFM-Zero](https://github.com/LeCAR-Lab/BFM-Zero)、[Project Instinct](https://project-instinct.github.io/)和[Legged Lab DWAQ](https://gitee.com/chaomingsanhua/legged_lab)。完整页面收录**39篇论文/技术报告和56个项目**。
 
 ### 3. 动作跟踪与全身控制
 
@@ -82,7 +82,7 @@ cd humanoid-motion-intelligence
 | 跟踪增强与失配恢复 | 修正不可达参考，处理动力学偏差、碰撞扰动、在线适应和偏离参考后的恢复 | [BeyondMimic](论文与项目/论文逐篇解读/P034.md)、[Heracles](论文与项目/论文逐篇解读/P134.md)、[Any2Track](论文与项目/论文逐篇解读/P103.md) |
 | 人体驱动与遥操作 | 把人体信号、重定向、因果观测、通信延迟、真机反馈和安全约束组成实时闭环 | [H2O](论文与项目/论文逐篇解读/P029.md)、[OmniH2O](论文与项目/论文逐篇解读/P030.md)、[TWIST](论文与项目/论文逐篇解读/P088.md)、[TWIST2](论文与项目/论文逐篇解读/P089.md) |
 
-代表项目包括[BeyondMimic](https://github.com/HybridRobotics/whole_body_tracking)、[HoloMotion](https://github.com/HorizonRobotics/HoloMotion)、[OmniH2O](https://omni.human2humanoid.com/)、[MimicKit](https://github.com/xbpeng/MimicKit)和[engineai_rl_lab](https://github.com/engineai-robotics/engineai_rl_lab)。完整页面收录**37篇论文/技术报告和44个项目**。
+代表项目包括[BeyondMimic](https://github.com/HybridRobotics/whole_body_tracking)、[HoloMotion](https://github.com/HorizonRobotics/HoloMotion)、[OmniH2O](https://omni.human2humanoid.com/)、[MimicKit](https://github.com/xbpeng/MimicKit)和[engineai_rl_lab](https://github.com/engineai-robotics/engineai_rl_lab)。完整页面收录**38篇论文/技术报告和47个项目**。
 
 ### 4. LocoManip与物理交互
 
@@ -94,7 +94,7 @@ cd humanoid-motion-intelligence
 | 接触力控与负载适应 | 处理外力、柔顺响应、接触切换、未知负载和人体安全交互 | [FACET](论文与项目/论文逐篇解读/P084.md)、[Thor](论文与项目/论文逐篇解读/P112.md)、[GentleHumanoid](论文与项目/论文逐篇解读/P083.md) |
 | 全身协同与技能接口 | 联合腿、腰、手和物体状态，并向遥操作、规划器或上层模型提供统一身体接口 | [OmniContact](论文与项目/论文逐篇解读/P138.md)、[CoorDex](论文与项目/论文逐篇解读/P139.md)、[OpenHLM](论文与项目/论文逐篇解读/P141.md) |
 
-代表项目包括[DoorMan](https://doorman-humanoid.github.io/)、[OmniContact](https://github.com/Ingrid789/OmniContact_sim2sim)、[CoorDex](https://github.com/Skevinci/coordex)和[Thor](https://baai-aether.github.io/baai-thor/)。完整页面收录**30篇论文/技术报告和30个项目**。
+代表项目包括[DoorMan](https://doorman-humanoid.github.io/)、[OmniContact](https://github.com/Ingrid789/OmniContact_sim2sim)、[CoorDex](https://github.com/Skevinci/coordex)和[Thor](https://baai-aether.github.io/baai-thor/)。完整页面收录**31篇论文/技术报告和35个项目**。
 
 ### 5. 世界模型、VLA与Agent
 
@@ -106,7 +106,7 @@ cd humanoid-motion-intelligence
 | 物理世界建模与预测 | 预测动作条件下的未来视觉、潜在状态、物体变化或动力学，用于规划、训练和评测 | [DreamDojo](论文与项目/论文逐篇解读/P114.md)、[HAIC](论文与项目/论文逐篇解读/P049.md)、[WorldArena](论文与项目/论文逐篇解读/P116.md) |
 | 记忆、规划与任务调度 | 维护空间和任务上下文，把长程目标拆成技能图，并依据执行反馈重新规划 | [HoloAgent-0](论文与项目/论文逐篇解读/P082.md)、[SceneBot](论文与项目/论文逐篇解读/P094.md)、[FALCON](论文与项目/论文逐篇解读/P044.md) |
 
-代表项目包括[Isaac-GR00T](https://github.com/NVIDIA/Isaac-GR00T)、[HoloAgent](https://github.com/HorizonRobotics/HoloAgent)、[GE-2 / GE-Sim 2.0](https://github.com/AgibotTech/GE-Sim-V2)和[GO-2](https://www.agibot.com/article/231/detail/56.html)。完整页面收录**42篇论文/技术报告和91个项目**。
+代表项目包括[Isaac-GR00T](https://github.com/NVIDIA/Isaac-GR00T)、[HoloAgent](https://github.com/HorizonRobotics/HoloAgent)、[GE-2 / GE-Sim 2.0](https://github.com/AgibotTech/GE-Sim-V2)和[GO-2](https://www.agibot.com/article/231/detail/56.html)。完整页面收录**43篇论文/技术报告和101个项目**。
 
 ### 6. 工程与实机部署
 
@@ -119,7 +119,7 @@ cd humanoid-motion-intelligence
 | Sim2Real、安全与部署 | 怎样处理动力学偏差、系统辨识、模型导出、控制时序、硬件通信、安全过滤和故障回退 | [PACE](论文与项目/论文逐篇解读/P146.md)、[ASAP](论文与项目/论文逐篇解读/P033.md)、[SafeWBC](论文与项目/论文逐篇解读/P142.md)、[ros2_control](https://github.com/ros-controls/ros2_control) |
 | 数据集、Benchmark与标准 | 怎样定义数据来源、本体依赖、许可、任务协议、评价指标和回归测试 | [具身智能数据集](数据集/README.md) · [工程与实机部署完整索引](技术路线/06_工程与实机部署.md#数据集benchmark与标准) |
 
-完整页面收录**17篇论文/技术报告和188个项目**。项目数量较多，是因为本体接口、仿真器、控制库、数据工具和部署工程都在这一层汇合。
+完整页面收录**17篇论文/技术报告和256个项目**。项目数量较多，是因为本体接口、仿真器、控制库、数据工具和部署工程都在这一层汇合。
 
 ## 新手学习顺序
 
@@ -143,11 +143,11 @@ cd humanoid-motion-intelligence
 |---|---|
 | [技术路线总览与学习路径](技术路线/README.md) | 系统能力栈、训练更新闭环、路线关系、七阶段学习顺序、最小作品和通过标准 |
 | [强化学习开发者必备开源资料](强化学习开发者必备开源资料/README.md) | 通过开源项目页和书籍课程页，分别解决“开发用什么工具”和“基础怎样补齐” |
-| [具身智能数据集](数据集/README.md) | 按数据来源、本体依赖、动作表示和训练用途查找34个具身智能数据集 |
-| [论文与技术报告总索引](论文与项目/README.md) | 178篇论文与技术报告按最终系统作用分类，可按稳定`Pxxx`编号进入独立解读 |
-| [开源项目主表](论文与项目/开源项目主表.md) | 430个项目的研发位置、关键实现、开源边界与开发价值 |
+| [具身智能数据集](数据集/README.md) | 按数据来源、本体依赖、动作表示和训练用途查找36个具身智能数据集 |
+| [论文与技术报告总索引](论文与项目/README.md) | 183篇论文与技术报告按最终系统作用分类，可按稳定`Pxxx`编号进入独立解读 |
+| [开源项目主表](论文与项目/开源项目主表.md) | 538个项目的研发位置、关键实现、开源边界与开发价值 |
 | [具身智能公司的开源项目](具身智能公司的开源项目) | 目录按公司拆成独立页面，展示官方归属可核验且具有代码托管入口的项目，并标注许可证与使用边界 |
-| [公司与产品主表](公司与产业/公司与产品主表.md) | 按国家或地区整理的124家公司/机构及其公开产品与平台 |
+| [公司与产品主表](公司与产业/公司与产品主表.md) | 按国家或地区整理的145家公司/机构及其公开产品与平台 |
 | [公开信号时间线](公司与产业/公开信号时间线.md) | 只记录带日期的公司成立、产品发布与融资事实 |
 | [运动控制面经、谈薪与薪资汇总](求职与岗位/2026-03_运动控制面经_谈薪技巧_薪资汇总.md) | 运动控制面试、项目表达、谈薪与匿名薪资样本入口 |
 | [具身秋招运动控制问答](求职与岗位/2026-07_具身秋招运动控制问答.md) | 秋招阶段关于方向选择、项目准备和岗位判断的集中问答 |

@@ -42,7 +42,7 @@
 
 ## 完整条目
 
-本路线当前收录 **38** 篇论文/技术报告、**49** 个项目。
+本路线当前收录 **39** 篇论文/技术报告、**56** 个项目。
 
 ### 基础Locomotion
 
@@ -68,6 +68,7 @@
 | --- | --- |
 | [agibot_x1_train](https://github.com/AgibotTech/agibot_x1_train) | 仿真中的机器人模型、观测、奖励和随机化进入并行强化学习训练，输出可供回放和部署的运动策略。 |
 | [AgileX Robot Lab](https://github.com/agilexrobotics/robot_lab) | 仿真中的机器人模型、观测、奖励和随机化进入并行强化学习训练，输出可供回放和部署的运动策略。 |
+| [atom-locomotion-training](https://github.com/embodied-dobot/atom-locomotion-training) | 提供ATOM人形机器人Locomotion强化学习训练入口，连接机器人模型、任务环境和策略配置。 |
 | [Booster Gym](https://github.com/BoosterRobotics/booster_gym) | T1策略从Isaac Gym并行训练，经模型导出后进入MuJoCo、Webots和真机部署；新流水线进一步把K1的Isaac Lab训练、机器人资产与部署代码分仓组织，使关节顺序、观测契约和控制周期能够沿完整链路逐项核对。 |
 | [booster_train](https://github.com/BoosterRobotics/booster_train) | 仿真中的机器人模型、观测、奖励和随机化进入并行强化学习训练，输出可供回放和部署的运动策略。 |
 | [DeepRobotics RL Training](https://github.com/DeepRoboticsLab/RL_Training) | Isaac Lab环境分别注册Lite3和M20粗糙地形速度跟踪任务及DR02平地AMP任务，统一RSL-RL训练、回放、键盘命令和多GPU入口；策略部署明确交给配套部署仓库，不把训练环境误写成完整实机控制栈。 |
@@ -81,7 +82,10 @@
 | [LejuLab-Train](https://github.com/LejuRobotics/LejuLab-Train) | 仿真中的机器人模型、观测、奖励和随机化进入并行强化学习训练，输出可供回放和部署的运动策略。 |
 | [LeTools-Learning](https://github.com/LejuRobotics/LeTools-Learning) | 仿真中的机器人模型、观测、奖励和随机化进入并行强化学习训练，输出可供回放和部署的运动策略。 |
 | [livelybot_pi_rl_baseline](https://github.com/HighTorque-Robotics/livelybot_pi_rl_baseline) | 仿真中的机器人模型、观测、奖励和随机化进入并行强化学习训练，输出可供回放和部署的运动策略。 |
+| [magiclab_rl_lab](https://github.com/MagiclabRobotics/magiclab_rl_lab) | 为魔法原子机器人提供基于Isaac Lab的强化学习训练环境与任务配置。 |
 | [ModelBasedFootstepPlanning-IROS2024](https://github.com/hojae-io/ModelBasedFootstepPlanning-IROS2024) | 线性倒立摆模型先根据速度目标生成可行落脚参考，无模型策略再学习跟踪落脚与全身状态；仓库同时提供LIPM分析、MIT Humanoid训练、策略回放和ONNX导出，适合检查模型规划怎样成为强化学习策略的结构化输入。 |
+| [noetix_e1_lab](https://github.com/Noetix-Robotics/noetix_e1_lab) | 为E1人形机器人提供Isaac Lab强化学习训练环境和任务配置。 |
+| [OpenLoong-Gymloong](https://github.com/loongOpen/OpenLoong-Gymloong) | 提供青龙人形机器人在Isaac Gym中的训练环境、任务配置和策略训练入口，用于建立基础Locomotion与Sim2Sim链路。 |
 | [RoboOrchardLab](https://github.com/HorizonRobotics/RoboOrchardLab) | 仿真中的机器人模型、观测、奖励和随机化进入并行强化学习训练，输出可供回放和部署的运动策略。 |
 | [roboparty_train](https://github.com/Roboparty/roboparty_train) | 以两个Git子模块组织Roboparty训练生态，串起GMR动作准备、AMP与BeyondMimic训练、跑酷任务、ONNX导出和MuJoCo Sim2Sim；适合从工程目录理解数据、算法与部署前验证的分工。 |
 | [Robot_Training_Cases](https://github.com/DeepRoboticsLab/Robot_Training_Cases) | 仿真中的机器人模型、观测、奖励和随机化进入并行强化学习训练，输出可供回放和部署的运动策略。 |
@@ -93,6 +97,7 @@
 | [Unitree RL Gym](https://github.com/unitreerobotics/unitree_rl_gym) | 这是Unitree官方保留的Isaac Gym时代训练链路，本体配置、PPO训练、MuJoCo Sim2Sim和实机入口仍可沿代码追踪。它主要服务旧工程维护和新旧仿真栈对照，不应与Isaac Lab版本混用。 |
 | [Unitree RL Lab](https://github.com/unitreerobotics/unitree_rl_lab) | Unitree将Go2、H1和G1的Isaac Lab任务接到策略导出、MuJoCo验证与实机SDK。机器人配置和部署接口处在同一仓库，能直接检查训练关节命令与真机控制协议是否一致。 |
 | [Unitree RL Mjlab](https://github.com/unitreerobotics/unitree_rl_mjlab) | MJLab和MuJoCo组成不依赖Omniverse的轻量训练路线，现有任务同时覆盖速度行走与动作模仿。策略回放和真机接口让开发者可以用同一模型核对训练、Sim2Sim与部署差异。 |
+| [wheelDog_RL](https://github.com/seer-robotics/wheelDog_RL) | 仙工智能公开的第一阶段轮足机器人强化学习项目，为其轮足平台提供训练环境与策略实验入口。 |
 | [Wiki-GRx-Gym](https://github.com/FFTAI/Wiki-GRx-Gym) | 仿真中的机器人模型、观测、奖励和随机化进入并行强化学习训练，输出可供回放和部署的运动策略。 |
 
 ### 感知与复杂地形
@@ -108,6 +113,7 @@
 | 2026 | [PHP：基于运动匹配与多教师蒸馏的感知人形跑酷](../论文与项目/论文逐篇解读/P133.md) · [原文](https://arxiv.org/abs/2602.15827) | 单段人类跑酷动作稀缺且难覆盖连续障碍组合。运动匹配按地形和身体状态拼成长参考，多名跟踪专家提供动作，最终蒸馏为根据深度与速度命令自主衔接技能的学生。 | 否 |
 | 2026 | [DPL：以跨模态地形重建驱动深度感知人形运动](../论文与项目/论文逐篇解读/P149.md) · [原文](https://arxiv.org/abs/2510.07152) | 单目深度直接控关节难训练，显式高度图又依赖定位。DPL用自遮挡噪声合成、跨模态地形重建和多教师蒸馏，把嘈杂深度转成天工Ultra的100Hz关节动作。 | 否 |
 | 2026 | [Light-Loco-Parkour：多专家蒸馏与无标签切换的视觉全身跑酷](../论文与项目/论文逐篇解读/P150.md) · [原文](https://arxiv.org/abs/2608.02653) | 单技能跑酷专家难以连续切换。Light-Loco-Parkour从稀疏动作种子扩展物理可行参考，经多专家DAgger蒸馏和奖励微调，得到仅凭深度与速度指令自主切换技能的策略。 | 否 |
+| 2026 | [Vision-Driven Soccer：把不可靠视觉接入人形机器人反应式全身控制](../论文与项目/论文逐篇解读/P182.md) · [原文](https://arxiv.org/abs/2511.03996) | 模块化足球系统会把带噪和延迟的检测结果逐级传给行走与踢球控制器。该工作把对象中心视觉观测、历史状态估计和全身关节控制放进同一强化学习策略，并在仿真中复现真实视觉的不确定性。 | 是 · [代码](https://doi.org/10.5281/zenodo.21620490) |
 | 2025 | [MoRE：面向复杂地形拟人步态切换的残差专家混合策略](../论文与项目/论文逐篇解读/P126.md) · [原文](https://arxiv.org/abs/2506.08840) | 复杂地形通过能力与多种拟人步态风格会在单策略中相互干扰；基础地形策略保证通行，多个残差专家和独立对抗判别器按命令叠加风格，使自然性不覆盖稳定底座。 | 是 · [代码](https://github.com/TeleHuman/MoRE) |
 | 2025 | [DBHL：基于ZMP奖励的无外部感知窄地形全身运动](../论文与项目/论文逐篇解读/P129.md) · [原文](https://arxiv.org/abs/2502.17219) | 窄路和未知障碍上没有外感知时，速度奖励不足以约束足端与全身稳定。扩展ZMP及任务奖励把动态平衡写进并行RL，本体历史只能在接触后推断地形并输出关节目标。 | 否 |
 | 2023 | [DreamWaQ：基于隐式地形想象的鲁棒四足运动控制](../论文与项目/论文逐篇解读/P125.md) · [原文](https://arxiv.org/abs/2301.10602) | 盲走策略无法直接观察地形和基座速度。CENet从五帧本体历史联合估计速度与环境潜变量，Beta-VAE辅助重建并与PPO训练，使四足依靠接触响应形成隐式地形表征。 | 是 · [代码](https://github.com/Manaro-Alpha/DreamWaQ) |
@@ -134,6 +140,7 @@
 | [Perceptive Humanoid Parkour](https://php-parkour.github.io/) | 先用运动匹配拼接长程参考并训练多个跑酷跟踪专家，再多教师蒸馏成接收深度与速度指令的学生策略；最终闭环面向G1感知跑酷，项目页已有真机结果但代码尚未发布。 |
 | [Project Instinct](https://project-instinct.github.io/) | InstinctLab定义环境和任务，instinct_rl维护PPO、AMP与蒸馏算法，instinct_onboard负责G1板载推理，动作编辑器处理训练前检查。按仓库分工阅读，可以从数据到实机逐层替换组件。 |
 | [Robot Parkour Learning](https://robot-parkour.github.io/) | 将直接配点得到的结构转成强化学习课程，用软约束逐步收紧为硬约束，先训练多种跑酷专家再蒸馏为单一深度策略；代码和板载部署面向A1、Go1四足，可作人形感知控制的跨本体参考。 |
+| [Vision-Driven Reactive Soccer Skills code and data](https://doi.org/10.5281/zenodo.21620490) | 作者通过Zenodo开放代码和预训练权重，并通过Dryad开放成功率、视觉遮挡、球位置估计、关节轨迹、触球时间、角速度和滚动球实验数据，可用于核对论文结果及复现训练部署链路。 |
 | [X-Loco](https://x-loco-humanoid.github.io/) | 为多类地形训练不同特权专家，再根据当前场景自适应选取教师并协同蒸馏成单个视觉速度跟踪策略；最终能力是无参考动作的G1感知行走，项目页已有实机证据但未开放代码。 |
 
 ### 对抗先验与行为模型
@@ -168,6 +175,7 @@
 | [Generative Motion Prior](https://sites.google.com/view/humanoid-gmp) | 人体动作先重定向为机器人轨迹，条件VAE再在线生成未来参考，以冻结的关节和关键点监督训练速度策略。若AMP判别奖励难调，可沿这条路线比较分布判别与显式生成参考对自然步态的影响。 |
 | [Mini Pi Plus AMP](https://github.com/HighTorque-Robotics/Mini-Pi-Plus_AMP) | 高擎官方仓库提供Mini Pi Plus人形机器人的AMP运动训练与仿真工具：Isaac Lab GPU并行训练、AMP+PPO与镜像轨迹增强（pi_plus_amp_sym_flat，4096并行环境、50000迭代）、MuJoCo sim2sim验证、策略回放与AMP动画、TensorBoard日志及TorchScript导出，并附带三个示例权重；README明确面向研究与仿真，实机连接前需受控验证。 |
 | [motion_imitation](https://github.com/erwincoumans/motion_imitation) | 动物参考动作先经重定向转换到四足本体，策略同时接收任务状态与参考相位，通过动作跟踪奖励学习步态和动态技能；仓库提供Gym环境、参考数据、训练代码、预训练模型和MPC组件。 |
+| [noetix_n2_gym](https://github.com/Noetix-Robotics/noetix_n2_gym) | 为N2人形机器人提供Isaac Gym训练环境、动作加载、AMP和Sim2Sim工具。 |
 | [PULSE](https://github.com/ZhengyiLuo/PULSE) | 在物理人体控制器之上学习潜在动作空间，再由高层策略组合潜变量完成目标任务；它把低层自然运动约束与任务学习分离，适合研究可复用技能表示而非直接机器人部署。 |
 | [rl_amp](https://github.com/fan-ziqi/rl_amp) | 在legged_gym环境和rsl_rl训练器上增加专家动作数据、AMP观测、判别器与先验奖励，使读者能够直接定位任务奖励和对抗运动先验分别怎样更新策略与判别器。 |
 | [TienKung-Lab](https://github.com/Open-X-Humanoid/TienKung-Lab) | SMPL-X动作经GMR重定向并转换成可视化与AMP专家数据，Isaac Lab以AMP和周期步态奖励训练走跑策略，MuJoCo执行Sim2Sim，官方Deploy仓库再将导出策略接入ROS 2真机控制；它把动作数据、训练、跨引擎验证和天工实机部署连成完整运动链。 |

@@ -15,13 +15,13 @@
 | 当前目标 | 建议入口 | 选择理由 |
 |---|---|---|
 | 理解环境与算法怎样交互 | [Gymnasium](https://github.com/Farama-Foundation/Gymnasium) | 当前维护的标准单智能体环境接口，适合检查`reset`、`step`、终止、截断、空间和随机种子 |
-| 阅读一份可以逐行追踪的算法实现 | [CleanRL](../论文与项目/开源项目主表.md#r032) | 单文件实现便于沿采样、优势估计、损失、更新和日志读完整训练循环 |
-| 快速建立可靠算法基线 | [Stable-Baselines3](../论文与项目/开源项目主表.md#r031) | 经过测试的常见算法和统一API适合做对照，不必先搭完整训练框架 |
+| 阅读一份可以逐行追踪的算法实现 | [CleanRL](https://github.com/vwxyzjn/cleanrl) | 单文件实现便于沿采样、优势估计、损失、更新和日志读完整训练循环 |
+| 快速建立可靠算法基线 | [Stable-Baselines3](https://github.com/DLR-RM/stable-baselines3) | 经过测试的常见算法和统一API适合做对照，不必先搭完整训练框架 |
 | 研究模块化或分布式训练系统 | [DI-engine](https://github.com/opendilab/DI-engine) | 把环境、策略、模型、任务和中间件拆开，适合研究大规模实验组织，而不是强化学习第一课 |
 | 构建自定义三维交互环境 | [Unity ML-Agents](https://github.com/Unity-Technologies/ml-agents) | Unity场景可以作为深度强化学习和模仿学习环境，但结果不能直接替代机器人动力学仿真和Sim2Real验证 |
 | 使用JAX研究可批量化环境 | [Jumanji](https://github.com/instadeepai/jumanji) | 提供JAX原生、可扩展的环境集合，适合研究并行环境与组合优化任务 |
 | 研究第一视角视觉决策 | [ViZDoom](https://github.com/Farama-Foundation/ViZDoom) | 视觉输入、快速仿真和自定义场景适合做感知决策实验，但与真实机器人接触控制仍有明显距离 |
-| 训练腿式或人形机器人 | [Isaac Lab](../论文与项目/开源项目主表.md#r001) + [RSL-RL](../论文与项目/开源项目主表.md#r026) | 前者组织机器人、场景和MDP，后者负责PPO等策略优化；两者的职责需要分开理解 |
+| 训练腿式或人形机器人 | [Isaac Lab](https://github.com/isaac-sim/IsaacLab) + [RSL-RL](https://github.com/leggedrobotics/rsl_rl) | 前者组织机器人、场景和MDP，后者负责PPO等策略优化；两者的职责需要分开理解 |
 
 ## 当前训练栈怎样分工
 
@@ -49,11 +49,11 @@
 
 | 资源 | 适合解决的问题 | 使用边界 |
 |---|---|---|
-| [Isaac Lab](../论文与项目/开源项目主表.md#r001) | 用Manager-Based或Direct工作流定义机器人场景、观测、动作、奖励、终止和随机化 | 它是环境与仿真基础设施，不会自动给出合理奖励、控制接口或Sim2Real结果 |
-| [RSL-RL](../论文与项目/开源项目主表.md#r026) | 追踪向量化PPO、非对称Actor-Critic、经验存储、归一化、蒸馏和策略导出 | 它不负责机器人资产、传感器或低层硬件通信，需要与环境和部署工程配合 |
-| [legged_gym](../论文与项目/开源项目主表.md#r027) | 理解Isaac Gym时代的GPU并行地形、关节位置动作、奖励、噪声和动力学随机化最小闭环 | 官方已经把相关环境迁移到Isaac Lab，并说明该仓库只接受有限更新；新项目应优先评估Isaac Lab |
-| [IsaacGymEnvs](../论文与项目/开源项目主表.md#r028) | 复现Isaac Gym时代的官方GPU并行任务和多算法接入方式 | 适合旧实验复现和迁移对照，不是新机器人任务的默认起点 |
-| [Unitree RL Lab](../论文与项目/开源项目主表.md#r036) | 检查Unitree本体从Isaac Lab训练、策略导出、MuJoCo验证到实机SDK的接口 | 平台支持范围和控制安全以官方仓库及机器人版本为准 |
+| [Isaac Lab](https://github.com/isaac-sim/IsaacLab) | 用Manager-Based或Direct工作流定义机器人场景、观测、动作、奖励、终止和随机化 | 它是环境与仿真基础设施，不会自动给出合理奖励、控制接口或Sim2Real结果 |
+| [RSL-RL](https://github.com/leggedrobotics/rsl_rl) | 追踪向量化PPO、非对称Actor-Critic、经验存储、归一化、蒸馏和策略导出 | 它不负责机器人资产、传感器或低层硬件通信，需要与环境和部署工程配合 |
+| [legged_gym](https://github.com/leggedrobotics/legged_gym) | 理解Isaac Gym时代的GPU并行地形、关节位置动作、奖励、噪声和动力学随机化最小闭环 | 官方已经把相关环境迁移到Isaac Lab，并说明该仓库只接受有限更新；新项目应优先评估Isaac Lab |
+| [IsaacGymEnvs](https://github.com/isaac-sim/IsaacGymEnvs) | 复现Isaac Gym时代的官方GPU并行任务和多算法接入方式 | 适合旧实验复现和迁移对照，不是新机器人任务的默认起点 |
+| [Unitree RL Lab](https://github.com/unitreerobotics/unitree_rl_lab) | 检查Unitree本体从Isaac Lab训练、策略导出、MuJoCo验证到实机SDK的接口 | 平台支持范围和控制安全以官方仓库及机器人版本为准 |
 | [IsaacGym二阶倒立摆示例](https://github.com/ZzzzzzS/legged_gym/releases) | 用较小任务理解观测、动作、奖励和训练入口，再进入多关节机器人 | 属于社区教程和旧Isaac Gym栈，应锁定版本；不能把倒立摆跑通等同于掌握腿式控制 |
 
 Isaac Lab的安装、兼容矩阵和API以[官方文档](https://isaac-sim.github.io/IsaacLab/)为准。中文镜像或社区教程可以降低阅读成本，但版本冲突时必须回到官方文档和仓库提交定位。
