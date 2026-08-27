@@ -85,14 +85,14 @@
 
 | 项目 | 定位 |
 | --- | --- |
-| [GE-2 / GE-Sim 2.0](https://github.com/AgibotTech/GE-Sim-V2) | 当前图像、本体状态和候选动作进入生成模型，系统滚动预测未来视频与状态，独立策略服务据此完成闭环评测。它承担学习式策略试验和数据回流，物理接触精度仍由其他验证环节负责。 |
+| [GE-Sim 2.0](https://github.com/AgibotTech/GE-Sim-V2) | 当前图像、本体状态和候选动作进入生成模型，系统滚动预测未来视频与状态，独立策略服务据此完成闭环评测。它承担学习式策略试验和数据回流，物理接触精度仍由其他验证环节负责。 |
 | [GO-2](https://www.agibot.com/article/231/detail/56.html) | Action CoT生成宏观动作意图，低频语义规划器持续细化计划，高频动作跟随器用残差修正现场偏差。公开材料界定了规划到执行的接口，具体控制输出仍缺少代码和权重验证。 |
 | [HoloAgent](https://github.com/HorizonRobotics/HoloAgent) | AgentOS把语言任务展开为受监控的技能图，三维空间记忆支撑检索、执行反馈和失败恢复；当前仓库已开放机器人无关ROS 2核心、导航与感知节点、HTTP/ROS桥接、Unitree和HexFellow适配及录制工具，但模型和数据分发、无硬件快速启动与HoloAgent-1仍未完成。 |
 | [Isaac-GR00T / GR00T N1.7](https://github.com/NVIDIA/Isaac-GR00T) | N1.7以Cosmos-Reason2-2B视觉语言主干和扩散动作头接收图像、语言与机器人状态，并用跨本体相对末端动作表示连接人类视频和机器人数据。仓库提供LeRobot后训练、推理及ONNX/TensorRT导出，可直接检查VLA适配新本体的工程成本。 |
 
 ## 完整条目
 
-本路线当前收录 **43** 篇论文/技术报告、**101** 个项目。
+本路线当前收录 **47** 篇论文/技术报告、**103** 个项目。
 
 ### 动作生成与通用策略
 
@@ -121,6 +121,8 @@
 | 2026 | [EgoVLA：用手腕位姿和MANO手部参数连接人类视频与机器人动作](../论文与项目/论文逐篇解读/P168.md) · [原文](https://arxiv.org/abs/2507.12440) | 第一视角人类视频与机器人数据的视觉外观和动作表示不同。EgoVLA把人手运动恢复成统一腕部与MANO动作，再与机器人样本共同训练，使模型先学习任务和手物关系后再输出机器人动作。 | 是 · [代码](https://github.com/catburgg/EgoVLA) |
 | 2026 | [Riemann-1.0：在同一因果模型中学习机器人动作与未来视觉](../论文与项目/论文逐篇解读/P177.md) · [原文](https://riemann-dynamics.github.io/Riemann-1.0-Website/paper/Riemann-1.0.pdf) | 第一视角视频、UMI示范和机器人轨迹的数据规模与动作监督不同。Riemann-1.0用同一套因果Action/Video DiT学习未来视觉与可执行动作，并通过本体专属动作头保留不同机器人的动作空间。 | 否 |
 | 2026 | [EATR-Stereo：让人形VLA按身体状态使用双目辅助证据](../论文与项目/论文逐篇解读/P181.md) · [原文](https://arxiv.org/abs/2608.17453) | 头戴双目可以补充遮挡视野，但直接拼接或替换视觉Token会破坏预训练VLA的主视角分布。EATR-Stereo保留原始主视角Token，以跨视图辅助Token吸收第二视角，再根据机器人身体历史逐Token调节辅助证据。 | 否 |
+| 2026 | [VINE：生成式控制策略的价值梯度后训练](../论文与项目/论文逐篇解读/P184.md) · [原文](https://arxiv.org/abs/2607.10369) | Flow Matching策略能够表达多峰动作分布，但把Critic的价值梯度直接穿过常规迭代采样路径时容易出现梯度不稳定。VINE重构每一步插值状态，使动作生成过程保持可微且能够被价值函数稳定优化。 | 否 |
+| 2026 | [ALOE：混合轨迹中的动作级离策略评估](../论文与项目/论文逐篇解读/P185.md) · [原文](https://arxiv.org/abs/2602.12691) | 机器人后训练数据常混合历史策略、当前策略和人工接管轨迹，普通回报统计难以判断每段动作对最终成败的贡献。ALOE以动作块为评估单位进行离策略时序差分估计，为稀疏奖励下的VLA后训练提供更细的信用分配信号。 | 否 |
 | 2025 | [DreamPolicy：面向可扩展人形运动控制的统一世界模型策略](../论文与项目/论文逐篇解读/P018.md) · [原文](https://arxiv.org/abs/2505.18780) | 为每类地形单独训练策略难以扩展，直接混合专家又会产生冲突。地形条件自回归扩散模型从专家数据生成未来身体状态，统一目标条件策略跟踪该状态并用转移判别器维持运动分布。 | 否 |
 | 2025 | [π0.5：具备开放世界泛化能力的视觉语言动作模型](../论文与项目/论文逐篇解读/P059.md) · [原文](https://arxiv.org/abs/2504.16054) | 训练场景内的VLA容易依赖固定环境和短技能，进入新家庭后任务分解与执行同时失效；分阶段预训练把网页语义、多源机器人数据和长程移动操作对齐，再后训练连续动作头。 | 部分 · [代码](https://github.com/Physical-Intelligence/openpi) |
 | 2025 | [Phantom：先把人类示范改造成目标机器人看到的训练画面](../论文与项目/论文逐篇解读/P169.md) · [原文](https://arxiv.org/abs/2503.00779) | 人类视频中的手臂外观与机器人不同，直接训练会在部署时遇到视觉域差异。Phantom先恢复人手动作并映射到目标机器人，再移除人臂、渲染机器人替身，使训练图像和测试时机器人视角更接近。 | 是 · [代码](https://github.com/MarionLepert/phantom) |
@@ -208,6 +210,8 @@
 | 2026 | [WAM-TTT：用无标注人类视频在部署前调整世界动作模型](../论文与项目/论文逐篇解读/P173.md) · [原文](https://arxiv.org/abs/2607.06988) | 世界动作模型遇到新任务时缺少与机器人动作配对的数据。WAM-TTT用配对人机示范元训练快速记忆，再在部署前只观看无标注人类视频更新轻量权重，以视觉变化引导冻结动作模型生成机器人动作。 | 否 |
 | 2026 | [LDA-1B：让不同质量的具身数据共同训练视觉预测与机器人动作](../论文与项目/论文逐篇解读/P174.md) · [原文](https://arxiv.org/abs/2602.12215) | 机器人示范、人类视频和仿真轨迹的监督完整度不同。LDA-1B按数据可用字段分配策略、正向动力学、逆向动力学和视觉预测任务，让无动作视频也能训练世界变化表示，再用目标本体数据生成可执行动作块。 | 部分 · [代码](https://github.com/jiangranlv/LDA-1B) |
 | 2026 | [Matrix-Game 3.5：用三维Patch记忆维持长时交互视频的一致性](../论文与项目/论文逐篇解读/P178.md) · [原文](https://matrix-game-v3-5.github.io/paper/Matrix-Game-3.5.pdf) | 相机可控视频模型长时间自回归时容易遗忘离开视野的场景，并在重新观察时产生几何漂移和动态主体重影。Matrix-Game 3.5把历史静态Patch回投三维并重投影到新视角，同时用参考Token单独维持动态主体。 | 部分 · [代码](https://github.com/Riemann-Dynamics/Matrix-Game-3.5) |
+| 2026 | [Zero-WAM：让人类视频成为未见任务的上下文指令](../论文与项目/论文逐篇解读/P186.md) · [原文](https://arxiv.org/abs/2608.26103) | 语言难以完整描述未见操作任务的时序和几何细节。Zero-WAM把人类示范视频当作上下文任务指令，用因果视频动作模型联合预测未来机器人视觉和可执行动作，在推理时不更新模型参数。 | 否 |
+| 2026 | [WALL-SS：让动作条件世界模型持续推演，并用于筛选机器人策略](../论文与项目/论文逐篇解读/P187.md) · [原文](https://x2robot-open.oss-cn-shenzhen.aliyuncs.com/ARWM%20OPEN/WALL-SS.pdf) | 机器人世界模型容易忽略给定动作并在递归生成中积累状态漂移。WALL-SS把动作按时间、视角与视觉尺度对齐，用固定预算的时间尺度记忆持续推演，并以冻结评分器对视觉动力学做在策略分布上的奖励对齐。 | 部分 · [代码](https://github.com/X-Square-Robot/wall-ss) |
 | 2025 | [V-JEPA 2：面向理解、预测与规划的自监督视频模型](../论文与项目/论文逐篇解读/P067.md) · [原文](https://arxiv.org/abs/2506.09985) | 海量无动作视频能学到物体和运动规律，却不能直接决定机器人控制；掩码潜在预测先获得视频表征，再用少量机器人数据训练动作条件世界模型，并以模型预测控制选择可执行动作。 | 是 · [代码](https://github.com/facebookresearch/vjepa2) |
 | 2025 | [GR00T-Dreams：面向人形机器人学习的合成轨迹生成](../论文与项目/论文逐篇解读/P068.md) · [原文](https://developer.nvidia.com/blog/enhance-robot-learning-with-synthetic-trajectory-data-generated-by-world-foundation-models/) | 人形真实轨迹稀缺，纯视频生成又缺少可靠动作标签。世界基础模型先生成任务变化与未来视觉，逆动力学模型补动作，再经仿真或策略筛选形成训练轨迹，关键瓶颈是标签误差回流。 | 部分 |
 | 2024 | [Denoising World Model Locomotion：基于去噪世界模型的复杂地形人形运动控制](../论文与项目/论文逐篇解读/P017.md) · [原文](https://arxiv.org/abs/2408.14472) | 噪声和遮挡使本体历史无法直接提供控制所需状态；循环编码器以特权真值做去噪重建并与PPO联合优化，策略从潜变量立即输出关节目标，属于学习式状态估计而非向前滚动规划的世界模型。 | 部分 |
@@ -225,8 +229,8 @@
 | [Being-VL-0.5](https://github.com/BeingBeyond/Being-VL-0.5) | 当前观测与动作条件进入生成或预测模型，输出未来状态、视频或交互结果，为策略训练、评测或规划提供数据。 |
 | [DreamDojo](https://github.com/NVIDIA/DreamDojo) | 四万四千小时第一视角视频先建立潜在动作表示，机器人数据后训练再把它转成可交互策略并蒸馏到十帧每秒运行。开放的数据、模型与推理入口让人类视频预训练对机器人控制的增益可以分阶段核对。 |
 | [EnerVerse-AC](https://github.com/AgibotTech/EnerVerse-AC) | 根据机器人场景和动作条件生成未来视觉变化，用于构造操作数据和研究动作结果预测；它是Genie-Envisioner与GE-Sim-V2之前的重要历史入口。 |
-| [GE-2 / GE-Sim 2.0](https://github.com/AgibotTech/GE-Sim-V2) | 当前图像、本体状态和候选动作进入生成模型，系统滚动预测未来视频与状态，独立策略服务据此完成闭环评测。它承担学习式策略试验和数据回流，物理接触精度仍由其他验证环节负责。 |
-| [Genie-Envisioner](https://github.com/AgibotTech/Genie-Envisioner) | 从场景和动作条件生成机器人交互视频，为策略训练、数据扩充和未来预测提供可控环境；仓库连接GE-Sim系列与早期EnerVerse-AC路线。 |
+| [GE-Sim 2.0](https://github.com/AgibotTech/GE-Sim-V2) | 当前图像、本体状态和候选动作进入生成模型，系统滚动预测未来视频与状态，独立策略服务据此完成闭环评测。它承担学习式策略试验和数据回流，物理接触精度仍由其他验证环节负责。 |
+| [Genie-Envisioner-V1](https://github.com/AgibotTech/Genie-Envisioner-V1) | 从场景和动作条件生成机器人交互视频，为策略训练、数据扩充和未来预测提供可控环境；V1仓库连接早期EnerVerse-AC与后续GE-Sim闭环世界模拟路线。 |
 | [GigaWorld-0](https://github.com/open-gigaai/giga-world-0) | 把视频外观、视角和动作建模与三维高斯场景、系统辨识及规划模块连接，形成服务VLA训练的数据生成流程；已开放训练、推理和模型配置，可核查世界建模如何产出机器人可用数据。 |
 | [GigaWorld-1](https://github.com/open-gigaai/giga-world-1) | GigaWorld-1继续研究机器人动作条件下的未来环境生成、交互一致性和世界模型评测，为具身数据生成与策略训练提供可控环境变化。 |
 | [Kairos](https://github.com/kairos-agi/kairos) | Kairos以通用视频、人类行为和真机交互数据逐级训练持续世界表征，并在统一模型中预测未来视觉状态与可执行动作；仓库开放推理代码和多组模型权重，并提供RoboTwin与LIBERO评测入口。 |
@@ -243,9 +247,11 @@
 | [RynnWorld-4D](https://github.com/alibaba-damo-academy/RynnWorld-4D) | 模型联合表达三维空间结构和时间演化，用于预测机器人动作后的场景变化与对象运动；适合作为空间理解、世界生成和规划之间的研究入口。 |
 | [UnifoLM-WMA-0](https://github.com/unitreerobotics/unifolm-world-model-action) | 视觉观测和动作条件进入世界模型预测未来状态，动作模块再把预测与任务条件转成机器人控制序列；官方仓库提供数据处理、训练、推理、权重和G1部署入口，用于检查世界预测怎样接回真实动作闭环。 |
 | [VideoWorld](https://github.com/ByteDance-Seed/VideoWorld) | 从无标注视频学习潜在动态和行为表示，为从视觉变化中获得动作先验提供上游模型案例。 |
+| [WALL-SS](https://github.com/X-Square-Robot/wall-ss) | 当前公开论文、方法说明、实验结果和项目图片，展示动作对齐、时间尺度记忆、Dream Forcing与视觉动力学奖励对齐。现阶段适合阅读方法和跟踪发布，不能作为可直接训练或部署的代码框架。 |
 | [WALL-WM](https://github.com/X-Square-Robot/WALL-WM) | 联合建模场景视频、机器人状态与动作，预测执行后的环境变化，为动作选择和策略训练提供世界表征；仓库公开模型结构与训练评测入口。 |
 | [WorldArena](https://github.com/tsinghua-fib-lab/WorldArena) | 十六项感知指标与功能任务把“视频生成更像”拆成可测能力，2.0又跨RoboTwin、LIBERO和真实ALOHA检查这些指标能否转化为策略收益。把新模型接入数据引擎、策略排序和动作规划三条路径，可以检验视觉质量是否真正转成控制收益。 |
 | [X-WAM](https://github.com/sharinka0715/X-WAM) | 模型联合学习视频世界变化与机器人动作，在共享表征中支持跨本体操作和未来预测；项目用于检查世界模型输出怎样与动作头连接。 |
+| [Zero-WAM](https://github.com/robbyant-research/Zero-WAM) | 当前公开论文、方法说明和图片素材，并公告将发布训练代码、模型和HumanGen数据。现阶段可用于理解方法和跟踪发布，不能作为可直接训练的开源框架。 |
 
 ### 记忆、规划与任务调度
 
