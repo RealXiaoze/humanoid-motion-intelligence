@@ -11,16 +11,16 @@ from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parents[2]
 EXPORT_MANIFEST = ROOT / ".github" / "public-release.json"
-EXPECTED_CONTENT_FILES = 486
+EXPECTED_CONTENT_FILES = 491
 EXPECTED_OPERATIONAL_FILES = 6
-EXPECTED_PAPER_PAGES = 188
-EXPECTED_PAPER_IMAGES = 180
-EXPECTED_PROJECTS = 548
-EXPECTED_DATASETS = 37
+EXPECTED_PAPER_PAGES = 190
+EXPECTED_PAPER_IMAGES = 182
+EXPECTED_PROJECTS = 556
+EXPECTED_DATASETS = 38
 EXPECTED_TRACK_COUNTS = {
-    "### 1. 动作数据与重定向": (16, 45),
-    "### 2. Locomotion与运动先验": (39, 56),
-    "### 3. 动作跟踪与全身控制": (38, 47),
+    "### 1. 动作数据与重定向": (17, 46),
+    "### 2. Locomotion与运动先验": (39, 60),
+    "### 3. 动作跟踪与全身控制": (39, 50),
     "### 4. LocoManip与物理交互": (31, 35),
     "### 5. 世界模型、VLA与Agent": (47, 103),
     "### 6. 工程与实机部署": (17, 262),

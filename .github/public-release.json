@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "generator": "build_public_release.py",
-  "content_file_count": 486,
+  "content_file_count": 491,
   "operational_file_count": 6,
   "files": [
     {
@@ -32,7 +32,7 @@
     {
       "path": ".github/scripts/validate_public_tree.py",
       "size": 13764,
-      "sha256": "323c9ee163fa594020d67d8df9848f09b18552fdf33435adc1ef879ea3768549"
+      "sha256": "6c980661b82a71533b7940c3932715dc02852d2f031a62b5fe24cb12135de568"
     },
     {
       "path": ".github/workflows/public-release-check.yml",
@@ -57,7 +57,7 @@
     {
       "path": "README.md",
       "size": 22257,
-      "sha256": "7aa3797605a60519c93c3ab8293c4ec2ba52c8245a9b557f1dd3cfddf374acaa"
+      "sha256": "9bb73e8c83ee7274b7c208e4c0f47c973eb908ec26f50b5dfe11ae178663e730"
     },
     {
       "path": "公司与产业/README.md",
@@ -71,13 +71,13 @@
     },
     {
       "path": "公司与产业/公开信号时间线.md",
-      "size": 30668,
-      "sha256": "277b56dbaf14921a68bec36d473160456f23a832084e83b1b72cbf64732edf77"
+      "size": 30851,
+      "sha256": "eb4e601923c82b829904464fc94d7c75bb4c28e9d33e0ff98d4f40f8026298ff"
     },
     {
       "path": "具身智能公司的开源项目/README.md",
-      "size": 16131,
-      "sha256": "c88112504047d872ae9d05bc014551ef8d92c27918d756a3e2773010aeec3a44"
+      "size": 16164,
+      "sha256": "8dc5221c7b45eb1e0f5f99ce9e5050a37ecff29b1765935b3a12ff8a8e7a0a80"
     },
     {
       "path": "具身智能公司的开源项目/公司项目/1X_Technologies.md",
@@ -206,8 +206,8 @@
     },
     {
       "path": "具身智能公司的开源项目/公司项目/它石智航.md",
-      "size": 1453,
-      "sha256": "51823c1c20c8504b4e9b9ffbf4ef6faf621c00bce9570b54c756205a77a286f2"
+      "size": 2158,
+      "sha256": "d1371a6b8594ccf40ad432e1a17cf2039c0bf5002a2e0211a3620eb2fbc73bb9"
     },
     {
       "path": "具身智能公司的开源项目/公司项目/宇树科技.md",
@@ -446,18 +446,18 @@
     },
     {
       "path": "技术路线/01_动作数据与重定向.md",
-      "size": 24509,
-      "sha256": "2a7001d0632abfe15544a404d8d635b59bd640f6a7ce4824939a7e912a46c07a"
+      "size": 25627,
+      "sha256": "5eda0d65fe73c9800e8228a8f6c0df811cbb599218dd3d86465a1fcd6b3b80ff"
     },
     {
       "path": "技术路线/02_Locomotion与运动先验.md",
-      "size": 37466,
-      "sha256": "9dcf177afa65e3c0ea2f9d9e3c493506585e71d02a1ab68648723639a900ca57"
+      "size": 39222,
+      "sha256": "ecbe612990ba6bdb2486111aee1d73c8b306d304dff88adfb18446aef11dbf61"
     },
     {
       "path": "技术路线/03_动作跟踪与全身控制.md",
-      "size": 35787,
-      "sha256": "3aa4254099a0278c8e323c5f917efd6967fd74451f6db6c7cbbb79f8f93c88fc"
+      "size": 37628,
+      "sha256": "64067435da543bc4475583a8e4f040ba06a75df6e97b3b7419b6c0e812e012ed"
     },
     {
       "path": "技术路线/04_LocoManip.md",
@@ -471,13 +471,18 @@
     },
     {
       "path": "技术路线/06_工程与实机部署.md",
-      "size": 85426,
-      "sha256": "ec40980f724947156efcbf6659ddf825f7f6125bc3e1576d2499db2924d95b72"
+      "size": 85602,
+      "sha256": "98ecc09ef51d98cb8f0ab6728ab1dead1dc5a8ed2c09b6fc68f43b4182b63207"
     },
     {
       "path": "技术路线/README.md",
       "size": 18109,
       "sha256": "d05c6ea4e79f8115692643d8f0804f30c4257f309ae619024c006e1b56dd31f9"
+    },
+    {
+      "path": "技术路线/双轮足机器人训练开源方案表.md",
+      "size": 9059,
+      "sha256": "62d5907728e7841a1c05c5fae4fe731f504074f3091b088adf26ce5b10dbb49d"
     },
     {
       "path": "技术路线/基础书籍与学习资料.md",
@@ -496,8 +501,8 @@
     },
     {
       "path": "数据集/README.md",
-      "size": 9771,
-      "sha256": "443c9062c0bfdaa04dcc0d6799f2e9e5215f486c87459b82922609427aa43b6f"
+      "size": 10046,
+      "sha256": "3d528a4d6cdea043c9cec9e4928632c4e05d002694740723fbf145869e7c0ccb"
     },
     {
       "path": "数据集/RealOmni-Open.md",
@@ -511,8 +516,8 @@
     },
     {
       "path": "数据集/数据集主表.md",
-      "size": 10697,
-      "sha256": "cb93808640a723dd216c5492b61f7dd66dfc1d2a0121b0bebf753cb554ce0dfb"
+      "size": 11198,
+      "sha256": "9e7b5ae72134dc22d617c423a3b2f912b164ccc84625874f5576a431b94255dd"
     },
     {
       "path": "求职与岗位/2026-03_运动控制面经_谈薪技巧_薪资汇总.md",
@@ -601,13 +606,13 @@
     },
     {
       "path": "论文与项目/README.md",
-      "size": 82095,
-      "sha256": "b11b93399ea8e15d2c2b5ef22e731819c061d2b3d3fd802b5fe0a24aa2382237"
+      "size": 83187,
+      "sha256": "cd4f955bb656da5613939b289a79caa07528ee2fbc57b0567944bab57866ccaa"
     },
     {
       "path": "论文与项目/开源项目主表.md",
-      "size": 138968,
-      "sha256": "20a4302b51f813e2b7d02678697fa8d4f3579e4aff0b87199ffc428b3c08643c"
+      "size": 142102,
+      "sha256": "feada77ef01d74b2f25c12963ccce5718d1fc1f2af4c74448cf80f21b8ef829c"
     },
     {
       "path": "论文与项目/许可/CC-BY-NC-SA-4.0.txt",
@@ -1560,6 +1565,16 @@
       "sha256": "c04c03734334e4b6976c1c0ded6b5746798a43565cf5b3ff8f095b75a550426b"
     },
     {
+      "path": "论文与项目/论文逐篇解读/P189.md",
+      "size": 5455,
+      "sha256": "af826d8f54232e7b9b85ba0e59e25064ca87336dfb9116535dba8f3bbd7a1f46"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P190.md",
+      "size": 5306,
+      "sha256": "81a22b965dff22c604ab1cabacfec72a26511ecc419d9bf5f2563b9eac55ebb0"
+    },
+    {
       "path": "论文与项目/论文逐篇解读/README.md",
       "size": 372,
       "sha256": "286d10373492551405d46290c05f38211f90e76bcadb7961ad3b55b5f4cef862"
@@ -2463,6 +2478,16 @@
       "path": "论文与项目/论文逐篇解读/论文原图/P187_figure.png",
       "size": 941937,
       "sha256": "5c2c85967b29105bafd6c3540374cd3a5ea9efbb94bf89f10f1d36e2ee70f42c"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P189_figure.png",
+      "size": 1341113,
+      "sha256": "5388707242ef9ae7492c668c3a5847854f072ed0a6d7fbb16f0f8ac12756a26b"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P190_figure.png",
+      "size": 4581242,
+      "sha256": "ebb3be9bb0e499cff91474f72604b671f49ba2ff210f9c11ba49592ad8b2e988"
     }
   ]
 }

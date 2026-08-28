@@ -12,13 +12,17 @@
 
 ## 本页导航
 
-[内部路线](#怎么区分内部路线) · [代表工作](#代表工作) · [完整条目](#完整条目) · [基础Locomotion](#基础locomotion) · [感知与复杂地形](#感知与复杂地形) · [对抗先验与行为模型](#对抗先验与行为模型)
+[内部路线](#怎么区分内部路线) · [双轮足训练表](双轮足机器人训练开源方案表.md) · [代表工作](#代表工作) · [完整条目](#完整条目) · [基础Locomotion](#基础locomotion) · [感知与复杂地形](#感知与复杂地形) · [对抗先验与行为模型](#对抗先验与行为模型)
 
 ## 怎么区分内部路线
 
 - **基础Locomotion**：建立速度跟踪、平衡、抗扰和Sim2Real底座，先解决机器人能否稳定移动。
 - **感知与复杂地形**：让地形表征、视觉或本体历史直接参与控制，处理落脚、障碍、窄地形和户外运行。
 - **对抗先验与行为模型**：用判别器、生成先验或潜变量约束动作分布，形成可复用、可提示但不要求逐帧复制的行为。
+
+## 双轮足机器人训练开源方案
+
+双轮足训练需要同时处理倒立摆平衡、腿长与腿角调节、轮速跟踪、落地冲击和地形适应。[双轮足机器人训练开源方案表](双轮足机器人训练开源方案表.md)只比较公开训练环境、控制抽象、课程、检查点和跨仿真证据，不把硬件宣传或四轮足项目混入排名。
 
 ## 代表工作
 
@@ -42,7 +46,7 @@
 
 ## 完整条目
 
-本路线当前收录 **39** 篇论文/技术报告、**56** 个项目。
+本路线当前收录 **39** 篇论文/技术报告、**60** 个项目。
 
 ### 基础Locomotion
 
@@ -78,6 +82,7 @@
 | [humanoid-lab](https://github.com/roboterax/humanoid-lab) | 仿真中的机器人模型、观测、奖励和随机化进入并行强化学习训练，输出可供回放和部署的运动策略。 |
 | [humanoid-rl-isaaclab](https://github.com/limxdynamics/humanoid-rl-isaaclab) | 仿真中的机器人模型、观测、奖励和随机化进入并行强化学习训练，输出可供回放和部署的运动策略。 |
 | [InternRobotics运动控制开源生态](https://github.com/InternRobotics) | 组织内的HIMLoco、OpenHomie等仓库分别覆盖感知行走和同构外骨骼Loco-Manip，可沿各自代码库比较训练框架、遥操作接口与真机部署边界，不能把组织主页当作单一算法实现。 |
+| [Isaac-RL-Two-wheel-Legged-Bot](https://github.com/jaykorea/Isaac-RL-Two-wheel-Legged-Bot) | 为Flamingo双轮足平台提供Isaac Lab速度跟踪环境、观测历史堆叠、PPO与CoRL训练入口，并实现Constraints as Termination约束管理；策略可导出ONNX并在迁移分支进入MuJoCo Sim2Sim。 |
 | [legged_gym](https://github.com/leggedrobotics/legged_gym) | GPU并行地形、速度指令、关节位置动作、噪声与动力学随机化构成了经典腿式Sim2Real最小闭环。算法开发者可先固定环境和执行器网络，只改一组观测或奖励，判断收益究竟来自方法还是工程配置。 |
 | [LejuLab-Train](https://github.com/LejuRobotics/LejuLab-Train) | 仿真中的机器人模型、观测、奖励和随机化进入并行强化学习训练，输出可供回放和部署的运动策略。 |
 | [LeTools-Learning](https://github.com/LejuRobotics/LeTools-Learning) | 仿真中的机器人模型、观测、奖励和随机化进入并行强化学习训练，输出可供回放和部署的运动策略。 |
@@ -97,6 +102,9 @@
 | [Unitree RL Gym](https://github.com/unitreerobotics/unitree_rl_gym) | 这是Unitree官方保留的Isaac Gym时代训练链路，本体配置、PPO训练、MuJoCo Sim2Sim和实机入口仍可沿代码追踪。它主要服务旧工程维护和新旧仿真栈对照，不应与Isaac Lab版本混用。 |
 | [Unitree RL Lab](https://github.com/unitreerobotics/unitree_rl_lab) | Unitree将Go2、H1和G1的Isaac Lab任务接到策略导出、MuJoCo验证与实机SDK。机器人配置和部署接口处在同一仓库，能直接检查训练关节命令与真机控制协议是否一致。 |
 | [Unitree RL Mjlab](https://github.com/unitreerobotics/unitree_rl_mjlab) | MJLab和MuJoCo组成不依赖Omniverse的轻量训练路线，现有任务同时覆盖速度行走与动作模仿。策略回放和真机接口让开发者可以用同一模型核对训练、Sim2Sim与部署差异。 |
+| [Wheel-Legged-Gym](https://github.com/clearlab-sustech/Wheel-Legged-Gym) | 基于legged_gym和rsl_rl提供端到端开链双轮足环境，并用VMC把虚拟腿控制统一映射到开链或闭链机构；平地和粗糙地形任务可作为RL直接关节控制与RL加VMC结构化动作空间的经典对照。 |
+| [Wheel-Legged-Lab](https://github.com/zyicome/Wheel-Legged-Lab) | 策略输出左右虚拟腿角、虚拟腿长和轮速参考，再由VMC转换为实际关节力矩；训练从平衡和速度跟踪扩展到高跳、落地吸能、空中收腿、移动跳跃、目标落点和障碍跨越，并提供阶段脚本、检查点与训练曲线。 |
+| [wheel_legged_genesis](https://github.com/Albusgive/wheel_legged_genesis) | 在Genesis中用RSL-RL PPO训练双轮足速度、转向、腿长和姿态动作，加入粗糙地形、连续坡面、课程学习与域随机化，并将策略放入MuJoCo做跨引擎回放；仓库附带示例策略和多版本训练记录。 |
 | [wheelDog_RL](https://github.com/seer-robotics/wheelDog_RL) | 仙工智能公开的第一阶段轮足机器人强化学习项目，为其轮足平台提供训练环境与策略实验入口。 |
 | [Wiki-GRx-Gym](https://github.com/FFTAI/Wiki-GRx-Gym) | 仿真中的机器人模型、观测、奖励和随机化进入并行强化学习训练，输出可供回放和部署的运动策略。 |
 
