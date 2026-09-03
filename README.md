@@ -82,7 +82,7 @@ cd humanoid-motion-intelligence
 | 跟踪增强与失配恢复 | 修正不可达参考，处理动力学偏差、碰撞扰动、在线适应和偏离参考后的恢复 | [BeyondMimic](论文与项目/论文逐篇解读/P034.md)、[Heracles](论文与项目/论文逐篇解读/P134.md)、[Any2Track](论文与项目/论文逐篇解读/P103.md) |
 | 人体驱动与遥操作 | 把人体信号、重定向、因果观测、通信延迟、真机反馈和安全约束组成实时闭环 | [H2O](论文与项目/论文逐篇解读/P029.md)、[OmniH2O](论文与项目/论文逐篇解读/P030.md)、[TWIST](论文与项目/论文逐篇解读/P088.md)、[TWIST2](论文与项目/论文逐篇解读/P089.md) |
 
-代表项目包括[BeyondMimic](https://github.com/HybridRobotics/whole_body_tracking)、[HoloMotion](https://github.com/HorizonRobotics/HoloMotion)、[OmniH2O](https://omni.human2humanoid.com/)、[MimicKit](https://github.com/xbpeng/MimicKit)和[engineai_rl_lab](https://github.com/engineai-robotics/engineai_rl_lab)。完整页面收录**39篇论文/技术报告和50个项目**。
+代表项目包括[BeyondMimic](https://github.com/HybridRobotics/whole_body_tracking)、[HoloMotion](https://github.com/HorizonRobotics/HoloMotion)、[OmniH2O](https://omni.human2humanoid.com/)、[MimicKit](https://github.com/xbpeng/MimicKit)和[engineai_rl_lab](https://github.com/engineai-robotics/engineai_rl_lab)。完整页面收录**40篇论文/技术报告和51个项目**。
 
 ### 4. LocoManip与物理交互
 
@@ -144,10 +144,10 @@ cd humanoid-motion-intelligence
 | [技术路线总览与学习路径](技术路线/README.md) | 系统能力栈、训练更新闭环、路线关系、七阶段学习顺序、最小作品和通过标准 |
 | [强化学习开发者必备开源资料](强化学习开发者必备开源资料/README.md) | 通过开源项目页和书籍课程页，分别解决“开发用什么工具”和“基础怎样补齐” |
 | [具身智能数据集](数据集/README.md) | 按数据来源、本体依赖、动作表示和训练用途查找38个具身智能数据集 |
-| [论文与技术报告总索引](论文与项目/README.md) | 190篇论文与技术报告按最终系统作用分类，可按稳定`Pxxx`编号进入独立解读 |
-| [开源项目主表](论文与项目/开源项目主表.md) | 556个项目的研发位置、关键实现、开源边界与开发价值 |
+| [论文与技术报告总索引](论文与项目/README.md) | 191篇论文与技术报告按最终系统作用分类，可按稳定`Pxxx`编号进入独立解读 |
+| [开源项目主表](论文与项目/开源项目主表.md) | 557个项目的研发位置、关键实现、开源边界与开发价值 |
 | [具身智能公司的开源项目](具身智能公司的开源项目) | 目录按公司拆成独立页面，展示官方归属可核验且具有代码托管入口的项目，并标注许可证与使用边界 |
-| [公司与产品主表](公司与产业/公司与产品主表.md) | 按国家或地区整理的145家公司/机构及其公开产品与平台 |
+| [公司与产品主表](公司与产业/公司与产品主表.md) | 按国家或地区整理的146家公司/机构及其公开产品与平台 |
 | [公开信号时间线](公司与产业/公开信号时间线.md) | 只记录带日期的公司成立、产品发布与融资事实 |
 | [运动控制面经、谈薪与薪资汇总](求职与岗位/2026-03_运动控制面经_谈薪技巧_薪资汇总.md) | 运动控制面试、项目表达、谈薪与匿名薪资样本入口 |
 | [具身秋招运动控制问答](求职与岗位/2026-07_具身秋招运动控制问答.md) | 秋招阶段关于方向选择、项目准备和岗位判断的集中问答 |
