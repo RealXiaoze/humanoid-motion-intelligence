@@ -47,6 +47,12 @@
 
 ## 机器人强化学习实践
 
+选训练栈时，要先区分策略优化、任务仿真、示范生成和硬件运行时。下面补充三个不同用途的入口，具体项目记录仍以[开源项目主表](../论文与项目/开源项目主表.md)为准：
+
+- [K-Sim](https://github.com/kscalelabs/ksim)：基于MuJoCo与JAX，从examples中的机器人任务开始追踪仿真采样和策略训练；先固定本体、控制周期和MDP，再做观测或奖励消融。配套[K-Scale OS](https://github.com/kscalelabs/kos)属于执行器与传感器运行时，不是第二套训练器。
+- [EmbodiChain](https://github.com/DexForce/EmbodiChain)：把GPU仿真、任务环境、数据生成和RL/IL接口放在同一框架内，适合研究环境与训练数据的协同。当前为Alpha，选择具体示例验证，不以功能路线图替代可运行证据。
+- [DISCOVERSE](https://github.com/discoverse-dev/DISCOVERSE)：用MuJoCo和3DGS连接场景重建、操作示范与模仿学习，适合研究视觉域差异和Real2Sim2Real数据流程；不是仅靠更逼真渲染就能解决接触与动力学迁移的通用方案。
+
 | 资源 | 适合解决的问题 | 使用边界 |
 |---|---|---|
 | [Isaac Lab](https://github.com/isaac-sim/IsaacLab) | 用Manager-Based或Direct工作流定义机器人场景、观测、动作、奖励、终止和随机化 | 它是环境与仿真基础设施，不会自动给出合理奖励、控制接口或Sim2Real结果 |

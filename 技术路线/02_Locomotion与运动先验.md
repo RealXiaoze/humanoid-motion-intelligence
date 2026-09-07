@@ -46,7 +46,7 @@
 
 ## 完整条目
 
-本路线当前收录 **39** 篇论文/技术报告、**60** 个项目。
+本路线当前收录 **39** 篇论文/技术报告、**61** 个项目。
 
 ### 基础Locomotion
 
@@ -187,4 +187,5 @@
 | [PULSE](https://github.com/ZhengyiLuo/PULSE) | 在物理人体控制器之上学习潜在动作空间，再由高层策略组合潜变量完成目标任务；它把低层自然运动约束与任务学习分离，适合研究可复用技能表示而非直接机器人部署。 |
 | [rl_amp](https://github.com/fan-ziqi/rl_amp) | 在legged_gym环境和rsl_rl训练器上增加专家动作数据、AMP观测、判别器与先验奖励，使读者能够直接定位任务奖励和对抗运动先验分别怎样更新策略与判别器。 |
 | [TienKung-Lab](https://github.com/Open-X-Humanoid/TienKung-Lab) | SMPL-X动作经GMR重定向并转换成可视化与AMP专家数据，Isaac Lab以AMP和周期步态奖励训练走跑策略，MuJoCo执行Sim2Sim，官方Deploy仓库再将导出策略接入ROS 2真机控制；它把动作数据、训练、跨引擎验证和天工实机部署连成完整运动链。 |
+| [topstar_rl_lab](https://github.com/MatrixZTlab/topstar_rl_lab) | MatrixZTlab公开H2的Isaac Lab任务与AMP训练：将重定向动作转换为专家数据，利用运动先验与速度任务学习自然行走，并提供训练、回放、站走切换和偏航诊断脚本。专家数据经Git LFS管理，第三方AMP库另有来源说明；不把仓库开放等同已独立复现。 |
 | [UFO](https://github.com/Roboparty/UFO) | 用Forward-Backward与TeCH学习可提示的G1行为空间，并提供机器人感知的动作导入、目标定义、奖励和跟踪流程；仓库明确不自动完成重定向，也不能让不同本体直接共享同一检查点。 |

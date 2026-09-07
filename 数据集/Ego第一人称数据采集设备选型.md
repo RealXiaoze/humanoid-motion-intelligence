@@ -57,6 +57,10 @@
 
 ## 动作采集与数据平台
 
+KaiEgo还应与实际开放数据区分：[KAI Ego Data Minibatch](https://huggingface.co/datasets/Kinetix-AI/kai-data-minibatch)是约3小时的受控访问处理样例，需签约与人工审核，具体字段见[数据集主表](数据集主表.md#d039)。设备宣传规模不等于样例开放规模。
+
+[Sunday Robotics](https://www.sunday.ai/)采用Skill Capture Glove采集家庭示范并用于Memo技能学习，适合作为“人类示范设备 → 家庭任务数据 → 机器人策略”的公司系统案例。当前核验材料未提供可下载数据卡或开放训练框架，因此不把它列成开放数据集，也不从演示推断采集精度或跨本体迁移效果。
+
 | 系统 | 已确认的能力 | 与Ego设备的关系 | 关键边界 |
 |---|---|---|---|
 | [Lightwheel EgoSuite](https://lightwheel.ai/egosuite) | 官方方案组合VR采集、外骨骼和UMI式夹爪，并覆盖RGB-D、上肢/手部姿态、触觉、三维姿态处理和语义标签 | 它是多种采集设备和数据处理服务的组合，不是一款头戴相机 | 规模、自动化比例和模型收益属于具体项目交付指标，应核对数据所有权、导出格式和验收口径 |
