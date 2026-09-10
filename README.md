@@ -94,7 +94,7 @@ cd humanoid-motion-intelligence
 | 接触力控与负载适应 | 处理外力、柔顺响应、接触切换、未知负载和人体安全交互 | [FACET](论文与项目/论文逐篇解读/P084.md)、[Thor](论文与项目/论文逐篇解读/P112.md)、[GentleHumanoid](论文与项目/论文逐篇解读/P083.md) |
 | 全身协同与技能接口 | 联合腿、腰、手和物体状态，并向遥操作、规划器或上层模型提供统一身体接口 | [OmniContact](论文与项目/论文逐篇解读/P138.md)、[CoorDex](论文与项目/论文逐篇解读/P139.md)、[OpenHLM](论文与项目/论文逐篇解读/P141.md) |
 
-代表项目包括[DoorMan](https://doorman-humanoid.github.io/)、[OmniContact](https://github.com/Ingrid789/OmniContact_sim2sim)、[CoorDex](https://github.com/Skevinci/coordex)和[Thor](https://baai-aether.github.io/baai-thor/)。完整页面收录**31篇论文/技术报告和37个项目**。
+代表项目包括[DoorMan](https://doorman-humanoid.github.io/)、[OmniContact](https://github.com/Ingrid789/OmniContact_sim2sim)、[CoorDex](https://github.com/Skevinci/coordex)和[Thor](https://baai-aether.github.io/baai-thor/)。完整页面收录**32篇论文/技术报告和38个项目**。
 
 ### 5. 世界模型、VLA与Agent
 
@@ -144,8 +144,8 @@ cd humanoid-motion-intelligence
 | [技术路线总览与学习路径](技术路线/README.md) | 系统能力栈、训练更新闭环、路线关系、七阶段学习顺序、最小作品和通过标准 |
 | [强化学习开发者必备开源资料](强化学习开发者必备开源资料/README.md) | 通过开源项目页和书籍课程页，分别解决“开发用什么工具”和“基础怎样补齐” |
 | [具身智能数据集](数据集/README.md) | 按数据来源、本体依赖、动作表示和训练用途查找40个具身智能数据集 |
-| [论文与技术报告总索引](论文与项目/README.md) | 191篇论文与技术报告按最终系统作用分类，可按稳定`Pxxx`编号进入独立解读 |
-| [开源项目主表](论文与项目/开源项目主表.md) | 586个项目的研发位置、关键实现、开源边界与开发价值 |
+| [论文与技术报告总索引](论文与项目/README.md) | 192篇论文与技术报告按最终系统作用分类，可按稳定`Pxxx`编号进入独立解读 |
+| [开源项目主表](论文与项目/开源项目主表.md) | 587个项目的研发位置、关键实现、开源边界与开发价值 |
 | [具身智能公司的开源项目](具身智能公司的开源项目) | 目录按公司拆成独立页面，展示官方归属可核验且具有代码托管入口的项目，并标注许可证与使用边界 |
 | [公司与产品主表](公司与产业/公司与产品主表.md) | 按国家或地区整理的176家公司/机构及其公开产品与平台 |
 | [公开信号时间线](公司与产业/公开信号时间线.md) | 只记录带日期的公司成立、产品发布与融资事实 |

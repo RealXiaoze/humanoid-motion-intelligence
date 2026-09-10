@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "generator": "build_public_release.py",
-  "content_file_count": 503,
+  "content_file_count": 505,
   "operational_file_count": 6,
   "files": [
     {
@@ -32,7 +32,7 @@
     {
       "path": ".github/scripts/validate_public_tree.py",
       "size": 13764,
-      "sha256": "cc532006843c315d5a14795bebd6d4a3e542c4e76f79bad56e32946ad1e58f01"
+      "sha256": "10b8311c1a04eacdad52d6ef6ac330c16e807263617aae716a7540af6dffd7d8"
     },
     {
       "path": ".github/workflows/public-release-check.yml",
@@ -57,7 +57,7 @@
     {
       "path": "README.md",
       "size": 22257,
-      "sha256": "75ad6d10f96b807a9f040f9bb188d42dbb42f9b90e9b5c553076ff3601c2de2f"
+      "sha256": "65211f4c2af4263dd10d94b13804fe381e0eb215ace5b1b37424f35ec84a2fd2"
     },
     {
       "path": "公司与产业/README.md",
@@ -511,8 +511,8 @@
     },
     {
       "path": "技术路线/04_LocoManip.md",
-      "size": 29443,
-      "sha256": "23606a99ad45ee0e7c74c061584c4c54f27f8b3f28ca1cf097d68b242ee653b6"
+      "size": 30260,
+      "sha256": "9c67617bb2c8a6cf1e590177108265a05cd8f82232a7d42bbbd41f1eb93b0df4"
     },
     {
       "path": "技术路线/05_世界模型VLA与Agent.md",
@@ -581,8 +581,8 @@
     },
     {
       "path": "求职与岗位/2026_招聘与内推信息.md",
-      "size": 29896,
-      "sha256": "05432362d5916974e0ee657ed918519572c1f83120a4b90c02b196037e064bdc"
+      "size": 31298,
+      "sha256": "84dc58c74f6abd7417aac481e9ca9bd5c11aecfc2b23902334634c643bbe03b5"
     },
     {
       "path": "求职与岗位/README.md",
@@ -656,13 +656,13 @@
     },
     {
       "path": "论文与项目/README.md",
-      "size": 83710,
-      "sha256": "1946e9e9af58bc7400226a35f7e96538b29a9e9aeb720091f6def8e426b94647"
+      "size": 84141,
+      "sha256": "b16774aea1eb1c1bafe5da6af23196846b57f5c40503b9b0388b16db35c203c0"
     },
     {
       "path": "论文与项目/开源项目主表.md",
-      "size": 152660,
-      "sha256": "bf7b211c1e428a20a012d5e8f8059c15b27036ee9039efdc842a19f7457dbd8e"
+      "size": 153027,
+      "sha256": "0f065e6c7b262b2bfef526a2b47cd5f46a30dd275a787c7777d3191690696bd9"
     },
     {
       "path": "论文与项目/许可/CC-BY-NC-SA-4.0.txt",
@@ -911,8 +911,8 @@
     },
     {
       "path": "论文与项目/论文逐篇解读/P048.md",
-      "size": 3679,
-      "sha256": "1225eddc0ae7802e56ab717b9aaa48d69daa112986d70a84f82cb3add6ef6fcb"
+      "size": 3869,
+      "sha256": "5a1642d280ea8a7924e50d8c60afc812db4740b146c7f3e2d3c5d94212a1ee51"
     },
     {
       "path": "论文与项目/论文逐篇解读/P049.md",
@@ -1628,6 +1628,11 @@
       "path": "论文与项目/论文逐篇解读/P191.md",
       "size": 7323,
       "sha256": "8ff049c061eae21c1501363b8afd1957a15afde542ecb116c53057ef5f219b4f"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P192.md",
+      "size": 6013,
+      "sha256": "acf56c8d502d30deb96f67c019d4b5d3574deb0ed81cb17e9a660b88d08e0a61"
     },
     {
       "path": "论文与项目/论文逐篇解读/README.md",
@@ -2548,6 +2553,11 @@
       "path": "论文与项目/论文逐篇解读/论文原图/P191_figure.png",
       "size": 770747,
       "sha256": "e1c654bd9bf1807ccfc8174504742873027bce88368a947845b63224cd20b646"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/论文原图/P192_figure.png",
+      "size": 921683,
+      "sha256": "b0ee2b5ef69610b07c3b67f1f8acd4af584f758871aeeb700f7c765b72b71e7f"
     }
   ]
 }
