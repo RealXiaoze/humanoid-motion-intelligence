@@ -92,7 +92,7 @@
 
 ## 完整条目
 
-本路线当前收录 **58** 篇论文/技术报告、**109** 个项目。
+本路线当前收录 **61** 篇论文/技术报告、**109** 个项目。
 
 ### 动作生成与通用策略
 
@@ -130,6 +130,8 @@
 | 2026 | [Fast-WAM：保留视频共训练，部署时跳过未来想象](../论文与项目/论文逐篇解读/P198.md) · [原文](https://arxiv.org/abs/2603.16666) | 大多数WAM在测试时迭代去噪未来视频后再执行动作，推理延迟高，难以判断视频建模的收益来自训练还是在线想象。Fast-WAM保留训练期视频-动作共训练，在测试时跳过未来预测，并用多个变体分离这两个因素。 | 是 · [代码](https://github.com/yuantianyuan01/FastWAM) |
 | 2026 | [Flex-π：让同一个世界动作模型按计算预算选择输出流](../论文与项目/论文逐篇解读/P206.md) · [原文](https://arxiv.org/abs/2608.10860) | 许多世界动作模型主要处理RGB latent，或固定在动作策略与未来视觉预测之间的一种模式。Flex-π把RGB、三维pointmap、DINO语义特征和动作放进同一联合去噪模型，并用流丢弃支持从action-only到完整多流推理。 | 是 · [代码](https://github.com/geyan21/flex-pi) |
 | 2026 | [TurboVLA：把视觉语言直接送入低延迟动作解码器](../论文与项目/论文逐篇解读/P208.md) · [原文](https://arxiv.org/abs/2607.27205) | LLM中心的VLA在每个控制步都要承担视觉投影、语言建模和动作接口的中间计算，带来延迟和显存开销。TurboVLA让视觉、语言和本体状态直接形成执行级动作表示，以紧凑模型换取低延迟。 | 是 · [代码](https://github.com/H-EmbodVis/TurboVLA) |
+| 2026 | [Show-Harness：用语义动作接口让 VLM 闭环操作机械臂](../论文与项目/论文逐篇解读/P210.md) · [原文](https://arxiv.org/abs/2609.10522) | 通用VLM具备视觉语义理解但难直接输出不同机械臂的物理控制量；Show-Harness用离散语义动作和本体专用确定性解释器连接模型决策与末端运动。 | 是 · [代码](https://github.com/showlab/Show-Harness) |
+| 2026 | [FluxVLA Engine：把策略实验接到真机闭环的工程平台](../论文与项目/论文逐篇解读/P212.md) · [原文](https://arxiv.org/abs/2609.17210) | 异构数据、模型、评测、推理和机器人接口阻碍具身策略的可复现比较与真机部署；FluxVLA Engine用统一配置和接口把数据到执行的流程串联。 | 是 · [代码](https://github.com/FluxVLA/FluxVLA) |
 | 2025 | [DreamPolicy：面向可扩展人形运动控制的统一世界模型策略](../论文与项目/论文逐篇解读/P018.md) · [原文](https://arxiv.org/abs/2505.18780) | 为每类地形单独训练策略难以扩展，直接混合专家又会产生冲突。地形条件自回归扩散模型从专家数据生成未来身体状态，统一目标条件策略跟踪该状态并用转移判别器维持运动分布。 | 否 |
 | 2025 | [π0.5：具备开放世界泛化能力的视觉语言动作模型](../论文与项目/论文逐篇解读/P059.md) · [原文](https://arxiv.org/abs/2504.16054) | 训练场景内的VLA容易依赖固定环境和短技能，进入新家庭后任务分解与执行同时失效；分阶段预训练把网页语义、多源机器人数据和长程移动操作对齐，再后训练连续动作头。 | 部分 · [代码](https://github.com/Physical-Intelligence/openpi) |
 | 2025 | [Phantom：先把人类示范改造成目标机器人看到的训练画面](../论文与项目/论文逐篇解读/P169.md) · [原文](https://arxiv.org/abs/2503.00779) | 人类视频中的手臂外观与机器人不同，直接训练会在部署时遇到视觉域差异。Phantom先恢复人手动作并映射到目标机器人，再移除人臂、渲染机器人替身，使训练图像和测试时机器人视角更接近。 | 是 · [代码](https://github.com/MarionLepert/phantom) |
@@ -155,7 +157,7 @@
 | [Fast-WAM](https://github.com/yuantianyuan01/FastWAM) | 训练保留视频与动作共学习，推理跳过未来视频生成并直接输出动作块；提供数据准备、训练脚本、模型下载与LIBERO和RoboTwin评测入口。适合固定骨干与数据，比较视频共训练和测试时未来生成各自的作用。 |
 | [Flex-π](https://github.com/geyan21/flex-pi) | 将RGB、几何与语义等输入组织为可组合模态流，借助冻结的视频编码器和模态训练策略生成动作；提供训练、评测与部署实现。适合检查几何输入的增益和缺失模态下的表现，不能把单一本体上的倍数收益外推到所有任务。 |
 | [flexiv_trainer](https://github.com/flexivrobotics/flexiv_trainer) | 面向非夕机器人组织数据、训练和Physical AI技能开发流程，把机器人接口接到策略训练与验证。 |
-| [FluxVLA Engine](https://github.com/FluxVLA/FluxVLA) | 以统一配置连接LeRobot数据、策略训练、仿真评测和机器人接口；已增加Fast-WAM、DiT4DiT、GR00T N1.7适配及RoboCasa配方，可比较模型原生实现与工程集成的差异。Oli全身采集示例同时处理身体目标和手部开合，但状态、命令和时间对齐仍需逐项检查。 |
+| [FluxVLA Engine](https://github.com/FluxVLA/FluxVLA) | 以统一配置连接LeRobot数据、策略训练、仿真评测和机器人接口；已增加Fast-WAM、DiT4DiT、GR00T N1.7适配及RoboCasa配方，可比较模型原生实现与工程集成的差异。Oli全身采集示例同时处理身体目标和手部开合，但状态、命令和时间对齐仍需逐项检查。技术报告见P212。 |
 | [fourier-lerobot](https://github.com/FFTAI/fourier-lerobot) | 相机、语言和机器人状态进入策略模型生成动作块，再经本体接口送入真机或仿真执行并回收任务结果。 |
 | [GalaxeaDP](https://github.com/OpenGalaxea/GalaxeaDP) | 把相机观测、机器人状态和任务条件映射为连续动作块，用扩散策略完成双臂或移动操作；项目适合作为GalaxeaVLA之外的模仿学习基线。 |
 | [GalaxeaVLA](https://github.com/OpenGalaxea/GalaxeaVLA) | 将语言、视觉和机器人状态转为动作，G0.5进一步用Action Codec连接自回归推理与连续控制；官方仓库提供训练和运行入口。适合与P162论文联合检查跨本体动作槽位、训练监督和实际本体映射。 |
@@ -229,6 +231,7 @@
 | 2025 | [GR00T-Dreams：面向人形机器人学习的合成轨迹生成](../论文与项目/论文逐篇解读/P068.md) · [原文](https://developer.nvidia.com/blog/enhance-robot-learning-with-synthetic-trajectory-data-generated-by-world-foundation-models/) | 人形真实轨迹稀缺，纯视频生成又缺少可靠动作标签。世界基础模型先生成任务变化与未来视觉，逆动力学模型补动作，再经仿真或策略筛选形成训练轨迹，关键瓶颈是标签误差回流。 | 部分 |
 | 2024 | [Denoising World Model Locomotion：基于去噪世界模型的复杂地形人形运动控制](../论文与项目/论文逐篇解读/P017.md) · [原文](https://arxiv.org/abs/2408.14472) | 噪声和遮挡使本体历史无法直接提供控制所需状态；循环编码器以特权真值做去噪重建并与PPO联合优化，策略从潜变量立即输出关节目标，属于学习式状态估计而非向前滚动规划的世界模型。 | 部分 |
 | 2023 | [UniSim：交互式真实世界模拟器学习](../论文与项目/论文逐篇解读/P066.md) · [原文](https://arxiv.org/abs/2310.06114) | 真实视频数据异构且缺少统一动作标注，传统模拟器又难覆盖外观变化。条件生成模型融合机器人轨迹、驾驶和互联网视频，按动作生成可交互未来画面，但视觉一致性不能替代接触动力学验证。 | 否 |
+| 2026 | [World-Action Models 综述：从预测世界到生成可执行动作](../论文与项目/论文逐篇解读/P211.md) · [原文](https://arxiv.org/abs/2609.16074) | 世界动作模型常将未来预测与动作生成混称而缺少统一比较口径；综述从机器人执行视角整理表示、转移建模、动作接口、架构、训练、数据和规模化七个维度。 | 部分 |
 | 2025 | [Embodied World Model Survey：具身智能世界模型综合综述](../论文与项目/论文逐篇解读/P072.md) · [原文](https://arxiv.org/abs/2510.16732) | 具身世界模型既可做状态估计、未来预测、数据生成或规划，单一“生成质量”指标无法覆盖。综述从功能、时间建模和空间表示三轴组织方法，并强调以决策效用评估。 | 是 · [代码](https://github.com/Li-Zn-H/AwesomeWorldModels) |
 
 #### 相关项目

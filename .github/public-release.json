@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "generator": "build_public_release.py",
-  "content_file_count": 539,
+  "content_file_count": 542,
   "operational_file_count": 6,
   "files": [
     {
@@ -31,8 +31,8 @@
     },
     {
       "path": ".github/scripts/validate_public_tree.py",
-      "size": 13764,
-      "sha256": "45f9e72efad9257cb673d4152f8d8c614491c8663389f512d4a0d19a6cecdf6a"
+      "size": 13809,
+      "sha256": "7e58c4b4304e08e6f7f98ace9b27f6ea03f136211ed75fb0b75713158ce812db"
     },
     {
       "path": ".github/workflows/public-release-check.yml",
@@ -57,7 +57,7 @@
     {
       "path": "README.md",
       "size": 22257,
-      "sha256": "332fd3ca31fc5968f5e95768dceb2142f6dcfbde8ec27243a00c43aed14426f4"
+      "sha256": "46ef298636d4d97332e98ab8dd3679ab53848f22684bcce161d604abe415414d"
     },
     {
       "path": "公司与产业/README.md",
@@ -431,8 +431,8 @@
     },
     {
       "path": "具身智能公司的开源项目/公司项目/逐际动力.md",
-      "size": 7602,
-      "sha256": "9c53209e04bbf652355706a0983d497f880d91e9910e90282875f93a40ab2f82"
+      "size": 7624,
+      "sha256": "2277ee2695d2ae9e80db85310aeecfbc33317303186a2e23a1ef1e0d6effa77e"
     },
     {
       "path": "具身智能公司的开源项目/公司项目/速腾聚创.md",
@@ -516,8 +516,8 @@
     },
     {
       "path": "技术路线/05_世界模型VLA与Agent.md",
-      "size": 66413,
-      "sha256": "6be28a467ab4bb3e558dbd34aade2603f8a8fcd3716f83b7429b0d14b89aea99"
+      "size": 67672,
+      "sha256": "e313f4f26b7db68d85f37f2574e8d112cd88feef7f78b65056a654a93cd5f813"
     },
     {
       "path": "技术路线/06_工程与实机部署.md",
@@ -656,13 +656,13 @@
     },
     {
       "path": "论文与项目/README.md",
-      "size": 91390,
-      "sha256": "9299844afd529424dcf072ef1111d24a551b7e7be61985452d68fe53f65c4763"
+      "size": 92570,
+      "sha256": "fcc302b623813bb4482564393c414e07fb9763cc4d6f92087440450e0bc2661a"
     },
     {
       "path": "论文与项目/开源项目主表.md",
-      "size": 155459,
-      "sha256": "5a139df9dbd886454306d49f93a694b6c1f2ee0cee6b9c866bce6950a8b9e213"
+      "size": 155481,
+      "sha256": "6f4127603facdc0b869b2ed5cdc4ad7791c0be4769c33b3461b4fc5b7b5678d0"
     },
     {
       "path": "论文与项目/许可/CC-BY-NC-SA-4.0.txt",
@@ -1718,6 +1718,21 @@
       "path": "论文与项目/论文逐篇解读/P209.md",
       "size": 7470,
       "sha256": "fe8d4c8154388db00fce474620e0fdd32f96848bc3c5852452a45358f8c84ff5"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P210.md",
+      "size": 3770,
+      "sha256": "c2704e65534750ef21debe4a616c24d465f5441e16856d5f99887085fd9ef11b"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P211.md",
+      "size": 3204,
+      "sha256": "3518df3be033c81c60af9598f94cac4453d5995726ade5073f7e583dc22d9d7f"
+    },
+    {
+      "path": "论文与项目/论文逐篇解读/P212.md",
+      "size": 3587,
+      "sha256": "1aa081bb6068a0c872eabbea01b452c1c6b4eb247bcab7ef9041f6fd091c0169"
     },
     {
       "path": "论文与项目/论文逐篇解读/README.md",

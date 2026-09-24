@@ -106,7 +106,7 @@ cd humanoid-motion-intelligence
 | 物理世界建模与预测 | 预测动作条件下的未来视觉、潜在状态、物体变化或动力学，用于规划、训练和评测 | [DreamDojo](论文与项目/论文逐篇解读/P114.md)、[HAIC](论文与项目/论文逐篇解读/P049.md)、[WorldArena](论文与项目/论文逐篇解读/P116.md) |
 | 记忆、规划与任务调度 | 维护空间和任务上下文，把长程目标拆成技能图，并依据执行反馈重新规划 | [HoloAgent-0](论文与项目/论文逐篇解读/P082.md)、[SceneBot](论文与项目/论文逐篇解读/P094.md)、[FALCON](论文与项目/论文逐篇解读/P044.md) |
 
-代表项目包括[Isaac-GR00T](https://github.com/NVIDIA/Isaac-GR00T)、[HoloAgent](https://github.com/HorizonRobotics/HoloAgent)、[GE-2 / GE-Sim 2.0](https://github.com/AgibotTech/GE-Sim-V2)和[GO-2](https://www.agibot.com/article/231/detail/56.html)。完整页面收录**58篇论文/技术报告和109个项目**。
+代表项目包括[Isaac-GR00T](https://github.com/NVIDIA/Isaac-GR00T)、[HoloAgent](https://github.com/HorizonRobotics/HoloAgent)、[GE-2 / GE-Sim 2.0](https://github.com/AgibotTech/GE-Sim-V2)和[GO-2](https://www.agibot.com/article/231/detail/56.html)。完整页面收录**61篇论文/技术报告和109个项目**。
 
 ### 6. 工程与实机部署
 
@@ -144,7 +144,7 @@ cd humanoid-motion-intelligence
 | [技术路线总览与学习路径](技术路线/README.md) | 系统能力栈、训练更新闭环、路线关系、七阶段学习顺序、最小作品和通过标准 |
 | [强化学习开发者必备开源资料](强化学习开发者必备开源资料/README.md) | 通过开源项目页和书籍课程页，分别解决“开发用什么工具”和“基础怎样补齐” |
 | [具身智能数据集](数据集/README.md) | 按数据来源、本体依赖、动作表示和训练用途查找40个具身智能数据集 |
-| [论文与技术报告总索引](论文与项目/README.md) | 209篇论文与技术报告按最终系统作用分类，可按稳定`Pxxx`编号进入独立解读 |
+| [论文与技术报告总索引](论文与项目/README.md) | 212篇论文与技术报告按最终系统作用分类，可按稳定`Pxxx`编号进入独立解读 |
 | [开源项目主表](论文与项目/开源项目主表.md) | 594个项目的研发位置、关键实现、开源边界与开发价值 |
 | [具身智能公司的开源项目](具身智能公司的开源项目) | 目录按公司拆成独立页面，展示官方归属可核验且具有代码托管入口的项目，并标注许可证与使用边界 |
 | [公司与产品主表](公司与产业/公司与产品主表.md) | 按国家或地区整理的177家公司/机构及其公开产品与平台 |
