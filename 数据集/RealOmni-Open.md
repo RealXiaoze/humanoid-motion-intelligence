@@ -120,4 +120,4 @@ MCAP解析与质量检查
 - [LoongForge的GR00T N1.6训练优化说明](https://cloud.baidu.com/article/7382826)
 - [das-datakit官方代码](https://github.com/genrobot-ai/das-datakit)
 
-[返回具身智能数据集](README.md) · [查看数据集主表](数据集主表.md) · [查看Ego采集设备选型](Ego第一人称数据采集设备选型.md)
+[返回具身智能数据集](README.md) · [查看Ego采集设备选型](Ego第一人称数据采集设备选型.md)

@@ -11,7 +11,7 @@ from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parents[2]
 EXPORT_MANIFEST = ROOT / ".github" / "public-release.json"
-EXPECTED_CONTENT_FILES = 544
+EXPECTED_CONTENT_FILES = 458
 EXPECTED_OPERATIONAL_FILES = 6
 EXPECTED_PAPER_PAGES = 212
 EXPECTED_PAPER_IMAGES = 201
@@ -56,9 +56,9 @@ ALLOWED_TOP_LEVEL = {
     "AGENTS.md",
     "README.md",
     "LICENSE.md",
-    "具身智能公司的开源项目",
+    "具身智能公司的开源项目.md",
     "强化学习开发者必备开源资料",
-    "公司与产业",
+    "公司与产品主表.md",
     "数据集",
     "技术路线",
     "求职与岗位",
@@ -336,7 +336,7 @@ def check_readme_counts(errors: list[str]) -> None:
     for expected in (
         f"{EXPECTED_PAPER_PAGES}篇论文与技术报告按最终系统作用分类",
         f"{EXPECTED_PROJECTS}个项目的研发位置、关键实现、开源边界与开发价值",
-        f"查找{EXPECTED_DATASETS}个具身智能数据集",
+        f"查找{EXPECTED_DATASETS}项数据集与相关数据资源",
     ):
         if expected not in readme:
             errors.append(f"README总数与公开数据不一致：expected={expected}")

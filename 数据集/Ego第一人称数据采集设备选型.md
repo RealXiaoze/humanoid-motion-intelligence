@@ -57,7 +57,7 @@
 
 ## 动作采集与数据平台
 
-KaiEgo还应与实际开放数据区分：[KAI Ego Data Minibatch](https://huggingface.co/datasets/Kinetix-AI/kai-data-minibatch)是约3小时的受控访问处理样例，需签约与人工审核，具体字段见[数据集主表](数据集主表.md#d039)。设备宣传规模不等于样例开放规模。
+KaiEgo还应与实际开放数据区分：[KAI Ego Data Minibatch](https://huggingface.co/datasets/Kinetix-AI/kai-data-minibatch)是约3小时的受控访问处理样例，需签约与人工审核，具体字段见[数据集总览](README.md#d039)。设备宣传规模不等于样例开放规模。
 
 [Sunday Robotics](https://www.sunday.ai/)采用Skill Capture Glove采集家庭示范并用于Memo技能学习，适合作为“人类示范设备 → 家庭任务数据 → 机器人策略”的公司系统案例。当前核验材料未提供可下载数据卡或开放训练框架，因此不把它列成开放数据集，也不从演示推断采集精度或跨本体迁移效果。
 
@@ -95,4 +95,4 @@ KaiEgo还应与实际开放数据区分：[KAI Ego Data Minibatch](https://huggi
 - 同名产品、设备家族与组合方案必须按具体型号核对，不能把某一组件参数写成整套系统能力；
 - 未找到产品主体或官方技术页的候选设备不进入已核验表，待获得一手材料后再补。
 
-[返回人形训练数据构建](../技术路线/01_动作数据与重定向.md) · [动作数据质量检查表](../技术路线/01_动作数据与重定向.md) · [数据集主表](数据集主表.md)
+[返回人形训练数据构建](../技术路线/01_动作数据与重定向.md) · [动作数据质量检查表](../技术路线/01_动作数据与重定向.md) · [数据集总览](README.md)
