@@ -46,7 +46,7 @@
 
 ## 完整条目
 
-本路线当前收录 **39** 篇论文/技术报告、**61** 个项目。
+本路线当前收录 **39** 篇论文/技术报告、**62** 个项目。
 
 ### 基础Locomotion
 
@@ -181,6 +181,7 @@
 | [BFM-Zero](https://github.com/LeCAR-Lab/BFM-Zero) | Forward-Backward无监督强化学习先建立覆盖多种行为的潜在策略，行为提示和条件对抗运动先验再限制动作分布。仓库把分阶段训练、专家数据与G1部署串在一起，开发者可以分别消融潜变量覆盖和先验约束。 |
 | [FLD](https://github.com/mit-biomimetics/fld) | 第一阶段把高维周期或准周期动作编码为连续的频率、幅值和相位潜变量并学习重建与预测，第二阶段从离线动作、GMM或课程采样器选择潜变量作为策略任务，使同一策略按连续行为表示生成和跟踪动作。 |
 | [Generative Motion Prior](https://sites.google.com/view/humanoid-gmp) | 人体动作先重定向为机器人轨迹，条件VAE再在线生成未来参考，以冻结的关节和关键点监督训练速度策略。若AMP判别奖励难调，可沿这条路线比较分布判别与显式生成参考对自然步态的影响。 |
+| [isaac_asimov](https://github.com/menloresearch/isaac_asimov) | 以独立Isaac Lab扩展提供Asimov 1速度行走的普通PPO与AMP训练任务，可在同一本体上对照运动先验的作用；支持单卡、多卡分布式训练、检查点回放和ONNX导出。它是本体特定的Locomotion框架，不是通用全身动作跟踪基座。 |
 | [Mini Pi Plus AMP](https://github.com/HighTorque-Robotics/Mini-Pi-Plus_AMP) | 高擎官方仓库提供Mini Pi Plus人形机器人的AMP运动训练与仿真工具：Isaac Lab GPU并行训练、AMP+PPO与镜像轨迹增强（pi_plus_amp_sym_flat，4096并行环境、50000迭代）、MuJoCo sim2sim验证、策略回放与AMP动画、TensorBoard日志及TorchScript导出，并附带三个示例权重；README明确面向研究与仿真，实机连接前需受控验证。 |
 | [motion_imitation](https://github.com/erwincoumans/motion_imitation) | 动物参考动作先经重定向转换到四足本体，策略同时接收任务状态与参考相位，通过动作跟踪奖励学习步态和动态技能；仓库提供Gym环境、参考数据、训练代码、预训练模型和MPC组件。 |
 | [noetix_n2_gym](https://github.com/Noetix-Robotics/noetix_n2_gym) | 为N2人形机器人提供Isaac Gym训练环境、动作加载、AMP和Sim2Sim工具。 |
