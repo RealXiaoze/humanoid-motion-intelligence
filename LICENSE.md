@@ -5,10 +5,10 @@
 | 内容范围 | 许可 | 使用边界 |
 |---|---|---|
 | 原创论文解读、技术路线、产业观察、求职文章及原创数据编排 | [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) | 可在署名、非商业、相同方式共享的条件下复制和改编 |
-| 本仓库公开校验脚本 | [MIT License](论文与项目/许可/MIT.txt) | 可按MIT条款使用、修改和再分发 |
+| 本仓库公开校验脚本 | [MIT License](技术与研究/许可/MIT.txt) | 可按MIT条款使用、修改和再分发 |
 | 论文原图、项目截图、公司标识、引用文字及其他第三方材料 | 不在本库授权范围内 | 权利归原作者或权利人；本库收录不构成再许可 |
 
-CC BY-NC-SA 4.0 的完整法律文本见[本地副本](论文与项目/许可/CC-BY-NC-SA-4.0.txt)和[Creative Commons 官方版本](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.en)。
+CC BY-NC-SA 4.0 的完整法律文本见[本地副本](技术与研究/许可/CC-BY-NC-SA-4.0.txt)和[Creative Commons 官方版本](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.en)。
 
 ## 署名方式
 

@@ -1,10 +1,10 @@
-name: 开源项目候选或复现结果
+name: 项目与研究资源推荐
 description: 推荐项目，或报告实际运行与复现结果
 title: "[项目候选/复现] "
 body:
   - type: markdown
     attributes:
-      value: 请区分官方宣称、代码中实际开放的模块和你的复现结果，不要只转述README功能列表。
+      value: 请提供官方链接，简要说明项目解决的问题、核心方法和主要用途。运行过项目的读者可补充实验结果。
   - type: input
     id: repository
     attributes:
@@ -12,31 +12,24 @@ body:
       placeholder: https://github.com/...
     validations:
       required: true
-  - type: input
-    id: license
-    attributes:
-      label: 许可证
-      description: 未声明许可证时填写UNLICENSED，不确定时填写UNKNOWN。
-    validations:
-      required: true
   - type: textarea
     id: role
     attributes:
-      label: 项目在研发链中的位置
-      description: 说明输入、输出、已开放模块以及适合作为什么基线。
+      label: 主要用途与核心方法
+      description: 简要说明项目的输入、输出、方法和适用任务。
     validations:
       required: true
   - type: textarea
     id: environment
     attributes:
       label: 运行环境与复现步骤
-      description: 未实际运行时填写“仅推荐候选，未复现”。
+      description: 如有实际运行经历，可填写硬件、软件版本和操作步骤。
     validations:
-      required: true
+      required: false
   - type: textarea
     id: result
     attributes:
-      label: 成功结果与失败边界
-      description: 请附日志、配置、版本、视频或其他可核验证据；未复现时说明来源边界。
+      label: 实验结果
+      description: 如有实际运行经历，可附日志、配置、视频和遇到的问题。
     validations:
-      required: true
+      required: false

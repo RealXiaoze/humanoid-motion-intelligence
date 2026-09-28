@@ -11,19 +11,19 @@ from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parents[2]
 EXPORT_MANIFEST = ROOT / ".github" / "public-release.json"
-EXPECTED_CONTENT_FILES = 542
+EXPECTED_CONTENT_FILES = 457
 EXPECTED_OPERATIONAL_FILES = 6
-EXPECTED_PAPER_PAGES = 212
+EXPECTED_PAPER_PAGES = 214
 EXPECTED_PAPER_IMAGES = 201
-EXPECTED_PROJECTS = 594
+EXPECTED_PROJECTS = 599
 EXPECTED_DATASETS = 40
 EXPECTED_TRACK_COUNTS = {
-    "### 1. 动作数据与重定向": (18, 47),
-    "### 2. Locomotion与运动先验": (39, 61),
-    "### 3. 动作跟踪与全身控制": (41, 52),
-    "### 4. LocoManip与物理交互": (36, 38),
-    "### 5. 世界模型、VLA与Agent": (61, 109),
-    "### 6. 工程与实机部署": (17, 287),
+    "动作数据与重定向": (20, 49),
+    "Locomotion与运动先验": (42, 63),
+    "动作跟踪与全身控制": (40, 52),
+    "LocoManip": (36, 38),
+    "世界模型、VLA与Agent": (59, 109),
+    "工程与实机部署": (17, 288),
 }
 PAGES_WITHOUT_EMBEDDED_FIGURES = {
     "P016.md",
@@ -46,6 +46,8 @@ PAGES_WITHOUT_EMBEDDED_FIGURES = {
     "P210.md",
     "P211.md",
     "P212.md",
+    "P213.md",
+    "P214.md",
 }
 RUNTIME_IGNORED_DIRS = {".git", "__pycache__"}
 RUNTIME_IGNORED_SUFFIXES = {".pyc"}
@@ -56,13 +58,12 @@ ALLOWED_TOP_LEVEL = {
     "AGENTS.md",
     "README.md",
     "LICENSE.md",
-    "具身智能公司的开源项目",
+    "具身智能公司的开源项目.md",
     "强化学习开发者必备开源资料",
-    "公司与产业",
+    "公司与产品主表.md",
     "数据集",
-    "技术路线",
+    "技术与研究",
     "求职与岗位",
-    "论文与项目",
 }
 ALLOWED_GITHUB_FILES = {
     Path(".github/public-release.json"),
@@ -107,6 +108,14 @@ READER_INTERNAL_RE = re.compile(
 PUBLIC_MAINTENANCE_FIELD_RE = re.compile(
     r"^last_verified:\s*|最后更新时间|最后更新：|最近核验：|核验日期|"
     r"时间为(?:最后|最近一次)核验日期",
+    flags=re.MULTILINE,
+)
+PROJECT_STATUS_FIELD_RE = re.compile(
+    r"^#{1,6}[^\n]*(?:当前开放边界|开源状态|开放情况|开放范围|发布状态)|"
+    r"\|\s*(?:开源|开放状态|代码状态|权重状态|许可记录|核验)\s*\||"
+    r"\*\*(?:已公开内容|开放情况|关键限制|许可记录)\*\*|"
+    r"(?:代码|权重)(?:仍|尚)?(?:未|待)(?:发布|开放|开源)|"
+    r"(?:代码|权重)(?:已发布|已开放)",
     flags=re.MULTILINE,
 )
 
@@ -252,6 +261,11 @@ def check_markdown(files: list[Path], errors: list[str]) -> None:
     markdown_files = [path for path in files if path.suffix.lower() == ".md"]
     for page in markdown_files:
         text = page.read_text(encoding="utf-8")
+        relative = page.relative_to(ROOT)
+        if relative.parts[0] in {"技术与研究", "技术与研究", "数据集", "强化学习开发者必备开源资料", "具身智能公司的开源项目.md", "公司与产品主表.md"} and "许可" not in relative.parts:
+            for match in PROJECT_STATUS_FIELD_RE.finditer(text):
+                line_no = text.count("\n", 0, match.start()) + 1
+                errors.append(f"{relative}:{line_no} 项目页面应展示用途与链接，不展示开放状态字段：{match.group(0)}")
         for match in PUBLIC_MAINTENANCE_FIELD_RE.finditer(text):
             line_no = text.count("\n", 0, match.start()) + 1
             errors.append(
@@ -285,7 +299,7 @@ def check_markdown(files: list[Path], errors: list[str]) -> None:
                 elif "![" in match.group(1) and resolved.is_file():
                     referenced_images.add(relative)
 
-    paper_dir = ROOT / "论文与项目" / "论文逐篇解读"
+    paper_dir = ROOT / "技术与研究" / "论文逐篇解读"
     paper_pages = sorted(paper_dir.glob("P[0-9][0-9][0-9].md"))
     expected_names = {f"P{number:03d}.md" for number in range(1, EXPECTED_PAPER_PAGES + 1)}
     actual_names = {path.name for path in paper_pages}
@@ -297,6 +311,10 @@ def check_markdown(files: list[Path], errors: list[str]) -> None:
         )
     for page in paper_pages:
         text = page.read_text(encoding="utf-8")
+        title = re.search(r"^# [^\n]+\n", text, flags=re.MULTILINE)
+        resource_line = text[title.end():].lstrip().splitlines()[0] if title else ""
+        if not re.match(r"\[论文\]\(https?://", resource_line):
+            errors.append(f"论文与项目链接应置于标题下：{page.relative_to(ROOT)}")
         if not text.startswith("---\n"):
             errors.append(f"论文页面缺少front matter：{page.relative_to(ROOT)}")
         for field in ("title", "track"):
@@ -308,7 +326,7 @@ def check_markdown(files: list[Path], errors: list[str]) -> None:
     paper_images = {
         path.relative_to(ROOT) for path in files
         if path.suffix.lower() in IMAGE_SUFFIXES
-        and (ROOT / "论文与项目" / "论文逐篇解读" / "论文原图") in path.parents
+        and (ROOT / "技术与研究" / "论文逐篇解读" / "论文原图") in path.parents
     }
     if len(paper_images) != EXPECTED_PAPER_IMAGES:
         errors.append(
@@ -321,25 +339,30 @@ def check_markdown(files: list[Path], errors: list[str]) -> None:
 
 def check_readme_counts(errors: list[str]) -> None:
     readme = (ROOT / "README.md").read_text(encoding="utf-8")
-    headings = list(EXPECTED_TRACK_COUNTS)
-    for index, heading in enumerate(headings):
-        start = readme.find(heading)
-        end = (
-            readme.find(headings[index + 1], start)
-            if index + 1 < len(headings)
-            else readme.find("## 新手学习顺序", start)
-        )
-        papers, projects = EXPECTED_TRACK_COUNTS[heading]
-        expected = f"完整页面收录**{papers}篇论文/技术报告和{projects}个项目**"
-        if start == -1 or end == -1 or expected not in readme[start:end]:
-            errors.append(f"README路线数量与公开数据不一致：{heading}；expected={expected}")
-    for expected in (
-        f"{EXPECTED_PAPER_PAGES}篇论文与技术报告按最终系统作用分类",
-        f"{EXPECTED_PROJECTS}个项目的研发位置、关键实现、开源边界与开发价值",
-        f"查找{EXPECTED_DATASETS}个具身智能数据集",
-    ):
-        if expected not in readme:
-            errors.append(f"README总数与公开数据不一致：expected={expected}")
+    for title, (papers, projects) in EXPECTED_TRACK_COUNTS.items():
+        rows = [line for line in readme.splitlines() if line.startswith(f"| [{title}](")]
+        if len(rows) != 1 or len(rows[0].split("|")) != 4:
+            errors.append(f"README技术方向应为两列表格且入口唯一：{title}")
+            continue
+        target = re.search(r"\]\(([^)]+)\)", rows[0]).group(1)
+        chapter = ROOT / unquote(target)
+        expected = f"当前收录 **{papers}** 篇论文／技术报告、**{projects}** 个项目。"
+        if not chapter.is_file() or expected not in chapter.read_text(encoding="utf-8"):
+            errors.append(f"章节数量与公开数据不一致：{title}；expected={expected}")
+    # Check homepage section links as well as target file existence.
+    for target in re.findall(r"\]\(([^)]+)\)", readme):
+        if "#" not in target or target.startswith(("https:", "http:")):
+            continue
+        path, fragment = target.split("#", 1)
+        destination = ROOT / unquote(path) if path else ROOT / "README.md"
+        if not destination.is_file():
+            continue
+        content = destination.read_text(encoding="utf-8")
+        headings = re.findall(r"^#{1,6} (.+)$", content, re.MULTILINE)
+        anchors = {re.sub(r"[^\w\-\s]", "", heading.lower()).replace(" ", "-") for heading in headings}
+        anchors.update(re.findall(r'(?:id|name)="([^"]+)"', content))
+        if unquote(fragment) not in anchors:
+            errors.append(f"README章节链接不存在：{target}")
 
 
 def main() -> None:
