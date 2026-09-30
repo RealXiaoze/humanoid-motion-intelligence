@@ -16,6 +16,7 @@
 | 产品 | 采集或输出 | 主要用途 |
 |---|---|---|
 | [奥比中光 EGO RGB-D](https://www.orbbec.com.cn/index/News/info.html?cate=31&id=377) | 同步RGB、深度与IMU，提供公制深度与空间对齐 | 记录操作场景几何与手物交互 |
+| [五一视界 AperEgo 4](https://www.51world.com.cn/aperdata) | 四目全景头戴采集，记录视频、IMU、时间戳、音频与标定参数 | 采集第一视角人类示范，接入AperData数据处理流程 |
 | [简智机器人 DAS Ego](https://cn.genrobot.com/products/ego) | 6路RGB、六轴IMU、空间轨迹与音频 | 采集大视场第一视角视频、惯性与运动轨迹 |
 | [鹿明机器人 FastUMI Ego](https://www.news.cn/tech/20260314/e81f7585b7c94e1281f94cd4eb59202e/c.html) | RGB、IMU、ToF、世界坐标定位与双手跟踪，可配合FastUMI操作端 | 同时记录环境、操作者与手部操作轨迹 |
 | [Kinetix AI Kai Halo](https://www.kinetixai.tech/zh/KaiEgo) | 多路鱼眼图像，以及场景重建、手部跟踪、全身姿态与动作语义处理 | 构建第一视角人体动作与手物交互数据 |
@@ -34,6 +35,7 @@
 | [觅蜂科技 MEgo Engine](https://www.maniformer.net/mego) | 云端轨迹重建、人体位姿提取、质量检测与智能标注 | 将采集记录处理成结构化操作数据 |
 | [觅蜂派](https://www.maniformer.net/mifengpai) | 采集任务分发、设备申领、录制上传、脱敏与有效时长核定 | 组织分布式人类操作数据采集 |
 | [Lightwheel EgoSuite](https://lightwheel.ai/egosuite) | 组合VR、外骨骼与UMI式夹爪，处理RGB-D、手臂姿态、触觉、三维轨迹和语义 | 建设多设备协同采集与操作数据处理流程 |
+| [五一视界 AperOS](https://www.51world.com.cn/aperdata) | 采集任务管理、数据同步、质量检查、解算、评测与数据集交付 | 将AperEgo等设备记录组织为可用于训练的数据资产 |
 | [DexRobot DexCap（商业外骨骼）](https://www.dex-robot.com/dexCap) | 全身外骨骼记录手、手臂、腰部等动作，提供C++、Python与ROS接口 | 采集全身动作示范，接入遥操作与重定向 |
 | [Sunday Robotics Skill Capture Glove](https://www.sunday.ai/) | 手套采集家庭操作示范，供Memo技能学习使用 | 从人类示范学习家庭任务 |
 

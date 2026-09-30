@@ -2,7 +2,7 @@
 
 > 移动、平衡、接触与操作协同，汇总相关论文、方法与项目。
 
-当前收录 **36** 篇论文／技术报告、**38** 个项目。
+当前收录 **40** 篇论文／技术报告、**40** 个项目。
 
 ## 本页导航
 
@@ -87,11 +87,15 @@
 | [CoorDex：用身体与手部先验降低连续灵巧移动操作难度](论文逐篇解读/P139.md) | 分别蒸馏身体和灵巧手动作先验，再在潜在动作空间学习协同残差以完成连续移动抓取。 | [原文](https://arxiv.org/abs/2606.23680) · [代码](https://github.com/Skevinci/coordex) · [项目页](https://skevinci.github.io/coordex/) |
 | [DECOWAM：用未来蒸馏与动作解耦适配腿式移动操作](论文逐篇解读/P199.md) | 以未来瓶颈和底盘－手臂因子分解区分相机自运动与机械臂动作，面向腿式移动操作。 | [原文](https://arxiv.org/abs/2608.20114) |
 | [DPC：从视觉语义直接生成可执行全身关节目标](论文逐篇解读/P164.md) | 取消中间运动目标接口，让视觉、语言、本体与执行反馈直接生成关节和手部动作。 | [原文](https://symbiosis-robotics.com/research/dpc/en/) |
+| [FARO：面向可行性的机器人运动优化](论文逐篇解读/P239.md) | 围绕候选接触序列构建由便宜到昂贵的运动学与动力学可行性筛选层，并与接触模式树搜索结合以生成可执行的人形全身操作轨迹。 | [原文](https://arxiv.org/abs/2607.18362) · [项目页](https://atarilab.github.io/faro.io/) |
 | [HANDOFF：基于互补教师蒸馏的人形智能体任务空间全身控制](论文逐篇解读/P111.md) | 将互补移动、操作和恢复教师蒸馏为MoE策略，把低维任务空间命令转成人形全身动作。 | [原文](https://arxiv.org/abs/2606.06493) · [代码](https://github.com/lzyang2000/HANDOFF) · [项目页](https://lzyang2000.github.io/HANDOFF/) |
 | [HumanX：基于人类视频的敏捷可泛化人形交互技能](论文逐篇解读/P098.md) | 将人类视频恢复为人－物交互轨迹并扩增，再以统一模仿学习训练球类、搬运和交互技能。 | [原文](https://arxiv.org/abs/2602.02473) · [项目页](https://wyhuai.github.io/human-x/) |
+| [KINO：用关键帧连接视觉语言规划与人形全身控制](论文逐篇解读/P224.md) | 以稀疏语义关键帧连接VLM分阶段规划与PPO全身策略，通过场景重定向和显著性采样完成G1抓取搬运。 | [原文](https://arxiv.org/abs/2609.18869) |
 | [MobileWAM：用训练期未来信念支持移动操作](论文逐篇解读/P203.md) | 用前瞻链和移动专家建模底盘视角变化与手臂动作，执行全身移动操作长程任务。 | [原文](https://arxiv.org/abs/2608.04657) |
 | [OmniContact：用接触流组织可组合的人形物理技能](论文逐篇解读/P138.md) | 以身体轨迹和时序接触构成Contact Flow，由生成器与低层策略组合长程移动操作技能。 | [原文](https://arxiv.org/abs/2606.26201) · [代码](https://github.com/Ingrid789/OmniContact_sim2sim) · [项目页](https://omnicontact.github.io/) |
 | [OpenHLM：验证全身原生LocoManip的数据与训练配方](论文逐篇解读/P141.md) | 以关节级全身遥操作和异构数据共训练VLA，面向人形全身移动操作控制任务。 | [原文](https://arxiv.org/abs/2606.22174) · [项目页](https://openhlm-project.github.io/) |
+| [STRIDER：以精确落脚和多步态协同实现人形移动操作](论文逐篇解读/P225.md) | 融合AMP行走、地形感知迈步和笛卡尔上肢专家，并以LD-PPO蒸馏潜在协调表示实现单策略多步态移动操作。 | [原文](https://arxiv.org/abs/2609.23483) |
+| [WEAVE：从人—物交互示范学习全身灵巧移动操作](论文逐篇解读/P223.md) | 从人—物动作重定向与接触优化生成机器人参考，再以几何和接触感知策略联合控制人形身体、灵巧手与物体。 | [原文](https://arxiv.org/abs/2609.16683) · [代码](https://github.com/xiaohu-art/Weave) · [项目页](https://xiaohu-art.github.io/Weave/) |
 | [DemoHLM：从单次示范到可泛化人形移动操作](论文逐篇解读/P046.md) | 把单次仿真示范拆为移动、预操作和接触阶段，在新物体布局生成轨迹并训练长程策略。 | [原文](https://arxiv.org/abs/2510.11258) · [项目页](https://beingbeyond.github.io/DemoHLM/) |
 | [HDMI：从人类视频学习交互式人形全身控制](论文逐篇解读/P099.md) | 结合对象感知参考、残差控制和物体状态奖励，从单目视频学习人形开门、搬运和推物。 | [原文](https://arxiv.org/abs/2509.16757) · [代码](https://github.com/LeCAR-Lab/HDMI) · [项目页](https://hdmi-humanoid.github.io/) |
 | [Humanoid Loco-Manipulation Survey：人形运动与操作的控制、规划与学习综述](论文逐篇解读/P069.md) | 综述人形移动、操作的模型控制、强化学习、接触规划与硬件接口，覆盖全身控制任务。 | [原文](https://arxiv.org/abs/2501.02116) |
@@ -109,6 +113,7 @@
 | [DemoGrasp](https://github.com/BeingBeyond/DemoGrasp) | 移动操作与技能系统 | 结合移动底盘、双臂或灵巧手状态与任务观测生成操作动作，并依据接触结果闭环执行。 |
 | [DemoHLM](https://github.com/BeingBeyond/DemoHLM) | 移动操作与技能系统 | 结合移动底盘、双臂或灵巧手状态与任务观测生成操作动作，并依据接触结果闭环执行。 |
 | [duatic_teleop](https://github.com/Duatic/duatic_teleop) | 模块化ROS 2遥操作 | 将人体输入设备接入模块化ROS 2遥操作流程，用于机器人控制和示范采集。 |
+| [FARO](https://atarilab.github.io/faro.io/) | LocoManip与物理交互 | 围绕候选接触序列构建由便宜到昂贵的运动学与动力学可行性筛选层，并与接触模式树搜索结合以生成可执行的人形全身操作轨迹。 |
 | [HANDOFF](https://github.com/lzyang2000/HANDOFF) | Agent到WBC接口项目 | 将上层移动操作意图转为十维全身命令，并蒸馏运动跟踪、行走和恢复教师为MoE策略。 |
 | [HDMI](https://github.com/LeCAR-Lab/HDMI) | 人形物体交互项目 | 从单目视频恢复人体物体参考，在Isaac Lab训练残差策略，并通过动作蒸馏和在线适配连接G1部署。 |
 | [HumanX](https://wyhuai.github.io/human-x/) | 交互数据与技能项目 | 从互联网视频恢复人体与物体交互并生成物理化参考，再训练G1交互技能。 |
@@ -123,6 +128,7 @@
 | [troncamp-mani](https://github.com/limxdynamics/troncamp-mani) | 移动操作与技能系统 | 结合移动底盘、双臂或灵巧手状态与任务观测生成操作动作，并依据接触结果闭环执行。 |
 | [UMI on Legs](https://github.com/real-stanford/umi-on-legs) | 操作策略与移动全身控制接口 | 由视觉操作策略输出世界坐标夹爪轨迹，全身控制器协调四足底盘与机械臂执行移动操作。 |
 | [UniTacHand](https://github.com/BeingBeyond/UniTacHand) | 移动操作与技能系统 | 结合移动底盘、双臂或灵巧手状态与任务观测生成操作动作，并依据接触结果闭环执行。 |
+| [WEAVE](https://github.com/xiaohu-art/Weave) | 全身协同与技能接口 | 从人—物动作重定向与接触优化生成机器人参考，再以几何和接触感知策略联合控制人形身体、灵巧手与物体。 |
 
 ## 相关资料
 

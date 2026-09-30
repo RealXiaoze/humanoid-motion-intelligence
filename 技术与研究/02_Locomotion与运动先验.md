@@ -2,7 +2,7 @@
 
 > 自主移动、地形适应与运动先验，汇总相关论文、方法与项目。
 
-当前收录 **42** 篇论文／技术报告、**63** 个项目。
+当前收录 **48** 篇论文／技术报告、**68** 个项目。
 
 ## 本页导航
 
@@ -54,13 +54,18 @@
 
 | 论文／报告 | 主要方法与用途 | 原文／代码 |
 | --- | --- | --- |
+| [DAVIS：深度视觉驱动的人形足球技能](论文逐篇解读/P218.md) | 以头部深度图和本体历史端到端输出全身PD目标，使用可见性几何监督、真值渐进替换与AMP先验训练射门和盘带。 | [原文](https://arxiv.org/abs/2609.28175) · [项目页](https://thusi-lab.github.io/DAVIS/) |
 | [Deep Whole-Body Parkour：基于深度强化学习的全身跑酷控制](论文逐篇解读/P020.md) | 将场景扫描与人体示范配对，以参考、本体历史和深度输入修正人形跑酷中的多接触时机。 | [原文](https://arxiv.org/abs/2601.07701) · [代码](https://github.com/project-instinct/InstinctLab/blob/main/source/instinctlab/instinctlab/tasks/shadowing/README.md) · [项目页](https://project-instinct.github.io/deep-whole-body-parkour/) |
 | [DPL：以跨模态地形重建驱动深度感知人形运动](论文逐篇解读/P149.md) | 以深度合成、跨注意力地形重建和教师学生蒸馏，将深度输入映射为人形地形行走动作。 | [原文](https://arxiv.org/abs/2510.07152) |
+| [FootQuery：未来落脚点引导的深度历史检索](论文逐篇解读/P216.md) | 根据本体状态预测每只脚的下一触地点，并从深度历史中检索相关区域，与全局视觉记忆融合生成关节动作。 | [原文](https://arxiv.org/abs/2609.21447) |
+| [Generate, Track, Improve：强化学习微调的感知多技能人形运动](论文逐篇解读/P215.md) | 以深度条件流匹配生成全身参考、CLF-RL跟踪器执行，并用结构化搜索与AWR微调生成器，改善未见地形通过和技能选择。 | [原文](https://arxiv.org/abs/2609.31577) · [项目页](https://zolkin1.github.io/generate-track-improve/) |
 | [Hiking in the Wild：面向真实复杂地形的可扩展感知跑酷](论文逐篇解读/P132.md) | 从深度检测地形边缘并约束足部落点，训练人形在台阶、空隙等复杂地形自主行走。 | [原文](https://arxiv.org/abs/2601.07718) · [代码](https://github.com/project-instinct/InstinctLab/blob/main/source/instinctlab/instinctlab/tasks/parkour/README.md) · [项目页](https://project-instinct.github.io/hiking-in-the-wild/) |
 | [Vision-Driven Soccer：把不可靠视觉接入人形机器人反应式全身控制](论文逐篇解读/P182.md) | 将对象中心视觉、本体历史估计和关节控制合入强化学习策略，在仿真训练人形足球技能。 | [原文](https://arxiv.org/abs/2511.03996) · [代码](https://doi.org/10.5281/zenodo.21620490) · [项目页](https://humanoid-kick.github.io/) |
 | [Light-Loco-Parkour：多专家蒸馏与无标签切换的视觉全身跑酷](论文逐篇解读/P150.md) | 以多技能专家、DAgger蒸馏和奖励微调训练人形依据深度与速度切换跳跃攀爬动作。 | [原文](https://arxiv.org/abs/2608.02653) · [项目页](https://light-loco-parkour.github.io/) |
 | [Perceptive BFM：面向机器人中心地形的人体运动先验适配](论文逐篇解读/P038.md) | 离线生成地形一致参考并蒸馏学生策略，以局部高度扫描修正人形动作跟踪和地形行走。 | [原文](https://arxiv.org/abs/2606.08059) · [项目页](https://acodedog.github.io/perceptive-bfm/) |
 | [PHP：基于运动匹配与多教师蒸馏的感知人形跑酷](论文逐篇解读/P133.md) | 以运动匹配拼接人类跑酷技能并蒸馏跟踪专家，按深度和速度命令衔接障碍动作。 | [原文](https://arxiv.org/abs/2602.15827) · [项目页](https://php-parkour.github.io/) |
+| [SOLO：稳定长时全地形感知人形运动](论文逐篇解读/P238.md) | 以查询式地形重建保留落脚相关细节，并用带未来状态分歧信用分配的蒸馏奖励训练仅依赖深度与本体感知的长时运动策略。 | [原文](https://arxiv.org/abs/2608.26583) · [项目页](https://sunpihai-up.github.io/solo/) |
+| [WM-LOCO：世界模型增强的受限落足地形运动](论文逐篇解读/P217.md) | 将RSSM循环世界模型与PPO联合训练，以历史状态、动作和深度预测形成供人形运动策略使用的记忆特征。 | [原文](https://arxiv.org/abs/2609.02542) · [项目页](https://m0puppet.github.io/wm-loco/) |
 | [X-Loco：基于协同策略蒸馏的视觉通用人形运动控制](论文逐篇解读/P128.md) | 分别训练移动、恢复和协调专家并按场景蒸馏，形成视觉速度条件的人形移动策略。 | [原文](https://arxiv.org/abs/2603.03733) · [项目页](https://x-loco-humanoid.github.io/) |
 | [DreamPolicy：面向可扩展人形运动控制的统一世界模型策略](论文逐篇解读/P018.md) | 用地形条件扩散模型生成未来身体状态，并由统一策略跟踪以执行人形行走和地形适应。 | [原文](https://arxiv.org/abs/2505.18780) · [项目页](https://dreampolicy.github.io/) |
 | [LEGO-H：面向复杂山径的人形机器人一体化技能学习](论文逐篇解读/P019.md) | 结合时序局部目标、特权运动教师和视觉学生，联合学习复杂山径导航与人形行走技能。 | [原文](https://arxiv.org/abs/2505.06218) · [项目页](https://lego-h-humanoidrobothiking.github.io/) |
@@ -75,13 +80,17 @@
 | 项目 | 主要用途 | 功能与特点 |
 | --- | --- | --- |
 | [Click-and-Traverse](https://github.com/GalaxyGeneralRobotics/Click-and-Traverse) | 点击目标驱动的人形复杂地形移动 | 由视觉画面点击目标点，结合地形感知、导航和全身运动策略驱动人形机器人越障到达目标。 |
+| [DAVIS](https://thusi-lab.github.io/DAVIS/) | 视觉与地形感知运控 | 以头部深度图和本体历史端到端输出全身PD目标，使用可见性几何监督、真值渐进替换与AMP先验训练射门和盘带。 |
 | [Deep Whole-Body Parkour](https://project-instinct.github.io/deep-whole-body-parkour/) | 感知全身动作跟踪 | 将地形感知接入参考动作跟踪，以动作地形配对、深度修正和影子跟踪训练G1全身跑酷策略。 |
+| [Generate, Track, Improve](https://zolkin1.github.io/generate-track-improve/) | 视觉与地形感知运控 | 以深度条件流匹配生成全身参考、CLF-RL跟踪器执行，并用结构化搜索与AWR微调生成器，改善未见地形通过和技能选择。 |
 | [Hiking in the Wild](https://project-instinct.github.io/hiking-in-the-wild/) | 感知人形徒步 | 从原始深度生成G1动作，并以地形边缘、足部安全约束和平坦落脚区采样处理野外徒步。 |
 | [Humanoid Parkour Learning](https://humanoid4parkour.github.io/) | 人形感知跑酷 | 以深度图和全身关节动作策略控制人形机器人跨越连续障碍，提供跑酷任务与对照实现。 |
 | [MoRE](https://github.com/TeleHuman/MoRE) | 感知拟人Locomotion | 以共享基础策略和地形残差专家处理复杂地形行走，提供深度感知训练与MuJoCo部署。 |
 | [Perceptive Humanoid Parkour](https://php-parkour.github.io/) | 长时感知跑酷 | 拼接长程跑酷参考并训练多个跟踪专家，再蒸馏为接收深度和速度指令的G1策略。 |
 | [Robot Parkour Learning](https://robot-parkour.github.io/) | 四足感知跑酷 | 将直接配点跑酷解转成强化学习课程，训练多个四足专家并蒸馏为适配A1与Go1部署的单一深度策略。 |
+| [SOLO](https://sunpihai-up.github.io/solo/) | 视觉与地形感知运控 | 以查询式地形重建保留落脚相关细节，并用带未来状态分歧信用分配的蒸馏奖励训练仅依赖深度与本体感知的长时运动策略。 |
 | [Vision-Driven Reactive Soccer Skills code and data](https://doi.org/10.5281/zenodo.21620490) | 论文复现代码与实验数据 | 以视觉驱动机器人足球技能，处理遮挡与球状态估计并生成关节轨迹。 |
+| [WM-LOCO](https://m0puppet.github.io/wm-loco/) | 视觉与地形感知运控 | 将RSSM循环世界模型与PPO联合训练，以历史状态、动作和深度预测形成供人形运动策略使用的记忆特征。 |
 | [X-Loco](https://x-loco-humanoid.github.io/) | 通用人形Locomotion | 训练多种地形专家并自适应选择教师，蒸馏为G1深度感知速度跟踪策略。 |
 
 ## 技能表示与行为基座
@@ -94,6 +103,7 @@
 | --- | --- | --- |
 | [GPC：以离散运动Token预训练可适配的生成式控制器](论文逐篇解读/P159.md) | 将参考动作压成离散Token并训练自回归运动先验，支持角色控制、目标到达和轨迹跟随。 | [原文](https://arxiv.org/abs/2606.29148) · [代码](https://github.com/NVlabs/ProtoMotions) · [项目页](https://yi-shi94.github.io/gpc-page/) |
 | [P³：把边缘策略概率接回VAE与PPO之间](论文逐篇解读/P160.md) | 用矩匹配和潜变量采样估计VAE边缘策略概率，稳定PPO潜变量策略的具身行走训练。 | [原文](https://arxiv.org/abs/2607.25541) · [代码](https://github.com/ylyem9x/P3_Open) |
+| [SkillX：人形足球统一多技能策略](论文逐篇解读/P219.md) | 以单一命令条件Actor配合技能专属对抗先验、价值头和球物体时序编码器，学习带球、停球、射门及其转换。 | [原文](https://arxiv.org/abs/2609.06718) · [项目页](https://yzc0731.github.io/SkillX/) |
 | [BFM Survey：面向下一代人形全身控制的行为基座模型综述](论文逐篇解读/P070.md) | 按预训练监督、统一接口、适配方式和下游任务梳理人形行为基础模型与全身控制路线。 | [原文](https://arxiv.org/abs/2506.20487) |
 | [BFM：人形机器人行为基座模型](论文逐篇解读/P036.md) | 以物理代理生成行为数据，再用掩码CVAE与在线蒸馏学习多种目标接口下的人形全身动作。 | [原文](https://arxiv.org/abs/2509.13780) · [项目页](https://bfm4humanoid.github.io/) |
 | [BFM-Zero：基于无监督强化学习的可提示人形行为基座模型](论文逐篇解读/P080.md) | 以无监督强化学习构建共享行为潜空间，并用提示和条件运动先验连接跟踪、目标与奖励任务。 | [原文](https://arxiv.org/abs/2511.04131) · [代码](https://github.com/LeCAR-Lab/BFM-Zero) · [项目页](https://lecar-lab.github.io/BFM-Zero/) |
@@ -108,6 +118,7 @@
 | [BFM-Zero](https://github.com/LeCAR-Lab/BFM-Zero) | 行为基座 | 以Forward-Backward无监督强化学习学习行为潜空间，再结合行为提示和条件运动先验训练并部署G1策略。 |
 | [FLD](https://github.com/mit-biomimetics/fld) | 傅里叶潜在动力学运动表示实现 | 用傅里叶潜变量表示周期动作的频率、幅值和相位，再通过潜变量采样构造策略任务并生成运动。 |
 | [PULSE](https://github.com/ZhengyiLuo/PULSE) | 动作表示 | 在物理人体控制器上学习潜在动作空间，由高层策略组合潜变量完成任务，研究可复用技能表示。 |
+| [SkillX](https://yzc0731.github.io/SkillX/) | 技能表示与行为基座 | 以单一命令条件Actor配合技能专属对抗先验、价值头和球物体时序编码器，学习带球、停球、射门及其转换。 |
 | [UFO](https://github.com/Roboparty/UFO) | 无监督人形行为框架 | 结合Forward-Backward与TeCH学习可提示的G1行为潜空间，并提供动作导入、目标定义、奖励和跟踪流程。 |
 
 ## 抗扰与保护性控制

@@ -2,7 +2,7 @@
 
 > 汇总具身智能训练与评测相关的数据集、训练数据配方及仿真资产，涵盖人体动作、人类操作视频、机器人示范、重定向轨迹与合成数据，按数据来源与内容整理。
 
-当前收录：**40项数据集与相关数据资源**。
+当前收录：**42项数据集与相关数据资源**。
 
 ## 分类导航
 
@@ -103,6 +103,7 @@
 | <a id="d036"></a>[Open-AoE-2000H](https://github.com/ant-research/Open-AoE) | 手机视频、手部与相机轨迹、动作标注 | 人体＋手机 | 研究人类操作预训练、跨本体重定向与VLA/WAM |
 | <a id="d038"></a>[World In Your Hands](https://wiyh.tars-ai.com/) | 多视角、手部动作及部分触觉与语义 | 人体／灵巧操作 | 研究跨本体操作预训练、重定向与世界建模 |
 | <a id="d039"></a>[KAI Ego Data Minibatch](https://huggingface.co/datasets/Kinetix-AI/kai-data-minibatch) | 第一视角视频、相机参数与跟踪标注 | 人体 | 评估第一视角手物交互数据与机器人学习管线 |
+| <a id="d041"></a>[EgoHTR](https://huggingface.co/datasets/leggedrobotics/egohtr) | 复杂地形中的场景对齐4D人体运动序列，包含SMPL-X人体模型、第一视角视频与SLAM轨迹、原始IMU、三维场景网格和点云；部分片段还提供第二视角、固定相机和动捕真值。 | 8名人类被试；下游示范与控制验证包含Unitree G1 | 评测第一视角人体姿态与人体-场景4D重建；为复杂地形人体动作分析、参考动作重定向和基于场景几何的人形感知Locomotion训练提供数据。论文以重定向后的参考动作训练G1专家策略，并测试接触奖励与参考位置误差的影响。 |
 
 <details>
 <summary>规模、格式与官方来源</summary>
@@ -142,6 +143,13 @@
 - **具体本体／对象**：Human;No Target Robot
 - **官方来源**：[数据卡／项目来源](https://huggingface.co/datasets/Kinetix-AI/kai-data-minibatch)
 
+### EgoHTR
+
+- **规模**：7个场景；55段序列；约1.37小时、约15万帧@30fps；36段多视角序列约0.88小时；约0.7小时动捕真值测试子集
+- **模态与格式**：Ego RGB; SLAM trajectory; IMU; SMPL-X; Scene mesh; Point cloud; Optional exocentric video; MoCap ground truth subset
+- **具体本体／对象**：8名人类被试；下游示范与控制验证包含Unitree G1
+- **官方来源**：[数据卡／项目来源](https://huggingface.co/datasets/leggedrobotics/egohtr)
+
 </details>
 
 <a id="retargeted-motion"></a>
@@ -155,6 +163,7 @@
 | <a id="d026"></a>[OmniContact Dataset](https://huggingface.co/datasets/lightcone02/OmniContact-Dataset) | 人体-物体动作、G1轨迹与接触标签 | 人体／G1／物体 | 学习接触感知参考与全身移动操作 |
 | <a id="d031"></a>[LAFAN1 Retargeting Dataset](https://huggingface.co/datasets/lvhaidong/LAFAN1_Retargeting_Dataset) | 由LaFAN1转换的关节与根节点轨迹 | H1、H1-2、G1 | 训练目标本体动作跟踪与运动模仿 |
 | <a id="d040"></a>[AMS Synthetic Balance Motions](https://github.com/OpenDriveLab/AMS/blob/main/MotionGen/README.md) | 目标本体根节点、关节与支撑腿参考 | G1 29自由度 | 扩展平衡动作参考，研究动作跟踪与参考质量 |
+| <a id="d042"></a>[Weave reference motions and simulation rollouts](https://huggingface.co/datasets/appolyn/Weave) | 保留人—物交互的机器人参考动作、策略仿真执行轨迹与九种物体资产，包含身体、手部、物体状态及接触标签。 | Unitree G1与双Inspire灵巧手；人—物交互 | 用于人形全身移动操作策略学习、评测，以及带物理接触标注的人—物交互动作建模。 |
 
 <details>
 <summary>规模、格式与官方来源</summary>
@@ -193,6 +202,13 @@
 - **模态与格式**：Root Position;Quaternion;Joint Position;Axis-Angle Pose;FPS;Stance Leg
 - **具体本体／对象**：Unitree G1 29-DoF
 - **官方来源**：[数据卡／项目来源](https://github.com/OpenDriveLab/AMS/blob/main/MotionGen/README.md)
+
+### Weave reference motions and simulation rollouts
+
+- **规模**：参考动作9,474段、23.2小时；仿真执行轨迹8,699段、21.2小时；物体资产9种。
+- **模态与格式**：50 Hz关节与刚体状态、物体位姿与速度、接触标签；网格、USD、SDF与表面点
+- **具体本体／对象**：Unitree G1与双Inspire灵巧手；人—物交互
+- **官方来源**：[数据卡／项目来源](https://huggingface.co/datasets/appolyn/Weave)
 
 </details>
 

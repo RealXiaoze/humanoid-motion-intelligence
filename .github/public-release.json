@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "generator": "build_public_release.py",
-  "content_file_count": 457,
+  "content_file_count": 488,
   "operational_file_count": 6,
   "files": [
     {
@@ -31,8 +31,8 @@
     },
     {
       "path": ".github/scripts/validate_public_tree.py",
-      "size": 15574,
-      "sha256": "86a98155f24c338b32a75d93f5dcdbace40055481b2cb9f9855ffce48d02d013"
+      "size": 17407,
+      "sha256": "fb587347415f602553f616ea9f2e1ccce620f39973c9dc31cefd4775168d91e2"
     },
     {
       "path": ".github/workflows/public-release-check.yml",
@@ -56,13 +56,13 @@
     },
     {
       "path": "README.md",
-      "size": 10473,
-      "sha256": "d80e130925d1212e064db7885f51698d7a61f41c17447975e04c3a39307fd069"
+      "size": 10500,
+      "sha256": "be6ae66482442323ba981613bbbc2ee33947c4605b11d7918c1c33dc68fca719"
     },
     {
       "path": "公司与产品主表.md",
-      "size": 93966,
-      "sha256": "aec74e926087c73ecdb8a1263c545bbda7881d934a243bf6d29dd984b8480740"
+      "size": 96761,
+      "sha256": "bc30b7477b6cb92887bb0d047ef53ee1714bf36b1c149f4b0c63345aedfa9a16"
     },
     {
       "path": "具身智能公司的开源项目.md",
@@ -81,33 +81,33 @@
     },
     {
       "path": "技术与研究/01_动作数据与重定向.md",
-      "size": 19032,
-      "sha256": "a4c56a79a39e4ab9dccde337eed8225ec2d7579f639c17b296b2cc8a1968d374"
+      "size": 20851,
+      "sha256": "c65cf210e57ee99b05d2a00ad77b1de243b8920bfbf5fcb6325ded5388005db9"
     },
     {
       "path": "技术与研究/02_Locomotion与运动先验.md",
-      "size": 29545,
-      "sha256": "0db2f91d7a7e28449a589bad2e13dd595fd78ac3d384ffc1216c6917b2fc1102"
+      "size": 32717,
+      "sha256": "dc640516545f855cf317b028a9090abb9fccde46c567d7bc191ca3bd3be551cf"
     },
     {
       "path": "技术与研究/03_动作跟踪与全身控制.md",
-      "size": 26564,
-      "sha256": "b9191d92726fcb9d2af6c457901846fc86874309274aa3356ef03a97ee3d7e42"
+      "size": 30417,
+      "sha256": "b843886a6416065921d9872ebf548cdb8112edd3dcd939bc89df4e979fda7492"
     },
     {
       "path": "技术与研究/04_LocoManip.md",
-      "size": 21176,
-      "sha256": "e7848b80870eeef8ffe9111a425934e450396015e70fba18461025c3006db0fb"
+      "size": 22971,
+      "sha256": "a1a9376fa57e9b03c7b5f42c4ce9af7ff395dca1880b1ca1cf393cbe34cde12c"
     },
     {
       "path": "技术与研究/05_世界模型VLA与Agent.md",
-      "size": 46528,
-      "sha256": "da941e43fee6c492aec21bc554ff34e5745803f68e808c3035dd153afbbcf1cb"
+      "size": 51885,
+      "sha256": "38b01ef83c0917026c0d093517fceb97d3934d9691653ac634e81227e80ba2a8"
     },
     {
       "path": "技术与研究/06_工程与实机部署.md",
-      "size": 76904,
-      "sha256": "f8c85f1e0ac2239ff3fdd2808b8f6c0a25d69afa95a9960f418923b7a2860da0"
+      "size": 77840,
+      "sha256": "3fabb114de0cb1425b3a391e4a2d2e138ae8bfed4e4604c14a2e9d5f999ef912"
     },
     {
       "path": "技术与研究/README.md",
@@ -1200,6 +1200,161 @@
       "sha256": "66f936bc7b19b3a82ed4d6c176a29bad711847131c3f780bb6ad1bbe736876e4"
     },
     {
+      "path": "技术与研究/论文逐篇解读/P215.md",
+      "size": 2749,
+      "sha256": "5180171212608676a16a3aef9d36f0b33e9f4ca27c2672b12fcc0c7015e8be85"
+    },
+    {
+      "path": "技术与研究/论文逐篇解读/P216.md",
+      "size": 2782,
+      "sha256": "5d159c3e97d24ead3190e662e0334b18c955b136f19a284aff108d6d2a91f792"
+    },
+    {
+      "path": "技术与研究/论文逐篇解读/P217.md",
+      "size": 2882,
+      "sha256": "fafa068f4e93363b2b1d7425a817f323c9af71e399c6916cd579ca967253a0d5"
+    },
+    {
+      "path": "技术与研究/论文逐篇解读/P218.md",
+      "size": 2868,
+      "sha256": "72a19c41935f3a90456cd9acefaec995ff45ccb02ca1d20a8747f2f4d56ec790"
+    },
+    {
+      "path": "技术与研究/论文逐篇解读/P219.md",
+      "size": 2862,
+      "sha256": "226f8d4b6f451e03779446d9f4cdb37b74e52f379f2c4a810d752c7d3f1b7c4a"
+    },
+    {
+      "path": "技术与研究/论文逐篇解读/P220.md",
+      "size": 2722,
+      "sha256": "da91161a2103069e7fb822b5425360a9c0816005fd310dea0c58e0c25dcf8cf8"
+    },
+    {
+      "path": "技术与研究/论文逐篇解读/P221.md",
+      "size": 2887,
+      "sha256": "10309f35505361b0fdd4c270c1ed292ba8940d5e504362494e0b2131c10f202f"
+    },
+    {
+      "path": "技术与研究/论文逐篇解读/P222.md",
+      "size": 2794,
+      "sha256": "72a81d820e3a84089e7b193bc7ab910aa7f7e8a48b32c0c12baa6b3a824b65b6"
+    },
+    {
+      "path": "技术与研究/论文逐篇解读/P223.md",
+      "size": 3501,
+      "sha256": "c4f449d26309e5ae404d895692378e7db9b3569107654ad9ca99655d0987377c"
+    },
+    {
+      "path": "技术与研究/论文逐篇解读/P224.md",
+      "size": 2873,
+      "sha256": "84b1029ca196d16fa4a1707d9e5cdc80a99563f94f7f4b2a345c050ec40ed419"
+    },
+    {
+      "path": "技术与研究/论文逐篇解读/P225.md",
+      "size": 2863,
+      "sha256": "e65ffd5569d3a934baeb4b52890fe11e281dc938b4698c5bb4823cd374bbb181"
+    },
+    {
+      "path": "技术与研究/论文逐篇解读/P226.md",
+      "size": 2875,
+      "sha256": "f932b793329066b961b676cbd125e453023f2858b874e3f8dc991116c3501b18"
+    },
+    {
+      "path": "技术与研究/论文逐篇解读/P227.md",
+      "size": 2697,
+      "sha256": "c21c037634b36f82eb4545a945c93ebd4df31fe5e440f1c70434c16bb867b66a"
+    },
+    {
+      "path": "技术与研究/论文逐篇解读/P228.md",
+      "size": 2984,
+      "sha256": "6bde3f9d55869e91d048cf81bf57fed8458d161cce77b638e27a2e7da500a479"
+    },
+    {
+      "path": "技术与研究/论文逐篇解读/P229.md",
+      "size": 4456,
+      "sha256": "f0effedf4dfbe3b207a1ace3f23841e97b3be3289464b0594ff264ee56224f07"
+    },
+    {
+      "path": "技术与研究/论文逐篇解读/P230.md",
+      "size": 4094,
+      "sha256": "2648763d1d1e3ffcb18289206aa00d1617253c668322f891192f23df74afb98a"
+    },
+    {
+      "path": "技术与研究/论文逐篇解读/P231.md",
+      "size": 3688,
+      "sha256": "fa8af897f631507fe3e6ae3ce206a5543754f9acab6a8ed244e43d00d51670a6"
+    },
+    {
+      "path": "技术与研究/论文逐篇解读/P232.md",
+      "size": 3511,
+      "sha256": "9cc22e063e819cc60113b077e710fadd2bcb386e7a0173aa7117173e9820356a"
+    },
+    {
+      "path": "技术与研究/论文逐篇解读/P233.md",
+      "size": 3674,
+      "sha256": "227947f58801899c6c2b6a94702eade5950f9ae035a43a3ecb6faccc1acd99a5"
+    },
+    {
+      "path": "技术与研究/论文逐篇解读/P234.md",
+      "size": 3711,
+      "sha256": "a27dd68b47caa8e35b0ad0eaceb6d49e65e0b7058ce0b1aff0d0e3f26b83e700"
+    },
+    {
+      "path": "技术与研究/论文逐篇解读/P236.md",
+      "size": 3299,
+      "sha256": "9ce4175bbc591fefbbd4fe5fe2423e67cd420822f317e0d0ac7b29d4cfa3c40e"
+    },
+    {
+      "path": "技术与研究/论文逐篇解读/P237.md",
+      "size": 2880,
+      "sha256": "f1601caa23394d324f4610808a86f718acbfbcf2a8961d4d5a4411195f70ba80"
+    },
+    {
+      "path": "技术与研究/论文逐篇解读/P238.md",
+      "size": 2908,
+      "sha256": "79fb5c3553b56fe5716b7f2c086acdf8edaf54181761615656bcabb2407a8773"
+    },
+    {
+      "path": "技术与研究/论文逐篇解读/P239.md",
+      "size": 3020,
+      "sha256": "83898c7936f4408391f17e787356f00b82947c612121573f15d17e45171163ca"
+    },
+    {
+      "path": "技术与研究/论文逐篇解读/P240.md",
+      "size": 3047,
+      "sha256": "8a64017db38783d0dbe7b0e19f2f99d607c99a8ae514bf7963823556f9df7eb7"
+    },
+    {
+      "path": "技术与研究/论文逐篇解读/P241.md",
+      "size": 3143,
+      "sha256": "687c50a6ffe474e3b186b6be9653c794ab1fce57e505f80a31f2e6f277cf836c"
+    },
+    {
+      "path": "技术与研究/论文逐篇解读/P242.md",
+      "size": 3110,
+      "sha256": "e6e2358a79509f356bc4a31e8f3996663d596ae607b301a9817235f6ec8c03d3"
+    },
+    {
+      "path": "技术与研究/论文逐篇解读/P243.md",
+      "size": 3050,
+      "sha256": "e63bec57214d625d1bd035b33ba439d5ae2fade5fc18cdf5e06b1a332a98478e"
+    },
+    {
+      "path": "技术与研究/论文逐篇解读/P244.md",
+      "size": 3162,
+      "sha256": "f93ae767a24b8c2236d1dbeaa6e7693ac2168d439ff30a55fb8d4e1590aef031"
+    },
+    {
+      "path": "技术与研究/论文逐篇解读/P245.md",
+      "size": 3053,
+      "sha256": "9dc6e9ea92972ce47bfee20f44485309dd2494949a1b1a75c6bdb99f8dfe9e0d"
+    },
+    {
+      "path": "技术与研究/论文逐篇解读/P246.md",
+      "size": 2974,
+      "sha256": "c8f1c83b5a4d00098de19b0745dfcca616034c59ba79cfae78714bf2840f4c0c"
+    },
+    {
       "path": "技术与研究/论文逐篇解读/README.md",
       "size": 269,
       "sha256": "ee732f98b6142928a908092eae72db89eb1c6d92b53241a25116e48626233570"
@@ -2211,8 +2366,8 @@
     },
     {
       "path": "数据集/Ego第一人称数据采集设备选型.md",
-      "size": 5144,
-      "sha256": "0af679378e07f028df04920ddaf31da7feb2dd20bb52cb477fcd7b5263d35816"
+      "size": 5579,
+      "sha256": "a11aee12e4906922929605f3458255acf5bb1b1249ad9bae8e24e57411848ed7"
     },
     {
       "path": "数据集/Open-AoE.md",
@@ -2221,8 +2376,8 @@
     },
     {
       "path": "数据集/README.md",
-      "size": 22781,
-      "sha256": "e920798699ccd98f8724bc073c8cb8c50781d2c1fc201e1dbd70994e38c16491"
+      "size": 24861,
+      "sha256": "7418ad8cc8f636592d0b2e31e71b0e45a987b6e560f1a1ad209cedd1322cccda"
     },
     {
       "path": "数据集/RealOmni-Open.md",
