@@ -2,7 +2,7 @@
 
 > 汇总具身智能训练与评测相关的数据集、训练数据配方及仿真资产，涵盖人体动作、人类操作视频、机器人示范、重定向轨迹与合成数据，按数据来源与内容整理。
 
-当前收录：**42项数据集与相关数据资源**。
+当前收录：**47项数据集与相关数据资源**。
 
 ## 分类导航
 
@@ -11,6 +11,8 @@
 <a id="human-motion"></a>
 
 ## 人体动作与语言
+
+**9 项资源**
 
 | 数据集 | 数据内容 | 本体／对象 | 训练用途 |
 | --- | --- | --- | --- |
@@ -92,9 +94,13 @@
 
 </details>
 
+[返回分类导航](#分类导航)
+
 <a id="human-demonstration"></a>
 
 ## 人类视频与操作示范
+
+**6 项资源**
 
 | 数据集 | 数据内容 | 本体／对象 | 训练用途 |
 | --- | --- | --- | --- |
@@ -152,9 +158,13 @@
 
 </details>
 
+[返回分类导航](#分类导航)
+
 <a id="retargeted-motion"></a>
 
 ## 重定向与目标本体动作
+
+**7 项资源**
 
 | 数据集 | 数据内容 | 本体／对象 | 训练用途 |
 | --- | --- | --- | --- |
@@ -164,6 +174,7 @@
 | <a id="d031"></a>[LAFAN1 Retargeting Dataset](https://huggingface.co/datasets/lvhaidong/LAFAN1_Retargeting_Dataset) | 由LaFAN1转换的关节与根节点轨迹 | H1、H1-2、G1 | 训练目标本体动作跟踪与运动模仿 |
 | <a id="d040"></a>[AMS Synthetic Balance Motions](https://github.com/OpenDriveLab/AMS/blob/main/MotionGen/README.md) | 目标本体根节点、关节与支撑腿参考 | G1 29自由度 | 扩展平衡动作参考，研究动作跟踪与参考质量 |
 | <a id="d042"></a>[Weave reference motions and simulation rollouts](https://huggingface.co/datasets/appolyn/Weave) | 保留人—物交互的机器人参考动作、策略仿真执行轨迹与九种物体资产，包含身体、手部、物体状态及接触标签。 | Unitree G1与双Inspire灵巧手；人—物交互 | 用于人形全身移动操作策略学习、评测，以及带物理接触标注的人—物交互动作建模。 |
+| <a id="d043"></a>[HOI-Retarget Kinematic Robot-HOI References](https://huggingface.co/datasets/leggedrobotics/hoi-retarget) | SMPL-X人体姿态;物体网格与位姿轨迹;物体坐标系接触目标;机器人根姿态与关节位置;逐链接接触和足支撑标记;视频 | Unitree G1 29-DoF;Unitree H2 31-DoF;含同步双机器人协作片段 | 用于接触保持的人体到人形动作重定向、物体尺度扩增和跨物体交互参考构建；运动学轨迹可供下游模仿策略及动态精化使用。 |
 
 <details>
 <summary>规模、格式与官方来源</summary>
@@ -210,11 +221,22 @@
 - **具体本体／对象**：Unitree G1与双Inspire灵巧手；人—物交互
 - **官方来源**：[数据卡／项目来源](https://huggingface.co/datasets/appolyn/Weave)
 
+### HOI-Retarget Kinematic Robot-HOI References
+
+- **规模**：6952段机器人HOI参考轨迹；13.8小时；75个物体；5个来源数据集
+- **模态与格式**：SMPL-X人体姿态;物体网格与位姿轨迹;物体坐标系接触目标;机器人根姿态与关节位置;逐链接接触和足支撑标记;视频
+- **具体本体／对象**：Unitree G1 29-DoF;Unitree H2 31-DoF;含同步双机器人协作片段
+- **官方来源**：[数据卡／项目来源](https://huggingface.co/datasets/leggedrobotics/hoi-retarget)
+
 </details>
+
+[返回分类导航](#分类导航)
 
 <a id="robot-demonstration"></a>
 
 ## 真实机器人示范与运行数据
+
+**10 项资源**
 
 | 数据集 | 数据内容 | 本体／对象 | 训练用途 |
 | --- | --- | --- | --- |
@@ -226,6 +248,8 @@
 | <a id="d018"></a>[AGIBOT WORLD 2026](https://huggingface.co/datasets/agibot-world/AgiBotWorld2026) | 全身操作、多模态交互及策略运行记录 | G2及配套末端 | 研究模仿学习、世界模型、真机RL与失败恢复 |
 | <a id="d024"></a>[Humanoid Everyday](https://humanoideveryday.github.io/) | 真机多传感器、关节动作与任务语言 | G1、H1 | 训练全身操作策略，评测开放世界任务 |
 | <a id="d027"></a>[OpenHLM-data](https://huggingface.co/datasets/OpenHLM/OpenHLM-data) | 相机、语言与全身关节动作 | 人形机器人 | 训练全身VLA与移动操作策略 |
+| <a id="d044"></a>[ABC-130K](https://huggingface.co/datasets/XDOF/ABC-130k) | 顶部与双腕RGB、14维本体状态、关节位置动作、夹爪状态、任务语言与子任务标注；MCAP格式 | 双YAM六自由度机械臂与平行夹爪 | 训练双臂行为克隆、VLA与扩散策略，研究数据规模、模型架构及仿真到真机评测。 |
+| <a id="d045"></a>[OpenNeoData](https://huggingface.co/datasets/NeoteAIEmbodied/OpenNeoData) | 同步RGB、腕部视触觉图像、本体状态、动作与任务／子任务标签 | ALOHA (dual-arm);ARX-5 (dual-arm/single-arm);Flexiv Rizon 4s;UR5e/UR7e;UMI (dual-hand/single-hand) | 学习视觉与触觉联合表征，训练接触丰富操作、力控及柔性物体操作策略。 |
 
 <details>
 <summary>规模、格式与官方来源</summary>
@@ -286,11 +310,29 @@
 - **具体本体／对象**：Humanoid
 - **官方来源**：[数据卡／项目来源](https://huggingface.co/datasets/OpenHLM/OpenHLM-data)
 
+### ABC-130K
+
+- **规模**：当前数据卡：130,703段回合、3,590.7小时，42,980段带标注；论文统计：134,806段回合、3,553小时、195项任务。
+- **模态与格式**：顶部与双腕RGB、14维本体状态、关节位置动作、夹爪状态、任务语言与子任务标注；MCAP格式
+- **具体本体／对象**：双YAM六自由度机械臂与平行夹爪
+- **官方来源**：[数据卡／项目来源](https://huggingface.co/datasets/XDOF/ABC-130k)
+
+### OpenNeoData
+
+- **规模**：当前数据卡：20万余条轨迹、5,000余小时、257类任务、6种本体；论文描述：5,000小时、250余任务、200余技能。
+- **模态与格式**：同步RGB、腕部视触觉图像、本体状态、动作与任务／子任务标签
+- **具体本体／对象**：ALOHA (dual-arm);ARX-5 (dual-arm/single-arm);Flexiv Rizon 4s;UR5e/UR7e;UMI (dual-hand/single-hand)
+- **官方来源**：[数据卡／项目来源](https://huggingface.co/datasets/NeoteAIEmbodied/OpenNeoData)
+
 </details>
+
+[返回分类导航](#分类导航)
 
 <a id="synthetic-data"></a>
 
 ## 仿真合成与生成式数据
+
+**7 项资源**
 
 | 数据集 | 数据内容 | 本体／对象 | 训练用途 |
 | --- | --- | --- | --- |
@@ -300,6 +342,7 @@
 | <a id="d025"></a>[GRAIL Generated Loco-Manipulation Dataset](https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-Locomanipulation-GRAIL) | 合成视频、人-物交互与G1轨迹 | G1／人体／物体 | 构建移动操作参考，研究动作跟踪与仿真迁移 |
 | <a id="d030"></a>[NVIDIA GR00T X-Embodiment Sim](https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-GR00T-X-Embodiment-Sim) | 跨本体仿真操作轨迹 | Panda、GR1、G1 | 生成操作训练数据，开展GR00T后训练 |
 | <a id="d037"></a>[HumanGen](https://github.com/robbyant-research/Zero-WAM) | 生成式人机视频、动作及任务配对 | 人体＋多种机器人 | 研究上下文机器人学习与跨任务泛化 |
+| <a id="d046"></a>[TableVerse-100K](https://huggingface.co/datasets/ByteDance/TableVerse) | 任务指令、物体网格、公制场景点云、MJCF、仿真图像与关节空间轨迹 | MuJoCo桌面操作机器人与重建场景 | 构建Real2Sim桌面环境、生成操作轨迹与视觉示范，用于操作策略及VLA预训练。 |
 
 <details>
 <summary>规模、格式与官方来源</summary>
@@ -346,11 +389,22 @@
 - **具体本体／对象**：Human + 45+ Robot Embodiments
 - **官方来源**：[数据卡／项目来源](https://github.com/robbyant-research/Zero-WAM)
 
+### TableVerse-100K
+
+- **规模**：100,000个场景，近100万物体实例，35,000余语义类别，配套连续操作轨迹。
+- **模态与格式**：任务指令、物体网格、公制场景点云、MJCF、仿真图像与关节空间轨迹
+- **具体本体／对象**：MuJoCo桌面操作机器人与重建场景
+- **官方来源**：[数据卡／项目来源](https://huggingface.co/datasets/ByteDance/TableVerse)
+
 </details>
+
+[返回分类导航](#分类导航)
 
 <a id="training-mixtures"></a>
 
 ## 跨来源训练集合与配方
+
+**5 项资源**
 
 | 数据集 | 数据内容 | 本体／对象 | 训练用途 |
 | --- | --- | --- | --- |
@@ -358,6 +412,7 @@
 | <a id="d028"></a>[MolmoAct Dataset与训练数据配方](https://github.com/allenai/molmoact) | 自采示范与多源动作推理训练配方 | Franka、WidowX等 | 开展VLA预训练、中期训练与动作推理学习 |
 | <a id="d029"></a>[MolmoAct2训练集合与策略Rollout](https://github.com/allenai/molmoact2) | 跨本体训练集合与策略执行轨迹 | SO-100/101、Franka等 | 研究VLA微调、失败标注及奖励建模 |
 | <a id="d033"></a>[ARIO Dataset](https://imaei.github.io/project_pages/ario/) | 统一格式的真实、仿真及转换数据 | 多种机器人 | 统一多源数据，研究跨机器人操作与导航 |
+| <a id="d047"></a>[MiGA](https://huggingface.co/datasets/GVLA/MiGA-Dataset) | 多视角RGB-D、本体状态、动作轨迹、夹爪策略标注与任务语言 | Franka、UR10、xArm7、UR5；平行夹爪、三指夹爪、软夹爪、吸盘与五指灵巧手 | 学习随夹爪形态变化的抓取与操作策略，用于跨夹爪动作学习、策略分析及少样本适配。 |
 
 <details>
 <summary>规模、格式与官方来源</summary>
@@ -390,11 +445,22 @@
 - **具体本体／对象**：Multi-Robot;Manipulation;Navigation
 - **官方来源**：[数据卡／项目来源](https://imaei.github.io/project_pages/ario/)
 
+### MiGA
+
+- **规模**：103,000条示范、36项任务、5类夹爪，包含约5%的失败示范。
+- **模态与格式**：多视角RGB-D、本体状态、动作轨迹、夹爪策略标注与任务语言
+- **具体本体／对象**：Franka、UR10、xArm7、UR5；平行夹爪、三指夹爪、软夹爪、吸盘与五指灵巧手
+- **官方来源**：[数据卡／项目来源](https://huggingface.co/datasets/GVLA/MiGA-Dataset)
+
 </details>
+
+[返回分类导航](#分类导航)
 
 <a id="assets-perception"></a>
 
 ## 数字资产与感知评测资源
+
+**3 项资源**
 
 | 数据集 | 数据内容 | 本体／对象 | 训练用途 |
 | --- | --- | --- | --- |
@@ -427,6 +493,8 @@
 - **官方来源**：[数据卡／项目来源](https://grandtour.leggedrobotics.com/)
 
 </details>
+
+[返回分类导航](#分类导航)
 
 ## 专题阅读
 

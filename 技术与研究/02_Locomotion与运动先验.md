@@ -2,7 +2,7 @@
 
 > 自主移动、地形适应与运动先验，汇总相关论文、方法与项目。
 
-当前收录 **48** 篇论文／技术报告、**68** 个项目。
+当前收录 **50** 篇论文／技术报告、**73** 个项目。
 
 ## 本页导航
 
@@ -11,6 +11,8 @@
 ## 基础行走与自然步态
 
 平衡、速度跟踪、走跑与运动适应，以及利用示范和运动先验学习自然步态。
+
+**16** 篇论文／报告 · **8** 个项目
 
 #### 论文与技术报告
 
@@ -46,9 +48,13 @@
 | [motion_imitation](https://github.com/erwincoumans/motion_imitation) | 四足参考动作模仿经典实现 | 将动物参考动作重定向到四足本体，以任务状态、动作相位和跟踪奖励学习步态与动态技能。 |
 | [rl_amp](https://github.com/fan-ziqi/rl_amp) | legged_gym最小改动AMP实现 | 在legged_gym与rsl_rl中加入专家动作、AMP观测、判别器和先验奖励，构成最小改动的AMP实现。 |
 
+[返回本页导航](#本页导航)
+
 ## 视觉与地形感知运控
 
 利用视觉与地形信息调整运动，涵盖落脚、越障、跑酷和目标驱动移动。
+
+**20** 篇论文／报告 · **14** 个项目
 
 #### 论文与技术报告
 
@@ -90,12 +96,17 @@
 | [Robot Parkour Learning](https://robot-parkour.github.io/) | 四足感知跑酷 | 将直接配点跑酷解转成强化学习课程，训练多个四足专家并蒸馏为适配A1与Go1部署的单一深度策略。 |
 | [SOLO](https://sunpihai-up.github.io/solo/) | 视觉与地形感知运控 | 以查询式地形重建保留落脚相关细节，并用带未来状态分歧信用分配的蒸馏奖励训练仅依赖深度与本体感知的长时运动策略。 |
 | [Vision-Driven Reactive Soccer Skills code and data](https://doi.org/10.5281/zenodo.21620490) | 论文复现代码与实验数据 | 以视觉驱动机器人足球技能，处理遮挡与球状态估计并生成关节轨迹。 |
+| [VR-M3 视觉感知爬楼梯](https://vinrobotics.net/blog/perceptive-stair-locomotion) | 视觉运控实机案例 | 利用机载单摄像头感知前方地形、评估落脚点并调整步态；官方演示约60 kg人形携带5 kg载荷攀爬陌生楼梯，报告速度0.6 m/s和零样本仿真迁移。 |
 | [WM-LOCO](https://m0puppet.github.io/wm-loco/) | 视觉与地形感知运控 | 将RSSM循环世界模型与PPO联合训练，以历史状态、动作和深度预测形成供人形运动策略使用的记忆特征。 |
 | [X-Loco](https://x-loco-humanoid.github.io/) | 通用人形Locomotion | 训练多种地形专家并自适应选择教师，蒸馏为G1深度感知速度跟踪策略。 |
+
+[返回本页导航](#本页导航)
 
 ## 技能表示与行为基座
 
 学习可复用的运动表示，通过潜变量、目标或提示调用与组合行为。
+
+**9** 篇论文／报告 · **5** 个项目
 
 #### 论文与技术报告
 
@@ -121,26 +132,38 @@
 | [SkillX](https://yzc0731.github.io/SkillX/) | 技能表示与行为基座 | 以单一命令条件Actor配合技能专属对抗先验、价值头和球物体时序编码器，学习带球、停球、射门及其转换。 |
 | [UFO](https://github.com/Roboparty/UFO) | 无监督人形行为框架 | 结合Forward-Backward与TeCH学习可提示的G1行为潜空间，并提供动作导入、目标定义、奖励和跟踪流程。 |
 
+[返回本页导航](#本页导航)
+
 ## 抗扰与保护性控制
 
 围绕抗扰稳定、失衡处理和保护性跌倒设计控制方法。
+
+**4** 篇论文／报告 · **3** 个项目
 
 #### 论文与技术报告
 
 | 论文／报告 | 主要方法与用途 | 原文／代码 |
 | --- | --- | --- |
+| [DDC：支撑脚相对动态质心驱动的人形单腿平衡](论文逐篇解读/P335.md) | DDC 将质心位置与速度变换为支撑脚相对动态 CoM 观测，配合人体姿势控制奖励和 FastSAC 直接训练单腿平衡策略，并通过跨仿真评测选择部署检查点。 | [原文](https://arxiv.org/abs/2608.00500) · [项目页](https://estoil.github.io/DDC/) |
 | [ADP：以对抗动力学分布训练人形抗扰运动](论文逐篇解读/P148.md) | 以轨迹优化数据学习对抗动力学先验，训练人形速度跟踪和推扰恢复而非逐帧模仿。 | [原文](https://arxiv.org/abs/2607.03454) · [项目页](https://seokju-lee.github.io/adp/) |
+| [PAC-MAN：感知约束下的人形全身安全躲避](论文逐篇解读/P336.md) | PAC-MAN 以分割掩码深度和本体状态驱动全身躲球策略，在训练期用逐连杆 CBF 安全奖励塑形，并以 AMP 人体躲避动作先验协调关节响应。 | [原文](https://arxiv.org/abs/2607.28623) · [代码](https://github.com/lzyang2000/perceptive_cbf_rl) · [项目页](https://lzyang2000.github.io/perceptive_cbf_rl/) |
 | [SafeFall：人形机器人的保护性跌倒控制学习](论文逐篇解读/P108.md) | 以GRU预测不可避免跌倒，并由损伤感知保护策略控制落地，用于人形跌倒防护与恢复接口。 | [原文](https://arxiv.org/abs/2511.18509) · [项目页](https://safefall.github.io/) |
 
 #### 相关项目
 
 | 项目 | 主要用途 | 功能与特点 |
 | --- | --- | --- |
+| [DDC](https://estoil.github.io/DDC/) | 抗扰与保护性控制 | DDC 将质心位置与速度变换为支撑脚相对动态 CoM 观测，配合人体姿势控制奖励和 FastSAC 直接训练单腿平衡策略，并通过跨仿真评测选择部署检查点。 |
+| [PAC-MAN](https://github.com/lzyang2000/perceptive_cbf_rl) | 抗扰与保护性控制 | PAC-MAN 以分割掩码深度和本体状态驱动全身躲球策略，在训练期用逐连杆 CBF 安全奖励塑形，并以 AMP 人体躲避动作先验协调关节响应。 |
 | [SafeFall](https://safefall.github.io/) | 保护性跌倒项目 | 用GRU判断跌倒是否不可避免，仅在触发后切换损伤缓解策略。 |
+
+[返回本页导航](#本页导航)
 
 ## 训练框架与本体适配
 
 各厂商与社区的训练实现，涵盖人形、四足、双轮足及多本体任务配置。
+
+**1** 篇论文／报告 · **42** 个项目
 
 #### 论文与技术报告
 
@@ -187,11 +210,15 @@
 | [Unitree RL Gym](https://github.com/unitreerobotics/unitree_rl_gym) | 人形/腿式RL | Unitree官方Isaac Gym时代的人形与腿式训练链，包含本体配置、PPO、MuJoCo验证和实机入口。 |
 | [Unitree RL Lab](https://github.com/unitreerobotics/unitree_rl_lab) | 人形/腿式RL | 面向宇树Go2、H1和G1，连接Isaac Lab任务、策略导出、MuJoCo验证及实机SDK，贯通训练与部署流程。 |
 | [Unitree RL Mjlab](https://github.com/unitreerobotics/unitree_rl_mjlab) | 人形/腿式RL | 基于MJLab和MuJoCo的轻量训练路线，覆盖速度行走、动作模仿、策略回放与真机接口。 |
+| [VinRobotics mjlab](https://github.com/VinRobotics/vinrobotics_mjlab) | 厂商训练与部署 | 基于mjlab、MuJoCo Warp与RSL-RL训练M3.1速度跟踪策略，提供全身及12自由度下肢的平地/粗糙地形任务、多GPU训练、策略回放与ONNX导出。 |
+| [VinRobotics mjlab deploy](https://github.com/VinRobotics/vinrobotics_mjlab_deploy) | 厂商训练与部署 | 在MuJoCo中加载M3.1模型与ONNX运动策略，通过Vinverse Connector接入运行流程，提供站立、行走和前后、侧向、转向命令的Sim2Sim验证。 |
 | [Wheel-Legged-Gym](https://github.com/clearlab-sustech/Wheel-Legged-Gym) | 双轮足强化学习训练 | 基于legged_gym和rsl_rl训练双轮足，并以VMC适配开链或闭链机构，支持平地与粗糙地形任务。 |
 | [Wheel-Legged-Lab](https://github.com/zyicome/Wheel-Legged-Lab) | 双轮足强化学习训练 | 以策略生成虚拟腿角度、腿长和轮速参考，再由VMC转为关节力矩，训练双轮足跳跃、落地与越障。 |
 | [wheel_legged_genesis](https://github.com/Albusgive/wheel_legged_genesis) | 双轮足强化学习训练 | 在Genesis训练双轮足速度、转向、腿长和姿态策略，加入地形课程与随机化并提供MuJoCo回放。 |
 | [wheelDog_RL](https://github.com/seer-robotics/wheelDog_RL) | 强化学习训练框架 | 仙工智能第一阶段轮足机器人强化学习项目，为轮足平台提供训练环境与策略实验入口。 |
 | [Wiki-GRx-Gym](https://github.com/FFTAI/Wiki-GRx-Gym) | 强化学习训练框架 | 组织仿真本体、观测、奖励和随机化配置，提供强化学习训练及运动策略回放入口。 |
+
+[返回本页导航](#本页导航)
 
 ## 相关资料
 
