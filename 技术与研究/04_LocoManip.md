@@ -2,7 +2,7 @@
 
 > 移动、平衡、接触与操作协同，汇总相关论文、方法与项目。
 
-当前收录 **45** 篇论文／技术报告、**45** 个项目。
+当前收录 **47** 篇论文／技术报告、**47** 个项目。
 
 ## 本页导航
 
@@ -49,7 +49,7 @@
 
 协调外力、柔顺控制、接触切换与负载变化。
 
-**13** 篇论文／报告 · **13** 个项目
+**14** 篇论文／报告 · **14** 个项目
 
 #### 论文与技术报告
 
@@ -59,6 +59,7 @@
 | [TF-ART：把触觉、力觉学习拆成可核验的闭环](论文逐篇解读/P205.md) | 综述触觉力觉感知、动作生成、动作修正和末端控制，覆盖接触操作与柔顺控制方法。 | [原文](https://arxiv.org/abs/2608.07558) · [项目页](https://lorenzo-0-0.github.io/tactile-force-survey/) |
 | [HTD：从解耦身体控制、触觉示范到接触感知策略](论文逐篇解读/P180.md) | 以分离下肢控制维持基座，并用训练期力与触觉潜变量预测改进人形接触操作策略。 | [原文](https://arxiv.org/abs/2604.13015) · [代码](https://github.com/chrisyrniu/humanoid-touch-dream) · [项目页](https://humanoid-touch-dream.github.io/) |
 | [SplitAdapter：基于因子化适配的负载感知人形移动操作](论文逐篇解读/P110.md) | 分别编码物体负载与本体动力学，再调制冻结策略层，适配人形搬运和Sim2Real任务。 | [原文](https://arxiv.org/abs/2606.03297) · [项目页](https://splitadapter.github.io/) |
+| [VisForce：指尖力视觉对齐与目标条件灵巧操作](论文逐篇解读/P353.md) | VisForce将腕部图像上的当前指尖力线索与示范检索得到的目标力图像送入目标条件交叉注意力，再沿π0.5的动作生成路径输出手臂与手部增量动作。在UR10与RH56F1上评估力条件抓取、插入、倾倒、工具转移和受控滑移任务。 | [原文](https://arxiv.org/abs/2609.25785) |
 | [WT-UMI：把接触力纳入全身示范、规划与柔顺执行](论文逐篇解读/P140.md) | 以触觉和力监督修正人体示范的位姿与接触轨迹，再用导纳控制完成柔性及大件操作。 | [原文](https://arxiv.org/abs/2606.13232) · [项目页](https://wt-umi.github.io/WTUMI/) |
 | [CHIP：基于后见扰动的人形自适应柔顺控制](论文逐篇解读/P086.md) | 将后见扰动转成条件目标，使全身策略按任务调节末端顺应，支持开门、擦拭和推车。 | [原文](https://arxiv.org/abs/2512.14689) · [项目页](https://nvlabs.github.io/CHIP/) |
 | [DexNDM：用真实状态转移学习灵巧手的动力学残差](论文逐篇解读/P175.md) | 以仿真专家蒸馏通用策略，再用真机数据训练逐关节动力学和残差模型补偿手内旋转差异。 | [原文](https://arxiv.org/abs/2510.08556) · [项目页](https://meowuu7.github.io/DexNDM/) |
@@ -84,6 +85,7 @@
 | [SoftMimic](https://gmargo11.github.io/softmimic/) | 柔顺控制项目 | 将刚性示范扩增为动力学可行的柔顺响应，再训练策略跟踪响应分布，覆盖数据处理、训练与部署。 |
 | [SplitAdapter](https://splitadapter.github.io/) | 负载适配项目 | 分离编码负载变化与机器人动力学变化，并以世界模型和分层FiLM适配G1负载操作。 |
 | [Thor](https://baai-aether.github.io/baai-thor/) | 强接触控制项目 | 协调上肢、腰部和下肢应对强外力与负载变化，利用躯干倾斜目标调节承重和步态。 |
+| [VisForce](https://arxiv.org/abs/2609.25785) | 接触力控与负载适应 | VisForce将腕部图像上的当前指尖力线索与示范检索得到的目标力图像送入目标条件交叉注意力，再沿π0.5的动作生成路径输出手臂与手部增量动作。在UR10与RH56F1上评估力条件抓取、插入、倾倒、工具转移和受控滑移任务。 |
 | [WT-UMI](https://wt-umi.github.io/WTUMI/) | 触觉示范与柔顺执行 | 以可穿戴触觉接口采集人体示范和机器人接触反馈，力监督规划末端轨迹，再以触觉导纳闭环执行。 |
 | [wuji-mjlab](https://github.com/wuji-technology/wuji-mjlab) | 强化学习训练与实机部署 | 基于mjlab训练Wuji Hand手内旋转策略，提供PPO训练与Sim2Real部署入口。 |
 
@@ -93,7 +95,7 @@
 
 联合移动、平衡、上肢与手部完成操作任务。
 
-**21** 篇论文／报告 · **24** 个项目
+**22** 篇论文／报告 · **25** 个项目
 
 #### 论文与技术报告
 
@@ -112,6 +114,7 @@
 | [MotionDisco：通过接触计划搜索发现人形全身技能](论文逐篇解读/P329.md) | MotionDisco 以LLM进化搜索生成离散接触计划，通过分层运动学检查与动力学轨迹优化闭环修正，发现长时程人形全身移动操作技能并训练跟踪策略部署。 | [原文](https://arxiv.org/abs/2606.06139) |
 | [OmniContact：用接触流组织可组合的人形物理技能](论文逐篇解读/P138.md) | 以身体轨迹和时序接触构成Contact Flow，由生成器与低层策略组合长程移动操作技能。 | [原文](https://arxiv.org/abs/2606.26201) · [代码](https://github.com/Ingrid789/OmniContact_sim2sim) · [项目页](https://omnicontact.github.io/) |
 | [OpenHLM：验证全身原生LocoManip的数据与训练配方](论文逐篇解读/P141.md) | 以关节级全身遥操作和异构数据共训练VLA，面向人形全身移动操作控制任务。 | [原文](https://arxiv.org/abs/2606.22174) · [项目页](https://openhlm-project.github.io/) |
+| [Praxis：从第一视角示范迁移人形机器人的全身灵巧操作](论文逐篇解读/P338.md) | Praxis将移动操作分成视觉语言导航、闭环全身姿态校准和基于一次 egocentric RGB-D 示范的灵巧操作。人体腕部关键帧经机器人坐标变换、物体相对位姿重定位和手指关节映射后执行；在线物体跟踪、五指触觉与视觉结果验证支持跨位姿、跨物体和受扰恢复。五项实机任务平均成功率76.97%。 | [原文](https://arxiv.org/abs/2609.30735) · [项目页](https://edem-ai.github.io/Praxis/) |
 | [STRIDER：以精确落脚和多步态协同实现人形移动操作](论文逐篇解读/P225.md) | 融合AMP行走、地形感知迈步和笛卡尔上肢专家，并以LD-PPO蒸馏潜在协调表示实现单策略多步态移动操作。 | [原文](https://arxiv.org/abs/2609.23483) |
 | [WEAVE：从人—物交互示范学习全身灵巧移动操作](论文逐篇解读/P223.md) | 从人—物动作重定向与接触优化生成机器人参考，再以几何和接触感知策略联合控制人形身体、灵巧手与物体。 | [原文](https://arxiv.org/abs/2609.16683) · [代码](https://github.com/xiaohu-art/Weave) · [项目页](https://xiaohu-art.github.io/Weave/) |
 | [DemoHLM：从单次示范到可泛化人形移动操作](论文逐篇解读/P046.md) | 把单次仿真示范拆为移动、预操作和接触阶段，在新物体布局生成轨迹并训练长程策略。 | [原文](https://arxiv.org/abs/2510.11258) · [项目页](https://beingbeyond.github.io/DemoHLM/) |
@@ -144,6 +147,7 @@
 | [open_manipulator](https://github.com/ROBOTIS-GIT/open_manipulator) | 移动操作与技能系统 | 结合移动底盘、双臂或灵巧手状态与任务观测生成操作动作，并依据接触结果闭环执行。 |
 | [OpenHLM](https://huggingface.co/OpenHLM) | 全身VLA数据与权重 | 以语言、相机和全身关节动作统一训练策略，面向异构本体的全身共训练。 |
 | [OpenWBT](https://github.com/GalaxyGeneralRobotics/OpenWBT) | 人形全身遥操作系统 | 以头显和手柄提供视角、手部目标与行走命令，结合上肢逆运动学和下肢策略驱动G1遥操作。 |
+| [Praxis](https://edem-ai.github.io/Praxis/) | 全身协同与技能接口 | Praxis将移动操作分成视觉语言导航、闭环全身姿态校准和基于一次 egocentric RGB-D 示范的灵巧操作。人体腕部关键帧经机器人坐标变换、物体相对位姿重定位和手指关节映射后执行；在线物体跟踪、五指触觉与视觉结果验证支持跨位姿、跨物体和受扰恢复。五项实机任务平均成功率76.97%。 |
 | [SkillBlender](https://github.com/Humanoid-SkillBlender/SkillBlender) | 分层技能组合项目 | 以目标条件的低层技能和混合器组合行走、伸手与操作，适配H1、G1全身控制与部署。 |
 | [troncamp-mani](https://github.com/limxdynamics/troncamp-mani) | 移动操作与技能系统 | 结合移动底盘、双臂或灵巧手状态与任务观测生成操作动作，并依据接触结果闭环执行。 |
 | [UMI on Legs](https://github.com/real-stanford/umi-on-legs) | 操作策略与移动全身控制接口 | 由视觉操作策略输出世界坐标夹爪轨迹，全身控制器协调四足底盘与机械臂执行移动操作。 |

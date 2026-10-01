@@ -2,7 +2,7 @@
 
 > 自主移动、地形适应与运动先验，汇总相关论文、方法与项目。
 
-当前收录 **50** 篇论文／技术报告、**73** 个项目。
+当前收录 **51** 篇论文／技术报告、**74** 个项目。
 
 ## 本页导航
 
@@ -12,13 +12,14 @@
 
 平衡、速度跟踪、走跑与运动适应，以及利用示范和运动先验学习自然步态。
 
-**16** 篇论文／报告 · **8** 个项目
+**17** 篇论文／报告 · **9** 个项目
 
 #### 论文与技术报告
 
 | 论文／报告 | 主要方法与用途 | 原文／代码 |
 | --- | --- | --- |
 | [GaitSpan：从冻结行走策略扩展连续走跑能力](论文逐篇解读/P147.md) | 冻结行走策略并以动作波、SLIP事件塑形和残差策略扩展人形慢跑、跑步与地形移动。 | [原文](https://arxiv.org/abs/2607.12114) · [项目页](https://gaitspan2026.github.io/) |
+| [Fly-Inspired Recurrent Controller：飞虫启发循环网络的人形机器人行走分析](论文逐篇解读/P339.md) | 论文分析固定T_graph检查点的神经状态—身体闭环：82维身体与命令输入经投影进入3,609维循环核心，由135个电机神经元标记状态读出15个关节目标，在MuJoCo G1上以50 Hz运行。控制器完成63项地形、速度和初始偏航组合中的61项；重置循环状态后标称偏航成功从19/21降为0/21。 | [原文](https://arxiv.org/abs/2609.27001) |
 | [SMP：把动作扩散模型变成可复用的运动奖励](论文逐篇解读/P137.md) | 复用冻结扩散模型的运动分数作为SDS奖励，训练物理角色移动与风格控制技能。 | [原文](https://arxiv.org/abs/2512.03028) · [代码](https://github.com/xbpeng/MimicKit) · [项目页](https://yxmu.foo/smp-page/) |
 | [State-Dependent AMP：基于状态相关对抗运动先验的统一行走、跑步与恢复](论文逐篇解读/P106.md) | 用状态门控选择走、跑和恢复运动先验，由同一PPO策略完成速度跟踪与人形真机控制。 | [原文](https://arxiv.org/abs/2605.18611) |
 | [DBHL：基于ZMP奖励的无外部感知窄地形全身运动](论文逐篇解读/P129.md) | 将ZMP与角动量约束写入PPO奖励，以本体历史控制人形窄路、障碍和负载行走。 | [原文](https://arxiv.org/abs/2502.17219) · [项目页](https://whole-body-loco.github.io/) |
@@ -42,6 +43,7 @@
 | [AMP_mjlab](https://github.com/ccrpRepo/AMP_mjlab) | AMP人形控制实现 | 在MJLab提供G1地形AMP任务、动作转换、行走跑步与跌倒恢复训练及ONNX导出；实机状态由外部仓库接入。 |
 | [DBHL窄地形全身运动](https://whole-body-loco.github.io/) | 本体感知复杂地形运动 | 仅依赖本体感觉在狭窄未知地形行走，以扩展ZMP和全身任务奖励约束落脚、躯干与摆臂。 |
 | [DreamWaQ（社区实现）](https://github.com/Manaro-Alpha/DreamWaQ) | 感知运动复现 | 在Isaac Gym和legged_gym复现DreamWaQ式历史编码、速度估计与潜变量辅助盲走训练；未实现全部论文机制且无实机入口。 |
+| [Fly-Inspired Recurrent Controller](https://arxiv.org/abs/2609.27001) | 基础行走与自然步态 | 论文分析固定T_graph检查点的神经状态—身体闭环：82维身体与命令输入经投影进入3,609维循环核心，由135个电机神经元标记状态读出15个关节目标，在MuJoCo G1上以50 Hz运行。控制器完成63项地形、速度和初始偏航组合中的61项；重置循环状态后标称偏航成功从19/21降为0/21。 |
 | [Generative Motion Prior](https://sites.google.com/view/humanoid-gmp) | 生成式自然行走参考 | 以条件VAE在线生成重定向后的机器人未来参考，并训练速度策略跟踪，用于生成式自然行走控制。 |
 | [Legged Lab DWAQ（Unitree G1）](https://gitee.com/chaomingsanhua/legged_lab) | 感知运动复现 | 在Legged Lab为G1复现DreamWaQ式历史VAE速度与环境潜变量估计并训练PPO盲走策略；缺少AdaBoot和实机通信链路。 |
 | [ModelBasedFootstepPlanning-IROS2024](https://github.com/hojae-io/ModelBasedFootstepPlanning-IROS2024) | 模型落脚规划与无模型策略结合实现 | 以线性倒立摆模型生成速度目标对应的落脚参考，再训练无模型策略跟踪落脚和全身状态。 |
