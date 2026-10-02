@@ -2,7 +2,7 @@
 
 > 自主移动、地形适应与运动先验，汇总相关论文、方法与项目。
 
-当前收录 **55** 篇论文／技术报告、**78** 个项目。
+当前收录 **56** 篇论文／技术报告、**79** 个项目。
 
 ## 本页导航
 
@@ -112,13 +112,14 @@
 
 学习可复用的运动表示，通过潜变量、目标或提示调用与组合行为。
 
-**10** 篇论文／报告 · **6** 个项目
+**11** 篇论文／报告 · **7** 个项目
 
 #### 论文与技术报告
 
 | 论文／报告 | 主要方法与用途 | 原文／代码 |
 | --- | --- | --- |
 | [GPC：以离散运动Token预训练可适配的生成式控制器](论文逐篇解读/P159.md) | 将参考动作压成离散Token并训练自回归运动先验，支持角色控制、目标到达和轨迹跟随。 | [原文](https://arxiv.org/abs/2606.29148) · [代码](https://github.com/NVlabs/ProtoMotions) · [项目页](https://yi-shi94.github.io/gpc-page/) |
+| [LATENT：从不完整人体动作片段学习人形网球技能](论文逐篇解读/P376.md) | 五小时不完整网球动捕片段学习可纠正潜动作，由PPO高层策略组合步法、击球和腕部修正；G1在随机来球仿真及动捕支持的真机对打中完成回球，并分别评估正反手与前后场表现。 | [原文](https://arxiv.org/abs/2603.12686) · [代码](https://github.com/GalaxyGeneralRobotics/LATENT) · [项目页](https://zzk273.github.io/LATENT/) |
 | [Locomotion-Grounded Humanoid Soccer：任务门控的多向人形踢球技能库](论文逐篇解读/P368.md) | 先训练全向Locomotion基座，再用任务模式门控七个视频重定向踢球技能并蒸馏为单策略；Unitree G1实机验证部分方向，仿真显示多方向覆盖与合并负迁移。 | [原文](https://arxiv.org/abs/2609.38852) |
 | [P³：把边缘策略概率接回VAE与PPO之间](论文逐篇解读/P160.md) | 用矩匹配和潜变量采样估计VAE边缘策略概率，稳定PPO潜变量策略的具身行走训练。 | [原文](https://arxiv.org/abs/2607.25541) · [代码](https://github.com/ylyem9x/P3_Open) |
 | [SkillX：人形足球统一多技能策略](论文逐篇解读/P219.md) | 以单一命令条件Actor配合技能专属对抗先验、价值头和球物体时序编码器，学习带球、停球、射门及其转换。 | [原文](https://arxiv.org/abs/2609.06718) · [项目页](https://yzc0731.github.io/SkillX/) |
@@ -135,6 +136,7 @@
 | --- | --- | --- |
 | [BFM-Zero](https://github.com/LeCAR-Lab/BFM-Zero) | 行为基座 | 以Forward-Backward无监督强化学习学习行为潜空间，再结合行为提示和条件运动先验训练并部署G1策略。 |
 | [FLD](https://github.com/mit-biomimetics/fld) | 傅里叶潜在动力学运动表示实现 | 用傅里叶潜变量表示周期动作的频率、幅值和相位，再通过潜变量采样构造策略任务并生成运动。 |
+| [LATENT](https://github.com/GalaxyGeneralRobotics/LATENT) | 技能表示与行为基座 | 五小时不完整网球动捕片段学习可纠正潜动作，由PPO高层策略组合步法、击球和腕部修正；G1在随机来球仿真及动捕支持的真机对打中完成回球，并分别评估正反手与前后场表现。 |
 | [Locomotion-Grounded Humanoid Soccer](https://arxiv.org/abs/2609.38852) | 技能表示与行为基座 | 先训练全向Locomotion基座，再用任务模式门控七个视频重定向踢球技能并蒸馏为单策略；Unitree G1实机验证部分方向，仿真显示多方向覆盖与合并负迁移。 |
 | [PULSE](https://github.com/ZhengyiLuo/PULSE) | 动作表示 | 在物理人体控制器上学习潜在动作空间，由高层策略组合潜变量完成任务，研究可复用技能表示。 |
 | [SkillX](https://yzc0731.github.io/SkillX/) | 技能表示与行为基座 | 以单一命令条件Actor配合技能专属对抗先验、价值头和球物体时序编码器，学习带球、停球、射门及其转换。 |

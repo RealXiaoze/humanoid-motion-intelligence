@@ -2,7 +2,7 @@
 
 > 视觉语言理解、未来预测与任务决策，汇总相关论文、方法与项目。
 
-当前收录 **168** 篇论文／技术报告、**161** 个项目。
+当前收录 **173** 篇论文／技术报告、**166** 个项目。
 
 ## 本页导航
 
@@ -35,7 +35,7 @@
 
 根据观测、历史和动作条件预测未来状态、视频或奖励，用于想象学习、规划和策略评估。动作条件也可用语言或潜变量表达。
 
-**23** 篇论文／报告 · **19** 个项目
+**24** 篇论文／报告 · **20** 个项目
 
 #### 论文与技术报告
 
@@ -53,6 +53,7 @@
 | [Qwen-RobotWorld：语言条件的具身未来视频预测](论文逐篇解读/P259.md) | 以自然语言动作意图统一描述不同机器人操作，并预测对应的未来视频状态，供生成评测与下游世界模型研究使用。 | [原文](https://arxiv.org/abs/2606.17030) · [项目页](https://qwen.ai/blog?id=qwen-robotworld) |
 | [RynnWorld-4D：协同预测外观、几何与运动的具身世界模型](论文逐篇解读/P281.md) | 从RGB-D观察与任务文本协同生成未来RGB、深度和光流，通过逐帧跨模态注意力形成可还原3D场景流的4D表征；独立训练的RynnWorld-4D-Policy再用冻结预测表征产生动作。 | [原文](https://arxiv.org/abs/2607.06559) · [代码](https://github.com/alibaba-damo-academy/RynnWorld-4D) · [项目页](https://alibaba-damo-academy.github.io/RynnWorld-4D.github.io) |
 | [WALL-SS：让动作条件世界模型持续推演，并用于筛选机器人策略](论文逐篇解读/P187.md) | 以尺度对齐动作条件和时间尺度记忆进行长程视频推演，评估机器人世界模型及策略。 | [原文](https://x2robot-open.oss-cn-shenzhen.aliyuncs.com/ARWM%20OPEN/WALL-SS.pdf) · [代码](https://github.com/X-Square-Robot/wall-ss) · [项目页](https://x2robot.com/pages/ss) |
+| [μ₀：以三维交互轨迹学习可迁移运动先验](论文逐篇解读/P382.md) | 从人类与机器人视频提取三维交互轨迹，以视觉、语言目标和查询点预测未来运动；冻结轨迹模型后训练目标机器人动作专家，将交互运动先验用于真实操作。 | [原文](https://arxiv.org/abs/2606.13769) · [代码](https://github.com/Yoonkyo/mu0) · [项目页](https://mu0-wm.github.io/) |
 | [Embodied World Model Survey：具身智能世界模型综合综述](论文逐篇解读/P072.md) | 从功能、时间建模和空间表示整理具身世界模型，涵盖状态估计、预测、生成与规划。 | [原文](https://arxiv.org/abs/2510.16732) · [代码](https://github.com/Li-Zn-H/AwesomeWorldModels) |
 | [Cosmos平台：面向Physical AI的视频世界基础模型](论文逐篇解读/P252.md) | 从通用视频生成先验构建物理AI世界模型平台，覆盖视频数据处理、未来状态生成、目标领域后训练和条件安全评估。 | [原文](https://arxiv.org/pdf/2501.03575) · [代码](https://github.com/nvidia-cosmos/cosmos-predict1) · [项目页](https://research.nvidia.com/labs/dir/cosmos1/) |
 | [Ctrl-World：动作条件世界预测与策略评估](论文逐篇解读/P257.md) | 根据外部策略动作生成后续相机视觉状态，为候选操作策略的闭环评测和合成轨迹筛选提供可控视频环境。 | [原文](https://arxiv.org/abs/2510.10125) · [代码](https://github.com/Robert-gyj/Ctrl-World) · [项目页](https://ctrl-world.github.io/) |
@@ -88,6 +89,7 @@
 | [RynnWorld-4D](https://github.com/alibaba-damo-academy/RynnWorld-4D) | 世界模型与未来预测 | 从RGB-D观察与任务文本协同生成未来RGB、深度和光流，通过逐帧跨模态注意力形成可还原3D场景流的4D表征；独立训练的RynnWorld-4D-Policy再用冻结预测表征产生动作。 |
 | [VideoWorld](https://github.com/ByteDance-Seed/VideoWorld) | 世界模型与未来预测 | 以VQ-VAE视频自回归生成和LDM多步视觉变化压缩学习任务动态，再由逆动力学模块从生成帧与潜代码恢复动作，在围棋、CALVIN和RLBench验证规划能力。 |
 | [WALL-SS](https://github.com/X-Square-Robot/wall-ss) | 长时世界模型项目页 | 以长时世界模型对齐动作与视觉动态，并利用记忆和视觉动力学奖励评估机器人策略。 |
+| [μ₀](https://github.com/Yoonkyo/mu0) | 世界模型与未来预测 | 从人类与机器人视频提取三维交互轨迹，以视觉、语言目标和查询点预测未来运动；冻结轨迹模型后训练目标机器人动作专家，将交互运动先验用于真实操作。 |
 
 [返回本页导航](#本页导航)
 
@@ -95,7 +97,7 @@
 
 根据观测、任务指令和本体状态生成可执行动作或动作块，涵盖VLA、视觉运动模仿学习、跨本体策略与后训练。
 
-**70** 篇论文／报告 · **55** 个项目
+**71** 篇论文／报告 · **56** 个项目
 
 #### 论文与技术报告
 
@@ -120,6 +122,7 @@
 | [GigaBrain-0.7：以三系统协同生成跨本体机器人动作](论文逐篇解读/P269.md) | GigaBrain-0.7以VLA为最终动作策略，将场景理解与子任务规划、未来视频/进度预测、MoT连续动作生成协同起来，使用异构轨迹和VLM数据预训练，并支持世界模型条件微调及经验强化。 | [原文](https://arxiv.org/abs/2608.15875) · [代码](https://github.com/open-gigaai/giga-brain-0) · [项目页](https://gigaai.cc/blog/gigabrain07) |
 | [GVLA：夹爪条件化的视觉语言动作策略](论文逐篇解读/P326.md) | MiGA覆盖五类夹爪的多视角示范与策略标签，GVLA以三级夹爪提示和平台/夹爪双MoA条件化π0.5动作生成，提升四类抓取表现并支持UR5少样本迁移。 | [原文](https://arxiv.org/abs/2608.24603) · [项目页](https://airvlab.github.io/G-VLA/) |
 | [HEX：以预测本体动力学支撑人形全身操作](论文逐篇解读/P262.md) | HEX 用规范身体部位状态和形态感知 MoE 跨本体预测未来本体动力学，再以视觉语言条件和预测状态生成高层全身操作动作，由低层强化学习控制器保持平衡。 | [原文](https://arxiv.org/abs/2604.07993) · [代码](https://github.com/Open-X-Humanoid/HEX) · [项目页](https://hex-humanoid.github.io/) |
+| [HumanEgo：从数分钟人类第一视角视频学习双臂操作策略](论文逐篇解读/P378.md) | 从人类第一视角视频恢复手物交互几何，以流匹配预测双臂末端动作块，并用三类未来状态目标强化少样本学习；四项WidowX实机任务平均成功率为92.5%，并测试跨相机与机械臂迁移。 | [原文](https://arxiv.org/abs/2605.24934) · [代码](https://github.com/TX-Leo/HumanEgo) · [项目页](https://humanego-ai.github.io/) |
 | [Hy-Embodied-0.5-VLA：从VLA策略到真机学习执行栈](论文逐篇解读/P291.md) | 以Hy-Embodied MoT骨干和连续流匹配Action Expert输出相对末端delta动作块，结合10K小时UMI预训练、跨本体部署、异步轨迹拼接及FlowPRO真实失败偏好优化。 | [原文](https://arxiv.org/abs/2606.14409) · [代码](https://github.com/Tencent-Hunyuan/Hy-Embodied-0.5-VLA) |
 | [IronMind：以第一视角预训练扩展人形灵巧操作](论文逐篇解读/P366.md) | 以相机坐标动作统一第一视角人类与异构机器人示范，预训练可共同优化动作流匹配及深度、语义、未来帧目标；推理仅输出动作，在IRON-R01上开展闭环实机评测。 | [原文](https://arxiv.org/abs/2609.39403) · [项目页](https://xpeng-robotics.github.io/ironmind/) |
 | [JALA：联合对齐潜动作的开放域 VLA 预训练](论文逐篇解读/P307.md) | 以起止帧逆动力学提取latent action，与VLA遮蔽动作块的预测嵌入联合对齐，使7.5M实验室及野外人类视频参与动作预训练。 | [原文](https://arxiv.org/abs/2602.21736) · [代码](https://github.com/BeingBeyond/JALA) · [项目页](https://research.beingbeyond.com/jala) |
@@ -194,6 +197,7 @@
 | [GraspVLA](https://github.com/PKU-EPIC/GraspVLA) | VLA与通用操作策略 | 在SynGrasp-1B合成抓取轨迹与互联网目标定位数据上联合训练VLM和流匹配动作专家，以PAG逐步预测二维目标框、三维抓取姿态和连续末端动作，并验证真机开放类别抓取及LIBERO零样本迁移。 |
 | [GVLA](https://airvlab.github.io/G-VLA/) | VLA与通用操作策略 | MiGA覆盖五类夹爪的多视角示范与策略标签，GVLA以三级夹爪提示和平台/夹爪双MoA条件化π0.5动作生成，提升四类抓取表现并支持UR5少样本迁移。 |
 | [HEX](https://github.com/Open-X-Humanoid/HEX) | VLA与通用操作策略 | HEX 用规范身体部位状态和形态感知 MoE 跨本体预测未来本体动力学，再以视觉语言条件和预测状态生成高层全身操作动作，由低层强化学习控制器保持平衡。 |
+| [HumanEgo](https://github.com/TX-Leo/HumanEgo) | VLA与通用操作策略 | 从人类第一视角视频恢复手物交互几何，以流匹配预测双臂末端动作块，并用三类未来状态目标强化少样本学习；四项WidowX实机任务平均成功率为92.5%，并测试跨相机与机械臂迁移。 |
 | [HY-Embodied-0.5-VLA](https://github.com/Tencent-Hunyuan/Hy-Embodied-0.5-VLA) | VLA与通用操作策略 | 以Hy-Embodied MoT骨干和连续流匹配Action Expert输出相对末端delta动作块，结合10K小时UMI预训练、跨本体部署、异步轨迹拼接及FlowPRO真实失败偏好优化。 |
 | [HY-Embodied-0.5-X](https://github.com/Tencent-Hunyuan/HY-Embodied-0.5-X) | 跨本体具身动作模型 | 以共享多模态表征和统一动作接口学习不同机器人数据，支持跨本体训练与适配。 |
 | [IronMind](https://xpeng-robotics.github.io/ironmind/) | VLA与通用操作策略 | 以相机坐标动作统一第一视角人类与异构机器人示范，预训练可共同优化动作流匹配及深度、语义、未来帧目标；推理仅输出动作，在IRON-R01上开展闭环实机评测。 |
@@ -367,7 +371,7 @@
 
 理解场景与任务，组织空间记忆、任务分解、技能调用和导航决策。
 
-**16** 篇论文／报告 · **23** 个项目
+**19** 篇论文／报告 · **26** 个项目
 
 #### 论文与技术报告
 
@@ -378,11 +382,14 @@
 | [HoloAgent-0：具备三维空间记忆的统一具身智能体框架](论文逐篇解读/P082.md) | 以三维空间记忆、技能图和运行监控组织搜索、导航与移动操作，不直接控制关节。 | [原文](https://arxiv.org/abs/2606.23565) · [代码](https://github.com/HorizonRobotics/HoloAgent) · [项目页](https://horizonrobotics.github.io/robot_lab/holoagent) |
 | [HY-Embodied-0.5：面向具身任务的空间理解底座](论文逐篇解读/P289.md) | 以模态自适应MoT及视觉潜变量token构建空间感知VLM，训练覆盖定位、深度、分割和具身推理，并在扩展Action Expert的下游版本上验证双臂真机操作。 | [原文](https://arxiv.org/abs/2604.07430) · [代码](https://github.com/Tencent-Hunyuan/HY-Embodied) |
 | [Hy-Embodied-VLM-1.0：面向物理环境任务的视觉语言Agent](论文逐篇解读/P290.md) | 沿用HY-Embodied VLM骨干并按状态理解、状态转移、序列自适应推理组织监督，以可验证推理后训练驱动视觉语言导航和仿真Agent决策。 | [原文](https://arxiv.org/abs/2607.12894) · [代码](https://github.com/Tencent-Hunyuan/HY-Embodied) |
+| [LT-Mem：为反复访问的场景保存对象状态与变化历史](论文逐篇解读/P375.md) | 将多次单目观察对齐到统一三维场景，以对象身份和变化频率维护当前状态、事件历史与统计记忆，支持物品移动、出现和消失等时序场景问答。 | [原文](https://arxiv.org/abs/2608.19059) · [项目页](https://lt-mem.github.io/) |
 | [ME-Brain 1.0：用记忆、认知与动作积累可复用经验](论文逐篇解读/P231.md) | ME-Brain把机器人执行记录整理为分层记忆，由认知核心抽取可迁移技能，并让动作模型按事件检索经验完成后续操作。 | [原文](https://arxiv.org/abs/2609.24271) · [代码](https://github.com/MachEmbodied/ME-Brain-1.0) · [项目页](https://machembodied.com/ME-Brain/ME-Brain-1.0.html) |
 | [ME-VLM：统一具身认知与多模态Agent协作](论文逐篇解读/P232.md) | ME-VLM把物理场景理解、空间与时序推理、Agent任务规划和执行结果检查统一训练，并提供适配端侧部署的4B版本。 | [原文](https://arxiv.org/abs/2609.24526) · [代码](https://github.com/MachEmbodied/ME-VLM) · [项目页](https://machembodied.com/ME-Brain/ME-VLM.html) |
 | [Counterfactual Memory Audit：反事实检验历史是否引导决策](论文逐篇解读/P350.md) | CMA把不同任务历史配对到相同当前输入，用同随机数查询冻结策略并将保存动作交叉放入两种评估世界，分别统计记忆敏感性、正确分支、匹配世界价值和配对可靠性。 | [原文](https://arxiv.org/abs/2609.27247) |
 | [NavProbe：基于主动记忆检索的证据约束零样本导航](论文逐篇解读/P360.md) | NavProbe以动态子目标议程、拓扑情景记忆和实体索引管理导航历史，在推理缺少证据时按需检索图像或几何记录，核实后修订议程并输出航点、垂直移动、回退或停止技能。论文在R2R-CE、RxR-CE、HM3D-v2上报告仿真结果，并展示Galaxea R1Pro实机部署流程。 | [原文](https://arxiv.org/abs/2609.27526) |
+| [iFlax：面向长程任务的规划反馈式对象重要性学习](论文逐篇解读/P380.md) | 以PDDL任务关系图预测对象重要性，令规划器在逐步扩张的裁剪空间中搜索，并用所得计划生成训练伪标签；3R并行恢复补回关键对象、重建精简集合或谨慎回退扩张，输出高层计划并在Spot上调用技能执行。 | [原文](https://arxiv.org/abs/2606.06877) · [项目页](https://sairlab.org/iflax/) |
 | [RoboAssist：长程手术辅助中的人形机器人交互规划](论文逐篇解读/P371.md) | 把人的部分可观测流程与机器人技能任务分轨维护，以证据门控和仅重规划受影响后缀应对请求变化，并用导航、交接与运行时监督三层机制约束G1执行；实验为非临床模拟手术辅助流程。 | [原文](https://arxiv.org/abs/2609.39384) · [项目页](https://roboassist.github.io/) |
+| [VAP-TAMP：以主动视觉核验恢复动态环境中的机器人任务执行](论文逐篇解读/P381.md) | 从RGB-D和语言目标构建动态场景图及PDDL问题，以动作前提和效果组成VLM谓词核验；问法分歧或视野不足时主动换视角，确认状态偏差后更新场景图并重规划，输出由参数化运动技能执行的任务计划。 | [原文](https://arxiv.org/abs/2604.26988) · [代码](https://github.com/aoloo-r/VAP-TAMP) · [项目页](https://vap-tamp.github.io/vap-tamp/) |
 | [RxBrain：联合语言推理与视觉想象的具身认知模型](论文逐篇解读/P292.md) | 以交错语言推理和图像子目标表达具身计划，通过视频状态预测、联合子目标想象与自动任务视频标注训练认知模型，并扩展连续动作头完成真机操作。 | [原文](https://arxiv.org/abs/2607.14187) · [代码](https://github.com/Tencent-Hunyuan/Hy-Embodied-RxBrain-1.0) · [项目页](https://huggingface.co/tencent/Hy-Embodied-RxBrain-1.0) |
 | [RynnBrain：面向具身任务的时空基础模型](论文逐篇解读/P274.md) | 以Qwen3-VL为底座进行时空具身预训练，再分别后训练CoP空间推理、Nav导航、Plan高层规划与VLA动作策略分支。 | [原文](https://arxiv.org/abs/2602.14979v1) · [代码](https://github.com/alibaba-damo-academy/RynnBrain) · [项目页](https://alibaba-damo-academy.github.io/RynnBrain.github.io) |
 | [RynnValue：以时间距离学习机器人任务价值](论文逐篇解读/P282.md) | 以任务语言、本体元数据和多帧观察估计逐帧剩余完成时间及相邻帧有符号时间位移，并辅助输出任务描述/匹配/成功判断；将时间距离势函数接入在线离线RL、价值筛选和冻结策略候选动作重排。 | [原文](https://arxiv.org/abs/2608.09853) · [代码](https://github.com/alibaba-damo-academy/RynnValue) · [项目页](https://alibaba-damo-academy.github.io/RynnValue.github.io) |
@@ -404,6 +411,8 @@
 | [GO-2](https://www.agibot.com/article/231/detail/56.html) | 具身规划与执行模型 | 以Action CoT生成宏观动作意图，再由低频语义规划和高频动作跟随器逐级细化执行。 |
 | [HoloAgent](https://github.com/HorizonRobotics/HoloAgent) | 具身Agent与机器人系统栈 | 以AgentOS技能图、空间记忆和执行反馈组织机器人任务，并通过ROS 2连接导航、感知节点及多本体适配工具。 |
 | [HY-Embodied](https://github.com/Tencent-Hunyuan/HY-Embodied) | 具身理解与Agent规划 | 沿用HY-Embodied VLM骨干并按状态理解、状态转移、序列自适应推理组织监督，以可验证推理后训练驱动视觉语言导航和仿真Agent决策。 |
+| [iFlax](https://sairlab.org/iflax/) | 具身理解与Agent规划 | 以PDDL任务关系图预测对象重要性，令规划器在逐步扩张的裁剪空间中搜索，并用所得计划生成训练伪标签；3R并行恢复补回关键对象、重建精简集合或谨慎回退扩张，输出高层计划并在Spot上调用技能执行。 |
+| [LT-Mem](https://lt-mem.github.io/) | 具身理解与Agent规划 | 将多次单目观察对齐到统一三维场景，以对象身份和变化频率维护当前状态、事件历史与统计记忆，支持物品移动、出现和消失等时序场景问答。 |
 | [ME-Brain 1.0](https://github.com/MachEmbodied/ME-Brain-1.0) | 具身理解与Agent规划 | ME-Brain把机器人执行记录整理为分层记忆，由认知核心抽取可迁移技能，并让动作模型按事件检索经验完成后续操作。 |
 | [ME-VLM](https://github.com/MachEmbodied/ME-VLM) | 具身理解与Agent规划 | ME-VLM把物理场景理解、空间与时序推理、Agent任务规划和执行结果检查统一训练，并提供适配端侧部署的4B版本。 |
 | [MiniCPM-Robot](https://github.com/OpenBMB/MiniCPM-Robot) | 端侧机器人感知与决策工具集 | 提供端侧多模态模型的视觉跟踪、目标理解和动作决策接口，支持Jetson、ROS 2及机器人SDK集成。 |
@@ -417,6 +426,7 @@
 | [RynnValue](https://github.com/alibaba-damo-academy/RynnValue) | 具身理解与Agent规划 | 以任务语言、本体元数据和多帧观察估计逐帧剩余完成时间及相邻帧有符号时间位移，并辅助输出任务描述/匹配/成功判断；将时间距离势函数接入在线离线RL、价值筛选和冻结策略候选动作重排。 |
 | [tron1-agent](https://github.com/limxdynamics/tron1-agent) | 机器人Agent与任务规划 | 根据语言任务与多模态环境状态生成技能调用或导航操作步骤，并结合执行反馈调整任务计划。 |
 | [UrbanVLA](https://github.com/GalaxyGeneralRobotics/UrbanVLA) | 城市开放环境视觉语言导航模型 | 根据第一视角视觉与语言指令生成移动决策，面向室外及半开放城市环境导航。 |
+| [VAP-TAMP](https://github.com/aoloo-r/VAP-TAMP) | 具身理解与Agent规划 | 从RGB-D和语言目标构建动态场景图及PDDL问题，以动作前提和效果组成VLM谓词核验；问法分歧或视野不足时主动换视角，确认状态偏差后更新场景图并重规划，输出由参数化运动技能执行的任务计划。 |
 
 [返回本页导航](#本页导航)
 
