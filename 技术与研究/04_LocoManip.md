@@ -2,7 +2,7 @@
 
 > 移动、平衡、接触与操作协同，汇总相关论文、方法与项目。
 
-当前收录 **50** 篇论文／技术报告、**50** 个项目。
+当前收录 **53** 篇论文／技术报告、**53** 个项目。
 
 ## 本页导航
 
@@ -12,12 +12,13 @@
 
 利用视觉、物体状态与场景信息控制机器人交互。
 
-**11** 篇论文／报告 · **8** 个项目
+**14** 篇论文／报告 · **10** 个项目
 
 #### 论文与技术报告
 
 | 论文／报告 | 主要方法与用途 | 原文／代码 |
 | --- | --- | --- |
+| [Dexterity-BEV：以鸟瞰空间对齐三维世界与操作动作](论文逐篇解读/P405.md) | 以多视角点云/顶点谱融合成共同BEV工作区，将机器人状态与SE(3)末端动作也映射到该坐标系，再由VLM条件下的flow-matching动作专家输出动作块；在LIBERO、RoboTwin 2.0和AgileX、DexForce W1、A1实机上测试。作者项目页是代码与资源入口，本登记不将其误标为DexForce公司GitHub。 | [原文](https://arxiv.org/abs/2606.02274) · [项目页](https://hnuzhy.github.io/projects/Dex-BEV) |
 | [EgoHumanoid：基于机器人无关第一视角示范的野外移动操作](论文逐篇解读/P047.md) | 将第一视角示范重投影并转为末端增量和移动原语，再以少量真机数据锚定移动操作策略。 | [原文](https://arxiv.org/abs/2602.10106) · [代码](https://github.com/OpenDriveLab/EgoHumanoid) · [项目页](https://opendrivelab.com/EgoHumanoid) |
 | [ForeTime-VLA：把未来动作线索蒸馏进因果抓取策略](论文逐篇解读/P200.md) | 从世界动作模型蒸馏因果未来潜变量与阶段信息，改善传送带抓取和接触时序控制。 | [原文](https://arxiv.org/abs/2608.20735) |
 | [HAIC：基于动力学感知世界模型的敏捷人形物体交互控制](论文逐篇解读/P049.md) | 用对象中心世界模型递推物体位姿、速度和占据状态，并将预测作为策略输入执行物体交互。 | [原文](https://arxiv.org/abs/2602.11758) · [代码](https://github.com/ldt29/HAIC) · [项目页](https://haic-humanoid.github.io/) |
@@ -26,6 +27,8 @@
 | [OASIS：从仿真数据采集到真实人形移动操作](论文逐篇解读/P119.md) | 在Isaac Lab采集本体对齐轨迹并扩增视觉外观，训练迁移至真实G1的移动操作策略。 | [原文](https://arxiv.org/abs/2606.08548) · [代码](https://github.com/TeleHuman/OASIS) · [项目页](https://oasis-humanoid.github.io/) |
 | [Psi0：分阶段学习人形移动操作并接入全身控制](论文逐篇解读/P192.md) | 分阶段训练视觉语言动作模型与动作专家，并由低层控制器执行人形移动和灵巧操作。 | [原文](https://arxiv.org/abs/2603.12263) · [代码](https://github.com/physical-superintelligence-lab/Psi0) · [项目页](https://psi-lab.ai/Psi0/) |
 | [SceneBot：接触提示的场景交互人形全身跟踪](论文逐篇解读/P094.md) | 从动作恢复场景并生成接触标签，以接触提示条件化人形跟踪器，区分支撑地面与交互对象。 | [原文](https://arxiv.org/abs/2606.27581) · [项目页](https://ericcsr.github.io/scenebot/) |
+| [TouchGuide：用触觉引导推理时的接触操作](论文逐篇解读/P421.md) | 视觉运动策略在接触丰富任务中缺少对接触可行性、滑移和局部物理状态的推理，纯视觉动作容易在接触阶段偏离可执行区域。 | [原文](https://arxiv.org/abs/2601.20239) · [项目页](https://martelzhang.github.io/touchguide) |
+| [DexGraspVLA：面向泛化灵巧抓取的视觉语言动作框架](论文逐篇解读/P416.md) | 高层视觉语言规划器把开放式指令转为目标物体与框选区域，SAM/Cutie 生成并跟踪掩码，冻结 DINOv2 表征和 diffusion action chunk 策略执行灵巧抓取；以 2,094 条示范训练，并在新物体、背景、照明及长程操作上实测。 | [原文](https://arxiv.org/abs/2502.20900) · [代码](https://github.com/Psi-Robot/DexGraspVLA) · [项目页](https://dexgraspvla.github.io/) |
 | [DoorMan：面向人形像素到动作策略Sim2Real迁移的开门系统](论文逐篇解读/P092.md) | 以阶段重置训练特权开门教师，再经DAgger和GRPO优化RGB学生的像素到动作Sim2Real控制。 | [原文](https://arxiv.org/abs/2512.01061) · [代码](https://github.com/NVlabs/GR00T-VisualSim2Real) · [项目页](https://doorman-humanoid.github.io/) |
 | [VIRAL：面向人形移动操作的大规模视觉Sim2Real](论文逐篇解读/P093.md) | 以特权教师、DAgger学生和视觉随机化训练RGB人形策略，面向长程搬运与移动操作Sim2Real。 | [原文](https://arxiv.org/abs/2511.15200) · [代码](https://github.com/NVlabs/GR00T-VisualSim2Real) · [项目页](https://viral-humanoid.github.io/) |
 | [VBC：面向腿式移动操作的视觉全身控制](论文逐篇解读/P043.md) | 由特权高层生成任务目标、视觉学生预测目标，再经低层全身控制执行腿式移动操作。 | [原文](https://arxiv.org/abs/2403.16967) · [项目页](https://wholebody-b1.github.io/) |
@@ -34,6 +37,8 @@
 
 | 项目 | 主要用途 | 功能与特点 |
 | --- | --- | --- |
+| [#sudo R1](https://www.sudo.ai/) | 仿真训练通用操作系统 | 以动态观察条件策略在仿真中执行连续物体操作；官方介绍其观测条件动作频率为15至25Hz并采用逐步闭环输出而非开环动作块。 |
+| [DexGraspVLA](https://github.com/Psi-Robot/DexGraspVLA) | 灵巧抓取视觉语言动作策略 | 高层视觉语言规划器把指令转成目标物体与区域，分割掩码跟踪保持抓取对象对应，冻结DINOv2视觉特征与扩散动作块控制器执行灵巧抓取；项目提供控制器训练、评测和推理记录入口。 |
 | [DoorMan](https://doorman-humanoid.github.io/) | 视觉物理交互 | 以特权PPO教师、DAgger视觉学生和GRPO训练开门策略，并通过程序化门体随机化测试视觉物理交互。 |
 | [LadderMan](https://github.com/amazon-far/LadderMan) | LocoManip | LadderMan 从单条参考动作学习不同梯具的攀爬专家，再以混合模仿与强化学习蒸馏为深度视觉闭环全身策略，并以双智能体实现梯上操作和平衡。 |
 | [LEGS](https://legsvla.github.io/) | LocoManip与物理交互 | 组合MuJoCo动态网格、3DGS真实场景背景与程序化全身动作，生成可重渲染的视觉示范，微调VLA并通过SONIC驱动G1移动与操作。 |
@@ -49,7 +54,7 @@
 
 协调外力、柔顺控制、接触切换与负载变化。
 
-**17** 篇论文／报告 · **17** 个项目
+**17** 篇论文／报告 · **18** 个项目
 
 #### 论文与技术报告
 
@@ -86,6 +91,7 @@
 | [humanoid-touch-dream](https://github.com/chrisyrniu/humanoid-touch-dream) | 具身操作策略与数据采集 | 连接解耦身体控制、VR遥操作、多视角触觉数据、HTD行为克隆和真机执行；部署时仅保留动作策略。 |
 | [linkerhand-sim](https://github.com/linker-bot/linkerhand-sim) | 灵巧手仿真与操作 | 提供LinkerHand灵巧手仿真环境，用于验证抓取、手部控制和操作策略。 |
 | [MSDP](https://msdp-pearl.github.io/) | 接触力控与负载适应 | 通过多传感器掩码重建和动作条件下一观测预测学习融合表征，再以交叉注意力Critic及池化Actor接入强化学习；在仿真与Franka插销、推块任务及扰动条件下验证。 |
+| [RevoLab](https://github.com/BrainCoTech/RevoLab) | 仿真与灵巧手训练 | 为Revo3提供Isaac Lab环境、机器人资产和预训练策略，覆盖手内重定位、姿态调整、物体旋转、抬举与动态交接；训练与部署目录对应RSL-RL、RL Games及HORA/ProprioAdapt等路径。 |
 | [SoFTA / Hold My Beer](https://github.com/LeCAR-Lab/SoFTA) | 末端稳定项目 | 将下肢平衡与上肢末端稳定分为不同控制带宽，以协调行走和手持物任务中的基座扰动补偿。 |
 | [SoftMimic](https://gmargo11.github.io/softmimic/) | 柔顺控制项目 | 将刚性示范扩增为动力学可行的柔顺响应，再训练策略跟踪响应分布，覆盖数据处理、训练与部署。 |
 | [SplitAdapter](https://splitadapter.github.io/) | 负载适配项目 | 分离编码负载变化与机器人动力学变化，并以世界模型和分层FiLM适配G1负载操作。 |

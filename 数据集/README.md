@@ -2,7 +2,7 @@
 
 > 汇总具身智能训练与评测相关的数据集、训练数据配方及仿真资产，涵盖人体动作、人类操作视频、机器人示范、重定向轨迹与合成数据，按数据来源与内容整理。
 
-当前收录：**47项数据集与相关数据资源**。
+当前收录：**51项数据集与相关数据资源**。
 
 ## 分类导航
 
@@ -12,7 +12,7 @@
 
 ## 人体动作与语言
 
-**9 项资源**
+**10 项资源**
 
 | 数据集 | 数据内容 | 本体／对象 | 训练用途 |
 | --- | --- | --- | --- |
@@ -25,6 +25,7 @@
 | <a id="d008"></a>[Human3.6M](http://vision.imar.ro/human3.6m/description.php) | 室内人体视频与三维姿态 | 人体 | 训练姿态估计，为动作重定向提供人体表示 |
 | <a id="d009"></a>[LaFAN1](https://github.com/ubisoft/ubisoft-laforge-animation-dataset) | 运动捕捉序列与动作过渡片段 | 人体 | 研究动作补间、动作生成与跟踪参考 |
 | <a id="d023"></a>[OMOMO](https://github.com/lijiaman/omomo_release) | 人体与物体动作、物体三维几何 | 人体／物体 | 学习人-物交互动作，研究重定向与移动操作 |
+| <a id="d049"></a>[HiPHI](https://huggingface.co/datasets/noitomrobotics/HiPHI) | 光学动捕人体BVH动作，交互子集含同步物体轨迹与OBJ网格 | 132名表演者；人体与40种交互物体 | 支持人形动作跟踪、重定向、全身控制与人体-物体交互建模。 |
 
 <details>
 <summary>规模、格式与官方来源</summary>
@@ -92,6 +93,13 @@
 - **具体本体／对象**：Human;Object
 - **官方来源**：[数据卡／项目来源](https://github.com/lijiaman/omomo_release)
 
+### HiPHI
+
+- **规模**：原始采集308.7小时；镜像扩增后617.5小时/200.1M帧；132名表演者；90 Hz；371.8小时身体动作+245.7小时HOI
+- **模态与格式**：光学MoCap；55关节BVH；物体6D轨迹与OBJ网格；文本与Frame-LU标签
+- **具体本体／对象**：人体；40种交互物体/12类别
+- **官方来源**：[数据卡／项目来源](https://huggingface.co/datasets/noitomrobotics/HiPHI)
+
 </details>
 
 [返回分类导航](#分类导航)
@@ -100,7 +108,7 @@
 
 ## 人类视频与操作示范
 
-**6 项资源**
+**7 项资源**
 
 | 数据集 | 数据内容 | 本体／对象 | 训练用途 |
 | --- | --- | --- | --- |
@@ -110,6 +118,7 @@
 | <a id="d038"></a>[World In Your Hands](https://wiyh.tars-ai.com/) | 多视角、手部动作及部分触觉与语义 | 人体／灵巧操作 | 研究跨本体操作预训练、重定向与世界建模 |
 | <a id="d039"></a>[KAI Ego Data Minibatch](https://huggingface.co/datasets/Kinetix-AI/kai-data-minibatch) | 第一视角视频、相机参数与跟踪标注 | 人体 | 评估第一视角手物交互数据与机器人学习管线 |
 | <a id="d041"></a>[EgoHTR](https://huggingface.co/datasets/leggedrobotics/egohtr) | 复杂地形中的场景对齐4D人体运动序列，包含SMPL-X人体模型、第一视角视频与SLAM轨迹、原始IMU、三维场景网格和点云；部分片段还提供第二视角、固定相机和动捕真值。 | 8名人类被试；下游示范与控制验证包含Unitree G1 | 评测第一视角人体姿态与人体-场景4D重建；为复杂地形人体动作分析、参考动作重定向和基于场景几何的人形感知Locomotion训练提供数据。论文以重定向后的参考动作训练G1专家策略，并测试接触奖励与参考位置误差的影响。 |
+| <a id="d051"></a>[OmniEgo](https://huggingface.co/datasets/Delta-Intelligence/OmniEgo) | 第一视角多目视频、24关节骨架、头显姿态与运动状态及动作片段标注 | 人体＋Delta D1头戴式采集设备 | 为人形机器人动作理解、模仿学习与人体动作重定向提供同步全身示范。 |
 
 <details>
 <summary>规模、格式与官方来源</summary>
@@ -155,6 +164,13 @@
 - **模态与格式**：Ego RGB; SLAM trajectory; IMU; SMPL-X; Scene mesh; Point cloud; Optional exocentric video; MoCap ground truth subset
 - **具体本体／对象**：8名人类被试；下游示范与控制验证包含Unitree G1
 - **官方来源**：[数据卡／项目来源](https://huggingface.co/datasets/leggedrobotics/egohtr)
+
+### OmniEgo
+
+- **规模**：552个episode；133,246主帧；4,441.533秒（约1.23小时，约1小时14分）；HF仓库504 GB
+- **模态与格式**：多视角RGB视频；24关节SMPL-style骨架；头显位姿、速度与加速度；动作片段文本标注
+- **具体本体／对象**：Human;Delta D1头戴式采集设备
+- **官方来源**：[数据卡／项目来源](https://huggingface.co/datasets/Delta-Intelligence/OmniEgo)
 
 </details>
 
@@ -332,7 +348,7 @@
 
 ## 仿真合成与生成式数据
 
-**7 项资源**
+**8 项资源**
 
 | 数据集 | 数据内容 | 本体／对象 | 训练用途 |
 | --- | --- | --- | --- |
@@ -343,6 +359,7 @@
 | <a id="d030"></a>[NVIDIA GR00T X-Embodiment Sim](https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-GR00T-X-Embodiment-Sim) | 跨本体仿真操作轨迹 | Panda、GR1、G1 | 生成操作训练数据，开展GR00T后训练 |
 | <a id="d037"></a>[HumanGen](https://github.com/robbyant-research/Zero-WAM) | 生成式人机视频、动作及任务配对 | 人体＋多种机器人 | 研究上下文机器人学习与跨任务泛化 |
 | <a id="d046"></a>[TableVerse-100K](https://huggingface.co/datasets/ByteDance/TableVerse) | 任务指令、物体网格、公制场景点云、MJCF、仿真图像与关节空间轨迹 | MuJoCo桌面操作机器人与重建场景 | 构建Real2Sim桌面环境、生成操作轨迹与视觉示范，用于操作策略及VLA预训练。 |
+| <a id="d050"></a>[RoboTidy](https://arxiv.org/abs/2511.14161) | 3DGS家庭场景、对象与容器、操作示范及跨房间导航轨迹 | Isaac Sim家庭场景；真实迁移平台为Cobot-Magic与Piper机械臂 | 训练和评测偏好条件家庭整理、移动操作与语言导航。 |
 
 <details>
 <summary>规模、格式与官方来源</summary>
@@ -396,6 +413,13 @@
 - **具体本体／对象**：MuJoCo桌面操作机器人与重建场景
 - **官方来源**：[数据卡／项目来源](https://huggingface.co/datasets/ByteDance/TableVerse)
 
+### RoboTidy
+
+- **规模**：500套家庭场景（覆盖500个对象与容器）；摘要报告6.4k条操作演示，第4.1节报告6k条；400条真实操作演示；1.5k条导航轨迹
+- **模态与格式**：3DGS室内场景；碰撞网格；多视角RGB/RGB-D/LiDAR；关节、夹爪及动作轨迹；任务语言
+- **具体本体／对象**：Isaac Sim家庭场景；Cobot-Magic双臂移动平台与4台Piper机械臂
+- **官方来源**：[数据卡／项目来源](https://arxiv.org/abs/2511.14161)
+
 </details>
 
 [返回分类导航](#分类导航)
@@ -404,7 +428,7 @@
 
 ## 跨来源训练集合与配方
 
-**5 项资源**
+**6 项资源**
 
 | 数据集 | 数据内容 | 本体／对象 | 训练用途 |
 | --- | --- | --- | --- |
@@ -413,6 +437,7 @@
 | <a id="d029"></a>[MolmoAct2训练集合与策略Rollout](https://github.com/allenai/molmoact2) | 跨本体训练集合与策略执行轨迹 | SO-100/101、Franka等 | 研究VLA微调、失败标注及奖励建模 |
 | <a id="d033"></a>[ARIO Dataset](https://imaei.github.io/project_pages/ario/) | 统一格式的真实、仿真及转换数据 | 多种机器人 | 统一多源数据，研究跨机器人操作与导航 |
 | <a id="d047"></a>[MiGA](https://huggingface.co/datasets/GVLA/MiGA-Dataset) | 多视角RGB-D、本体状态、动作轨迹、夹爪策略标注与任务语言 | Franka、UR10、xArm7、UR5；平行夹爪、三指夹爪、软夹爪、吸盘与五指灵巧手 | 学习随夹爪形态变化的抓取与操作策略，用于跨夹爪动作学习、策略分析及少样本适配。 |
+| <a id="d048"></a>[LARYBench](https://huggingface.co/datasets/meituan-longcat/LARYBench) | 人类与机器人视频、图像对及对应动作轨迹 | 人类与11种机器人本体 | 比较潜在动作表征的语义识别能力与低层机器人动作回归表现。 |
 
 <details>
 <summary>规模、格式与官方来源</summary>
@@ -451,6 +476,13 @@
 - **模态与格式**：多视角RGB-D、本体状态、动作轨迹、夹爪策略标注与任务语言
 - **具体本体／对象**：Franka、UR10、xArm7、UR5；平行夹爪、三指夹爪、软夹爪、吸盘与五指灵巧手
 - **官方来源**：[数据卡／项目来源](https://huggingface.co/datasets/GVLA/MiGA-Dataset)
+
+### LARYBench
+
+- **规模**：超过1.2M短视频/1,000小时；620K图像对；595,237条轨迹；151个动作类别；11种机器人本体；HF仓库1.11 TB
+- **模态与格式**：短视频；图像对；机器人运动轨迹
+- **具体本体／对象**：人类与11种机器人本体
+- **官方来源**：[数据卡／项目来源](https://huggingface.co/datasets/meituan-longcat/LARYBench)
 
 </details>
 

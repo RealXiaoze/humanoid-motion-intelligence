@@ -34,6 +34,9 @@ dist/
 *.bak
 *.log
 
+# One-off paper cleanup helpers remain local.
+/.tmp_*.py
+
 # Source documents beyond PDF/DOC (kept outside the public knowledge base)
 *.ppt
 *.pptx
