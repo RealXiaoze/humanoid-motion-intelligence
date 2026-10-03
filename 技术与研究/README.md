@@ -9,10 +9,10 @@
 左图按System 1与System 0概括上层智能和身体控制，是本库的功能划分；右图展示Loco-Manipulation的三种可组合实现方式。
 
 <table width="100%" style="width: 100%; table-layout: fixed;">
-<thead><tr><th width="9999" align="center"><div align="center" style="text-align: center;">行业技术路线图</div></th><th width="9999" align="center"><div align="center" style="text-align: center;">Loco-Manipulation技术路线图</div></th></tr></thead>
+<thead><tr><th width="9999" align="center"><div align="center" style="text-align: center;">知识库能力分层示意</div></th><th width="9999" align="center"><div align="center" style="text-align: center;">Loco-Manipulation技术路线图</div></th></tr></thead>
 <tbody><tr>
 <td valign="top"><pre>
-                具身智能行业技术路线
+                具身智能能力分层示意
         上层智能 · 身体能力 · 真实世界闭环
                           |
                System 1 · 上层具身智能

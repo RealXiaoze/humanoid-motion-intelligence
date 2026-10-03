@@ -21,11 +21,11 @@ EXPECTED_PROJECTS = 767
 EXPECTED_DATASETS = 51
 EXPECTED_TRACK_COUNTS = {
     "动作数据与重定向": (36, 67),
-    "Locomotion与运动先验": (62, 82),
-    "动作跟踪与全身控制": (48, 57),
-    "LocoManip": (53, 53),
-    "世界模型、VLA与Agent": (229, 197),
-    "工程与实机部署": (38, 311),
+    "Locomotion与运动先验": (62, 79),
+    "动作跟踪与全身控制": (48, 55),
+    "LocoManip": (53, 52),
+    "世界模型、VLA与Agent": (229, 196),
+    "工程与实机部署": (38, 318),
 }
 PAGES_WITHOUT_EMBEDDED_FIGURES = set('P016.md P135.md P144.md P152.md P164.md P165.md P166.md P167.md P168.md P169.md P170.md P171.md P172.md P179.md P184.md P185.md P188.md P210.md P211.md P212.md P213.md P214.md P215.md P216.md P217.md P218.md P219.md P220.md P221.md P222.md P223.md P224.md P225.md P226.md P227.md P228.md P229.md P230.md P231.md P232.md P233.md P234.md P236.md P237.md P238.md P239.md P240.md P241.md P242.md P243.md P244.md P245.md P246.md P247.md P248.md P249.md P250.md P251.md P252.md P253.md P254.md P255.md P256.md P257.md P258.md P259.md P260.md P261.md P262.md P263.md P264.md P265.md P266.md P267.md P268.md P269.md P270.md P271.md P272.md P273.md P274.md P275.md P276.md P277.md P278.md P279.md P280.md P281.md P282.md P283.md P284.md P285.md P286.md P287.md P288.md P289.md P290.md P291.md P292.md P293.md P294.md P295.md P296.md P297.md P298.md P299.md P300.md P301.md P302.md P303.md P304.md P305.md P306.md P307.md P308.md P309.md P310.md P311.md P312.md P313.md P314.md P315.md P316.md P317.md P318.md P319.md P320.md P321.md P322.md P323.md P324.md P325.md P326.md P327.md P328.md P329.md P330.md P331.md P332.md P333.md P335.md P336.md P337.md P338.md P339.md P340.md P341.md P342.md P343.md P344.md P345.md P346.md P347.md P348.md P349.md P350.md P351.md P352.md P353.md P354.md P355.md P356.md P357.md P358.md P359.md P360.md P361.md P362.md P363.md P364.md P365.md P366.md P367.md P368.md P369.md P370.md P371.md P372.md P373.md P374.md P375.md P376.md P377.md P378.md P379.md P380.md P381.md P382.md P383.md P384.md P385.md P386.md P387.md P388.md P389.md P390.md P391.md P392.md P393.md P394.md P395.md P396.md P397.md P398.md P399.md P400.md P401.md P402.md P403.md P404.md P405.md P406.md P407.md P408.md P409.md P410.md P411.md P412.md P413.md P414.md P415.md P416.md P417.md P418.md P419.md P420.md P421.md P422.md P424.md P425.md P426.md P427.md P428.md P429.md P430.md P431.md P432.md P433.md P434.md P435.md P437.md P438.md P439.md P440.md P441.md P442.md P443.md P444.md P445.md P446.md P447.md P448.md P449.md P450.md P451.md P452.md P453.md P454.md P455.md P456.md P457.md P458.md P459.md P460.md P461.md P462.md P463.md P464.md P465.md P466.md P467.md P468.md P469.md P470.md'.split())
 RUNTIME_IGNORED_DIRS = {".git", "__pycache__"}
@@ -308,7 +308,7 @@ def check_markdown(files: list[Path], errors: list[str]) -> None:
         text = page.read_text(encoding="utf-8")
         title = re.search(r"^# [^\n]+\n", text, flags=re.MULTILINE)
         resource_line = text[title.end():].lstrip().splitlines()[0] if title else ""
-        if not re.match(r"\[(?:论文|技术报告|公司研究入口)\]\(https?://", resource_line):
+        if not re.match(r"\[(?:论文|技术报告|公司研究入口)(?:（v\d+）)?\]\(https?://", resource_line):
             errors.append(f"论文与项目链接应置于标题下：{page.relative_to(ROOT)}")
         if not text.startswith("---\n"):
             errors.append(f"论文页面缺少front matter：{page.relative_to(ROOT)}")

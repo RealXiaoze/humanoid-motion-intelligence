@@ -2,7 +2,7 @@
 
 > 移动、平衡、接触与操作协同，汇总相关论文、方法与项目。
 
-当前收录 **53** 篇论文／技术报告、**53** 个项目。
+当前收录 **53** 篇论文／技术报告、**52** 个项目。
 
 ## 本页导航
 
@@ -39,13 +39,13 @@
 | --- | --- | --- |
 | [#sudo R1](https://www.sudo.ai/) | 仿真训练通用操作系统 | 以动态观察条件策略在仿真中执行连续物体操作；官方介绍其观测条件动作频率为15至25Hz并采用逐步闭环输出而非开环动作块。 |
 | [DexGraspVLA](https://github.com/Psi-Robot/DexGraspVLA) | 灵巧抓取视觉语言动作策略 | 高层视觉语言规划器把指令转成目标物体与区域，分割掩码跟踪保持抓取对象对应，冻结DINOv2视觉特征与扩散动作块控制器执行灵巧抓取；项目提供控制器训练、评测和推理记录入口。 |
-| [DoorMan](https://doorman-humanoid.github.io/) | 视觉物理交互 | 以特权PPO教师、DAgger视觉学生和GRPO训练开门策略，并通过程序化门体随机化测试视觉物理交互。 |
+| [DoorMan](https://doorman-humanoid.github.io/) | 视觉物理交互 | 以分阶段reset和PPO训练特权开门教师，通过DAgger蒸馏为RGB视觉学生，再用GRPO改善部分可观测性下的闭环行为。门体、把手动力学、材质、光照及相机参数随机化覆盖物理与视觉变化，策略在G1上完成开门与穿门。 |
 | [LadderMan](https://github.com/amazon-far/LadderMan) | LocoManip | LadderMan 从单条参考动作学习不同梯具的攀爬专家，再以混合模仿与强化学习蒸馏为深度视觉闭环全身策略，并以双智能体实现梯上操作和平衡。 |
 | [LEGS](https://legsvla.github.io/) | LocoManip与物理交互 | 组合MuJoCo动态网格、3DGS真实场景背景与程序化全身动作，生成可重渲染的视觉示范，微调VLA并通过SONIC驱动G1移动与操作。 |
-| [OASIS](https://github.com/TeleHuman/OASIS) | 仿真数据采集 | 在Isaac Lab以PICO遥操作采集移动操作数据，并通过视觉外观扩增训练G1策略，覆盖采集、训练和部署。 |
+| [OASIS](https://github.com/TeleHuman/OASIS) | 仿真数据采集 | 用PICO/XR遥操作在Isaac Lab记录G1移动操作轨迹，并将机器人头部相机画面实时送回操作者。离线回放利用PathTracing随机化纹理、光照和相机外参，生成多外观视觉训练数据；场景资产可由照片重建并导入。 |
 | [Psi0](https://github.com/physical-superintelligence-lab/Psi0) | 人形VLA训练与分层执行 | 提供人类第一视角预训练、真机后训练、任务微调和动作块部署，连接SONIC遥操作、LeRobot数据与G1全身执行。 |
 | [SceneBot](https://ericcsr.github.io/scenebot/) | 接触物理交互 | 以接触标签和条件提示统一地形、物体、障碍与自由空间交互，展示单一G1策略的场景适应能力。 |
-| [SimToolReal](https://github.com/tylerlum/simtoolreal) | 跨本体灵巧操作参考 | 以程序化工具随机化训练KUKA与SHARPA灵巧手跟踪6D目标轨迹，研究跨工具Sim2Real；真机闭环依赖外部仓库。 |
+| [SimToolReal](https://github.com/tylerlum/simtoolreal) | 跨工具灵巧操作参考 | 通过程序化工具几何与动力学随机化训练物体中心、目标条件的灵巧操作策略，在KUKA iiwa14与22自由度SHARPA手上跟踪六维工具目标姿态。SAPG训练支持跨未见工具、物体和目标轨迹迁移，视觉估计提供部署时的工具姿态。 |
 | [VIRAL](https://viral-humanoid.github.io/) | 视觉物理交互 | 面向托盘搬运等人形交互任务训练RGB视觉策略，结合特权教师、视觉随机化和指尖系统辨识处理真机偏差。 |
 
 [返回本页导航](#本页导航)
@@ -76,7 +76,7 @@
 | [Hold My Beer / SoFTA：柔和人形运动与末端稳定控制学习](论文逐篇解读/P087.md) | 以低频下肢和高频上肢策略分工稳定基座与末端，面向轻柔行走和手持物稳定。 | [原文](https://arxiv.org/abs/2505.24198) · [代码](https://github.com/LeCAR-Lab/SoFTA) · [项目页](https://lecar-lab.github.io/SoFTA/) |
 | [MSDP：用多传感器动态预训练提升接触操作强化学习](论文逐篇解读/P379.md) | 通过多传感器掩码重建和动作条件下一观测预测学习融合表征，再以交叉注意力Critic及池化Actor接入强化学习；在仿真与Franka插销、推块任务及扰动条件下验证。 | [原文](https://arxiv.org/abs/2511.14427) · [项目页](https://msdp-pearl.github.io/) |
 | [SoftMimic：从示例学习柔顺全身控制](论文逐篇解读/P085.md) | 从逆运动学生成的受力响应样本学习柔顺全身控制，用于扰动吸收、安全交互和恢复。 | [原文](https://arxiv.org/abs/2510.17792) · [代码](https://github.com/Improbable-AI/softmimic) · [项目页](https://gmargo11.github.io/softmimic/) |
-| [Thor：面向强接触环境的人类级全身反应](论文逐篇解读/P112.md) | 以分区Actor-Critic和力自适应躯干倾斜奖励协调腰腿与手臂，执行强接触人形交互。 | [原文](https://arxiv.org/abs/2510.26280) · [项目页](https://baai-aether.github.io/baai-thor/) |
+| [Thor：面向强接触环境的人类启发全身反应](论文逐篇解读/P112.md) | 以分区Actor-Critic和力自适应躯干倾斜奖励协调腰腿与手臂，执行强接触人形交互。 | [原文](https://arxiv.org/abs/2510.26280) · [项目页](https://baai-aether.github.io/baai-thor/) |
 
 #### 相关项目
 
@@ -86,8 +86,8 @@
 | [CHIP](https://nvlabs.github.io/CHIP/) | 柔顺控制项目 | 利用后见式扰动把外力位移转成跟踪目标，使策略在顺应和姿态恢复间调节刚度。 |
 | [dexrobot_ecosystem](https://github.com/DexRobot/dexrobot_ecosystem) | 灵巧手开发与仿真平台 | 整合灵巧手控制、运动学、URDF、Isaac Sim、MuJoCo和ROS兼容层，连接硬件、仿真与算法开发。 |
 | [FACET](https://facet.pages.dev/) | 柔顺控制项目 | 把虚拟质量、弹簧和阻尼系统的短时响应作为强化学习目标，研究外力与接触下的可控阻抗行为。 |
-| [GentleHumanoid](https://gentle-humanoid.axell.top/) | 柔顺控制项目 | 以多连杆虚拟弹簧生成可调柔顺参考，训练G1跟踪不同刚度和受力条件下的接触响应。 |
-| [HOIST](https://arxiv.org/abs/2606.00252) | LocoManip与物理交互 | 以VR示范训练高层视觉语言动作策略，输出手部、头部与移动目标，由固定全身控制器操控悬挂负载；再从机器人交互学习动作流噪声修正，提高定位与停止精度。 |
+| [GentleHumanoid](https://github.com/Axellwppr/gentle-humanoid) | 柔顺控制项目 | 以带上身柔顺和可调力阈值的全身跟踪策略协调肩、肘、腕对外力的响应，处理阻抗接触和人类引导动作。部署工具通过MuJoCo仿真与Unitree SDK2连接G1，支持参考动作切换及运行时力阈值调节。 |
+| [HOIST](https://arxiv.org/abs/2606.00252) | LocoManip与物理交互 | 先用VR示范微调高层VLA，输出双手、头部、导航及机身高度目标，由固定全身控制器执行悬挂负载操作；随后冻结VLA，以交互rollout训练actor-critic，按状态选择流匹配动作专家的初始噪声向量，改善负载定位与停止表现。 |
 | [humanoid-touch-dream](https://github.com/chrisyrniu/humanoid-touch-dream) | 具身操作策略与数据采集 | 连接解耦身体控制、VR遥操作、多视角触觉数据、HTD行为克隆和真机执行；部署时仅保留动作策略。 |
 | [linkerhand-sim](https://github.com/linker-bot/linkerhand-sim) | 灵巧手仿真与操作 | 提供LinkerHand灵巧手仿真环境，用于验证抓取、手部控制和操作策略。 |
 | [MSDP](https://msdp-pearl.github.io/) | 接触力控与负载适应 | 通过多传感器掩码重建和动作条件下一观测预测学习融合表征，再以交叉注意力Critic及池化Actor接入强化学习；在仿真与Franka插销、推块任务及扰动条件下验证。 |
@@ -107,7 +107,7 @@
 
 联合移动、平衡、上肢与手部完成操作任务。
 
-**22** 篇论文／报告 · **25** 个项目
+**22** 篇论文／报告 · **24** 个项目
 
 #### 论文与技术报告
 
@@ -140,11 +140,10 @@
 
 | 项目 | 主要用途 | 功能与特点 |
 | --- | --- | --- |
-| [aloha-agilex](https://github.com/agilexrobotics/aloha-agilex) | 移动操作与技能系统 | 结合移动底盘、双臂或灵巧手状态与任务观测生成操作动作，并依据接触结果闭环执行。 |
 | [CEER](https://robotproject8.github.io/ceer_page/) | 层级物理交互 | 将移动操作任务压缩为基座速度、高度和双手目标等命令，由定制G1全身策略执行并进行Sim2Sim验证。 |
 | [CoorDex](https://github.com/Skevinci/coordex) | 身体与灵巧手协同回放 | 拆分身体先验、手部先验与协同残差，在Isaac Lab中构造训练任务，用于研究身体与灵巧手联合控制。 |
-| [DemoGrasp](https://github.com/BeingBeyond/DemoGrasp) | 移动操作与技能系统 | 结合移动底盘、双臂或灵巧手状态与任务观测生成操作动作，并依据接触结果闭环执行。 |
-| [DemoHLM](https://github.com/BeingBeyond/DemoHLM) | 移动操作与技能系统 | 结合移动底盘、双臂或灵巧手状态与任务观测生成操作动作，并依据接触结果闭环执行。 |
+| [DemoGrasp](https://github.com/BeingBeyond/DemoGrasp) | 灵巧手仿真与操作 | 以单次示范增强灵巧抓取强化学习策略，并研究不同机器人手形态间的迁移。 |
+| [DemoHLM](https://github.com/BeingBeyond/DemoHLM) | 移动操作与技能系统 | 从单次仿真示范生成多样化人形移动操作轨迹；高层策略根据关节位置与速度、躯干roll/pitch及相机坐标目标物六维位姿输出运动命令，由全身控制器转为关节位置目标并经PD执行。 |
 | [duatic_teleop](https://github.com/Duatic/duatic_teleop) | 模块化ROS 2遥操作 | 将人体输入设备接入模块化ROS 2遥操作流程，用于机器人控制和示范采集。 |
 | [FARO](https://atarilab.github.io/faro.io/) | LocoManip与物理交互 | 围绕候选接触序列构建由便宜到昂贵的运动学与动力学可行性筛选层，并与接触模式树搜索结合以生成可执行的人形全身操作轨迹。 |
 | [HANDOFF](https://github.com/lzyang2000/HANDOFF) | Agent到WBC接口项目 | 将上层移动操作意图转为十维全身命令，并蒸馏运动跟踪、行走和恢复教师为MoE策略。 |
@@ -156,14 +155,14 @@
 | [MPC-RL](https://github.com/junhengl/mpc-rl) | LocoManip与物理交互 | 用并行GPU质心动力学MPC生成结构化奖励训练PPO，关节策略部署时独立执行，在Themis V2上验证行走、抗扰与推箱移动操作。 |
 | [OmniContact](https://github.com/Ingrid789/OmniContact_sim2sim) | 接触流执行与仿真回放 | 以关键身体轨迹和时序接触统一表示搬运、推拉、滑动和踢球，并提供ONNX策略的MuJoCo回放。 |
 | [omniteleop](https://github.com/dexmate-ai/omniteleop) | Dexmate遥操作接口 | 接入JoyCon、Dynamixel外骨骼和VR位姿，经急停与关节限制发送控制，并支持轨迹录制回放和遥测。 |
-| [open_manipulator](https://github.com/ROBOTIS-GIT/open_manipulator) | 移动操作与技能系统 | 结合移动底盘、双臂或灵巧手状态与任务观测生成操作动作，并依据接触结果闭环执行。 |
-| [OpenHLM](https://huggingface.co/OpenHLM) | 全身VLA数据与权重 | 以语言、相机和全身关节动作统一训练策略，面向异构本体的全身共训练。 |
+| [open_manipulator](https://github.com/ROBOTIS-GIT/open_manipulator) | 机器人SDK与通信接口 | OpenMANIPULATOR系列ROS 2软件包，用于机械臂控制、传感器集成和Physical AI开发。 |
+| [OpenHLM](https://huggingface.co/OpenHLM) | 全身VLA数据与权重 | 将语言、相机像素和全身关节动作连接为人形VLA训练接口，通过异构共训练学习全身操作。官方数据集页列出约298 GB、1,814,714行数据，模型检查点另设独立仓库；代码包含G1控制采集、HuMI数据处理、训练与推理流程。 |
 | [OpenWBT](https://github.com/GalaxyGeneralRobotics/OpenWBT) | 人形全身遥操作系统 | 以头显和手柄提供视角、手部目标与行走命令，结合上肢逆运动学和下肢策略驱动G1遥操作。 |
 | [Praxis](https://edem-ai.github.io/Praxis/) | 全身协同与技能接口 | Praxis将移动操作分成视觉语言导航、闭环全身姿态校准和基于一次 egocentric RGB-D 示范的灵巧操作。人体腕部关键帧经机器人坐标变换、物体相对位姿重定位和手指关节映射后执行；在线物体跟踪、五指触觉与视觉结果验证支持跨位姿、跨物体和受扰恢复。五项实机任务平均成功率76.97%。 |
-| [SkillBlender](https://github.com/Humanoid-SkillBlender/SkillBlender) | 分层技能组合项目 | 以目标条件的低层技能和混合器组合行走、伸手与操作，适配H1、G1全身控制与部署。 |
-| [troncamp-mani](https://github.com/limxdynamics/troncamp-mani) | 移动操作与技能系统 | 结合移动底盘、双臂或灵巧手状态与任务观测生成操作动作，并依据接触结果闭环执行。 |
+| [SkillBlender](https://github.com/Humanoid-SkillBlender/SkillBlender) | 分层技能组合项目 | 以目标条件的低层技能原语和逐关节混合器组合行走、伸手与操作；SkillBench提供H1、G1和H1-2的任务配置、训练、回放与评测流程，支持状态或第一视角视觉作为高层观测。 |
+| [troncamp-mani](https://github.com/limxdynamics/troncamp-mani) | Benchmark与评测平台 | TRON2双臂ACT竞赛的训练与推理基线，围绕竞赛任务完成仿真评估和结果提交。 |
 | [UMI on Legs](https://github.com/real-stanford/umi-on-legs) | 操作策略与移动全身控制接口 | 由视觉操作策略输出世界坐标夹爪轨迹，全身控制器协调四足底盘与机械臂执行移动操作。 |
-| [UniTacHand](https://github.com/BeingBeyond/UniTacHand) | 移动操作与技能系统 | 结合移动底盘、双臂或灵巧手状态与任务观测生成操作动作，并依据接触结果闭环执行。 |
+| [UniTacHand](https://github.com/BeingBeyond/UniTacHand) | 灵巧手遥操作与训练系统 | 将人类触觉手套信号与机器人灵巧手信号映射到统一表示，用于触觉技能迁移。 |
 | [WEAVE](https://github.com/xiaohu-art/Weave) | 全身协同与技能接口 | 从人—物动作重定向与接触优化生成机器人参考，再以几何和接触感知策略联合控制人形身体、灵巧手与物体。 |
 
 [返回本页导航](#本页导航)

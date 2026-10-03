@@ -10,7 +10,7 @@
 
 | 项目 | 主要用途 | 功能与特点 |
 |---|---|---|
-| [Gymnasium](https://github.com/Farama-Foundation/Gymnasium) | 统一环境与算法的数据接口 | 定义观测、动作、奖励、终止与截断，提供标准实验环境 |
+| [Gymnasium](https://github.com/Farama-Foundation/Gymnasium) | 统一环境与算法的交互接口 | 通过reset/step接口返回观测、奖励、终止、截断与附加信息，具体任务由环境实现 |
 | [Unity ML-Agents](https://github.com/Unity-Technologies/ml-agents) | 构建三维交互与智能体训练任务 | 使用Unity场景进行强化学习和模仿学习实验 |
 | [Jumanji](https://github.com/instadeepai/jumanji) | JAX并行环境与组合优化实验 | JAX原生环境集合，支持批量化计算 |
 | [ViZDoom](https://github.com/Farama-Foundation/ViZDoom) | 第一视角视觉决策实验 | 基于Doom提供视觉输入、快速仿真和自定义场景 |
@@ -31,7 +31,7 @@
 | [Isaac Lab](https://github.com/isaac-sim/IsaacLab) | 构建机器人强化学习与模仿学习任务 | 机器人场景、传感器、观测、动作、奖励、随机化与并行环境；[官方文档](https://isaac-sim.github.io/IsaacLab/) · [中文文档（范子琦译）](https://docs.robotsfan.com/isaaclab/index.html) |
 | [Unitree RL Lab](https://github.com/unitreerobotics/unitree_rl_lab) | 宇树机器人训练与部署 | 连接Isaac Lab训练、策略导出、MuJoCo验证和实机SDK |
 | [K-Sim](https://github.com/kscalelabs/ksim) | 基于MuJoCo与JAX训练机器人策略 | 提供机器人任务示例与仿真采样、策略训练流程 |
-| [K-Scale OS](https://github.com/kscalelabs/kos) | 机器人硬件运行时 | 接入执行器、传感器与机器人运行系统 |
+| [K-Scale OS](https://github.com/kscalelabs/kos) | 可配置的机器人固件框架 | 提供本体平台扩展、执行器与IMU接口、Python客户端及运行日志 |
 | [EmbodiChain](https://github.com/DexForce/EmbodiChain) | 组织仿真任务、数据生成与策略训练 | 集成GPU仿真、任务环境和RL/IL接口 |
 | [DISCOVERSE](https://github.com/discoverse-dev/DISCOVERSE) | 场景重建、操作示范与模仿学习 | 结合MuJoCo与3DGS，支持Real2Sim2Real数据流程 |
 
@@ -44,7 +44,7 @@
 | [IsaacGym二阶倒立摆示例](https://github.com/ZzzzzzS/legged_gym/releases) | 用低自由度任务学习训练配置 | 社区Isaac Gym教程，包含观测、动作、奖励与训练入口 |
 | [OpenAI Gym](https://github.com/openai/gym) | 强化学习标准环境接口 | Gym环境封装与交互协议 |
 | [OpenAI Universe](https://github.com/openai/universe) | 将桌面程序与游戏包装为交互环境 | VNC与容器化环境交互 |
-| [Retro Learning Environment](https://github.com/nadavbh12/Retro-Learning-Environment) | 复古游戏强化学习环境 | 相关入口：[Arcade Learning Environment](https://github.com/Farama-Foundation/Arcade-Learning-Environment) |
+| [Retro Learning Environment](https://github.com/nadavbh12/Retro-Learning-Environment) | 复古游戏强化学习环境 | 基于ALE与Libretro构建；项目README指定的后续项目为[Gym Retro](https://github.com/openai/retro) |
 | [Project Malmo](https://github.com/microsoft/malmo) | Minecraft智能体与多智能体实验 | Minecraft任务环境与多智能体接口 |
 | [DeepMind Lab](https://github.com/google-deepmind/lab) | 三维第一视角学习任务 | 基于Quake III的视觉导航与交互环境 |
 | [MAgent](https://github.com/geek-ai/MAgent) | 大规模多智能体实验 | 后续入口：[MAgent2](https://github.com/Farama-Foundation/MAgent2) |

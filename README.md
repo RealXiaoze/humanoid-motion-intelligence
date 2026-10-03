@@ -6,7 +6,6 @@
   <a href="https://github.com/RealXiaoze/humanoid-motion-intelligence/stargazers"><img src="https://img.shields.io/github/stars/RealXiaoze/humanoid-motion-intelligence?style=flat-square&label=Stars&color=0969da" alt="GitHub Stars"></a>
   <a href="https://github.com/RealXiaoze/humanoid-motion-intelligence/forks"><img src="https://img.shields.io/github/forks/RealXiaoze/humanoid-motion-intelligence?style=flat-square&label=Forks&color=0969da" alt="GitHub Forks"></a>
   <a href="LICENSE.md"><img src="https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-2da44e?style=flat-square" alt="CC BY-NC-SA 4.0 License"></a>
-  <img src="https://komarev.com/ghpvc/?username=RealXiaoze-humanoid-motion-intelligence&label=Views&color=grey&style=flat-square" alt="Repository Views">
 </p>
 
 <p align="center">

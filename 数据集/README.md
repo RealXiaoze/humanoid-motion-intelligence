@@ -53,7 +53,7 @@
 
 ### KIT Motion-Language Dataset
 
-- **规模**：文本描述动作
+- **规模**：3,911条动作、6,353条文本标注（2017-06-22发布版）
 - **模态与格式**：Text + MoCap
 - **具体本体／对象**：Human
 - **官方来源**：[数据卡／项目来源](https://motion-annotation.humanoids.kit.edu/)
@@ -153,7 +153,7 @@
 
 ### KAI Ego Data Minibatch
 
-- **规模**：约3小时完整处理数据包；数据卡显示63.7 GB
+- **规模**：约3小时完整处理数据包
 - **模态与格式**：Ego Video;Camera Parameters;Tracking;Semantic Segments;Quality Inspection
 - **具体本体／对象**：Human;No Target Robot
 - **官方来源**：[数据卡／项目来源](https://huggingface.co/datasets/Kinetix-AI/kai-data-minibatch)
@@ -211,7 +211,7 @@
 
 ### OmniContact Dataset
 
-- **规模**：公开仓库当前列出700条处理轨迹；项目页汇总1274条有效序列与22.29小时配对采集
+- **规模**：当前数据卡列出690条处理轨迹、2231个轨迹片段；项目页另汇总1274条有效序列与22.29小时配对采集
 - **模态与格式**：BVH;G1 Joint Trajectory;Object Pose;Contact Label
 - **具体本体／对象**：Human;Unitree G1;Object
 - **官方来源**：[数据卡／项目来源](https://huggingface.co/datasets/lightcone02/OmniContact-Dataset)
@@ -272,16 +272,16 @@
 
 ### DROID
 
-- **规模**：规模见项目页
+- **规模**：论文报告76,000条示范、350小时、564个场景、86项任务
 - **模态与格式**：Multi-view Video + Proprioception + Actions
-- **具体本体／对象**：多机械臂
+- **具体本体／对象**：Franka Panda 7-DoF单臂
 - **官方来源**：[数据卡／项目来源](https://droid-dataset.github.io/)
 
 ### BridgeData V2
 
-- **规模**：规模见项目页
+- **规模**：60,096条轨迹，24个环境、13项技能
 - **模态与格式**：Video + Actions + Language
-- **具体本体／对象**：机械臂
+- **具体本体／对象**：WidowX 250
 - **官方来源**：[数据卡／项目来源](https://rail-berkeley.github.io/bridgedata/)
 
 ### RoboNet
@@ -293,14 +293,14 @@
 
 ### RH20T
 
-- **规模**：规模见项目页
-- **模态与格式**：Multi-modal Sensor + Actions
+- **规模**：官方报告超过110,000条接触丰富操作序列
+- **模态与格式**：RGB-D;IR;Joint State;Force/Torque;Audio;Actions;Tactile（Cfg.7）
 - **具体本体／对象**：多机械臂
 - **官方来源**：[数据卡／项目来源](https://rh20t.github.io/)
 
 ### RoboMIND
 
-- **规模**：V1.2 107k轨迹/479任务/96物体类/4本体；V2.0官方集合称新增300k+双臂轨迹/6本体/739任务/129技能/12k+触觉数据
+- **规模**：V1.2：107k轨迹、479任务、96物体类、4本体；V2.0官方集合报告至多310k轨迹、超过1000小时、6本体，含12k触觉增强序列和20k移动操作轨迹
 - **模态与格式**：Multi-view + Proprioception + Language + Tactile
 - **具体本体／对象**：多机器人/人形
 - **官方来源**：[数据卡／项目来源](https://huggingface.co/datasets/x-humanoid-robomind/RoboMIND)
@@ -322,7 +322,7 @@
 ### OpenHLM-data
 
 - **规模**：约298 GB
-- **模态与格式**：Camera;Language;Whole-Body Joint Action
+- **模态与格式**：Head/Wrist Camera;Robot State;Whole-Body Action
 - **具体本体／对象**：Humanoid
 - **官方来源**：[数据卡／项目来源](https://huggingface.co/datasets/OpenHLM/OpenHLM-data)
 
@@ -357,7 +357,7 @@
 | <a id="d022"></a>[DexMimicGen Datasets](https://dexmimicgen.github.io/) | 双臂与灵巧操作仿真示范 | 双臂／灵巧手 | 训练灵巧操作和长程模仿策略 |
 | <a id="d025"></a>[GRAIL Generated Loco-Manipulation Dataset](https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-Locomanipulation-GRAIL) | 合成视频、人-物交互与G1轨迹 | G1／人体／物体 | 构建移动操作参考，研究动作跟踪与仿真迁移 |
 | <a id="d030"></a>[NVIDIA GR00T X-Embodiment Sim](https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-GR00T-X-Embodiment-Sim) | 跨本体仿真操作轨迹 | Panda、GR1、G1 | 生成操作训练数据，开展GR00T后训练 |
-| <a id="d037"></a>[HumanGen](https://github.com/robbyant-research/Zero-WAM) | 生成式人机视频、动作及任务配对 | 人体＋多种机器人 | 研究上下文机器人学习与跨任务泛化 |
+| <a id="d037"></a>[HumanGen](https://huggingface.co/datasets/Robbyant-Research/HumanGen) | 生成式人机视频、动作及任务配对 | 人体＋多种机器人 | 研究上下文机器人学习与跨任务泛化 |
 | <a id="d046"></a>[TableVerse-100K](https://huggingface.co/datasets/ByteDance/TableVerse) | 任务指令、物体网格、公制场景点云、MJCF、仿真图像与关节空间轨迹 | MuJoCo桌面操作机器人与重建场景 | 构建Real2Sim桌面环境、生成操作轨迹与视觉示范，用于操作策略及VLA预训练。 |
 | <a id="d050"></a>[RoboTidy](https://arxiv.org/abs/2511.14161) | 3DGS家庭场景、对象与容器、操作示范及跨房间导航轨迹 | Isaac Sim家庭场景；真实迁移平台为Cobot-Magic与Piper机械臂 | 训练和评测偏好条件家庭整理、移动操作与语言导航。 |
 
@@ -387,7 +387,7 @@
 
 ### GRAIL Generated Loco-Manipulation Dataset
 
-- **规模**：20,000余条序列；约250 GB；多类拾取、坐下与地形动作
+- **规模**：官方数据卡六类动作合计22,312条；平台文件总大小约224 GB（核验时快照）
 - **模态与格式**：Synthetic Video;4D HOI;G1 Trajectory;Object 6DoF;USD Asset
 - **具体本体／对象**：Unitree G1;SMPL-X;Object
 - **官方来源**：[数据卡／项目来源](https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-Locomanipulation-GRAIL)
@@ -404,7 +404,7 @@
 - **规模**：论文报告：7.42万对人机上下文样本；8600个任务
 - **模态与格式**：Generated Human Video;Robot Video;Executable Action;Language;Task Metadata
 - **具体本体／对象**：Human + 45+ Robot Embodiments
-- **官方来源**：[数据卡／项目来源](https://github.com/robbyant-research/Zero-WAM)
+- **官方来源**：[数据卡／项目来源](https://huggingface.co/datasets/Robbyant-Research/HumanGen)
 
 ### TableVerse-100K
 
@@ -451,8 +451,8 @@
 
 ### MolmoAct Dataset与训练数据配方
 
-- **规模**：自采约10k轨迹/93任务；原始表约111万帧行；预训练混合约2410万样本
-- **模态与格式**：Multi-View RGB;Robot State;Action;Language;Depth Token;Visual Trace
+- **规模**：自采约10k轨迹/93任务；原始表约111万帧行；论文预训练混合约2630万样本
+- **模态与格式**：Multi-View RGB;Robot State;Action;Language;训练派生Depth Token/Visual Trace
 - **具体本体／对象**：Franka;Google Robot;WidowX;Mixed
 - **官方来源**：[数据卡／项目来源](https://github.com/allenai/molmoact)
 
@@ -505,7 +505,7 @@
 
 ### BEHAVIOR-1K
 
-- **规模**：1000日常任务
+- **规模**：1000项日常任务定义；2026 Challenge另提供100任务、20,000条遥操作示范
 - **模态与格式**：Task Definitions + Assets + Demonstrations
 - **具体本体／对象**：移动操作
 - **官方来源**：[数据卡／项目来源](https://behavior.stanford.edu/)
