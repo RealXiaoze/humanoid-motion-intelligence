@@ -5,8 +5,9 @@ import json
 import os
 import re
 import sys
+from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import unquote
+from urllib.parse import parse_qs, unquote, urlsplit
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -289,6 +290,20 @@ def check_markdown(files: list[Path], errors: list[str]) -> None:
             f"缺少={sorted(expected_names - actual_names)}；"
             f"多余={sorted(actual_names - expected_names)}"
         )
+    index_path = paper_dir / "README.md"
+    if not index_path.is_file():
+        errors.append("缺少论文与技术报告解读索引")
+    else:
+        index_text = index_path.read_text(encoding="utf-8")
+        index_names = re.findall(r"\]\((P[0-9]{3}\.md)\)", index_text)
+        indexed_names = set(index_names)
+        if indexed_names != expected_names or len(index_names) != len(expected_names):
+            errors.append(
+                "论文与技术报告解读索引必须覆盖每篇且不重复；"
+                f"缺少={sorted(expected_names - indexed_names)}；"
+                f"多余={sorted(indexed_names - expected_names)}；"
+                f"链接数量={len(index_names)}"
+            )
     for page in paper_pages:
         text = page.read_text(encoding="utf-8")
         title = re.search(r"^# [^\n]+\n", text, flags=re.MULTILINE)
@@ -345,6 +360,38 @@ def check_readme_counts(errors: list[str]) -> None:
             errors.append(f"README章节链接不存在：{target}")
 
 
+def check_readme_badges(readme: str, errors: list[str]) -> None:
+    class Images(HTMLParser):
+        def __init__(self):
+            super().__init__()
+            self.sources: list[str] = []
+
+        def handle_starttag(self, tag, attrs):
+            if tag == 'img':
+                source = dict(attrs).get('src')
+                if source:
+                    self.sources.append(source)
+
+    images = Images()
+    images.feed(readme)
+    named_colors = {
+        'brightgreen', 'green', 'yellow', 'yellowgreen', 'orange', 'red',
+        'blue', 'grey', 'lightgrey', 'blueviolet',
+    }
+    for source in images.sources:
+        url = urlsplit(source)
+        if url.hostname != 'komarev.com' or url.path != '/ghpvc/':
+            continue
+        params = parse_qs(url.query, keep_blank_values=True)
+        colors = params.get('color', ['blue'])
+        if len(colors) != 1 or not (
+            colors[0] in named_colors or re.fullmatch(r'[0-9a-fA-F]{6}', colors[0])
+        ):
+            errors.append('README访问量徽章颜色无效：应使用受支持的颜色名或六位HEX颜色')
+        if not params.get('username', [''])[0].strip():
+            errors.append('README访问量徽章缺少统计标识username')
+
+
 def main() -> None:
     errors: list[str] = []
     files = collect_files(errors)
@@ -352,6 +399,7 @@ def main() -> None:
     check_export_manifest(files, errors)
     check_markdown(files, errors)
     check_readme_counts(errors)
+    check_readme_badges((ROOT / 'README.md').read_text(encoding='utf-8'), errors)
     if errors:
         print("\n".join(f"ERROR: {error}" for error in errors))
         raise SystemExit(1)
