@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "generator": "build_public_release.py",
-  "content_file_count": 709,
+  "content_file_count": 710,
   "operational_file_count": 6,
   "files": [
     {
@@ -31,8 +31,8 @@
     },
     {
       "path": ".github/scripts/validate_public_tree.py",
-      "size": 22070,
-      "sha256": "9857fa7a386e8379df780c4a2706f648af299b0489f4532112c793a8e40e4ad6"
+      "size": 22083,
+      "sha256": "c3da3cff6f790e5114c99197658c91493a3bb62d34f80431135581c6685a8ff8"
     },
     {
       "path": ".github/workflows/public-release-check.yml",
@@ -56,13 +56,13 @@
     },
     {
       "path": "README.md",
-      "size": 16985,
-      "sha256": "c77664ae3bc2d53bc8a5da5347afccf69aa941d444e362a055fed8b31ff1199d"
+      "size": 19833,
+      "sha256": "fbcfff66f07a262636d60aec08833f8e54303deb25b50016adeef445afb6f9a0"
     },
     {
       "path": "公司与产品主表.md",
-      "size": 121964,
-      "sha256": "8e27da4e014b5ec1f44a665191bc529137cb618df5d1ad0998e7100bac575c95"
+      "size": 122114,
+      "sha256": "ea34452f4a9689c05f04021df118c34585b6a7d5a46313e80bab83587555ec2a"
     },
     {
       "path": "具身智能公司的开源项目.md",
@@ -101,13 +101,13 @@
     },
     {
       "path": "技术与研究/05_世界模型VLA与Agent.md",
-      "size": 152720,
-      "sha256": "a07ca2e54cc42cff48dfdbb8ebf3702a679a2066c4778a532ad34ef0182e15a1"
+      "size": 152679,
+      "sha256": "6fa47992e893eb2a9bb64ec89d765d9ef0dca2b7fdb59423ff585d3ae0ecf770"
     },
     {
       "path": "技术与研究/06_工程与实机部署.md",
-      "size": 100442,
-      "sha256": "09b68c81f743288d6006f00a24cb9a6df9d01e752f975597ad0a302b70612229"
+      "size": 100985,
+      "sha256": "3ff2231d57d2f5fe932a9193b17e5dc37fa7f7298b98b5f4e39649e1a1287533"
     },
     {
       "path": "技术与研究/README.md",
@@ -1061,8 +1061,8 @@
     },
     {
       "path": "技术与研究/论文逐篇解读/P187.md",
-      "size": 6936,
-      "sha256": "9eb9dfa22f6aa6bbb70881d7798c1ae2780ddafdbb5db98aea876d66b623b01d"
+      "size": 6979,
+      "sha256": "b9c28b9330cd9552f5ff7976aaad62db8fc567f1896cac9a6cb936452c01b604"
     },
     {
       "path": "技术与研究/论文逐篇解读/P188.md",
@@ -2460,9 +2460,14 @@
       "sha256": "840651c41a0d1baea0959664cf2f136dc7fd258dea64409f69e16df49a5ace78"
     },
     {
+      "path": "技术与研究/论文逐篇解读/P471.md",
+      "size": 4095,
+      "sha256": "cf0f520a5239ccf9d746f3d06c213ab589f8f60a22120db05c20e14b62ae23aa"
+    },
+    {
       "path": "技术与研究/论文逐篇解读/README.md",
-      "size": 119305,
-      "sha256": "673875bf90ca4ede795bd161fff9f4de860e5ae16b5a09a4b7ee70cdaf0cd6f5"
+      "size": 119558,
+      "sha256": "17eb1a92571bf3c1eb75a6b935fe1dca6f2484ba7c0a082573233536dbaf4dbf"
     },
     {
       "path": "技术与研究/论文逐篇解读/论文原图/P001_figure.png",
