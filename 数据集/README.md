@@ -2,7 +2,7 @@
 
 > 汇总具身智能训练与评测相关的数据集、训练数据配方及仿真资产，涵盖人体动作、人类操作视频、机器人示范、重定向轨迹与合成数据，按数据来源与内容整理。
 
-当前收录：**51项数据集与相关数据资源**。
+当前收录：**52项数据集与相关数据资源**。
 
 ## 分类导航
 
@@ -180,7 +180,7 @@
 
 ## 重定向与目标本体动作
 
-**7 项资源**
+**8 项资源**
 
 | 数据集 | 数据内容 | 本体／对象 | 训练用途 |
 | --- | --- | --- | --- |
@@ -191,6 +191,7 @@
 | <a id="d040"></a>[AMS Synthetic Balance Motions](https://github.com/OpenDriveLab/AMS/blob/main/MotionGen/README.md) | 目标本体根节点、关节与支撑腿参考 | G1 29自由度 | 扩展平衡动作参考，研究动作跟踪与参考质量 |
 | <a id="d042"></a>[Weave reference motions and simulation rollouts](https://huggingface.co/datasets/appolyn/Weave) | 保留人—物交互的机器人参考动作、策略仿真执行轨迹与九种物体资产，包含身体、手部、物体状态及接触标签。 | Unitree G1与双Inspire灵巧手；人—物交互 | 用于人形全身移动操作策略学习、评测，以及带物理接触标注的人—物交互动作建模。 |
 | <a id="d043"></a>[HOI-Retarget Kinematic Robot-HOI References](https://huggingface.co/datasets/leggedrobotics/hoi-retarget) | SMPL-X人体姿态;物体网格与位姿轨迹;物体坐标系接触目标;机器人根姿态与关节位置;逐链接接触和足支撑标记;视频 | Unitree G1 29-DoF;Unitree H2 31-DoF;含同步双机器人协作片段 | 用于接触保持的人体到人形动作重定向、物体尺度扩增和跨物体交互参考构建；运动学轨迹可供下游模仿策略及动态精化使用。 |
+| <a id="d052"></a>[OpenLET 小脑动作数据集（LET-HumanMotion-Roban2）](https://openlet.openatom.tech/data/let-humanmotion-roban2) | 已重定向到鲁班机型并按120 fps重采样的全身动作，覆盖非交互、环境交互、物体交互、武术与舞蹈 | Roban鲁班人形机器人 | 用于全身动作跟踪、运控策略训练与运动能力评测。 |
 
 <details>
 <summary>规模、格式与官方来源</summary>
@@ -243,6 +244,13 @@
 - **模态与格式**：SMPL-X人体姿态;物体网格与位姿轨迹;物体坐标系接触目标;机器人根姿态与关节位置;逐链接接触和足支撑标记;视频
 - **具体本体／对象**：Unitree G1 29-DoF;Unitree H2 31-DoF;含同步双机器人协作片段
 - **官方来源**：[数据卡／项目来源](https://huggingface.co/datasets/leggedrobotics/hoi-retarget)
+
+### OpenLET 小脑动作数据集（LET-HumanMotion-Roban2）
+
+- **规模**：非交互、环境交互、物体交互、武术与舞蹈五类动作
+- **模态与格式**：重定向全身动作轨迹；120 fps重采样
+- **具体本体／对象**：Roban鲁班人形机器人
+- **官方来源**：[数据卡／项目来源](https://openlet.openatom.tech/data/let-humanmotion-roban2)
 
 </details>
 
