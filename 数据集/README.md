@@ -2,7 +2,7 @@
 
 > 汇总具身智能训练与评测相关的数据集、训练数据配方及仿真资产，涵盖人体动作、人类操作视频、机器人示范、重定向轨迹与合成数据，按数据来源与内容整理。
 
-当前收录：**52项数据集与相关数据资源**。
+当前收录：**54项数据集与相关数据资源**。
 
 ## 分类导航
 
@@ -108,7 +108,7 @@
 
 ## 人类视频与操作示范
 
-**7 项资源**
+**9 项资源**
 
 | 数据集 | 数据内容 | 本体／对象 | 训练用途 |
 | --- | --- | --- | --- |
@@ -119,6 +119,8 @@
 | <a id="d039"></a>[KAI Ego Data Minibatch](https://huggingface.co/datasets/Kinetix-AI/kai-data-minibatch) | 第一视角视频、相机参数与跟踪标注 | 人体 | 评估第一视角手物交互数据与机器人学习管线 |
 | <a id="d041"></a>[EgoHTR](https://huggingface.co/datasets/leggedrobotics/egohtr) | 复杂地形中的场景对齐4D人体运动序列，包含SMPL-X人体模型、第一视角视频与SLAM轨迹、原始IMU、三维场景网格和点云；部分片段还提供第二视角、固定相机和动捕真值。 | 8名人类被试；下游示范与控制验证包含Unitree G1 | 评测第一视角人体姿态与人体-场景4D重建；为复杂地形人体动作分析、参考动作重定向和基于场景几何的人形感知Locomotion训练提供数据。论文以重定向后的参考动作训练G1专家策略，并测试接触奖励与参考位置误差的影响。 |
 | <a id="d051"></a>[OmniEgo](https://huggingface.co/datasets/Delta-Intelligence/OmniEgo) | 第一视角多目视频、24关节骨架、头显姿态与运动状态及动作片段标注 | 人体＋Delta D1头戴式采集设备 | 为人形机器人动作理解、模仿学习与人体动作重定向提供同步全身示范。 |
+| <a id="d053"></a>[TacClaw-Infinity](https://huggingface.co/datasets/daimonrobotics/Daimon-Infinity) | 手持夹爪视觉、指尖触觉、末端轨迹，以及接触阶段、子任务和物体空间标注 | 人工单手/双手示范；三类异构机器人验证 | 训练接触感知VLA、研究跨本体操作与结构化接触监督。详见[论文解读](../技术与研究/论文逐篇解读/P499.md)。 |
+| <a id="d054"></a>[TouchScale](https://touch-scale.github.io/) | 同步第一视角RGB-D、双腕RGB、双手密集压力、任务语言与物体模型 | 人体双手；统一穿戴式视觉与触觉采集 | 学习接触预测与视觉表示，为机器人接触操作提供中间训练监督。详见[论文解读](../技术与研究/论文逐篇解读/P500.md)。 |
 
 <details>
 <summary>规模、格式与官方来源</summary>
@@ -171,6 +173,20 @@
 - **模态与格式**：多视角RGB视频；24关节SMPL-style骨架；头显位姿、速度与加速度；动作片段文本标注
 - **具体本体／对象**：Human;Delta D1头戴式采集设备
 - **官方来源**：[数据卡／项目来源](https://huggingface.co/datasets/Delta-Intelligence/OmniEgo)
+
+### TacClaw-Infinity
+
+- **规模**：论文报告超过10,000小时、100万回合、10亿帧、1,000类任务
+- **模态与格式**：同步腕部RGB；第一视角图像；指尖变形、剪切与深度；末端轨迹；夹爪状态；接触阶段、子任务语言与空间标注
+- **具体本体／对象**：TacClaw单手/双手人工示范；下游Tianji Marvin M6S Lite、RealMan RM75-b与DM-Sparky One
+- **官方来源**：[数据卡／项目来源](https://huggingface.co/datasets/daimonrobotics/Daimon-Infinity)
+
+### TouchScale
+
+- **规模**：500小时、约87,000回合、约2,000条任务描述、1,500余件物体
+- **模态与格式**：第一视角RGB-D；双腕RGB；双手密集法向压力；任务语言；重建物体
+- **具体本体／对象**：人体双手；统一手套每手880个压力测点
+- **官方来源**：[数据卡／项目来源](https://touch-scale.github.io/)
 
 </details>
 

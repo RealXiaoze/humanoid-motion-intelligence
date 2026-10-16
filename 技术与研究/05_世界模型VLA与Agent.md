@@ -2,7 +2,7 @@
 
 > 视觉语言理解、未来预测与任务决策，汇总相关论文、方法与项目。
 
-当前收录 **229** 篇论文／技术报告、**196** 个项目。
+当前收录 **234** 篇论文／技术报告、**196** 个项目。
 
 ## 本页导航
 
@@ -35,7 +35,7 @@
 
 根据观测、历史和动作条件预测未来状态、视频或奖励，用于想象学习、规划和策略评估。动作条件也可用语言或潜变量表达。
 
-**27** 篇论文／报告 · **24** 个项目
+**29** 篇论文／报告 · **24** 个项目
 
 #### 论文与技术报告
 
@@ -45,9 +45,11 @@
 | [ABot-World-0：以键盘动作驱动桌面实时交互世界](论文逐篇解读/P272.md) | ABot-World-0把历史视频、多模态提示和逐帧8维键盘动作映射为因果未来视频rollout；Wan2.2双向教师、因果学生蒸馏与LongForcing提升动作可控及长程稳定，叠加轻量解码与低比特推理在单张RTX5090实现高分辨率交互。 | [原文](https://arxiv.org/abs/2607.19191) · [代码](https://github.com/amap-cvlab/ABot-World) · [项目页](https://amap-cvlab.github.io/ABot-World/) |
 | [LingBot-World 1.0：可交互的长时程视频世界模型](论文逐篇解读/P297.md) | LingBot-World 根据初始视频、相机轨迹及离散/连续用户控制自回归生成交互式未来画面，以空间记忆、动作条件扩散和因果分块推理支持长时程视觉模拟。 | [原文](https://arxiv.org/abs/2601.20540) · [代码](https://github.com/robbyant/lingbot-world) |
 | [CLAW：少量交互下的世界模型低秩适配](论文逐篇解读/P345.md) | CLAW用少量测试转移生成覆盖世界模型各层的低秩适配器，并与TD-MPC2基础模型联合预训练；在运动和操作仿真环境家族中比较在线适配、数据稀缺和上下文条件化。 | [原文](https://arxiv.org/abs/2609.12278) |
+| [HF-WM：以稳定点流迁移人类交互并预测失败动作后果](论文逐篇解读/P503.md) | OSCAR骨架对齐人类与机器人动作，稳定点流分支抑制人类视频相机运动，再以动作对齐和物理合理性双奖励的GRPO学习扰动动作未来；六种策略的预测成功率与真实表现相关系数为0.983。 | [原文](https://arxiv.org/abs/2610.13522) · [项目页](https://peiyantu.github.io/HF-WM/) |
 | [Cosmos 3：统一理解、预测与动作生成的全模态世界模型](论文逐篇解读/P253.md) | 通过共享跨模态MoT支持多模态理解、内容生成、动作条件视觉动力学、逆动力学和机器人策略接口。 | [原文](https://research.nvidia.com/labs/cosmos-lab/cosmos3/technical-report.pdf) · [代码](https://github.com/NVIDIA/cosmos) · [项目页](https://research.nvidia.com/labs/cosmos-lab/cosmos3/) |
 | [DreamDojo：基于大规模人类视频的通用机器人世界模型](论文逐篇解读/P114.md) | 从大规模人类视频学习潜在交互动力学，再经机器人后训练与蒸馏用于操作预测和规划。 | [原文](https://arxiv.org/abs/2602.06949) · [代码](https://github.com/NVIDIA/DreamDojo) · [项目页](https://dreamdojo-world.github.io/) |
 | [VLOA：物体中心世界模型与通用操作大模型](论文逐篇解读/P410.md) | 将RoboScience两篇VLOA公司技术报告合并为同一系统条目：Part 1以物体中心点云、位姿和带置信度的未来轨迹描述世界模型；Part 2根据预测状态生成接触、力控与关节动作，并用视觉/触觉/力觉反馈闭环。报告提供公司展示和曲线类别，未构成标准化基线对照。 | [原文](https://robosci.com/jishu_detail/18.html) · [项目页](https://robosci.com/core.html) |
+| [DR-WM：由真实动作响应校准地形物理的四足动作后果模型](论文逐篇解读/P502.md) | PhyMap从图像重建几何并预测摩擦、粗糙度、刚度先验，经实机响应校准为Genesis可执行接触参数，再由仿真轨迹条件化视频模型滚动预测地形相关动作后果；Full PhyMap机身轨迹ATE为0.1380米。 | [原文](https://arxiv.org/abs/2610.17630) · [项目页](https://developer.deeprobotics.cn/research/articles/dr-wm/index.html) |
 | [GE-Sim 2.0：让动作条件视频预测接入操作闭环](论文逐篇解读/P261.md) | 以双臂末端动作条件预测多视角未来视频，并联合预测关节状态与逐帧任务成功信号，形成可闭环评估和筛选策略轨迹的世界模型。 | [原文](https://arxiv.org/abs/2605.27491) · [代码](https://github.com/AgibotTech/GE-Sim-V2) · [项目页](https://ge-sim-v2.github.io/) |
 | [GigaWorld-1：以动作条件长程预测支持策略评测](论文逐篇解读/P271.md) | GigaWorld-1以历史观测、显式空间动作控制和任务条件自回归预测未来多视角视频；Wan初始化、层级历史记忆、相机几何控制和DMD2蒸馏服务长程rollout，并由WMBench评估其与真实策略结果的对齐。 | [原文](https://arxiv.org/abs/2607.02642) · [代码](https://github.com/open-gigaai/giga-world-1) · [项目页](https://open-gigaai.github.io/giga-world-1/) |
 | [LingBot-World 2.0：以相机与事件指令驱动长时程交互世界](论文逐篇解读/P266.md) | LingBot-World 2.0以初始画面、相机位姿和分块文本事件作为条件，自回归预测未来交互视频；MoBA因果注意力、少步蒸馏及Pilot/Director调度支持长时程实时世界交互。 | [原文](https://arxiv.org/abs/2607.07534) · [代码](https://github.com/Robbyant/lingbot-world-v2) · [项目页](https://technology.robbyant.com/lingbot-world-v2) |
@@ -296,7 +298,7 @@
 
 在观测和任务条件下联合学习动作与未来世界，通过世界预测支持动作生成、候选评估或闭环规划；部分方法部署时仅运行动作分支。
 
-**51** 篇论文／报告 · **40** 个项目
+**54** 篇论文／报告 · **40** 个项目
 
 #### 论文与技术报告
 
@@ -324,6 +326,7 @@
 | [INTACT：以同构意图—动作学习实现免搜索世界模型](论文逐篇解读/P408.md) | 在无奖励动作轨迹上训练JEPA前向模型及共享意图—动作算子，将物理后继位移和目标位移映射到同一动作条件空间，学习免大规模测试时搜索的直接动作块策略；在PushT、OGBench Cube、DMC Reacher与TwoRoom仿真测试。后续仓库更新修正评测实现，须与论文原始结果分开引用。 | [原文](https://arxiv.org/abs/2607.26056) · [代码](https://github.com/zju3dv/INTACT-JEPA) · [项目页](https://lab.roboparty.com/projects/intact) |
 | [Kairos：面向物理AI的遗憾感知世界动作栈](论文逐篇解读/P285.md) | 以控制充分状态统一VLM理解、未来视频生成和动作轨迹预测，并用局部/中程/全局混合时间记忆与分阶段人类、机器人数据训练世界动作策略。 | [原文](https://arxiv.org/abs/2606.16533) · [代码](https://github.com/DAXIAORobotics/kairos) |
 | [LDA-1B：让不同质量的具身数据共同训练视觉预测与机器人动作](论文逐篇解读/P174.md) | 按数据监督字段组合策略、正逆动力学和视觉预测任务，学习潜在动力学并生成机器人动作块。 | [原文](https://arxiv.org/abs/2602.12215) · [代码](https://github.com/jiangranlv/LDA-1B) · [项目页](https://pku-epic.github.io/LDA/) |
+| [Long-WAM：扩展世界动作模型的历史上下文](论文逐篇解读/P493.md) | 以长历史自回归未来视觉表征条件化动作专家，并通过流式编码、缓存和异步执行支持低延迟世界动作推理。 | [原文](https://arxiv.org/abs/2610.10528) · [代码](https://github.com/NVlabs/LongLive/tree/main/Long-WAM) · [项目页](https://nvlabs.github.io/LongLive/Long-WAM/) |
 | [MachEmbodied-U0：协同任务理解、未来预测与动作生成](论文逐篇解读/P233.md) | ME-U0以理解专家预测子任务和交互区域，再与生成专家联合预测未来视觉状态及机器人动作，用多模态预训练支持操作策略。 | [原文](https://arxiv.org/abs/2609.25627) · [代码](https://github.com/MachEmbodied/ME-U0) · [项目页](https://machembodied.com/ME-U/ME-U0.html) |
 | [AGRA：让世界模型表征服务机器人动作](论文逐篇解读/P452.md) | AGRA以冻结DINOv2空间特征对齐视频DiT中间表征、保留未来视频预测与动作flow-matching；XPENG与香港大学团队在IRON人形机器人上报告ID成功率80%对基线34%。 | [原文](https://arxiv.org/abs/2606.12217) · [项目页](https://xpeng-robotics.github.io/agra/) |
 | [ME-Dex 1.0：让世界动作模型联合预测视觉、触觉与动作](论文逐篇解读/P234.md) | ME-Dex把异构触觉映射到统一手部表示，并用视频、触觉和动作专家联合预测未来接触与动作，扩展世界动作模型的物理反馈。 | [原文](https://arxiv.org/abs/2609.21449) · [代码](https://github.com/MachEmbodied/ME-Dex-1.0) · [项目页](https://machembodied.com/ME-Dex/ME-Dex1.0.html) |
@@ -336,11 +339,13 @@
 | [Riemann-1.0：在同一因果模型中学习机器人动作与未来视觉](论文逐篇解读/P177.md) | 以因果Action/Video DiT共同建模未来视觉与机器人动作，并用本体专属头执行长程操作。 | [原文](https://riemann-dynamics.github.io/Riemann-1.0-Website/paper/Riemann-1.0.pdf) · [项目页](https://riemann-dynamics.github.io/Riemann-1.0-Website/) |
 | [Rolling-WAM：跨重规划周期滚动细化世界与动作预测](论文逐篇解读/P227.md) | 在滑动窗口内跨重规划周期复用视频—动作去噪状态，以滚动想象降低WAM推理延迟并保持闭环操作表现。 | [原文](https://arxiv.org/abs/2609.30247) · [代码](https://github.com/zyinghua/Rolling-WAM) · [项目页](https://rolling-wam.github.io/) |
 | [SimpleWAM：面向端侧部署的时序世界动作模型](论文逐篇解读/P251.md) | 用训练期未来RGB、深度和语义监督增强表征，以早期历史融合、目标定位和进度感知动作块执行实现两步去噪的端侧机器人控制。 | [公司研究入口](https://www.simplexityrobotics.com/research) |
+| [Thinker-WM：共享RGB、度量深度与动作的统一具身世界模型](论文逐篇解读/P501.md) | 以共享UDT联合建模RGB、度量深度与20维相对末端动作，通过分阶段训练支持视频动作联合生成、未来预测、策略推理及跨模态条件生成；EWMBench总体4.66，RoboTwin turn_switch双向深度仿真成功率75.0%。 | [原文](https://arxiv.org/abs/2610.18447) · [代码](https://github.com/UBTECH-Robot/Thinker-WM) · [项目页](https://thinkercosmos.ubtrobot.com/thinker-wm) |
 | [Lumo-2：对齐潜在世界动力学与机器人动作](论文逐篇解读/P328.md) | Lumo-2 通过三阶段训练将潜在世界动力学、视觉语言语义与机器人动作逐步对齐，在统一多模态Transformer中基于历史观测生成未来条件化动作块。 | [原文](https://arxiv.org/abs/2607.11270) · [项目页](https://www.astribot.com/research/Lumo2) |
 | [X-WAM：异步去噪的统一四维世界动作建模](论文逐篇解读/P305.md) | 以Wan2.2视频先验联合生成多视角未来RGB、深度、状态与动作，并用轻量深度支路和异步噪声采样兼顾几何精度与动作响应速度。 | [原文](https://arxiv.org/abs/2604.26694) · [代码](https://github.com/sharinka0715/X-WAM) · [项目页](https://sharinka0715.github.io/X-WAM/) |
 | [UniT：跨本体统一物理语言与世界建模](论文逐篇解读/P311.md) | 以共享RQ-VAE离散动作词汇对齐人类与机器人，通过跨重建支撑VLA动作生成和动作条件未来视频预测，并在RoboCasa、DROID及IRON人形机器人评测迁移效果。 | [原文](https://arxiv.org/abs/2604.19734) · [代码](https://github.com/xpeng-robotics/UniT) · [项目页](https://xpeng-robotics.github.io/unit/) |
 | [WALL-WM：事件对齐的视频—动作世界模型](论文逐篇解读/P300.md) | 以可变时长语义事件为单位联合去噪生成多视角未来视频与末端动作，通过Wan视频塔、动作DiT、跨视角几何交互及Staircase潜在推理支持事件式和定长VLA两种执行，并在双臂真机与RoboTwin评测。 | [原文](https://arxiv.org/abs/2606.01955) · [代码](https://github.com/X-Square-Robot/wall-wm) · [项目页](https://github.com/X-Square-Robot/WALL-X) |
 | [WAM-TTT：用无标注人类视频在部署前调整世界动作模型](论文逐篇解读/P173.md) | 通过观看无标注人类视频更新轻量快速记忆，条件化冻结世界动作模型执行跨本体操作。 | [原文](https://arxiv.org/abs/2607.06988) |
+| [R2-WAM：系统比较世界动作模型的视觉表征与融合方式](论文逐篇解读/P504.md) | 在统一协议下比较13种视觉编码器和REPA、门控交叉注意力、通道拼接、Token拼接、独立Feature Expert五种融合方式；DINOv3+UniTok+V-JEPA 2.1通道拼接配方在RoboCasa达84.7%、RoboTwin达92.8%，并提升Galbot G1真机任务表现。 | [原文](https://arxiv.org/abs/2610.13024) · [项目页](https://kailiu18.github.io/R-2WAM.github.io/) |
 | [WholeBodyWAM：以统一全身控制语义扩展世界动作模型](论文逐篇解读/P226.md) | 保留预训练WAM视觉—操作先验，以56维统一全身控制语义和可操作性门控协调不同人形全身控制器。 | [原文](https://arxiv.org/abs/2609.16644) · [项目页](https://wholebodywam.github.io/) |
 | [DreamZero：作为零样本策略的世界动作模型](论文逐篇解读/P113.md) | 联合自回归生成未来视觉与机器人动作，并以新观测滚动校正，用作零样本操作策略。 | [原文](https://arxiv.org/abs/2602.15922) · [代码](https://github.com/dreamzero0/dreamzero) · [项目页](https://dreamzero0.github.io/) |
 | [World-Action Models 综述：从预测世界到生成可执行动作](论文逐篇解读/P211.md) | 从表示、转移建模、动作接口、架构、训练、数据和规模化整理机器人世界动作模型研究。 | [原文](https://arxiv.org/abs/2609.16074) · [项目页](https://rcl-robotics.github.io/Awesome-World-Action-Models/) |

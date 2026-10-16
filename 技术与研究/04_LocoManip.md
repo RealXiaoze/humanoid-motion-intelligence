@@ -2,7 +2,7 @@
 
 > 移动、平衡、接触与操作协同，汇总相关论文、方法与项目。
 
-当前收录 **66** 篇论文／技术报告、**60** 个项目。
+当前收录 **72** 篇论文／技术报告、**60** 个项目。
 
 ## 本页导航
 
@@ -14,7 +14,7 @@
 
 | 场景 | 实验平台 | 相关解读 |
 | --- | --- | --- |
-| 乒乓球 | 人形机器人实机 | [HITTER](论文逐篇解读/P472.md) · [PACE](论文逐篇解读/P473.md) · [SMASH](论文逐篇解读/P474.md) |
+| 乒乓球 | 人形机器人实机 | [HITTER](论文逐篇解读/P472.md) · [PACE](论文逐篇解读/P473.md) · [SMASH](论文逐篇解读/P474.md) · [PingpongDuo](论文逐篇解读/P505.md) · [From Hitter to Player](论文逐篇解读/P506.md) |
 | 乒乓球 | 机械臂与专用竞技平台 | [SpikePingpong](论文逐篇解读/P480.md) · [DeepMind乒乓球机器人](论文逐篇解读/P481.md) · [Sony Ace](论文逐篇解读/P482.md) |
 | 网球 | 人形机器人实机 | [LATENT](论文逐篇解读/P376.md) · [AdaPT](论文逐篇解读/P191.md) · [ATHLETE](论文逐篇解读/P475.md) |
 | 网球 | 轮椅底盘与机械臂 | [ESTHER](论文逐篇解读/P484.md) |
@@ -28,7 +28,7 @@
 
 利用视觉、物体状态与场景信息控制机器人交互。
 
-**17** 篇论文／报告 · **11** 个项目
+**18** 篇论文／报告 · **11** 个项目
 
 #### 论文与技术报告
 
@@ -43,6 +43,7 @@
 | [OASIS：从仿真数据采集到真实人形移动操作](论文逐篇解读/P119.md) | 在Isaac Lab采集本体对齐轨迹并扩增视觉外观，训练迁移至真实G1的移动操作策略。 | [原文](https://arxiv.org/abs/2606.08548) · [代码](https://github.com/TeleHuman/OASIS) · [项目页](https://oasis-humanoid.github.io/) |
 | [Sony Ace：以事件视觉与强化学习应对高速对抗](论文逐篇解读/P482.md) | 以主动像素相机测位置、事件视觉估旋转，再用仿真训练的非对称Actor-Critic生成短时击球动作，并由约束优化筛除碰撞风险、生成复位轨迹。论文记录了与精英及职业球员的比赛结果，但样本和赛事规则限定了结论范围。 | [原文](https://www.nature.com/articles/s41586-026-10338-5) · [项目页](https://ace.ai.sony/) |
 | [Psi0：分阶段学习人形移动操作并接入全身控制](论文逐篇解读/P192.md) | 分阶段训练视觉语言动作模型与动作专家，并由低层控制器执行人形移动和灵巧操作。 | [原文](https://arxiv.org/abs/2603.12263) · [代码](https://github.com/physical-superintelligence-lab/Psi0) · [项目页](https://psi-lab.ai/Psi0/) |
+| [Reflex：从机载视觉学习人形反应式接箱](论文逐篇解读/P490.md) | 先学习特权状态接箱控制，再通过潜变量对齐及带相机自运动历史的RGB-D编码实现视觉反应控制。 | [原文](https://arxiv.org/abs/2610.12772) |
 | [SceneBot：接触提示的场景交互人形全身跟踪](论文逐篇解读/P094.md) | 从动作恢复场景并生成接触标签，以接触提示条件化人形跟踪器，区分支撑地面与交互对象。 | [原文](https://arxiv.org/abs/2606.27581) · [项目页](https://ericcsr.github.io/scenebot/) |
 | [SMASH：机载视觉与可扩展全身动作的人形乒乓球控制](论文逐篇解读/P474.md) | Motion-VAE扩展G1可执行击球动作，双机载相机与自适应滤波估计来球和机器人状态；机载感知真球测试20次回球12次。 | [原文](https://arxiv.org/abs/2604.01158) · [项目页](https://mmlab.hk/Smash/) |
 | [SpikePingpong：用快慢视觉校正高速击球](论文逐篇解读/P480.md) | 将RGB-D物理弹道预测与脉冲相机接触标签监督的快慢校正结合，并以约2,000条示范训练关节修正策略；在ABB机械臂上评估30厘米、20厘米容差内的目标落点与连续回击。 | [原文](https://arxiv.org/abs/2506.06690) · [代码](https://github.com/PKUHaoWang/SpikePingpong) |
@@ -129,7 +130,7 @@
 
 联合移动、平衡、上肢与手部完成操作任务。
 
-**31** 篇论文／报告 · **30** 个项目
+**36** 篇论文／报告 · **30** 个项目
 
 #### 论文与技术报告
 
@@ -142,6 +143,7 @@
 | [DECOWAM：用未来蒸馏与动作解耦适配腿式移动操作](论文逐篇解读/P199.md) | 以未来瓶颈和底盘－手臂因子分解区分相机自运动与机械臂动作，面向腿式移动操作。 | [原文](https://arxiv.org/abs/2608.20114) |
 | [DPC：从视觉语义直接生成可执行全身关节目标](论文逐篇解读/P164.md) | 取消中间运动目标接口，让视觉、语言、本体与执行反馈直接生成关节和手部动作。 | [原文](https://symbiosis-robotics.com/research/dpc/en/) |
 | [FARO：面向可行性的机器人运动优化](论文逐篇解读/P239.md) | 围绕候选接触序列构建由便宜到昂贵的运动学与动力学可行性筛选层，并与接触模式树搜索结合以生成可执行的人形全身操作轨迹。 | [原文](https://arxiv.org/abs/2607.18362) · [项目页](https://atarilab.github.io/faro.io/) |
+| [From Hitter to Player：用落点命令分开训练击球执行与对抗策略](论文逐篇解读/P506.md) | 以落点坐标连接物理击球规划、29关节全身策略和高层选点；先适应连续回合，再冻结执行层学习对抗策略。 | [原文](https://arxiv.org/abs/2610.14067) · [项目页](https://mufanmufan.github.io/hitter-to-player/) |
 | [HANDOFF：基于互补教师蒸馏的人形智能体任务空间全身控制](论文逐篇解读/P111.md) | 将互补移动、操作和恢复教师蒸馏为MoE策略，把低维任务空间命令转成人形全身动作。 | [原文](https://arxiv.org/abs/2606.06493) · [代码](https://github.com/lzyang2000/HANDOFF) · [项目页](https://lzyang2000.github.io/HANDOFF/) |
 | [HumanX：基于人类视频的敏捷可泛化人形交互技能](论文逐篇解读/P098.md) | 将人类视频恢复为人－物交互轨迹并扩增，再以统一模仿学习训练球类、搬运和交互技能。 | [原文](https://arxiv.org/abs/2602.02473) · [代码](https://github.com/wyhuai/HumanX) · [项目页](https://wyhuai.github.io/human-x/) |
 | [KINO：用关键帧连接视觉语言规划与人形全身控制](论文逐篇解读/P224.md) | 以稀疏语义关键帧连接VLM分阶段规划与PPO全身策略，通过场景重定向和显著性采样完成G1抓取搬运。 | [原文](https://arxiv.org/abs/2609.18869) |
@@ -149,9 +151,13 @@
 | [MotionDisco：通过接触计划搜索发现人形全身技能](论文逐篇解读/P329.md) | MotionDisco 以LLM进化搜索生成离散接触计划，通过分层运动学检查与动力学轨迹优化闭环修正，发现长时程人形全身移动操作技能并训练跟踪策略部署。 | [原文](https://arxiv.org/abs/2606.06139) |
 | [OmniContact：用接触流组织可组合的人形物理技能](论文逐篇解读/P138.md) | 以身体轨迹和时序接触构成Contact Flow，由生成器与低层策略组合长程移动操作技能。 | [原文](https://arxiv.org/abs/2606.26201) · [代码](https://github.com/Ingrid789/OmniContact_sim2sim) · [项目页](https://omnicontact.github.io/) |
 | [OpenHLM：验证全身原生LocoManip的数据与训练配方](论文逐篇解读/P141.md) | 以关节级全身遥操作和异构数据共训练VLA，面向人形全身移动操作控制任务。 | [原文](https://arxiv.org/abs/2606.22174) · [项目页](https://openhlm-project.github.io/) |
+| [PanTact：通过可穿戴接触接口教授全身灵巧操作](论文逐篇解读/P496.md) | 从可穿戴贴片示范学习双手动作与身体接触目标，并用全身控制器将接触迁移到机器人可用表面。 | [原文](https://arxiv.org/abs/2610.12558) · [项目页](https://pantact.github.io/) |
+| [PingpongDuo：把双人让位与击球串成连续乒乓球双打](论文逐篇解读/P505.md) | 团队规划联合选择站位并筛选碰撞风险，步法与击球交替执行，手臂残差修正回球；两台G1实机连续严格交替击球超过10次。 | [原文](https://arxiv.org/abs/2610.20579) · [项目页](https://www.archon.tech/research/PingpongDuo) |
 | [Praxis：从第一视角示范迁移人形机器人的全身灵巧操作](论文逐篇解读/P338.md) | Praxis将移动操作分成视觉语言导航、闭环全身姿态校准和基于一次 egocentric RGB-D 示范的灵巧操作。人体腕部关键帧经机器人坐标变换、物体相对位姿重定位和手指关节映射后执行；在线物体跟踪、五指触觉与视觉结果验证支持跨位姿、跨物体和受扰恢复。五项实机任务平均成功率76.97%。 | [原文](https://arxiv.org/abs/2609.30735) · [项目页](https://edem-ai.github.io/Praxis/) |
+| [ResGAC：全身运动中的精确SE(3)末端控制](论文逐篇解读/P489.md) | 以几何SE(3)末端反馈产生名义手臂目标，再用共享关节位置接口上的残差强化学习协调手臂、步态和平衡。 | [原文](https://arxiv.org/abs/2610.09479) · [项目页](https://resgac.github.io/ResGAC-website/) |
 | [STRIDER：以精确落脚和多步态协同实现人形移动操作](论文逐篇解读/P225.md) | 融合AMP行走、地形感知迈步和笛卡尔上肢专家，并以LD-PPO蒸馏潜在协调表示实现单策略多步态移动操作。 | [原文](https://arxiv.org/abs/2609.23483) |
 | [WEAVE：从人—物交互示范学习全身灵巧移动操作](论文逐篇解读/P223.md) | 从人—物动作重定向与接触优化生成机器人参考，再以几何和接触感知策略联合控制人形身体、灵巧手与物体。 | [原文](https://arxiv.org/abs/2609.16683) · [代码](https://github.com/xiaohu-art/Weave) · [项目页](https://xiaohu-art.github.io/Weave/) |
+| [Workhorse：用机器人无关的人体示范学习全身移动操作](论文逐篇解读/P491.md) | 以人体五链动作直接训练视觉动作块规划器和全身强化学习跟踪器，并用漂移增强适配闭环误差。 | [原文](https://arxiv.org/abs/2610.09117) · [项目页](https://hybridrobotics.github.io/workhorse/) |
 | [DemoHLM：从单次示范到可泛化人形移动操作](论文逐篇解读/P046.md) | 把单次仿真示范拆为移动、预操作和接触阶段，在新物体布局生成轨迹并训练长程策略。 | [原文](https://arxiv.org/abs/2510.11258) · [项目页](https://beingbeyond.github.io/DemoHLM/) |
 | [HDMI：从人类视频学习交互式人形全身控制](论文逐篇解读/P099.md) | 结合对象感知参考、残差控制和物体状态奖励，从单目视频学习人形开门、搬运和推物。 | [原文](https://arxiv.org/abs/2509.16757) · [代码](https://github.com/LeCAR-Lab/HDMI) · [项目页](https://hdmi-humanoid.github.io/) |
 | [HITTER：层级规划与强化学习驱动的人形乒乓球控制](论文逐篇解读/P472.md) | 物理模型预测来球并规划球拍目标，PPO全身策略协调G1跑位与正反手击球；动捕实测26球中24次有效回球。 | [原文](https://arxiv.org/abs/2508.21043) · [项目页](https://humanoid-table-tennis.github.io/) |
