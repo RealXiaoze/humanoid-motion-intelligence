@@ -354,13 +354,13 @@ def check_readme_counts(errors: list[str]) -> None:
         rows = [line for line in section.splitlines() if re.match(r'^\| \[\d+\. ', line)]
         if len(rows) != route_count:
             errors.append(f"README展开技术路线数量不符：{title}")
-        if '| 技术路线 | 展开后的核心思路 | 代表项目 |' not in section:
+        if '| 技术路线 | 核心思路 | 代表项目 |' not in section:
             errors.append(f"README技术路线表格格式不符：{title}")
         chapter = ROOT / "技术与研究" / f"研究方向_{title}.md"
         content = chapter.read_text(encoding="utf-8") if chapter.is_file() else ""
         if len(re.findall(r'<a id="route-[^\"]+"></a>', content)) != route_count:
             errors.append(f"研究方向技术路线缺失：{title}")
-        if '| 技术路线 | 展开后的核心思路 | 代表项目 |' not in content:
+        if '| 技术路线 | 核心思路 | 代表项目 |' not in content:
             errors.append(f"研究方向表格格式不符：{title}")
     legacy_paths = [
         "01_动作数据与重定向.md", "02_Locomotion与运动先验.md", "03_动作跟踪与全身控制.md",

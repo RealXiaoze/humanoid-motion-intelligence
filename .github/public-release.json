@@ -31,8 +31,8 @@
     },
     {
       "path": ".github/scripts/validate_public_tree.py",
-      "size": 25428,
-      "sha256": "ced7ab52c9d6c4b5ae44f8a4fb0e78aa6dece35978af4588bed3a925ee3cc875"
+      "size": 25404,
+      "sha256": "9ddf3626f50708a99078c2180b838fdb09a3abd1efb9ed6d977154ef5788335a"
     },
     {
       "path": ".github/workflows/public-release-check.yml",
@@ -46,8 +46,8 @@
     },
     {
       "path": "AGENTS.md",
-      "size": 4515,
-      "sha256": "6b34e4d0f892fa930ad4abd63840f3f047f841515deac037cb7b55672bdaccd9"
+      "size": 4596,
+      "sha256": "b9d25c626b605c31d45f1094fb3f4f4eb3329cb99e22876c14513d08f5fea4cd"
     },
     {
       "path": "LICENSE.md",
@@ -56,8 +56,8 @@
     },
     {
       "path": "README.md",
-      "size": 28173,
-      "sha256": "a9490fae1b5078b110628b7b8b3c7ca7d992e6caa03e31790f5c2e406638f70d"
+      "size": 28600,
+      "sha256": "2fb93d146bd60772454b5a4dc38a6a339253f05084b4e3788b6d6ef2ad643e4c"
     },
     {
       "path": "全部资料目录.md",
@@ -126,28 +126,28 @@
     },
     {
       "path": "技术与研究/研究方向_世界模型与通用动作策略.md",
-      "size": 114147,
-      "sha256": "c7cb65b4852107dd12e06548b0c3700d5c7e2b726b33a700a4735e74119b071b"
+      "size": 114429,
+      "sha256": "2e88fa6b39b32d012ef1e5655a1c45f70c810e19ae8689564bb225f760764483"
     },
     {
       "path": "技术与研究/研究方向_任务规划与长程自主执行.md",
-      "size": 33154,
-      "sha256": "a8d5be2e4f4bc3df570f30e9e5c6153445df2f34c602ea06306d73775f82a0e5"
+      "size": 33196,
+      "sha256": "1cb0894c4c64bbd48896e08f0e975962631baa0f5bf96fa116499416ea4834cf"
     },
     {
       "path": "技术与研究/研究方向_动作数据与跨本体迁移.md",
-      "size": 46753,
-      "sha256": "ad5866ed85cc1b9afa6f9905859c9975218326d1c930d1e2eb00d7016e19816f"
+      "size": 46929,
+      "sha256": "06e37e2cf678254776809da25a94482058d54f86f8d62707f95989f93ef1ffe5"
     },
     {
       "path": "技术与研究/研究方向_物体交互与全身操作.md",
-      "size": 54404,
-      "sha256": "b75547c9e51319cc2eb4348f9f7d5c7d8b93cb85f1d9194eed3ee4981acfb450"
+      "size": 54518,
+      "sha256": "3ac54ed7dde2c34037de48d3e8df38328ba5f3d21e0ff4ca8c4b77f76df0ca70"
     },
     {
       "path": "技术与研究/研究方向_运动控制与全身行为.md",
-      "size": 80590,
-      "sha256": "efc7c302b6fb188bf78b20f57e2510f30bd37b67fd454f71d17772cf0bc63c5f"
+      "size": 80890,
+      "sha256": "91800c27dfff4c790fa3fe89c441c64ac6e061bb7fac0629438cd322a52423e2"
     },
     {
       "path": "技术与研究/许可/CC-BY-NC-SA-4.0.txt",
