@@ -21,11 +21,11 @@
 | [鹿明机器人 FastUMI Ego](https://www.news.cn/tech/20260314/e81f7585b7c94e1281f94cd4eb59202e/c.html) | RGB、IMU、ToF、世界坐标定位与双手跟踪，可配合FastUMI操作端 | 同时记录环境、操作者与手部操作轨迹 |
 | [Kinetix AI Kai Halo](https://www.kinetixai.tech/zh/KaiEgo) | 多路鱼眼图像，以及场景重建、手部跟踪、全身姿态与动作语义处理 | 构建第一视角人体动作与手物交互数据 |
 | [觅蜂科技 MEgo View](https://www.maniformer.net/mego) | 头戴及腕部共7摄RGB、深度、IMU、空间轨迹、音频与人体位姿信息 | 采集多视角人类操作，用于动作重建与操作学习 |
-| [OmniEgo](https://omniego.com/) | 头戴双目、三维手姿、点云、SLAM轨迹及清洗标注工具 | 将第一视角采集连接到三维重建与数据处理 |
+| [OmniEgo](https://www.omniego.com/) | 头戴双目、三维手姿、点云、SLAM轨迹及清洗标注工具 | 将第一视角采集连接到三维重建与数据处理 |
 | [TOBI E2/E6/E8](https://www.tobi.cn/products.html) | RGB、IMU、时间戳、相机内外参与音频，配置按型号区分 | 采集多视角观察与传感器原始数据 |
-| [松灵 Pika Pro Ego-centric](https://www.agilex.ai/page/690ac4905e78cfa260412ca1) | Pika Ego、移动计算单元与操作端协同记录视觉、深度、位姿和操作信息 | 采集第一视角与手部示范，连接标注和训练流程 |
+| [松灵 Pika Pro Ego-centric](https://www.agilex.ai/products/pika) | Pika Ego、移动计算单元与操作端协同记录视觉、深度、位姿和操作信息 | 采集第一视角与手部示范，连接标注和训练流程 |
 | [PIA Primus Ego](https://cn.piagroup.com/news/company2/538.html) | 工业场景第一视角操作记录 | 采集工业任务中的人类操作示范 |
-| [京东 JoyEgoCam](https://finance-app.people.cn/n1/2026/0417/c1004-40703454.html) | 第一视角采集终端，接入京东数据处理平台 | 连接数据采集、存储、标注、训练与评测 |
+| [京东 JoyEgoCam](https://finance.people.com.cn/n1/2026/0417/c1004-40703454.html) | 第一视角采集终端，接入京东数据处理平台 | 连接数据采集、存储、标注、训练与评测 |
 
 ## 动作采集与数据平台
 

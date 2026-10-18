@@ -25,10 +25,10 @@
 | [GaitSpan：从冻结行走策略扩展连续走跑能力](论文逐篇解读/P147.md) | 冻结行走策略并以动作波、SLIP事件塑形和残差策略扩展人形慢跑、跑步与地形移动。 | [原文](https://arxiv.org/abs/2607.12114) · [项目页](https://gaitspan2026.github.io/) |
 | [Fly-Inspired Recurrent Controller：飞虫启发循环网络的人形机器人行走分析](论文逐篇解读/P339.md) | 论文分析固定T_graph检查点的神经状态—身体闭环：82维身体与命令输入经投影进入3,609维循环核心，由135个电机神经元标记状态读出15个关节目标，在MuJoCo G1上以50 Hz运行。控制器完成63项地形、速度和初始偏航组合中的61项；重置循环状态后标称偏航成功从19/21降为0/21。 | [原文](https://arxiv.org/abs/2609.27001) |
 | [HuMBLE：人类动作驱动的具身行走行为学习](论文逐篇解读/P492.md) | 将全参考教师蒸馏为仅依赖本体状态和速度指令的学生，再以模仿与随机指令任务联合微调，实现自然步态和可操控Locomotion。 | [原文](https://arxiv.org/abs/2610.10489) |
-| [SMP：把动作扩散模型变成可复用的运动奖励](论文逐篇解读/P137.md) | 复用冻结扩散模型的运动分数作为SDS奖励，训练物理角色移动与风格控制技能。 | [原文](https://arxiv.org/abs/2512.03028) · [代码](https://github.com/xbpeng/MimicKit) · [项目页](https://yxmu.foo/smp-page/) |
 | [State-Dependent AMP：基于状态相关对抗运动先验的统一行走、跑步与恢复](论文逐篇解读/P106.md) | 用状态门控选择走、跑和恢复运动先验，由同一PPO策略完成速度跟踪与人形真机控制。 | [原文](https://arxiv.org/abs/2605.18611) |
 | [DBHL：基于ZMP奖励的无外部感知窄地形全身运动](论文逐篇解读/P129.md) | 将ZMP与角动量约束写入PPO奖励，以本体历史控制人形窄路、障碍和负载行走。 | [原文](https://arxiv.org/abs/2502.17219) · [项目页](https://whole-body-loco.github.io/) |
 | [GMP：用生成式运动先验监督自然人形行走](论文逐篇解读/P136.md) | 由条件VAE生成未来动作参考并转为监督信号，训练可调速度的人形行走策略。 | [原文](https://arxiv.org/abs/2503.09015) · [项目页](https://sites.google.com/view/humanoid-gmp) |
+| [SMP：把动作扩散模型变成可复用的运动奖励](论文逐篇解读/P137.md) | 复用冻结扩散模型的运动分数作为SDS奖励，训练物理角色移动与风格控制技能。 | [原文](https://arxiv.org/abs/2512.03028) · [代码](https://github.com/xbpeng/MimicKit) · [项目页](https://yxmu.foo/smp-page/) |
 | [Denoising World Model Locomotion：基于去噪世界模型的复杂地形人形运动控制](论文逐篇解读/P017.md) | 循环编码器以特权真值重建去噪潜状态，供PPO直接输出关节目标，用于人形地形行走。 | [原文](https://arxiv.org/abs/2408.14472) |
 | [Real-World Humanoid Locomotion：基于强化学习的真实世界人形运动控制](论文逐篇解读/P014.md) | 以特权教师训练、历史Transformer学生适配Digit本体观测，输出关节PD目标用于真机行走与恢复。 | [原文](https://doi.org/10.1126/scirobotics.adi9579) · [项目页](https://learning-humanoid-locomotion.github.io/) |
 | [DreamWaQ：基于隐式地形想象的鲁棒四足运动控制](论文逐篇解读/P125.md) | 从本体历史估计四足速度和地形潜变量，以PPO学习粗糙地面、台阶及户外行走。 | [原文](https://arxiv.org/abs/2301.10602) · [代码](https://github.com/Manaro-Alpha/DreamWaQ) · [项目页](https://sites.google.com/view/dreamwaq) |
@@ -70,11 +70,9 @@
 | [DAVIS：深度视觉驱动的人形足球技能](论文逐篇解读/P218.md) | 以头部深度图和本体历史端到端输出全身PD目标，使用可见性几何监督、真值渐进替换与AMP先验训练射门和盘带。 | [原文](https://arxiv.org/abs/2609.28175) · [项目页](https://thusi-lab.github.io/DAVIS/) |
 | [Deep Whole-Body Parkour：基于深度强化学习的全身跑酷控制](论文逐篇解读/P020.md) | 将场景扫描与人体示范配对，以参考、本体历史和深度输入修正人形跑酷中的多接触时机。 | [原文](https://arxiv.org/abs/2601.07701) · [代码](https://github.com/project-instinct/InstinctLab/blob/main/source/instinctlab/instinctlab/tasks/shadowing/README.md) · [项目页](https://project-instinct.github.io/deep-whole-body-parkour/) |
 | [DODGER：面向动态障碍导航的安全引导强化学习](论文逐篇解读/P367.md) | 训练阶段将动态抛物控制屏障函数（DPCBF）安全约束转为策略引导回报，策略依自身动作采样学习并输出导航命令供低层控制器跟踪；MuJoCo全身仿真和Unitree G1激光雷达实机验证动态避障。 | [原文](https://arxiv.org/abs/2609.38873) · [代码](https://github.com/psh0823/dodger) · [项目页](https://psh0823.github.io/dodger-homepage/) |
-| [DPL：以跨模态地形重建驱动深度感知人形运动](论文逐篇解读/P149.md) | 以深度合成、跨注意力地形重建和教师学生蒸馏，将深度输入映射为人形地形行走动作。 | [原文](https://arxiv.org/abs/2510.07152) |
 | [FootQuery：未来落脚点引导的深度历史检索](论文逐篇解读/P216.md) | 根据本体状态预测每只脚的下一触地点，并从深度历史中检索相关区域，与全局视觉记忆融合生成关节动作。 | [原文](https://arxiv.org/abs/2609.21447) |
 | [Generate, Track, Improve：强化学习微调的感知多技能人形运动](论文逐篇解读/P215.md) | 以深度条件流匹配生成全身参考、CLF-RL跟踪器执行，并用结构化搜索与AWR微调生成器，改善未见地形通过和技能选择。 | [原文](https://arxiv.org/abs/2609.31577) · [项目页](https://zolkin1.github.io/generate-track-improve/) |
 | [Hiking in the Wild：面向真实复杂地形的可扩展感知跑酷](论文逐篇解读/P132.md) | 从深度检测地形边缘并约束足部落点，训练人形在台阶、空隙等复杂地形自主行走。 | [原文](https://arxiv.org/abs/2601.07718) · [代码](https://github.com/project-instinct/InstinctLab/blob/main/source/instinctlab/instinctlab/tasks/parkour/README.md) · [项目页](https://project-instinct.github.io/hiking-in-the-wild/) |
-| [Vision-Driven Soccer：把不可靠视觉接入人形机器人反应式全身控制](论文逐篇解读/P182.md) | 将对象中心视觉、本体历史估计和关节控制合入强化学习策略，在仿真训练人形足球技能。 | [原文](https://arxiv.org/abs/2511.03996) · [代码](https://doi.org/10.5281/zenodo.21620490) · [项目页](https://humanoid-kick.github.io/) |
 | [Light-Loco-Parkour：多专家蒸馏与无标签切换的视觉全身跑酷](论文逐篇解读/P150.md) | 以多技能专家、DAgger蒸馏和奖励微调训练人形依据深度与速度切换跳跃攀爬动作。 | [原文](https://arxiv.org/abs/2608.02653) · [项目页](https://light-loco-parkour.github.io/) |
 | [NEXUS：让人体参考动作适应机器人所在的地形](论文逐篇解读/P362.md) | 生成地形适应参考训练特权教师，再把控制能力蒸馏到读取深度、本体历史与原始人体参考的学生；输出关节位置目标，在G1上执行楼梯、斜坡及全身遥操作。 | [原文](https://arxiv.org/abs/2609.39000) · [项目页](https://nexus-humanoid.github.io/) |
 | [PASSAGE：场景对齐动作生成驱动的人形障碍穿越](论文逐篇解读/P465.md) | 以场景对齐VR动捕训练三层高度图条件流匹配规划器，结合感知全身跟踪、RTC和冻结跟踪器下的规划RL，实现G1机载跨越、俯身与侧身穿越；仿真750回合无接触成功70.27%，50个实体布局完成50次、无接触45次。 | [原文](https://arxiv.org/abs/2609.18732) · [项目页](https://galaxygeneralrobotics.github.io/PASSAGE/) |
@@ -83,7 +81,9 @@
 | [SOLO：稳定长时全地形感知人形运动](论文逐篇解读/P238.md) | 以查询式地形重建保留落脚相关细节，并用带未来状态分歧信用分配的蒸馏奖励训练仅依赖深度与本体感知的长时运动策略。 | [原文](https://arxiv.org/abs/2608.26583) · [项目页](https://sunpihai-up.github.io/solo/) |
 | [WM-LOCO：世界模型增强的受限落足地形运动](论文逐篇解读/P217.md) | 将RSSM循环世界模型与PPO联合训练，以历史状态、动作和深度预测形成供人形运动策略使用的记忆特征。 | [原文](https://arxiv.org/abs/2609.02542) · [项目页](https://m0puppet.github.io/wm-loco/) |
 | [X-Loco：基于协同策略蒸馏的视觉通用人形运动控制](论文逐篇解读/P128.md) | 分别训练移动、恢复和协调专家并按场景蒸馏，形成视觉速度条件的人形移动策略。 | [原文](https://arxiv.org/abs/2603.03733) · [项目页](https://x-loco-humanoid.github.io/) |
+| [DPL：以跨模态地形重建驱动深度感知人形运动](论文逐篇解读/P149.md) | 以深度合成、跨注意力地形重建和教师学生蒸馏，将深度输入映射为人形地形行走动作。 | [原文](https://arxiv.org/abs/2510.07152) |
 | [DreamPolicy：面向可扩展人形运动控制的统一世界模型策略](论文逐篇解读/P018.md) | 用地形条件扩散模型生成未来身体状态，并由统一策略跟踪以执行人形行走和地形适应。 | [原文](https://arxiv.org/abs/2505.18780) · [项目页](https://dreampolicy.github.io/) |
+| [Vision-Driven Soccer：把不可靠视觉接入人形机器人反应式全身控制](论文逐篇解读/P182.md) | 将对象中心视觉、本体历史估计和关节控制合入强化学习策略，在仿真训练人形足球技能。 | [原文](https://arxiv.org/abs/2511.03996) · [代码](https://doi.org/10.5281/zenodo.21620490) · [项目页](https://humanoid-kick.github.io/) |
 | [LEGO-H：面向复杂山径的人形机器人一体化技能学习](论文逐篇解读/P019.md) | 结合时序局部目标、特权运动教师和视觉学生，联合学习复杂山径导航与人形行走技能。 | [原文](https://arxiv.org/abs/2505.06218) · [项目页](https://lego-h-humanoidrobothiking.github.io/) |
 | [MoRE：面向复杂地形拟人步态切换的残差专家混合策略](论文逐篇解读/P126.md) | 以基础地形策略配合残差专家和运动判别器，组合复杂地形通行与拟人步态控制策略。 | [原文](https://arxiv.org/abs/2506.08840) · [代码](https://github.com/TeleHuman/MoRE) · [项目页](https://more-humanoid.github.io/) |
 | [Skild Vision Locomotion：视觉反馈驱动的端到端地形运动](论文逐篇解读/P397.md) | Skild Brain低层控制策略把在线原始视觉与关节反馈直接映射为电机命令，在未知楼梯、间隙、障碍和负载地形中连续调整步态而不依赖地图或模式切换。 | [原文](https://www.skild.ai/blogs/one-policy-all-scenarios) |
@@ -168,7 +168,7 @@
 | [DDC：支撑脚相对动态质心驱动的人形单腿平衡](论文逐篇解读/P335.md) | DDC 将质心位置与速度变换为支撑脚相对动态 CoM 观测，配合人体姿势控制奖励和 FastSAC 直接训练单腿平衡策略，并通过跨仿真评测选择部署检查点。 | [原文](https://arxiv.org/abs/2608.00500) · [项目页](https://estoil.github.io/DDC/) |
 | [ADP：以对抗动力学分布训练人形抗扰运动](论文逐篇解读/P148.md) | 以轨迹优化生成的动力学窗口训练对抗判别器并形成动力学先验，提升人形速度跟踪与推扰恢复能力。 | [原文](https://arxiv.org/abs/2607.03454) · [项目页](https://seokju-lee.github.io/adp/) |
 | [Light REACT：让受扰与受损的人形机器人继续行动](论文逐篇解读/P425.md) | 执行器损失、关节锁定和膝部活动限制会改变动力学；需要依靠身体交互历史在恢复、直立移动和爬行间切换。 | [原文](https://www.lightorigins.com/blog/light-react) |
-| [LocoWM：世界模型引导的高精度运动残差适应](论文逐篇解读/P365.md) | 动作条件世界模型根据本体历史与基策略动作预测任务状态序列，残差适配器提前修正；Go2-W完成地形调平、加速补偿与抗推实机演示，G1搬盘验证仅在仿真。 | [原文](https://arxiv.org/abs/2609.39179) · [代码](https://github.com/zhaozijie2022/LocoWM) · [项目页](https://zhaozijie2022.github.io/LocoWM/) |
+| [LocoWM：世界模型引导的高精度运动残差适应](论文逐篇解读/P365.md) | 动作条件世界模型根据本体历史与基策略动作预测任务状态序列，残差适配器提前修正；Go2-W完成地形调平、加速补偿与抗推实机演示，G1搬盘验证仅在仿真。 | [原文](https://arxiv.org/abs/2609.39179) · [代码](https://github.com/zhaozijie2022/LocoWM) · [项目页](https://zhaozijie2022.github.io/locowm/) |
 | [PAC-MAN：感知约束下的人形全身安全躲避](论文逐篇解读/P336.md) | PAC-MAN 以分割掩码深度和本体状态驱动全身躲球策略，在训练期用逐连杆 CBF 安全奖励塑形，并以 AMP 人体躲避动作先验协调关节响应。 | [原文](https://arxiv.org/abs/2607.28623) · [代码](https://github.com/lzyang2000/perceptive_cbf_rl) · [项目页](https://lzyang2000.github.io/perceptive_cbf_rl/) |
 | [SafeFall：人形机器人的保护性跌倒控制学习](论文逐篇解读/P108.md) | 以GRU预测不可避免跌倒，并由损伤感知保护策略控制落地，用于人形跌倒防护与恢复接口。 | [原文](https://arxiv.org/abs/2511.18509) · [项目页](https://safefall.github.io/) |
 

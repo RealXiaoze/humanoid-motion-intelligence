@@ -50,10 +50,10 @@
 | [Reflex：从机载视觉学习人形反应式接箱](论文逐篇解读/P490.md) | 先学习特权状态接箱控制，再通过潜变量对齐及带相机自运动历史的RGB-D编码实现视觉反应控制。 | [原文](https://arxiv.org/abs/2610.12772) |
 | [SceneBot：接触提示的场景交互人形全身跟踪](论文逐篇解读/P094.md) | 从动作恢复场景并生成接触标签，以接触提示条件化人形跟踪器，区分支撑地面与交互对象。 | [原文](https://arxiv.org/abs/2606.27581) · [项目页](https://ericcsr.github.io/scenebot/) |
 | [SMASH：机载视觉与可扩展全身动作的人形乒乓球控制](论文逐篇解读/P474.md) | Motion-VAE扩展G1可执行击球动作，双机载相机与自适应滤波估计来球和机器人状态；机载感知真球测试20次回球12次。 | [原文](https://arxiv.org/abs/2604.01158) · [项目页](https://mmlab.hk/Smash/) |
-| [SpikePingpong：用快慢视觉校正高速击球](论文逐篇解读/P480.md) | 将RGB-D物理弹道预测与脉冲相机接触标签监督的快慢校正结合，并以约2,000条示范训练关节修正策略；在ABB机械臂上评估30厘米、20厘米容差内的目标落点与连续回击。 | [原文](https://arxiv.org/abs/2506.06690) · [代码](https://github.com/PKUHaoWang/SpikePingpong) |
 | [TouchGuide：用触觉引导推理时的接触操作](论文逐篇解读/P421.md) | 视觉运动策略先根据视觉观测生成粗略候选动作；任务专属接触物理模型融合视觉、触觉与候选动作，在扩散去噪或流匹配采样后期提供可行性梯度，引导动作贴合当前接触状态，无需重训基础策略。 | [原文](https://arxiv.org/abs/2601.20239) · [项目页](https://martelzhang.github.io/touchguide) |
 | [DexGraspVLA：面向泛化灵巧抓取的视觉语言动作框架](论文逐篇解读/P416.md) | 高层视觉语言规划器把开放式指令转为目标物体与框选区域，SAM/Cutie 生成并跟踪掩码，冻结 DINOv2 表征和 diffusion action chunk 策略执行灵巧抓取；以 2,094 条示范训练，并在新物体、背景、照明及长程操作上实测。 | [原文](https://arxiv.org/abs/2502.20900) · [代码](https://github.com/Psi-Robot/DexGraspVLA) · [项目页](https://dexgraspvla.github.io/) |
 | [DoorMan：面向人形像素到动作策略Sim2Real迁移的开门系统](论文逐篇解读/P092.md) | 以阶段重置训练特权开门教师，再经DAgger和GRPO优化RGB学生的像素到动作Sim2Real控制。 | [原文](https://arxiv.org/abs/2512.01061) · [代码](https://github.com/NVlabs/GR00T-VisualSim2Real) · [项目页](https://doorman-humanoid.github.io/) |
+| [SpikePingpong：用快慢视觉校正高速击球](论文逐篇解读/P480.md) | 将RGB-D物理弹道预测与脉冲相机接触标签监督的快慢校正结合，并以约2,000条示范训练关节修正策略；在ABB机械臂上评估30厘米、20厘米容差内的目标落点与连续回击。 | [原文](https://arxiv.org/abs/2506.06690) · [代码](https://github.com/PKUHaoWang/SpikePingpong) |
 | [VIRAL：面向人形移动操作的大规模视觉Sim2Real](论文逐篇解读/P093.md) | 以特权教师、DAgger学生和视觉随机化训练RGB人形策略，面向长程搬运与移动操作Sim2Real。 | [原文](https://arxiv.org/abs/2511.15200) · [代码](https://github.com/NVlabs/GR00T-VisualSim2Real) · [项目页](https://viral-humanoid.github.io/) |
 | [VBC：面向腿式移动操作的视觉全身控制](论文逐篇解读/P043.md) | 由特权高层生成任务目标、视觉学生预测目标，再经低层全身控制执行腿式移动操作。 | [原文](https://arxiv.org/abs/2403.16967) · [项目页](https://wholebody-b1.github.io/) |
 
@@ -169,12 +169,12 @@
 | [PACE：物理预测增强的端到端人形乒乓球策略](论文逐篇解读/P473.md) | 学习式球路预测增强统一PPO策略的观测，仿真物理预测提供密集奖励与Critic特权信息；T1实机31球中19次有效回球。 | [原文](https://arxiv.org/abs/2509.21690) · [代码](https://github.com/purdue-tracelab/PACE-ICRA2026) · [项目页](https://purdue-tracelab.github.io/ttrobot.github.io/) |
 | [SkillBlender：基于技能混合的通用人形全身移动操作](论文逐篇解读/P109.md) | 以目标条件全身技能原语和上层混合器组合推箱、搬运及按键等移动操作任务。 | [原文](https://arxiv.org/abs/2506.09366) · [代码](https://github.com/Humanoid-SkillBlender/SkillBlender) · [项目页](https://usc-gvl.github.io/SkillBlender-web/) |
 | [SkillMimic-V2：用轨迹连接和状态历史补足稀疏交互示范](论文逐篇解读/P478.md) | STG连接示范片段，STF扩充邻域转移，ATS重采困难轨迹，并用冻结历史编码器学习稳健交互和技能切换。 | [原文](https://arxiv.org/abs/2505.02094) · [代码](https://github.com/Ingrid789/SkillMimic-V2) · [项目页](https://ingrid789.github.io/SkillMimicV2/) |
-| [SkillMimic：从篮球示范学习可复用的交互技能](论文逐篇解读/P477.md) | 统一技能条件策略以人体、球和接触关系模仿篮球示范，再由高层控制器组合技能完成运球、投篮和连续得分任务。 | [原文](https://arxiv.org/abs/2408.15270) · [代码](https://github.com/wyhuai/SkillMimic) · [项目页](https://ingrid789.github.io/SkillMimic/) |
 | [ULC：面向人形移动操作的统一细粒度控制器](论文逐篇解读/P096.md) | 用单一策略接收根高、躯干、双臂和移动目标，支持连续组合人形移动与全身操作。 | [原文](https://arxiv.org/abs/2507.06905) · [项目页](https://hellod035.github.io/ULC/) |
 | [DeepMind乒乓球机器人：技能库与逐球决策](论文逐篇解读/P481.md) | 低层在MuJoCo中以进化策略训练17种击球技能，并利用真实人类球路反复校准；高层按来球、技能回球表现和对手特征逐球选技。真机与29名人类对手比赛，结果支持其达到业余中级水平，不代表职业级表现。 | [原文](https://arxiv.org/abs/2408.03906) · [项目页](https://deepmind.google/research/publications/107741/) |
+| [SkillMimic：从篮球示范学习可复用的交互技能](论文逐篇解读/P477.md) | 统一技能条件策略以人体、球和接触关系模仿篮球示范，再由高层控制器组合技能完成运球、投篮和连续得分任务。 | [原文](https://arxiv.org/abs/2408.15270) · [代码](https://github.com/wyhuai/SkillMimic) · [项目页](https://ingrid789.github.io/SkillMimic/) |
 | [物理乒乓球动画：分层学习击球技能与战术](论文逐篇解读/P483.md) | 先从动捕训练模仿和单项击球策略，再以Mixer平滑切换技能；策略层用条件VAE和迭代行为克隆，从角色、对手及球状态生成技能与目标落点。论文报告了技能识别、连续回球和VR交互结果，结论限于物理模拟角色。 | [原文](https://arxiv.org/abs/2407.16210) |
-| [ESTHER：以移动轮椅和机械臂完成网球回击](论文逐篇解读/P484.md) | ESTHER融合六套立体相机、连续时间球路滤波和轮椅定位，规划击球位姿后通过ROS导航与机械臂挥拍闭环回球。论文在标准室内球场和实验室评测；两种环境的成功判据不同，结果应分开解释。 | [原文](https://arxiv.org/abs/2210.02517) · [代码](https://github.com/CORE-Robotics-Lab/Wheelchair-Tennis-Robot) · [项目页](https://core-robotics-lab.github.io/Wheelchair-Tennis-Robot/) |
 | [Vid2Player3D：从网球转播视频学习物理角色控制](论文逐篇解读/P479.md) | 把转播视频动作嵌入、低层物理模仿和高层击球规划结合，控制模拟球员适应来球、目标与不同击球风格。 | [原文](https://doi.org/10.1145/3592408) · [代码](https://github.com/nv-tlabs/vid2player3d) · [项目页](https://research.nvidia.com/labs/toronto-ai/vid2player3d/) |
+| [ESTHER：以移动轮椅和机械臂完成网球回击](论文逐篇解读/P484.md) | ESTHER融合六套立体相机、连续时间球路滤波和轮椅定位，规划击球位姿后通过ROS导航与机械臂挥拍闭环回球。论文在标准室内球场和实验室评测；两种环境的成功判据不同，结果应分开解释。 | [原文](https://arxiv.org/abs/2210.02517) · [代码](https://github.com/CORE-Robotics-Lab/Wheelchair-Tennis-Robot) · [项目页](https://core-robotics-lab.github.io/Wheelchair-Tennis-Robot/) |
 | [Deep Whole-Body Control：操作与运动统一策略学习](论文逐篇解读/P042.md) | 用优势混合平衡移动与操作训练信号，并以在线适应估计环境变化，训练统一全身策略。 | [原文](https://arxiv.org/abs/2210.10044) · [项目页](https://manipulation-locomotion.github.io/) |
 
 #### 相关项目

@@ -53,7 +53,7 @@
 | [SLM-Lab](https://github.com/kengz/SLM-Lab) | 模块化算法研究与实验管理 | 训练配置、算法组件与实验组织 |
 | [Torch-TWRL](https://github.com/twitter-archive/torch-twrl) | Torch强化学习实验 | Lua/Torch技术栈 |
 | [UETorch](https://github.com/facebookarchive/UETorch) | 连接游戏引擎与学习系统 | UE4与Torch插件 |
-| [Coach](https://github.com/IntelLabs/coach) | 组合强化学习算法与环境 | 早期模块化训练框架 |
+| [Coach 官方文档（历史）](https://intellabs.github.io/coach/) | 组合强化学习算法与环境 | 仍可访问的旧文档标为0.12.0；IntelLabs/coach及文档所指NervanaSystems/coach均不可访问。已检查[Intel Labs迁移入口](https://intellabs.github.io/)，未找到Coach迁移映射或官方继任仓库；仅按历史资料引用，不作为当前维护依赖。 |
 | [TRFL](https://github.com/google-deepmind/trfl) | 复用强化学习计算组件 | TensorFlow损失函数与更新算子 |
 | [Tensorforce](https://github.com/tensorforce/tensorforce) | 构建应用型强化学习实验 | 基于TensorFlow的训练框架 |
 | [garage](https://github.com/rlworkgroup/garage) | 组织可复现强化学习研究 | 算法、环境与实验工具 |
