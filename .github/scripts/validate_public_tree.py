@@ -12,7 +12,7 @@ from urllib.parse import parse_qs, unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[2]
 EXPORT_MANIFEST = ROOT / ".github" / "public-release.json"
-EXPECTED_CONTENT_FILES = 750
+EXPECTED_CONTENT_FILES = 751
 EXPECTED_OPERATIONAL_FILES = 6
 EXPECTED_PAPER_PAGES = 502
 EXPECTED_PAPER_IMAGES = 201
@@ -36,6 +36,7 @@ ALLOWED_TOP_LEVEL = {
     ".gitignore",
     "AGENTS.md",
     "README.md",
+    "全部资料目录.md",
     "LICENSE.md",
     "具身智能公司的开源项目.md",
     "强化学习开发者必备开源资料",
@@ -341,11 +342,17 @@ def check_readme_counts(errors: list[str]) -> None:
         "世界模型与通用动作策略": 5,
         "任务规划与长程自主执行": 4,
     }
-    for title, route_count in directions.items():
-        rows = [line for line in readme.splitlines() if line.startswith(f"| [{title}](")]
-        if len(rows) != 1 or len(rows[0].split("|")) != 4:
-            errors.append(f"README研究方向应为两列表格且入口唯一：{title}")
+    for number, (title, route_count) in enumerate(directions.items(), 1):
+        heading = f'### {number}. [{title}](技术与研究/研究方向_{title}.md)'
+        if readme.count(heading) != 1:
+            errors.append(f"README缺少直接展示的研究方向：{title}")
             continue
+        section = readme.split(heading, 1)[1].split('\n### ', 1)[0].split('<!-- home-tracks:end -->', 1)[0]
+        rows = [line for line in section.splitlines() if re.match(r'^\| \[\d+\. ', line)]
+        if len(rows) != route_count:
+            errors.append(f"README展开技术路线数量不符：{title}")
+        if '| 技术路线 | 展开后的核心思路 | 代表项目 |' not in section:
+            errors.append(f"README技术路线表格格式不符：{title}")
         chapter = ROOT / "技术与研究" / f"研究方向_{title}.md"
         content = chapter.read_text(encoding="utf-8") if chapter.is_file() else ""
         if len(re.findall(r'<a id="route-[^\"]+"></a>', content)) != route_count:
@@ -361,15 +368,21 @@ def check_readme_counts(errors: list[str]) -> None:
         expected = f"当前收录 **{papers}** 篇论文／技术报告、**{projects}** 个项目。"
         if not chapter.is_file() or expected not in chapter.read_text(encoding="utf-8"):
             errors.append(f"章节数量与公开数据不一致：{title}；expected={expected}")
-    directory = re.search(r'<!-- home-files:start -->(.*?)<!-- home-files:end -->', readme, re.DOTALL)
+    if re.findall(r'^## (.+)$', readme, re.MULTILINE) != ['资料导航', '研究方向与技术路线', '关于知识库', '交流与许可']:
+        errors.append('README应保留四个主要部分，并以资料导航开头')
+    if '<details' in readme or '<summary' in readme:
+        errors.append('README不应包含折叠展示')
+    directory_path = ROOT / '全部资料目录.md'
+    directory_text = directory_path.read_text(encoding='utf-8') if directory_path.is_file() else ''
+    directory = re.search(r'<!-- home-files:start -->(.*?)<!-- home-files:end -->', directory_text, re.DOTALL)
     if not directory:
-        errors.append("README缺少完整文件导航")
+        errors.append("独立资料目录缺少完整文件导航")
     else:
         targets = {unquote(target.split('#', 1)[0]) for target in re.findall(r'\]\(([^)]+)\)', directory.group(1))}
         expected_files = {item['path'] for item in json.loads(EXPORT_MANIFEST.read_text())['files']
                           if not item['path'].startswith('.github/')}
         if targets != expected_files:
-            errors.append(f"README文件导航覆盖不一致：missing={sorted(expected_files - targets)} extra={sorted(targets - expected_files)}")
+            errors.append(f"独立文件导航覆盖不一致：missing={sorted(expected_files - targets)} extra={sorted(targets - expected_files)}")
     # Check homepage section links as well as target file existence.
     for target in re.findall(r"\]\(([^)]+)\)", readme):
         if "#" not in target or target.startswith(("https:", "http:")):
