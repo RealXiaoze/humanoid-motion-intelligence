@@ -1,5 +1,9 @@
 # Locomotion与运动先验
 
+<!-- direction-links:start -->
+研究方向入口：[运动控制与全身行为](研究方向_运动控制与全身行为.md)
+<!-- direction-links:end -->
+
 > 自主移动、地形适应与运动先验，汇总相关论文、方法与项目。
 
 当前收录 **64** 篇论文／技术报告、**79** 个项目。
@@ -65,7 +69,7 @@
 | --- | --- | --- |
 | [DAVIS：深度视觉驱动的人形足球技能](论文逐篇解读/P218.md) | 以头部深度图和本体历史端到端输出全身PD目标，使用可见性几何监督、真值渐进替换与AMP先验训练射门和盘带。 | [原文](https://arxiv.org/abs/2609.28175) · [项目页](https://thusi-lab.github.io/DAVIS/) |
 | [Deep Whole-Body Parkour：基于深度强化学习的全身跑酷控制](论文逐篇解读/P020.md) | 将场景扫描与人体示范配对，以参考、本体历史和深度输入修正人形跑酷中的多接触时机。 | [原文](https://arxiv.org/abs/2601.07701) · [代码](https://github.com/project-instinct/InstinctLab/blob/main/source/instinctlab/instinctlab/tasks/shadowing/README.md) · [项目页](https://project-instinct.github.io/deep-whole-body-parkour/) |
-| [DODGER：面向动态障碍导航的安全引导强化学习](论文逐篇解读/P367.md) | 把动态抛物CBF约束用作训练引导而非执行时安全过滤，策略在自身动作下采样并通过约束感知回报学习；MuJoCo全身仿真和Unitree G1激光雷达实机验证动态避障。 | [原文](https://arxiv.org/abs/2609.38873) · [代码](https://github.com/psh0823/dodger) · [项目页](https://psh0823.github.io/dodger-homepage/) |
+| [DODGER：面向动态障碍导航的安全引导强化学习](论文逐篇解读/P367.md) | 训练阶段将动态抛物控制屏障函数（DPCBF）安全约束转为策略引导回报，策略依自身动作采样学习并输出导航命令供低层控制器跟踪；MuJoCo全身仿真和Unitree G1激光雷达实机验证动态避障。 | [原文](https://arxiv.org/abs/2609.38873) · [代码](https://github.com/psh0823/dodger) · [项目页](https://psh0823.github.io/dodger-homepage/) |
 | [DPL：以跨模态地形重建驱动深度感知人形运动](论文逐篇解读/P149.md) | 以深度合成、跨注意力地形重建和教师学生蒸馏，将深度输入映射为人形地形行走动作。 | [原文](https://arxiv.org/abs/2510.07152) |
 | [FootQuery：未来落脚点引导的深度历史检索](论文逐篇解读/P216.md) | 根据本体状态预测每只脚的下一触地点，并从深度历史中检索相关区域，与全局视觉记忆融合生成关节动作。 | [原文](https://arxiv.org/abs/2609.21447) |
 | [Generate, Track, Improve：强化学习微调的感知多技能人形运动](论文逐篇解读/P215.md) | 以深度条件流匹配生成全身参考、CLF-RL跟踪器执行，并用结构化搜索与AWR微调生成器，改善未见地形通过和技能选择。 | [原文](https://arxiv.org/abs/2609.31577) · [项目页](https://zolkin1.github.io/generate-track-improve/) |
@@ -95,7 +99,7 @@
 | [Click-and-Traverse](https://github.com/GalaxyGeneralRobotics/Click-and-Traverse) | 点击目标驱动的人形复杂地形移动 | 用户在网格地图上点击目标；HumanoidPF将目标与障碍关系编码为多个身体部位的方向观测和避碰奖励，结合真实场景裁剪与程序化障碍训练全身遍历策略。实机使用激光雷达惯性SLAM与OctoMap更新环境地图，使G1绕行、侧身、下蹲和跨越障碍。 |
 | [DAVIS](https://thusi-lab.github.io/DAVIS/) | 视觉与地形感知运控 | 以头部深度图和本体历史端到端输出全身PD目标，使用可见性几何监督、真值渐进替换与AMP先验训练射门和盘带。 |
 | [Deep Whole-Body Parkour](https://project-instinct.github.io/deep-whole-body-parkour/) | 感知全身动作跟踪 | 将地形感知接入参考动作跟踪，以动作地形配对、深度修正和影子跟踪训练G1全身跑酷策略。 |
-| [DODGER](https://github.com/psh0823/dodger) | 视觉与地形感知运控 | 把动态抛物CBF约束用作训练引导而非执行时安全过滤，策略在自身动作下采样并通过约束感知回报学习；MuJoCo全身仿真和Unitree G1激光雷达实机验证动态避障。 |
+| [DODGER](https://github.com/psh0823/dodger) | 视觉与地形感知运控 | 训练阶段将动态抛物控制屏障函数（DPCBF）安全约束转为策略引导回报，策略依自身动作采样学习并输出导航命令供低层控制器跟踪；MuJoCo全身仿真和Unitree G1激光雷达实机验证动态避障。 |
 | [Generate, Track, Improve](https://zolkin1.github.io/generate-track-improve/) | 视觉与地形感知运控 | 以深度条件流匹配生成全身参考、CLF-RL跟踪器执行，并用结构化搜索与AWR微调生成器，改善未见地形通过和技能选择。 |
 | [Hiking in the Wild](https://project-instinct.github.io/hiking-in-the-wild/) | 感知人形徒步 | 从原始深度生成G1动作，并以地形边缘、足部安全约束和平坦落脚区采样处理野外徒步。 |
 | [Humanoid Parkour Learning](https://humanoid4parkour.github.io/) | 人形感知跑酷 | 以深度图和全身关节动作策略控制人形机器人跨越连续障碍，提供跑酷任务与对照实现。 |
@@ -162,7 +166,7 @@
 | 论文／报告 | 主要方法与用途 | 原文／代码 |
 | --- | --- | --- |
 | [DDC：支撑脚相对动态质心驱动的人形单腿平衡](论文逐篇解读/P335.md) | DDC 将质心位置与速度变换为支撑脚相对动态 CoM 观测，配合人体姿势控制奖励和 FastSAC 直接训练单腿平衡策略，并通过跨仿真评测选择部署检查点。 | [原文](https://arxiv.org/abs/2608.00500) · [项目页](https://estoil.github.io/DDC/) |
-| [ADP：以对抗动力学分布训练人形抗扰运动](论文逐篇解读/P148.md) | 以轨迹优化数据学习对抗动力学先验，训练人形速度跟踪和推扰恢复而非逐帧模仿。 | [原文](https://arxiv.org/abs/2607.03454) · [项目页](https://seokju-lee.github.io/adp/) |
+| [ADP：以对抗动力学分布训练人形抗扰运动](论文逐篇解读/P148.md) | 以轨迹优化生成的动力学窗口训练对抗判别器并形成动力学先验，提升人形速度跟踪与推扰恢复能力。 | [原文](https://arxiv.org/abs/2607.03454) · [项目页](https://seokju-lee.github.io/adp/) |
 | [Light REACT：让受扰与受损的人形机器人继续行动](论文逐篇解读/P425.md) | 执行器损失、关节锁定和膝部活动限制会改变动力学；需要依靠身体交互历史在恢复、直立移动和爬行间切换。 | [原文](https://www.lightorigins.com/blog/light-react) |
 | [LocoWM：世界模型引导的高精度运动残差适应](论文逐篇解读/P365.md) | 动作条件世界模型根据本体历史与基策略动作预测任务状态序列，残差适配器提前修正；Go2-W完成地形调平、加速补偿与抗推实机演示，G1搬盘验证仅在仿真。 | [原文](https://arxiv.org/abs/2609.39179) · [代码](https://github.com/zhaozijie2022/LocoWM) · [项目页](https://zhaozijie2022.github.io/LocoWM/) |
 | [PAC-MAN：感知约束下的人形全身安全躲避](论文逐篇解读/P336.md) | PAC-MAN 以分割掩码深度和本体状态驱动全身躲球策略，在训练期用逐连杆 CBF 安全奖励塑形，并以 AMP 人体躲避动作先验协调关节响应。 | [原文](https://arxiv.org/abs/2607.28623) · [代码](https://github.com/lzyang2000/perceptive_cbf_rl) · [项目页](https://lzyang2000.github.io/perceptive_cbf_rl/) |

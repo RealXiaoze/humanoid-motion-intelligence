@@ -1,5 +1,9 @@
 # 世界模型、VLA与Agent
 
+<!-- direction-links:start -->
+研究方向入口：[世界模型与通用动作策略](研究方向_世界模型与通用动作策略.md) · [任务规划与长程自主执行](研究方向_任务规划与长程自主执行.md)
+<!-- direction-links:end -->
+
 > 视觉语言理解、未来预测与任务决策，汇总相关论文、方法与项目。
 
 当前收录 **234** 篇论文／技术报告、**196** 个项目。
@@ -146,7 +150,7 @@
 | [Learning by Watching：人类视频驱动的技能迁移](论文逐篇解读/P398.md) | Skild AI以人类操作视频作为新技能微调的主要示范来源，并以少于一小时机器人数据进行本体适配，尝试弥补实时遥操作的规模与环境多样性瓶颈。 | [原文](https://skild.ai/blogs/learning-by-watching) |
 | [Learning While Deploying：用机器人车队在线改进通用策略](论文逐篇解读/P443.md) | LWD在16台G1构成的车队上闭环进行离线到在线强化学习，以DIVL学习回报分布、以QAM更新流式VLA；四小时在线预算、八项实机任务下平均得分0.95，长程子步骤平均0.91。 | [原文](https://arxiv.org/abs/2605.00416) · [项目页](https://learning-while-deploying.github.io/) |
 | [Light-O1：从互联网人类视频学习可迁移的全身动作先验](论文逐篇解读/P424.md) | 机器人本体示范覆盖窄，难以从长尾人类行为中获得广泛动作先验并迁移到机器人动作空间。 | [原文](https://www.lightorigins.com/en/blog/light-o1) · [代码](https://github.com/lightorigins/Light-O1) |
-| [Mind-0：从人类数据学习、服务多种机器人的统一智能](论文逐篇解读/P411.md) | MindOn官方技术文章描述跨本体人类示范管线、全身动作基础模型、少量实机数据训练的执行补偿和高低层分层协调；展示人形及双臂机器人工作流，并报告末端跟踪低于3cm、G1操作精度低于1cm的公司指标。来源为公司技术文章而非arXiv论文。 | [原文](https://www.mindon.tech/blog/mind-0/) |
+| [Mind-0：从人类数据学习、服务多种机器人的统一智能](论文逐篇解读/P411.md) | MindOn官方技术文章介绍跨本体人类示范管线、全身动作基础模型、少量实机数据训练的执行补偿和高低层分层协调；展示人形及双臂机器人工作流，并报告末端跟踪低于3cm、G1操作精度低于1cm的公司指标。 | [原文](https://www.mindon.tech/blog/mind-0/) |
 | [N0-Foundation：面向触觉智能的视触觉操作基座](论文逐篇解读/P322.md) | N0-Foundation将视触觉采集、力场标定、OpenNeoData、NeoForce时序表征与NeoReal/NeoSim评测连接起来，使操作策略能够使用跨传感器一致的三轴接触力信息。 | [原文](https://arxiv.org/abs/2608.29601) · [代码](https://github.com/neoteai/N0-Foundation) · [项目页](https://research.neoteai.com/n0-foundation/) |
 | [UCAG-P：相机中心动作几何统一异构操作策略](论文逐篇解读/P324.md) | 以相机坐标中的腕部/末端和抓取中心轨迹作为跨本体共享动作，再结合标定、Jacobian和本体状态翻译为执行命令，统一训练人类、单臂、双臂和人形数据。 | [原文](https://arxiv.org/abs/2608.26058) · [代码](https://github.com/Public-BOTs/ucag-p) · [项目页](https://public-bots.github.io/UCAG-P/) |
 | [Pelican-VLA 0.5：以动作前的视觉瓶颈形成任务相关注意](论文逐篇解读/P264.md) | 单一Qwen3-VL主干以BotTokens作为感知到动作的窄接口，并联合预测动作、未来图像潜变量和语言任务表示；动作输出是策略目标，未来帧为训练辅助监督。 | [原文](https://arxiv.org/abs/2607.06655) · [代码](https://github.com/Open-X-Humanoid/Pelican-VLA05) |
@@ -312,7 +316,7 @@
 | [Cosmos Policy：基于视频扩散的机器人策略与规划](论文逐篇解读/P254.md) | 将Cosmos视频生成主干后训练为 visuomotor policy，并扩展未来观测和值预测以支持候选动作规划。 | [原文](https://arxiv.org/pdf/2601.16163) · [代码](https://github.com/NVlabs/cosmos-policy) · [项目页](https://research.nvidia.com/labs/dir/cosmos-policy/) |
 | [DELE-w0.5：用未来状态辅助训练，部署时直接生成动作](论文逐篇解读/P193.md) | 训练时联合动作与未来视觉潜变量，部署时移除未来分支以直接生成双臂操作动作。 | [原文](https://arxiv.org/abs/2608.22067) · [项目页](https://deepleap-x.com/research/dele-w0.5) |
 | [Delta-0：世界动作模型驱动的全身移动操作](论文逐篇解读/P249.md) | 将潜在世界动作模型与学习型全身控制器连接，以人体数据预训练、仿真评测和实机RL后训练完成家庭移动操作。 | [原文](https://deltai.com/en/blog/delta-0) |
-| [DexWorldModel：以因果潜变量世界模型自动学习具身任务](论文逐篇解读/P406.md) | 用DINOv3潜视觉状态与共享Mixture-of-Transformers联合生成未来状态和动作，通过双态测试时记忆隔离真实历史与想象分支，并用SAI将部分去噪与实机执行重叠。论文结合EmbodiChain/ODS仿真数据生成，在RoboTwin仿真和四类零样本Sim2Real操作任务评测；EmbodiChain不是DexWorldModel模型代码。 | [原文](https://arxiv.org/abs/2604.16484) · [项目页](https://en.dexforce.com/core.html) |
+| [DexWorldModel：以因果潜变量世界模型自动学习具身任务](论文逐篇解读/P406.md) | 用DINOv3潜视觉状态与共享Mixture-of-Transformers联合生成未来状态和动作，以双态测试时记忆隔离真实历史与想象分支，并用SAI将部分去噪与实机执行重叠。EmbodiChain是配套仿真数据与场景生成项目；论文在RoboTwin仿真和四类零样本Sim2Real操作任务评测DexWorldModel。 | [原文](https://arxiv.org/abs/2604.16484) · [项目页](https://en.dexforce.com/core.html) |
 | [DIAL：潜在世界建模解耦意图与动作](论文逐篇解读/P310.md) | System-2以VLM query预测未来ViT视觉latent，System-1以当前-未来latent差异和本体状态驱动DiT flow matching生成动作，并经warmup后端到端联合优化。 | [原文](https://arxiv.org/abs/2603.29844) · [代码](https://github.com/xpeng-robotics/DIAL) · [项目页](https://xpeng-robotics.github.io/dial) |
 | [DiT4DiT：联合视频动力学与动作生成的泛化机器人控制](论文逐篇解读/P313.md) | 联合flow matching生成未来视频latent与机器人动作，并抽取视频DiT去噪中间特征条件化动作DiT，在LIBERO、RoboCasa-GR1和Unitree G1评测空间操作及分布变化泛化。 | [原文](https://arxiv.org/abs/2603.10448) · [代码](https://github.com/Mondo-Robotics/DiT4DiT) |
 | [DualWAM：异步全局规划与局部闭环修正](论文逐篇解读/P346.md) | DualWAM用高噪声System 2异步生成长时程全局世界动作计划，并让低噪声腕部System 1基于新观测精修时间对齐局部视频与动作窗口，在真实双本体任务上评测成功率和时延。 | [原文](https://arxiv.org/abs/2609.24868) · [项目页](https://steveouo.github.io/DualWAM-Web/) |
@@ -535,7 +539,7 @@
 | [Action-JND：按动作可容忍扰动压缩视觉语言动作模型 Token](论文逐篇解读/P358.md) | Action-JND训练轻量逐Token容忍度估计器，预测视觉特征扰动在多大程度内仍能维持VLA动作响应；推理时将容忍度分数用于时序KV复用或直接剪枝。LIBERO上的OpenVLA实验在87.5%剪枝时报告42.00%平均成功率与30.16 ms延迟。 | [原文](https://arxiv.org/abs/2608.21247) |
 | [RTR：潜空间高频连续动作块与异步执行连续性](论文逐篇解读/P312.md) | 以连续VAE压缩60Hz高频动作块，并用Reuse-then-Refine重整异步推理后的拼接轨迹，改善xArm接触操作的动作平滑性、块间连续和执行时长。 | [原文](https://arxiv.org/abs/2605.24931) · [代码](https://github.com/tars-robotics/RTR) |
 | [SOP：把多机器人在线采集和VLA后训练连成系统](论文逐篇解读/P444.md) | SOP是多机器人在线后训练系统：并行actor将自主轨迹和人工介入上传在线缓冲区，云端learner混合离线数据更新共享VLA并异步分发；HG-DAgger与RECAP实机验证中，四actor配置在180分钟达到0.925成功率，达到0.8用时71.7分钟。 | [原文](https://arxiv.org/abs/2601.03044) · [项目页](https://www.agibot.com/research/sop) |
-| [GPT-as-Policy：大模型数值动作能力的六域评测](论文逐篇解读/P374.md) | 跨夹爪、灵巧手、移动操作、导航、行走和人形移动操作比较GPT-6 Astra直接数值控制与混合控制的接口和结果；混合模式由低层策略或全身控制器执行动作，13/30是回报超过基线的任务数而非成功率。 | [原文](https://arxiv.org/abs/2609.38537) · [代码](https://github.com/anonymous-report-421/GPT-as-Policy) · [项目页](https://galaxygeneralrobotics.github.io/astra-policy/) |
+| [GPT-as-Policy：大模型数值动作能力的六域评测](论文逐篇解读/P374.md) | 在夹爪、灵巧手、移动操作、导航、行走和人形移动操作六域评估GPT-6 Astra直接数值动作控制及与低层策略或全身控制器协作的接口和效果；人形实验中13/30项任务的回报超过已发表基线。 | [原文](https://arxiv.org/abs/2609.38537) · [代码](https://github.com/anonymous-report-421/GPT-as-Policy) · [项目页](https://galaxygeneralrobotics.github.io/astra-policy/) |
 | [EffVLA：由动作头初始化、规模与延迟共同决定的高效 VLA](论文逐篇解读/P356.md) | EffVLA固定SigLIP2/Qwen2.5骨干与训练流程，系统比较动作头结构、损失、初始化、规模和推理轮数，并配对测量设备延迟。论文发现从语言主干复制末层初始化是跨规模最稳定的性能因素，并在LIBERO扰动集和SO-ARM101分拣任务验证迁移。 | [原文](https://arxiv.org/abs/2609.13984) · [代码](https://github.com/MindVLA-Team/EFFVLA) · [项目页](https://mindvla-team.github.io/EFFVLA) |
 | [WAM 实时执行：异步动作块衔接与控制平滑](论文逐篇解读/P439.md) | 比较世界动作模型的同步与异步动作块执行及四种衔接策略；在10 Hz双臂平台的三类任务实测中，时序对齐是前提，训练时前缀条件化整体兼顾精度、平滑度与耗时。 | [原文](https://arxiv.org/abs/2608.01880) · [代码](https://github.com/shengshu-ai/Motubrain) · [项目页](https://www.motubrain.cn/en/blog/beyond-stalls-deploying-world-action-models/) |
 | [WorldArena：具身世界模型感知与功能效用统一评测基准](论文逐篇解读/P116.md) | 以视觉指标和数据生成、策略评价、动作规划任务共同评估具身世界模型的感知与功能效用。 | [原文](https://arxiv.org/abs/2602.08971) · [代码](https://github.com/tsinghua-fib-lab/WorldArena) · [项目页](https://world-arena.ai/) |
@@ -554,7 +558,7 @@
 | [FoldQuantVLA](https://github.com/cair-vinuni/FoldQuantVLA) | 训练、部署与评测工具 | FoldQuantVLA在无需策略再训练的后训练量化中，为共享激活位置固定一致变换坐标，将其逆变换折叠进各消费者权重，并在原生整数路径执行W4A4；对语言主干敏感输出投影可采用选择性W8A8。Orin实机评估显示四项任务合计成功率为92.5%，均匀W4A4为80.0%。 |
 | [fourier-lerobot](https://github.com/FFTAI/fourier-lerobot) | VLA训练与部署 | 将相机、语言和机器人状态输入策略生成动作块，再连接本体接口执行并回收任务结果。 |
 | [GAUGE](https://github.com/InternRobotics/GAUGE) | 训练、部署与评测工具 | GAUGE以22类真实运动捕捉实验、校准物理参数和重复试验误差为共同参照，分别比较数值物理引擎的轨迹保真度与视频世界模型的物理定律拟合、参数准确度。 |
-| [GPT-as-Policy](https://github.com/anonymous-report-421/GPT-as-Policy) | 训练、部署与评测工具 | 跨夹爪、灵巧手、移动操作、导航、行走和人形移动操作比较GPT-6 Astra直接数值控制与混合控制的接口和结果；混合模式由低层策略或全身控制器执行动作，13/30是回报超过基线的任务数而非成功率。 |
+| [GPT-as-Policy](https://github.com/anonymous-report-421/GPT-as-Policy) | 训练、部署与评测工具 | 在夹爪、灵巧手、移动操作、导航、行走和人形移动操作六域评估GPT-6 Astra直接数值动作控制及与低层策略或全身控制器协作的接口和效果；人形实验中13/30项任务的回报超过已发表基线。 |
 | [gr00t-agilex](https://github.com/agilexrobotics/gr00t-agilex) | VLA训练与部署 | 将相机、语言和机器人状态输入策略生成动作块，再连接本体接口执行并回收任务结果。 |
 | [HIL-UMI](https://hil-umi.github.io/) | 训练、部署与评测工具 | HIL-UMI在UMI人类演示流中并行比较π0.5动作分布并采集策略盲区，另以低优势进度片段修正价值估计，再用混合历史/新增数据做优势条件克隆。 |
 | [lerobot-agilex](https://github.com/agilexrobotics/lerobot-agilex) | VLA训练与部署 | 将相机、语言和机器人状态输入策略生成动作块，再连接本体接口执行并回收任务结果。 |

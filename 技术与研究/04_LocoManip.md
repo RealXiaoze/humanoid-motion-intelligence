@@ -1,5 +1,9 @@
 # LocoManip
 
+<!-- direction-links:start -->
+研究方向入口：[物体交互与全身操作](研究方向_物体交互与全身操作.md)
+<!-- direction-links:end -->
+
 > 移动、平衡、接触与操作协同，汇总相关论文、方法与项目。
 
 当前收录 **72** 篇论文／技术报告、**60** 个项目。
@@ -47,7 +51,7 @@
 | [SceneBot：接触提示的场景交互人形全身跟踪](论文逐篇解读/P094.md) | 从动作恢复场景并生成接触标签，以接触提示条件化人形跟踪器，区分支撑地面与交互对象。 | [原文](https://arxiv.org/abs/2606.27581) · [项目页](https://ericcsr.github.io/scenebot/) |
 | [SMASH：机载视觉与可扩展全身动作的人形乒乓球控制](论文逐篇解读/P474.md) | Motion-VAE扩展G1可执行击球动作，双机载相机与自适应滤波估计来球和机器人状态；机载感知真球测试20次回球12次。 | [原文](https://arxiv.org/abs/2604.01158) · [项目页](https://mmlab.hk/Smash/) |
 | [SpikePingpong：用快慢视觉校正高速击球](论文逐篇解读/P480.md) | 将RGB-D物理弹道预测与脉冲相机接触标签监督的快慢校正结合，并以约2,000条示范训练关节修正策略；在ABB机械臂上评估30厘米、20厘米容差内的目标落点与连续回击。 | [原文](https://arxiv.org/abs/2506.06690) · [代码](https://github.com/PKUHaoWang/SpikePingpong) |
-| [TouchGuide：用触觉引导推理时的接触操作](论文逐篇解读/P421.md) | 视觉运动策略在接触丰富任务中缺少对接触可行性、滑移和局部物理状态的推理，纯视觉动作容易在接触阶段偏离可执行区域。 | [原文](https://arxiv.org/abs/2601.20239) · [项目页](https://martelzhang.github.io/touchguide) |
+| [TouchGuide：用触觉引导推理时的接触操作](论文逐篇解读/P421.md) | 视觉运动策略先根据视觉观测生成粗略候选动作；任务专属接触物理模型融合视觉、触觉与候选动作，在扩散去噪或流匹配采样后期提供可行性梯度，引导动作贴合当前接触状态，无需重训基础策略。 | [原文](https://arxiv.org/abs/2601.20239) · [项目页](https://martelzhang.github.io/touchguide) |
 | [DexGraspVLA：面向泛化灵巧抓取的视觉语言动作框架](论文逐篇解读/P416.md) | 高层视觉语言规划器把开放式指令转为目标物体与框选区域，SAM/Cutie 生成并跟踪掩码，冻结 DINOv2 表征和 diffusion action chunk 策略执行灵巧抓取；以 2,094 条示范训练，并在新物体、背景、照明及长程操作上实测。 | [原文](https://arxiv.org/abs/2502.20900) · [代码](https://github.com/Psi-Robot/DexGraspVLA) · [项目页](https://dexgraspvla.github.io/) |
 | [DoorMan：面向人形像素到动作策略Sim2Real迁移的开门系统](论文逐篇解读/P092.md) | 以阶段重置训练特权开门教师，再经DAgger和GRPO优化RGB学生的像素到动作Sim2Real控制。 | [原文](https://arxiv.org/abs/2512.01061) · [代码](https://github.com/NVlabs/GR00T-VisualSim2Real) · [项目页](https://doorman-humanoid.github.io/) |
 | [VIRAL：面向人形移动操作的大规模视觉Sim2Real](论文逐篇解读/P093.md) | 以特权教师、DAgger学生和视觉随机化训练RGB人形策略，面向长程搬运与移动操作Sim2Real。 | [原文](https://arxiv.org/abs/2511.15200) · [代码](https://github.com/NVlabs/GR00T-VisualSim2Real) · [项目页](https://viral-humanoid.github.io/) |
@@ -57,7 +61,7 @@
 
 | 项目 | 主要用途 | 功能与特点 |
 | --- | --- | --- |
-| [#sudo R1](https://www.sudo.ai/) | 仿真训练通用操作系统 | 以动态观察条件策略在仿真中执行连续物体操作；官方介绍其观测条件动作频率为15至25Hz并采用逐步闭环输出而非开环动作块。 |
+| [#sudo R1](https://www.sudo.ai/) | 仿真训练通用操作系统 | 在仿真中以视觉观测条件策略执行连续物体操作；官方介绍策略每步根据最新观测闭环更新动作，观测条件动作频率为15至25Hz。 |
 | [DexGraspVLA](https://github.com/Psi-Robot/DexGraspVLA) | 灵巧抓取视觉语言动作策略 | 高层视觉语言规划器把指令转成目标物体与区域，分割掩码跟踪保持抓取对象对应，冻结DINOv2视觉特征与扩散动作块控制器执行灵巧抓取；项目提供控制器训练、评测和推理记录入口。 |
 | [DoorMan](https://doorman-humanoid.github.io/) | 视觉物理交互 | 以分阶段reset和PPO训练特权开门教师，通过DAgger蒸馏为RGB视觉学生，再用GRPO改善部分可观测性下的闭环行为。门体、把手动力学、材质、光照及相机参数随机化覆盖物理与视觉变化，策略在G1上完成开门与穿门。 |
 | [LadderMan](https://github.com/amazon-far/LadderMan) | LocoManip | LadderMan 从单条参考动作学习不同梯具的攀爬专家，再以混合模仿与强化学习蒸馏为深度视觉闭环全身策略，并以双智能体实现梯上操作和平衡。 |
