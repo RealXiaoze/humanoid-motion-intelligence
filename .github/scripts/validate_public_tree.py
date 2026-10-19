@@ -351,7 +351,7 @@ def check_readme_counts(errors: list[str]) -> None:
             errors.append(f"README缺少直接展示的研究方向：{title}")
             continue
         section = readme.split(heading, 1)[1].split('\n### ', 1)[0].split('<!-- home-tracks:end -->', 1)[0]
-        rows = [line for line in section.splitlines() if re.match(r'^\| \[\d+\. ', line)]
+        rows = [line for line in section.splitlines() if re.match(r'^\| \[\d+\.(?: |&nbsp;)', line)]
         if len(rows) != route_count:
             errors.append(f"README展开技术路线数量不符：{title}")
         if '| 技术路线 | 核心思路 | 代表项目 |' not in section:
