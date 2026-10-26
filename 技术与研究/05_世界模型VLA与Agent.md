@@ -6,7 +6,7 @@
 
 > 视觉语言理解、未来预测与任务决策，汇总相关论文、方法与项目。
 
-当前收录 **234** 篇论文／技术报告、**195** 个项目。
+当前收录 **234** 篇论文／技术报告、**201** 个项目。
 
 ## 本页导航
 
@@ -110,7 +110,7 @@
 
 根据观测与任务条件生成可执行动作或动作块；具体接口可增加本体状态，涵盖VLA、视觉运动模仿学习、跨本体策略与后训练。
 
-**101** 篇论文／报告 · **73** 个项目
+**101** 篇论文／报告 · **76** 个项目
 
 #### 论文与技术报告
 
@@ -166,7 +166,7 @@
 | [The Gaussian Is Enough：大行为模型微调中的动作先验比较](论文逐篇解读/P351.md) | 该研究对七种动作先验、五档微调数据比例和三个行为模型开展仿真与硬件对照，发现通常高斯先验已足够，约5%示教数据时嵌入扰动先验可提高成功率。 | [原文](https://arxiv.org/abs/2609.27070) · [项目页](https://cxu-tri.github.io/non_gaussian_FT/) |
 | [GEN-1 Many Hands：通过多末端交互经验学习工具适配](论文逐篇解读/P412.md) | 以多末端交互预训练、工具微调和运行时视觉反馈适配不同夹爪、灵巧手及操作工具。 | [原文](https://generalistai.com/blog/towards-machines-with-a-thousand-hands) |
 | [TurboVLA：把视觉语言直接送入低延迟动作解码器](论文逐篇解读/P208.md) | 以紧凑视觉语言编码和动作解码器直接从视觉、语言与本体状态生成低延迟操作动作。 | [原文](https://arxiv.org/abs/2607.27205) · [代码](https://github.com/H-EmbodVis/TurboVLA) · [项目页](https://h-embodvis.github.io/TurboVLA/) |
-| [VINE：生成式控制策略的价值梯度后训练](论文逐篇解读/P184.md) | 重构流匹配去噪插值状态，使价值梯度可稳定优化生成策略，用于离线强化学习后训练。 | [原文](https://arxiv.org/abs/2607.10369) · [项目页](https://github.com/AgibotTech/vine) |
+| [VINE：生成式控制策略的价值梯度后训练](论文逐篇解读/P184.md) | 重构流匹配去噪插值状态，使价值梯度可稳定优化生成策略，用于离线强化学习后训练。 | [原文](https://arxiv.org/abs/2607.10369) · [代码](https://github.com/AgibotTech/vine-code) · [项目页](https://github.com/AgibotTech/vine) |
 | [Wall-OSS-0.5：梯度桥接预训练的多本体部署VLA](论文逐篇解读/P299.md) | 以 Mixture-of-Transformers 路由视觉语言与动作专家，通过离散动作 token 梯度桥接预训练主干，再用连续流匹配动作专家形成多本体部署策略。 | [原文](https://arxiv.org/abs/2605.30877) · [代码](https://github.com/X-Square-Robot/wall-x) · [项目页](https://x2robot.com/en/oss) |
 | [X-Tokenizer：将动作语义接入VLA预训练的分层编码器](论文逐篇解读/P293.md) | 用语义残差量化将跨本体连续delta动作分层为离散意图码和执行残差，并以动作掩码预测、冻结VLM对齐和下一帧特征预测塑造VLA表征。 | [原文](https://arxiv.org/abs/2606.14752) · [代码](https://github.com/X-Square-Robot/X-Tokenizer) · [项目页](https://x-square-robot.github.io/X-Tokenizer_projectPage/) |
 | [Xiaomi-Robotics-0：面向实时执行的双臂操作VLA](论文逐篇解读/P286.md) | 从图像、语言和本体状态生成双臂连续动作块，以流匹配和延迟前缀条件的异步拼接维持实时执行，并在仿真及LEGO分拣、毛巾折叠真机任务评测。 | [原文](https://arxiv.org/abs/2602.12684) · [代码](https://github.com/XiaomiRobotics/Xiaomi-Robotics-0) · [项目页](https://xiaomi-robotics-0.github.io/) |
@@ -237,6 +237,7 @@
 | [DualManip](https://lichengxi1.github.io/Dualmanip) | VLA与通用操作策略 | DualManip用较慢的语义路径拆解任务并初始化交互点，再用实时RGB-D几何路径在物体移动或形变时更新模板对应关系和抓取接触位置；信息交互模块校验几何更新，必要时触发语义重规划。论文在六项真实操作任务中评估静态、单次变化和连续变化场景。 |
 | [DYNA-1](https://www.dyna.co/research/dyna-1) | 进展奖励驱动的操作系统 | 以任务进展评分模型辨别有效操作进度并驱动自主探索、错误恢复和训练数据筛选；将连续采集流切分为片段并标注子任务与进展状态。 |
 | [Fast-in-Slow](https://github.com/CHEN-H01/Fast-in-Slow) | VLA与机器人策略 | 以慢速系统规划任务并由快速策略执行操作，研究长时决策与实时动作的分层接口。 |
+| [Focus-VLWA](https://github.com/MachEmbodied/Focus-VLWA) | 模型与研究资源 | 结合视觉历史、未来世界状态与动作学习，提供双臂操作的数据处理、后训练和本地推理入口。 |
 | [GalaxeaDP](https://github.com/OpenGalaxea/GalaxeaDP) | 星海图双臂移动操作扩散策略 | 以相机观测、机器人状态和任务条件生成连续动作块，提供双臂及移动操作扩散策略。 |
 | [GalaxeaVLA](https://github.com/OpenGalaxea/GalaxeaVLA) | 星海图移动操作视觉语言动作模型 | 将视觉、语言和本体状态转为Galaxea机器人动作，并以Action Codec连接自回归推理与连续控制。 |
 | [GEN-0](https://generalistai.com/blog/gen-0) | 物理交互基础模型 | 以Harmonic Reasoning处理异步连续时间的感知与动作token并将视觉观察和身体动作统一到通用操作模型中；公司展示长程真实操作任务。 |
@@ -276,6 +277,7 @@
 | [RynnBrain](https://github.com/alibaba-damo-academy/RynnBrain) | VLA与通用操作策略 | 在具身时空基础模型中加入显式3D物体框和接触点监督，并以81维分组遮罩与RTC构建G1、Astribot、Tianji-Wuji跨本体flow-matching动作策略。 |
 | [RynnVLA-001](https://github.com/alibaba-damo-academy/RynnVLA-001) | VLA与通用操作策略 | 在人类第一视角操作视频上联合学习未来帧与人体关键点轨迹，再以机器人示范训练动作块潜码预测。部署时由视觉语言模型生成潜码，经过机器人域ActionVAE解码为连续机器人动作序列。 |
 | [S1](https://skild.ai/blogs/s1) | 视频示范条件操作模型 | 将人类视频示范作为任务条件并从多来源情景数据预训练；推理时输入演示而不更新模型权重，借助示范上下文将目标动作迁移到机器人执行。 |
+| [ScaleNav](https://github.com/MachEmbodied/ScaleNav) | 模型与研究资源 | 利用无动作标注的互联网视频预训练语言条件局部导航策略，将视觉与语言目标转为导航动作；由理想汽车与高校团队合作研究。 |
 | [Skild Brain](https://www.skild.ai/blogs/omni-bodied) | 跨本体通用机器人策略 | 在大量不同机器人形态与长时仿真交互上训练单一策略，并测试训练中未出现本体的零样本执行；失败轨迹可作为上下文提示加入后续尝试。 |
 | [SmolVLA](https://huggingface.co/blog/smolvla) | VLA与通用操作策略 | 以SmolVLM2和流匹配Action Expert构建0.45B轻量VLA，在481个社区数据集上预训练，通过视觉token压缩、层跳过和异步动作队列降低推理等待，并评估LIBERO、Meta-World及SO100/SO101真机任务。 |
 | [Spirit-v1.5](https://github.com/Spirit-AI-Team/spirit-v1.5) | 千寻智能具身操作基础模型 | 根据视觉、语言和机器人状态生成操作动作，面向多任务及真实场景泛化研究。 |
@@ -286,6 +288,7 @@
 | [UnifoLM-WLA-1.0](https://github.com/unitreerobotics/unifolm-wla) | 人形机器人基础模型 | Unitree仓库公开约6B参数的人形机器人基础模型，以多模态交互式世界建模支持桌面与全身操作；官方介绍使用约2500小时实机数据并覆盖64项任务，同时提供动作专家训练、模型服务和微调入口。 |
 | [UniPi](https://universal-policy.github.io/) | 文本引导视频规划与动作解码 | 从任务语言与当前图像生成未来视觉计划，再由独立逆动力学模型解码可执行动作。 |
 | [video-prediction-policy](https://github.com/roboterax/video-prediction-policy) | 视频预测表征机器人策略 | 先将视频扩散模型微调为图像与语言条件的操作视频预测模型，再以其预测性视觉表征为条件学习隐式逆动力学，通过扩散Transformer策略生成动作序列。仓库提供视频模型、动作模型训练及CALVIN评测流程。 |
+| [VINE](https://github.com/AgibotTech/vine-code) | 模型与研究资源 | 重构流匹配策略的插值状态，使价值梯度稳定参与生成式控制策略后训练；代码连接生成策略与离线强化学习优化。 |
 | [VIPA-VLA](https://github.com/BeingBeyond/VIPA-VLA) | VLA与通用操作策略 | 用人手与物体米制空间标注、三维关系问答及离散腕部轨迹预训练双编码器VLA，再以flow-matching DiT适配机器人动作块。 |
 | [WALL-X](https://github.com/X-Square-Robot/WALL-X) | VLA与通用操作策略 | 以 Mixture-of-Transformers 路由视觉语言与动作专家，通过离散动作 token 梯度桥接预训练主干，再用连续流匹配动作专家形成多本体部署策略。 |
 | [WholeBodyVLA](https://github.com/OpenDriveLab/WholebodyVLA) | 人形VLA | 从无动作标注的第一视角视频学习潜在动作，将视觉语言条件解码为双臂动作和运动命令，用于视频驱动的机器人动作生成。 |
@@ -302,7 +305,7 @@
 
 在观测和任务条件下联合学习动作与未来世界，通过世界预测支持动作生成、候选评估或闭环规划；部分方法部署时仅运行动作分支。
 
-**54** 篇论文／报告 · **40** 个项目
+**54** 篇论文／报告 · **42** 个项目
 
 #### 论文与技术报告
 
@@ -400,6 +403,8 @@
 | [Unified World Models (UWM)](https://github.com/WEIRDLabUW/unified-world-model) | 动作条件世界建模与机器人策略预训练 | 在同一扩散模型中学习动作块及其未来视觉后果，为策略、前向动力学、逆动力学和视频-only训练提供接口。 |
 | [UnifoLM-WMA-0](https://github.com/unitreerobotics/unifolm-world-model-action) | 宇树世界模型与动作框架 | 联合预测未来状态与动作序列，连接数据处理、训练、推理流程并适配G1部署。 |
 | [UniT](https://github.com/xpeng-robotics/UniT) | 世界动作模型（WAM） | 以共享RQ-VAE码本将视觉、动作和融合分支编码为跨本体离散潜码，通过跨重建连接VLA动作策略与动作条件世界模型。策略实验包括RoboCasa-GR1和IRON-R01实机，DROID则用于动作条件未来视频预测评测。 |
+| [UNITAS](https://github.com/DexForce/UNITAS) | 模型与研究资源 | 在统一的度量三维坐标系中表示观测、动作轨迹与场景动态，支持机器人动作生成和动作条件场景预测；由跨维智能与高校团队合作提出。 |
+| [VPP-2](https://github.com/roboterax/video-prediction-policy-2) | 模型与研究资源 | 通过事件级视频预训练、单步视觉规划后训练与蒸馏，以及混合Transformer动作学习，将未来视觉预测与机器人动作生成连接起来。 |
 | [WALL-WM](https://github.com/X-Square-Robot/WALL-WM) | 世界动作模型（WAM） | 以可变时长语义事件为单位联合去噪生成多视角未来视频与末端动作，通过Wan视频塔、动作DiT、跨视角几何交互及Staircase潜在推理支持事件式和定长VLA两种执行，并在双臂真机与RoboTwin评测。 |
 | [WholeBodyWAM](https://wholebodywam.github.io/) | 世界动作模型（WAM） | 保留预训练WAM视觉—操作先验，以56维统一全身控制语义和可操作性门控协调不同人形全身控制器。 |
 | [X-WAM](https://github.com/sharinka0715/X-WAM) | 世界动作模型（WAM） | 以Wan2.2视频先验联合生成多视角未来RGB、深度、状态与动作，并用轻量深度支路和异步噪声采样兼顾几何精度与动作响应速度。 |
@@ -446,7 +451,7 @@
 
 理解场景与任务，组织空间记忆、任务分解、技能调用和导航决策。
 
-**29** 篇论文／报告 · **31** 个项目
+**29** 篇论文／报告 · **32** 个项目
 
 #### 论文与技术报告
 
@@ -513,6 +518,7 @@
 | [RxBrain-1.0](https://github.com/Tencent-Hunyuan/Hy-Embodied-RxBrain-1.0) | 具身理解与Agent规划 | 以交错语言推理和图像子目标表达具身计划，通过视频状态预测、联合子目标想象与自动任务视频标注训练认知模型，并扩展连续动作头完成真机操作。 |
 | [RynnEC](https://github.com/alibaba-damo-academy/RynnEC) | 具身理解与Agent规划 | 以视频区域编码器和SAM2掩码解码器增强具身视频认知，输入第一人称视频、问题及可选区域提示，输出物体/空间文字答案或跨帧实例掩码，并以四阶段训练整合对象、空间与指代分割能力。 |
 | [RynnValue](https://github.com/alibaba-damo-academy/RynnValue) | 具身理解与Agent规划 | 以任务语言、本体元数据和多帧观察估计逐帧剩余完成时间及相邻帧有符号时间位移，并辅助输出任务描述/匹配/成功判断；将时间距离势函数接入在线离线RL、价值筛选和冻结策略候选动作重排。 |
+| [Self-Refining VLM for Robotic Failure Detection](https://www.amazon.science/publications/self-refining-vision-language-model-for-robotic-failure-detection-and-reasoning) | 模型与研究资源 | 通过自我精炼的视觉语言模型识别机器人操作失败并分析原因，为执行结果检查与恢复提供反馈；由Amazon Robotics与高校团队合作研究。 |
 | [tron1-agent](https://github.com/limxdynamics/tron1-agent) | 语音交互与动作工具调用 | TRON机器人实时语音Agent：FunASR语音识别、silero-vad过滤、LLM生成对话并经TTS播报；支持中断、会话记忆、工具/任务管理及TRON硬件动作调用。 |
 | [UrbanVLA](https://github.com/GalaxyGeneralRobotics/UrbanVLA) | 城市开放环境视觉语言导航模型 | 输入结构化路线说明（含路线点和下一转向信息）与多摄像头RGB观察，预测当前自我坐标系下的SE(2)局部轨迹航点。先用仿真示范与网络导航视频监督微调，再通过仿真和真实数据上的IQL离线强化微调，学习城市微出行的路线跟随、避障与行人交互。 |
 | [VAP-TAMP](https://github.com/aoloo-r/VAP-TAMP) | 具身理解与Agent规划 | 从RGB-D和语言目标构建动态场景图及PDDL问题，以动作前提和效果组成VLM谓词核验；问法分歧或视野不足时主动换视角，确认状态偏差后更新场景图并重规划，输出由参数化运动技能执行的任务计划。 |

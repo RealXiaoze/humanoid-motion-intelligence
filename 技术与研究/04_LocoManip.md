@@ -6,7 +6,7 @@
 
 > 移动、平衡、接触与操作协同，汇总相关论文、方法与项目。
 
-当前收录 **72** 篇论文／技术报告、**60** 个项目。
+当前收录 **72** 篇论文／技术报告、**62** 个项目。
 
 ## 本页导航
 
@@ -134,7 +134,7 @@
 
 联合移动、平衡、上肢与手部完成操作任务。
 
-**36** 篇论文／报告 · **30** 个项目
+**36** 篇论文／报告 · **32** 个项目
 
 #### 论文与技术报告
 
@@ -192,10 +192,12 @@
 | [HANDOFF](https://github.com/lzyang2000/HANDOFF) | Agent到WBC接口项目 | 将上层移动操作意图转为十维全身命令，并蒸馏运动跟踪、行走和恢复教师为MoE策略。 |
 | [HDMI](https://github.com/LeCAR-Lab/HDMI) | 人形物体交互项目 | 从单目视频恢复人体物体参考，在Isaac Lab训练残差策略，并通过动作蒸馏和在线适配连接G1部署。 |
 | [HumanX](https://github.com/wyhuai/HumanX) | 交互数据与技能项目 | XGen编辑机器人与物体交互并导出HOI NPZ，XMimic将其转换为PKL训练数据，提供篮球接抛与假动作投篮、足球踢球、箱体取放的仿真训练、评测和回放流程。 |
+| [I-BFM](https://github.com/Roboparty/I-BFM-Code) | 机器人开发与研究 | 联合表征机器人、物体与接触状态，通过奖励推断选择行为意图，使用同一策略完成搬箱、推箱和踢箱，并在偏离原轨迹后继续交互。 |
 | [JAKA_Lumi](https://github.com/JAKARobotics/JAKA_Lumi) | 移动操作与技能系统 | 提供JAKA Lumi机器人平台开发入口，面向机械臂、移动平台与感知任务的系统集成。 |
 | [Mobile ALOHA](https://github.com/MarkFzp/mobile-aloha) | 低成本双臂移动操作与示范学习系统 | 以主从双臂遥操作和移动底盘采集示范，再用ACT、Diffusion Policy或VINN学习长程移动操作。 |
 | [MotionDisco](https://arxiv.org/abs/2606.06139) | LocoManip | MotionDisco 以LLM进化搜索生成离散接触计划，通过分层运动学检查与动力学轨迹优化闭环修正，发现长时程人形全身移动操作技能并训练跟踪策略部署。 |
 | [MPC-RL](https://github.com/junhengl/mpc-rl) | LocoManip与物理交互 | 用并行GPU质心动力学MPC生成结构化奖励训练PPO，关节策略部署时独立执行，在Themis V2上验证行走、抗扰与推箱移动操作。 |
+| [MuST](https://www.amazon.science/publications/must-multi-head-skill-transformer-for-long-horizon-dexterous-manipulation-with-skill-progress) | 机器人开发与研究 | 以多头技能Transformer和技能进度信息组织长流程灵巧操作，协调技能执行与阶段切换。 |
 | [OmniContact](https://github.com/Ingrid789/OmniContact_sim2sim) | 接触流执行与仿真回放 | 以关键身体轨迹和时序接触统一表示搬运、推拉、滑动和踢球，并提供ONNX策略的MuJoCo回放。 |
 | [omniteleop](https://github.com/dexmate-ai/omniteleop) | Dexmate遥操作接口 | 接入JoyCon、Dynamixel外骨骼和VR位姿，经急停与关节限制发送控制，并支持轨迹录制回放和遥测。 |
 | [open_manipulator](https://github.com/ROBOTIS-GIT/open_manipulator) | 机器人SDK与通信接口 | OpenMANIPULATOR系列ROS 2软件包，用于机械臂控制、传感器集成和Physical AI开发。 |

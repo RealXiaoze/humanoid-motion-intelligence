@@ -6,7 +6,7 @@
 
 > 自主移动、地形适应与运动先验，汇总相关论文、方法与项目。
 
-当前收录 **64** 篇论文／技术报告、**79** 个项目。
+当前收录 **64** 篇论文／技术报告、**80** 个项目。
 
 ## 本页导航
 
@@ -61,7 +61,7 @@
 
 利用视觉与地形信息调整运动，涵盖落脚、越障、跑酷和目标驱动移动。
 
-**24** 篇论文／报告 · **17** 个项目
+**24** 篇论文／报告 · **18** 个项目
 
 #### 论文与技术报告
 
@@ -105,6 +105,7 @@
 | [Humanoid Parkour Learning](https://humanoid4parkour.github.io/) | 人形感知跑酷 | 以深度图和全身关节动作策略控制人形机器人跨越连续障碍，提供跑酷任务与对照实现。 |
 | [MoRE](https://github.com/TeleHuman/MoRE) | 感知拟人Locomotion | 先以深度相机观测训练复杂地形基础运动策略，再添加潜在残差专家混合模块，用步态命令和多判别器学习走、跑、蹲行与高抬腿等拟人步态。残差作用于基础策略的隐藏层，支持复杂地形上的步态切换。 |
 | [NEXUS](https://nexus-humanoid.github.io/) | 视觉与地形感知运控 | 生成地形适应参考训练特权教师，再把控制能力蒸馏到读取深度、本体历史与原始人体参考的学生；输出关节位置目标，在G1上执行楼梯、斜坡及全身遥操作。 |
+| [P-BFM](https://github.com/Roboparty/P-BFM) | 机器人开发与研究 | 把动作参考、目标状态与奖励映射到共享意图空间，再结合深度感知及朝向、速度指令，让同一策略执行地形适应的全身动作。 |
 | [PASSAGE](https://galaxygeneralrobotics.github.io/PASSAGE/) | 复杂场景人形穿越规划系统 | 以场景对齐动捕训练高度图条件流匹配规划器，由50Hz感知全身跟踪器执行并在冻结跟踪器上进行规划强化学习；面向杂乱场景的无接触人形穿越。 |
 | [Perceptive Humanoid Parkour](https://php-parkour.github.io/) | 长时感知跑酷 | 拼接长程跑酷参考并训练多个跟踪专家，再蒸馏为接收深度和速度指令的G1策略。 |
 | [Robot Parkour Learning](https://robot-parkour.github.io/) | 四足感知跑酷 | 以直接配点启发的软动力学约束构建强化学习课程，逐步收紧为硬约束，先训练跑酷专家再蒸馏为深度视觉策略。仓库提供A1/Go2仿真训练配置，以及Go1/Go2板载部署示例，可作感知运动控制参考。 |
@@ -129,7 +130,7 @@
 | [GPC：以离散运动Token预训练可适配的生成式控制器](论文逐篇解读/P159.md) | 将参考动作压成离散Token并训练自回归运动先验，支持角色控制、目标到达和轨迹跟随。 | [原文](https://arxiv.org/abs/2606.29148) · [代码](https://github.com/NVlabs/ProtoMotions) · [项目页](https://yi-shi94.github.io/gpc-page/) |
 | [LATENT：从不完整人体动作片段学习人形网球技能](论文逐篇解读/P376.md) | 五小时不完整网球动捕片段学习可纠正潜动作，由PPO高层策略组合步法、击球和腕部修正；G1在随机来球仿真及动捕支持的真机对打中完成回球，并分别评估正反手与前后场表现。 | [原文](https://arxiv.org/abs/2603.12686) · [代码](https://github.com/GalaxyGeneralRobotics/LATENT) · [项目页](https://zzk273.github.io/LATENT/) |
 | [Locomotion-Grounded Humanoid Soccer：任务门控的多向人形踢球技能库](论文逐篇解读/P368.md) | 先训练全向Locomotion基座，再用任务模式门控七个视频重定向踢球技能并蒸馏为单策略；Unitree G1实机验证部分方向，仿真显示多方向覆盖与合并负迁移。 | [原文](https://arxiv.org/abs/2609.38852) |
-| [P-BFM：基于无监督强化学习的感知行为基座模型](论文逐篇解读/P497.md) | 将跟踪、目标到达和奖励条件编码为地形无关意图，并由深度感知策略通过无监督交互适配地形执行。 | [原文](https://arxiv.org/abs/2610.15833) · [项目页](https://roboparty.github.io/P-BFM/) |
+| [P-BFM：基于无监督强化学习的感知行为基座模型](论文逐篇解读/P497.md) | 将跟踪、目标到达和奖励条件编码为地形无关意图，并由深度感知策略通过无监督交互适配地形执行。 | [原文](https://arxiv.org/abs/2610.15833) · [代码](https://github.com/Roboparty/P-BFM) · [项目页](https://roboparty.github.io/P-BFM/) |
 | [Physical Self-Play：足球自我对弈策略](论文逐篇解读/P391.md) | Skild AI在Isaac Sim中以得分为目标训练近期策略版本相互竞赛，让足球策略通过自我对弈形成盘带、护球和抢球行为，再迁移至人形机器人展示。 | [原文](https://skild.ai/blogs/physical-self-play) |
 | [P³：把边缘策略概率接回VAE与PPO之间](论文逐篇解读/P160.md) | 用矩匹配和潜变量采样估计VAE边缘策略概率，稳定PPO潜变量策略的具身行走训练。 | [原文](https://arxiv.org/abs/2607.25541) · [代码](https://github.com/ylyem9x/P3_Open) |
 | [SkillX：人形足球统一多技能策略](论文逐篇解读/P219.md) | 以单一命令条件Actor配合技能专属对抗先验、价值头和球物体时序编码器，学习带球、停球、射门及其转换。 | [原文](https://arxiv.org/abs/2609.06718) · [项目页](https://yzc0731.github.io/SkillX/) |
