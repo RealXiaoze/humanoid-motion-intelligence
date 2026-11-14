@@ -35,6 +35,8 @@
 | [EmbodiChain](https://github.com/DexForce/EmbodiChain) | 组织仿真任务、数据生成与策略训练 | 集成GPU仿真、任务环境和RL/IL接口 |
 | [DISCOVERSE](https://github.com/discoverse-dev/DISCOVERSE) | 场景重建、操作示范与模仿学习 | 结合MuJoCo与3DGS，支持Real2Sim2Real数据流程 |
 
+另见 [Steel](../技术与研究/论文逐篇解读/P510.md)：Newton 的 GPU 刚体求解器，适合对照不同机器人和任务混在一个批次时的物理步进吞吐。
+
 ### MuJoCo、MJX 与 mjlab：仿真在哪一层，梯度从哪里来？
 
 | 工具 | 在训练链路中的作用 | 怎样取得动力学梯度 |
