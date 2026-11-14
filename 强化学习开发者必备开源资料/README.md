@@ -35,6 +35,19 @@
 | [EmbodiChain](https://github.com/DexForce/EmbodiChain) | 组织仿真任务、数据生成与策略训练 | 集成GPU仿真、任务环境和RL/IL接口 |
 | [DISCOVERSE](https://github.com/discoverse-dev/DISCOVERSE) | 场景重建、操作示范与模仿学习 | 结合MuJoCo与3DGS，支持Real2Sim2Real数据流程 |
 
+### MuJoCo、MJX 与 mjlab：仿真在哪一层，梯度从哪里来？
+
+| 工具 | 在训练链路中的作用 | 怎样取得动力学梯度 |
+|---|---|---|
+| [MuJoCo 原生引擎](https://mujoco.readthedocs.io/en/stable/APIreference/APIfunctions.html#mjd-transitionfd) | 计算关节、执行器和接触作用下的下一步状态，常用于仿真回放、控制验证和局部轨迹优化。 | `mjd_transitionFD` 用有限差分近似单步状态转移的雅可比；不会自动把一整段仿真轨迹接入反向传播。 |
+| [MJX-JAX](https://mujoco.readthedocs.io/en/stable/mjx.html) | 用 JAX 实现 MuJoCo 的一部分功能，可批量推进仿真。 | 支持对受支持的计算用 JAX 自动微分；接触切换处的梯度仍需结合具体模型和任务验证。 |
+| [MuJoCo Warp](https://mujoco.readthedocs.io/en/stable/mjwarp/) | 在 NVIDIA GPU 上并行推进大量环境；也可通过 MJX 的 Warp 后端调用。 | MuJoCo Warp 和 MJX-Warp 当前不提供仿真步进自动微分。用它们采样训练 PPO 时，不需要对仿真器反传。 |
+| [mjlab](https://github.com/mujocolab/mjlab) | 在 MuJoCo Warp 上组织机器人任务、观测、动作、奖励和并行环境。 | mjlab 是任务与训练框架；用它采样，不会让 Warp 仿真步进自动获得梯度。 |
+
+[SuperMimic](../技术与研究/论文逐篇解读/P507.md) 展示了另一种做法：先用 MuJoCo Warp 采集当前策略的状态和动作，再训练可微动力学模型。更新策略时，在学到的模型中展开 32 步想象轨迹，沿这段轨迹反传回报；梯度不经过 Warp。
+
+[MuJoCo 4.0 发布说明](https://mujoco.readthedocs.io/en/4.0.0/changelog.html#version-4-0-0-november-6-2026) 新增可选的预测接触，用于减少高速凸几何体在单个时间步内穿过薄障碍。这项改动针对碰撞处理，与上表中的求导方式是两件事。
+
 ## 其他环境与工具
 
 | 项目 | 主要用途 | 技术栈或相关入口 |
