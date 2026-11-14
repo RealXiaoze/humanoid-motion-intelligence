@@ -52,7 +52,7 @@
     {
       "path": "LICENSE.md",
       "size": 2458,
-      "sha256": "c34ec604716ecb04fe18ad702a0eeb6676907149ddd864e5a08ce51e49b3ed41"
+      "sha256": "1c45e1eb2afac0ca223eac8b5906dce91e09288005e9b7ee01b21b964a256115"
     },
     {
       "path": "README.md",
@@ -76,8 +76,8 @@
     },
     {
       "path": "强化学习开发者必备开源资料/README.md",
-      "size": 6462,
-      "sha256": "9b2fd0a1d04e374f16420a7b0d84f1ba10e898a0f164bbf9b3078ea5d4e235dd"
+      "size": 6450,
+      "sha256": "6bc5011ac263c62c70d0e99d8772864aacfa9a5c5746f144bd4fe50256d0b674"
     },
     {
       "path": "强化学习开发者必备开源资料/书籍与课程.md",
@@ -1111,8 +1111,8 @@
     },
     {
       "path": "技术与研究/论文逐篇解读/P191.md",
-      "size": 6546,
-      "sha256": "00ffe60ce467d1726424566821aeb4a2d8bef1a109d4f47fb35eeab9f0fddb57"
+      "size": 6558,
+      "sha256": "041d9c9d15d7257e385a141efcecf332b24e74970dec0619a193db00550d86d8"
     },
     {
       "path": "技术与研究/论文逐篇解读/P192.md",
