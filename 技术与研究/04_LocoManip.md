@@ -190,7 +190,7 @@
 | [ESTHER Wheelchair Tennis Robot](https://github.com/CORE-Robotics-Lab/Wheelchair-Tennis-Robot) | 移动操作机器人系统 | 官方项目提供轮椅网球机器人系统、硬件设计、固件与ROS软件。 |
 | [FARO](https://atarilab.github.io/faro.io/) | LocoManip与物理交互 | 围绕候选接触序列构建由便宜到昂贵的运动学与动力学可行性筛选层，并与接触模式树搜索结合以生成可执行的人形全身操作轨迹。 |
 | [HANDOFF](https://github.com/lzyang2000/HANDOFF) | Agent到WBC接口项目 | 将上层移动操作意图转为十维全身命令，并蒸馏运动跟踪、行走和恢复教师为MoE策略。 |
-| [HDMI](https://github.com/LeCAR-Lab/HDMI) | 人形物体交互项目 | 从单目视频恢复人体物体参考，在Isaac Lab训练残差策略，并通过动作蒸馏和在线适配连接G1部署。 |
+| [HDMI](https://github.com/LeCAR-Lab/HDMI) | 人形物体交互项目 | 从单目视频恢复人和物体的参考运动，在Isaac Lab训练残差策略，论文在G1上直接零样本部署；项目代码另提供残差蒸馏与适配流程。 |
 | [HumanX](https://github.com/wyhuai/HumanX) | 交互数据与技能项目 | XGen编辑机器人与物体交互并导出HOI NPZ，XMimic将其转换为PKL训练数据，提供篮球接抛与假动作投篮、足球踢球、箱体取放的仿真训练、评测和回放流程。 |
 | [I-BFM](https://github.com/Roboparty/I-BFM-Code) | 机器人开发与研究 | 联合表征机器人、物体与接触状态，通过奖励推断选择行为意图，使用同一策略完成搬箱、推箱和踢箱，并在偏离原轨迹后继续交互。 |
 | [JAKA_Lumi](https://github.com/JAKARobotics/JAKA_Lumi) | 移动操作与技能系统 | 提供JAKA Lumi机器人平台开发入口，面向机械臂、移动平台与感知任务的系统集成。 |
