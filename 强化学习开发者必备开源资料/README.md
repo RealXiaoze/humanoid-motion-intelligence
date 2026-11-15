@@ -52,6 +52,9 @@
 
 ## 其他环境与工具
 
+- [RoboKit](https://github.com/OpenRoboKit/RoboKit)：GPU 并行机器人优化工具，用于逆运动学、运动规划、动作重定向和抓取求解。
+- [RoboDojo](https://robodojo-benchmark.com/)：通用操作策略的仿真与真机评测入口；看榜单时按赛道、任务和评估协议对照。
+
 | 项目 | 主要用途 | 技术栈或相关入口 |
 |---|---|---|
 | [legged_gym](https://github.com/leggedrobotics/legged_gym) | 腿式机器人GPU并行训练 | Isaac Gym向量化仿真与批量训练 |

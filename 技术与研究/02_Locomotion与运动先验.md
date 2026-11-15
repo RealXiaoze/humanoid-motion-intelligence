@@ -6,7 +6,7 @@
 
 > 自主移动、地形适应与运动先验，汇总相关论文、方法与项目。
 
-当前收录 **64** 篇论文／技术报告、**80** 个项目。
+当前收录 **66** 篇论文／技术报告、**80** 个项目。
 
 ## 本页导航
 
@@ -61,7 +61,7 @@
 
 利用视觉与地形信息调整运动，涵盖落脚、越障、跑酷和目标驱动移动。
 
-**24** 篇论文／报告 · **18** 个项目
+**25** 篇论文／报告 · **18** 个项目
 
 #### 论文与技术报告
 
@@ -73,6 +73,7 @@
 | [FootQuery：未来落脚点引导的深度历史检索](论文逐篇解读/P216.md) | 根据本体状态预测每只脚的下一触地点，并从深度历史中检索相关区域，与全局视觉记忆融合生成关节动作。 | [原文](https://arxiv.org/abs/2609.21447) |
 | [Generate, Track, Improve：强化学习微调的感知多技能人形运动](论文逐篇解读/P215.md) | 以深度条件流匹配生成全身参考、CLF-RL跟踪器执行，并用结构化搜索与AWR微调生成器，改善未见地形通过和技能选择。 | [原文](https://arxiv.org/abs/2609.31577) · [项目页](https://zolkin1.github.io/generate-track-improve/) |
 | [Hiking in the Wild：面向真实复杂地形的可扩展感知跑酷](论文逐篇解读/P132.md) | 从深度检测地形边缘并约束足部落点，训练人形在台阶、空隙等复杂地形自主行走。 | [原文](https://arxiv.org/abs/2601.07718) · [代码](https://github.com/project-instinct/InstinctLab/blob/main/source/instinctlab/instinctlab/tasks/parkour/README.md) · [项目页](https://project-instinct.github.io/hiking-in-the-wild/) |
+| [ACP：基于接触规划的人形全身运动](论文逐篇解读/P514.md) | 通过机载感知预测身体与环境的未来接触，由接触条件控制器执行全身运动。 | [原文](https://arxiv.org/abs/2610.31608) |
 | [Light-Loco-Parkour：多专家蒸馏与无标签切换的视觉全身跑酷](论文逐篇解读/P150.md) | 以多技能专家、DAgger蒸馏和奖励微调训练人形依据深度与速度切换跳跃攀爬动作。 | [原文](https://arxiv.org/abs/2608.02653) · [项目页](https://light-loco-parkour.github.io/) |
 | [NEXUS：让人体参考动作适应机器人所在的地形](论文逐篇解读/P362.md) | 生成地形适应参考训练特权教师，再把控制能力蒸馏到读取深度、本体历史与原始人体参考的学生；输出关节位置目标，在G1上执行楼梯、斜坡及全身遥操作。 | [原文](https://arxiv.org/abs/2609.39000) · [项目页](https://nexus-humanoid.github.io/) |
 | [PASSAGE：场景对齐动作生成驱动的人形障碍穿越](论文逐篇解读/P465.md) | 以场景对齐VR动捕训练三层高度图条件流匹配规划器，结合感知全身跟踪、RTC和冻结跟踪器下的规划RL，实现G1机载跨越、俯身与侧身穿越；仿真750回合无接触成功70.27%，50个实体布局完成50次、无接触45次。 | [原文](https://arxiv.org/abs/2609.18732) · [项目页](https://galaxygeneralrobotics.github.io/PASSAGE/) |
@@ -121,12 +122,13 @@
 
 学习可复用的运动表示，通过潜变量、目标或提示调用与组合行为。
 
-**14** 篇论文／报告 · **7** 个项目
+**15** 篇论文／报告 · **7** 个项目
 
 #### 论文与技术报告
 
 | 论文／报告 | 主要方法与用途 | 原文／代码 |
 | --- | --- | --- |
+| [BeJEPA：用行为世界模型同时追踪姿态和世界位姿](论文逐篇解读/P521.md) | 一步动力学预测与长期后继表征联合训练，兼顾身体姿态和世界坐标目标。 | [原文](https://arxiv.org/abs/2610.23127) |
 | [GPC：以离散运动Token预训练可适配的生成式控制器](论文逐篇解读/P159.md) | 将参考动作压成离散Token并训练自回归运动先验，支持角色控制、目标到达和轨迹跟随。 | [原文](https://arxiv.org/abs/2606.29148) · [代码](https://github.com/NVlabs/ProtoMotions) · [项目页](https://yi-shi94.github.io/gpc-page/) |
 | [LATENT：从不完整人体动作片段学习人形网球技能](论文逐篇解读/P376.md) | 五小时不完整网球动捕片段学习可纠正潜动作，由PPO高层策略组合步法、击球和腕部修正；G1在随机来球仿真及动捕支持的真机对打中完成回球，并分别评估正反手与前后场表现。 | [原文](https://arxiv.org/abs/2603.12686) · [代码](https://github.com/GalaxyGeneralRobotics/LATENT) · [项目页](https://zzk273.github.io/LATENT/) |
 | [Locomotion-Grounded Humanoid Soccer：任务门控的多向人形踢球技能库](论文逐篇解读/P368.md) | 先训练全向Locomotion基座，再用任务模式门控七个视频重定向踢球技能并蒸馏为单策略；Unitree G1实机验证部分方向，仿真显示多方向覆盖与合并负迁移。 | [原文](https://arxiv.org/abs/2609.38852) |

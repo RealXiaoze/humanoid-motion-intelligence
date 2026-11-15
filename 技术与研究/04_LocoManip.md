@@ -6,7 +6,7 @@
 
 > 移动、平衡、接触与操作协同，汇总相关论文、方法与项目。
 
-当前收录 **72** 篇论文／技术报告、**62** 个项目。
+当前收录 **76** 篇论文／技术报告、**62** 个项目。
 
 ## 本页导航
 
@@ -79,7 +79,7 @@
 
 协调外力、柔顺控制、接触切换与负载变化。
 
-**18** 篇论文／报告 · **19** 个项目
+**19** 篇论文／报告 · **19** 个项目
 
 #### 论文与技术报告
 
@@ -89,6 +89,7 @@
 | [HOIST：面向悬挂负载搬运的人形模仿学习与样本高效微调](论文逐篇解读/P331.md) | 以VR示范训练高层视觉语言动作策略，输出手部、头部与移动目标，由固定全身控制器操控悬挂负载；再从机器人交互学习动作流噪声修正，提高定位与停止精度。 | [原文](https://arxiv.org/abs/2606.00252) |
 | [TF-ART：把触觉、力觉学习拆成可核验的闭环](论文逐篇解读/P205.md) | 综述触觉力觉感知、动作生成、动作修正和末端控制，覆盖接触操作与柔顺控制方法。 | [原文](https://arxiv.org/abs/2608.07558) · [项目页](https://lorenzo-0-0.github.io/tactile-force-survey/) |
 | [HTD：从解耦身体控制、触觉示范到接触感知策略](论文逐篇解读/P180.md) | 以分离下肢控制维持基座，并用训练期力与触觉潜变量预测改进人形接触操作策略。 | [原文](https://arxiv.org/abs/2604.13015) · [代码](https://github.com/chrisyrniu/humanoid-touch-dream) · [项目页](https://humanoid-touch-dream.github.io/) |
+| [Play2Perfect：灵巧手预训练与精密装配微调](论文逐篇解读/P531.md) | 用多物体、多目标的强化学习预训练灵巧手，再针对插接微调。 | [原文](https://arxiv.org/abs/2606.26428) |
 | [SplitAdapter：基于因子化适配的负载感知人形移动操作](论文逐篇解读/P110.md) | 分别编码物体负载与本体动力学，再调制冻结策略层，适配人形搬运和Sim2Real任务。 | [原文](https://arxiv.org/abs/2606.03297) · [项目页](https://splitadapter.github.io/) |
 | [SteadyTray：以残差强化学习稳定人形托盘运输](论文逐篇解读/P377.md) | 冻结步态基座训练残差以稳定托盘负载，再蒸馏编码器接入相机物体位姿；G1仿真评估变速、推机器人与推物体，真机展示多类负载运输和扰动恢复。 | [原文](https://arxiv.org/abs/2603.10306) · [代码](https://github.com/AllenHuangGit/steadytray) · [项目页](https://steadytray.github.io/) |
 | [VisForce：指尖力视觉对齐与目标条件灵巧操作](论文逐篇解读/P353.md) | VisForce将腕部图像上的当前指尖力线索与示范检索得到的目标力图像送入目标条件交叉注意力，再沿π0.5的动作生成路径输出手臂与手部增量动作。在UR10与RH56F1上评估力条件抓取、插入、倾倒、工具转移和受控滑移任务。 | [原文](https://arxiv.org/abs/2609.25785) |
@@ -134,13 +135,14 @@
 
 联合移动、平衡、上肢与手部完成操作任务。
 
-**36** 篇论文／报告 · **32** 个项目
+**39** 篇论文／报告 · **32** 个项目
 
 #### 论文与技术报告
 
 | 论文／报告 | 主要方法与用途 | 原文／代码 |
 | --- | --- | --- |
 | [MPC-RL：用并行质心动力学优化引导人形全身策略学习](论文逐篇解读/P333.md) | 用并行GPU质心动力学MPC生成结构化奖励训练PPO，关节策略部署时独立执行，在Themis V2上验证行走、抗扰与推箱移动操作。 | [原文](https://arxiv.org/abs/2606.05687) · [代码](https://github.com/junhengl/mpc-rl) |
+| [FIBER：用同一个潜动作空间规划多种交互技能](论文逐篇解读/P515.md) | 把专项策略投影到冻结行为基座的潜动作空间，再离线训练统一感知规划器。 | [原文](https://arxiv.org/abs/2610.24675v2) · [项目页](https://fiberaa.github.io/) |
 | [ATHLETE：轨迹引导动作匹配与反应式人形网球策略](论文逐篇解读/P475.md) | TGMM把LAFAN1步态与公开视频恢复的正反手动作拼成可执行参考，再用时限自适应教师、DAgger学生和PPO训练反应式G1策略。 | [原文](https://arxiv.org/abs/2610.13572) · [代码](https://anonymous.4open.science/r/athlete-humanoid-tennis) · [项目页](https://hazintihoa.github.io/athlete.github.io/) |
 | [CEER：面向分层人形移动操作的柔顺末端与根部统一控制接口](论文逐篇解读/P095.md) | 以末端位姿、基座速度和根状态构成低维接口，由柔顺全身策略执行接触操作与移动任务。 | [原文](https://arxiv.org/abs/2605.19981) · [代码](https://github.com/stevenryanrobot/ceer_deploy) · [项目页](https://robotproject8.github.io/ceer_page/) |
 | [CoorDex：用身体与手部先验降低连续灵巧移动操作难度](论文逐篇解读/P139.md) | 分别蒸馏身体和灵巧手动作先验，再在潜在动作空间学习协同残差以完成连续移动抓取。 | [原文](https://arxiv.org/abs/2606.23680) · [代码](https://github.com/Skevinci/coordex) · [项目页](https://skevinci.github.io/coordex/) |
@@ -151,6 +153,8 @@
 | [HANDOFF：基于互补教师蒸馏的人形智能体任务空间全身控制](论文逐篇解读/P111.md) | 将互补移动、操作和恢复教师蒸馏为MoE策略，把低维任务空间命令转成人形全身动作。 | [原文](https://arxiv.org/abs/2606.06493) · [代码](https://github.com/lzyang2000/HANDOFF) · [项目页](https://lzyang2000.github.io/HANDOFF/) |
 | [HumanX：基于人类视频的敏捷可泛化人形交互技能](论文逐篇解读/P098.md) | 将人类视频恢复为人－物交互轨迹并扩增，再以统一模仿学习训练球类、搬运和交互技能。 | [原文](https://arxiv.org/abs/2602.02473) · [代码](https://github.com/wyhuai/HumanX) · [项目页](https://wyhuai.github.io/human-x/) |
 | [KINO：用关键帧连接视觉语言规划与人形全身控制](论文逐篇解读/P224.md) | 以稀疏语义关键帧连接VLM分阶段规划与PPO全身策略，通过场景重定向和显著性采样完成G1抓取搬运。 | [原文](https://arxiv.org/abs/2609.18869) |
+| [LingBot-Touch：让不同触觉传感器给策略提供统一输入](论文逐篇解读/P516.md) | 统一压阻、磁性与视觉触觉表征，并将编码后的触觉 token 接入操作策略。 | [原文](https://arxiv.org/abs/2611.12806) · [项目页](https://technology.robbyant.com/lingbot-touch) |
+| [阶段条件策略优化：让一个策略依次完成移动操作各阶段](论文逐篇解读/P540.md) | 用阶段条件价值函数、阶段奖励和重置课程训练多阶段移动操作策略。 | [原文](https://arxiv.org/abs/2610.36270) |
 | [MobileWAM：用训练期未来信念支持移动操作](论文逐篇解读/P203.md) | 用前瞻链和移动专家建模底盘视角变化与手臂动作，执行全身移动操作长程任务。 | [原文](https://arxiv.org/abs/2608.04657) |
 | [MotionDisco：通过接触计划搜索发现人形全身技能](论文逐篇解读/P329.md) | MotionDisco 以LLM进化搜索生成离散接触计划，通过分层运动学检查与动力学轨迹优化闭环修正，发现长时程人形全身移动操作技能并训练跟踪策略部署。 | [原文](https://arxiv.org/abs/2606.06139) |
 | [OmniContact：用接触流组织可组合的人形物理技能](论文逐篇解读/P138.md) | 以身体轨迹和时序接触构成Contact Flow，由生成器与低层策略组合长程移动操作技能。 | [原文](https://arxiv.org/abs/2606.26201) · [代码](https://github.com/Ingrid789/OmniContact_sim2sim) · [项目页](https://omnicontact.github.io/) |
@@ -197,7 +201,7 @@
 | [Mobile ALOHA](https://github.com/MarkFzp/mobile-aloha) | 低成本双臂移动操作与示范学习系统 | 以主从双臂遥操作和移动底盘采集示范，再用ACT、Diffusion Policy或VINN学习长程移动操作。 |
 | [MotionDisco](https://arxiv.org/abs/2606.06139) | LocoManip | MotionDisco 以LLM进化搜索生成离散接触计划，通过分层运动学检查与动力学轨迹优化闭环修正，发现长时程人形全身移动操作技能并训练跟踪策略部署。 |
 | [MPC-RL](https://github.com/junhengl/mpc-rl) | LocoManip与物理交互 | 用并行GPU质心动力学MPC生成结构化奖励训练PPO，关节策略部署时独立执行，在Themis V2上验证行走、抗扰与推箱移动操作。 |
-| [MuST](https://www.amazon.science/publications/must-multi-head-skill-transformer-for-long-horizon-dexterous-manipulation-with-skill-progress) | 机器人开发与研究 | 以多头技能Transformer和技能进度信息组织长流程灵巧操作，协调技能执行与阶段切换。 |
+| [MuST](https://www.amazon.science/publications/must-multi-head-skill-transformer-for-long-horizon-dexterous-manipulation-with-skill-progress) | 机器人开发与研究 | 以多头技能Transformer和技能进度信息组织长流程灵巧操作，协调技能执行与阶段切换；当前入口为论文页面。 |
 | [OmniContact](https://github.com/Ingrid789/OmniContact_sim2sim) | 接触流执行与仿真回放 | 以关键身体轨迹和时序接触统一表示搬运、推拉、滑动和踢球，并提供ONNX策略的MuJoCo回放。 |
 | [omniteleop](https://github.com/dexmate-ai/omniteleop) | Dexmate遥操作接口 | 接入JoyCon、Dynamixel外骨骼和VR位姿，经急停与关节限制发送控制，并支持轨迹录制回放和遥测。 |
 | [open_manipulator](https://github.com/ROBOTIS-GIT/open_manipulator) | 机器人SDK与通信接口 | OpenMANIPULATOR系列ROS 2软件包，用于机械臂控制、传感器集成和Physical AI开发。 |
