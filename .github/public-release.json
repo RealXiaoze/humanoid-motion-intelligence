@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "generator": "build_public_release.py",
-  "content_file_count": 785,
+  "content_file_count": 786,
   "operational_file_count": 6,
   "files": [
     {
@@ -32,7 +32,7 @@
     {
       "path": ".github/scripts/validate_public_tree.py",
       "size": 25857,
-      "sha256": "488d5635a4002c1c0628aea6dd9da9b14209b27e289bb79c943cab311b8d0942"
+      "sha256": "d561ab56c40d2e8c034d63bcf915720944dd40cfe4a5ffaad308c259fea6f96a"
     },
     {
       "path": ".github/workflows/public-release-check.yml",
@@ -56,13 +56,13 @@
     },
     {
       "path": "README.md",
-      "size": 30175,
-      "sha256": "e2bbf46aa8fc06f78b632f402a14806a5c5287faecc27f8928921396ca502beb"
+      "size": 30330,
+      "sha256": "9968fbdc10352793657b5da1290cd877565d696990e54063916f01c16762edb7"
     },
     {
       "path": "全部资料目录.md",
-      "size": 80783,
-      "sha256": "3ca655458b8141005c5adf81a8a321c135bea393444512c5deac2427bda52c18"
+      "size": 80884,
+      "sha256": "dc46f73fcf0ad83ab1a7e29840da4229dcca20aee0cc87b62b7aec1a7867bacb"
     },
     {
       "path": "公司与产品主表.md",
@@ -116,8 +116,13 @@
     },
     {
       "path": "技术与研究/README.md",
-      "size": 12177,
-      "sha256": "bb464e230f58ad2e37ec6ae5b7462bde169d8c2bdd1d0362dcc4d9c13a9df6be"
+      "size": 12321,
+      "sha256": "89b8b88b3cd910281a8512a45cd2e9d1c2e3550033d0d1894a6712cd1fbe28d6"
+    },
+    {
+      "path": "技术与研究/专题_触觉与接触智能.md",
+      "size": 3304,
+      "sha256": "c018d785f483ae5ae37a9870800d30b85d69647953d7bd419b909170c90eca40"
     },
     {
       "path": "技术与研究/双轮足机器人训练开源方案表.md",
@@ -136,13 +141,13 @@
     },
     {
       "path": "技术与研究/研究方向_动作数据与跨本体迁移.md",
-      "size": 47891,
-      "sha256": "bc5457fe00bafe23b911936218436f2b68b3469714d2b7680f0158ed55e1bc25"
+      "size": 48030,
+      "sha256": "1238f4f120184f7f712f056860d5df792fc3485d2a59c8f589812c6d12d5e593"
     },
     {
       "path": "技术与研究/研究方向_物体交互与全身操作.md",
-      "size": 56191,
-      "sha256": "fd2fba5afc4fb94de2671e94cc365d5dc22ee1f8b0d88dbb6b277455892a7d5d"
+      "size": 56330,
+      "sha256": "334ed35e9788460a5a4bf92af0a99afbab5785832684cee8fb46030ce2ab5748"
     },
     {
       "path": "技术与研究/研究方向_运动控制与全身行为.md",

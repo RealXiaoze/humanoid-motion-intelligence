@@ -12,7 +12,7 @@ from urllib.parse import parse_qs, unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[2]
 EXPORT_MANIFEST = ROOT / ".github" / "public-release.json"
-EXPECTED_CONTENT_FILES = 785
+EXPECTED_CONTENT_FILES = 786
 EXPECTED_OPERATIONAL_FILES = 6
 EXPECTED_PAPER_PAGES = 536
 EXPECTED_PAPER_IMAGES = 201
