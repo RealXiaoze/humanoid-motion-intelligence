@@ -6,7 +6,7 @@
 
 > 移动、平衡、接触与操作协同，汇总相关论文、方法与项目。
 
-当前收录 **76** 篇论文／技术报告、**62** 个项目。
+当前收录 **78** 篇论文／技术报告、**62** 个项目。
 
 ## 本页导航
 
@@ -135,7 +135,7 @@
 
 联合移动、平衡、上肢与手部完成操作任务。
 
-**39** 篇论文／报告 · **32** 个项目
+**41** 篇论文／报告 · **32** 个项目
 
 #### 论文与技术报告
 
@@ -147,11 +147,13 @@
 | [CEER：面向分层人形移动操作的柔顺末端与根部统一控制接口](论文逐篇解读/P095.md) | 以末端位姿、基座速度和根状态构成低维接口，由柔顺全身策略执行接触操作与移动任务。 | [原文](https://arxiv.org/abs/2605.19981) · [代码](https://github.com/stevenryanrobot/ceer_deploy) · [项目页](https://robotproject8.github.io/ceer_page/) |
 | [CoorDex：用身体与手部先验降低连续灵巧移动操作难度](论文逐篇解读/P139.md) | 分别蒸馏身体和灵巧手动作先验，再在潜在动作空间学习协同残差以完成连续移动抓取。 | [原文](https://arxiv.org/abs/2606.23680) · [代码](https://github.com/Skevinci/coordex) · [项目页](https://skevinci.github.io/coordex/) |
 | [DECOWAM：用未来蒸馏与动作解耦适配腿式移动操作](论文逐篇解读/P199.md) | 以未来瓶颈和底盘－手臂因子分解区分相机自运动与机械臂动作，面向腿式移动操作。 | [原文](https://arxiv.org/abs/2608.20114) |
+| [DexRoam：从第一视角全身示范学习移动双臂灵巧操作](论文逐篇解读/P546.md) | 将第一视角全身示范整理成走路、伸手和双手操作协调的训练数据，训练移动双臂灵巧操作策略。 | [原文](https://arxiv.org/abs/2609.35761) · [代码](https://github.com/zhourui9813/DexRoam) · [项目页](https://dexroam.github.io/) |
 | [DPC：从视觉语义直接生成可执行全身关节目标](论文逐篇解读/P164.md) | 取消中间运动目标接口，让视觉、语言、本体与执行反馈直接生成关节和手部动作。 | [原文](https://symbiosis-robotics.com/research/dpc/en/) |
 | [FARO：面向可行性的机器人运动优化](论文逐篇解读/P239.md) | 围绕候选接触序列构建由便宜到昂贵的运动学与动力学可行性筛选层，并与接触模式树搜索结合以生成可执行的人形全身操作轨迹。 | [原文](https://arxiv.org/abs/2607.18362) · [项目页](https://atarilab.github.io/faro.io/) |
 | [From Hitter to Player：用落点命令分开训练击球执行与对抗策略](论文逐篇解读/P506.md) | 以落点坐标连接物理击球规划、29关节全身策略和高层选点；先适应连续回合，再冻结执行层学习对抗策略。 | [原文](https://arxiv.org/abs/2610.14067) · [项目页](https://mufanmufan.github.io/hitter-to-player/) |
 | [HANDOFF：基于互补教师蒸馏的人形智能体任务空间全身控制](论文逐篇解读/P111.md) | 将互补移动、操作和恢复教师蒸馏为MoE策略，把低维任务空间命令转成人形全身动作。 | [原文](https://arxiv.org/abs/2606.06493) · [代码](https://github.com/lzyang2000/HANDOFF) · [项目页](https://lzyang2000.github.io/HANDOFF/) |
 | [HumanX：基于人类视频的敏捷可泛化人形交互技能](论文逐篇解读/P098.md) | 将人类视频恢复为人－物交互轨迹并扩增，再以统一模仿学习训练球类、搬运和交互技能。 | [原文](https://arxiv.org/abs/2602.02473) · [代码](https://github.com/wyhuai/HumanX) · [项目页](https://wyhuai.github.io/human-x/) |
+| [I-BFM：用奖励调用同一个全身策略，让机器人在接触失败后继续任务](论文逐篇解读/P543.md) | 以奖励推断为交互策略指定目标，用同一个全身策略处理搬运、推移和踢击，并根据接触变化调整动作。 | [原文](https://arxiv.org/abs/2610.06129) · [代码](https://github.com/Roboparty/I-BFM-Code) · [项目页](https://iamhardworking.github.io/I-BFM/) |
 | [KINO：用关键帧连接视觉语言规划与人形全身控制](论文逐篇解读/P224.md) | 以稀疏语义关键帧连接VLM分阶段规划与PPO全身策略，通过场景重定向和显著性采样完成G1抓取搬运。 | [原文](https://arxiv.org/abs/2609.18869) |
 | [LingBot-Touch：让不同触觉传感器给策略提供统一输入](论文逐篇解读/P516.md) | 统一压阻、磁性与视觉触觉表征，并将编码后的触觉 token 接入操作策略。 | [原文](https://arxiv.org/abs/2611.12806) · [项目页](https://technology.robbyant.com/lingbot-touch) |
 | [阶段条件策略优化：让一个策略依次完成移动操作各阶段](论文逐篇解读/P540.md) | 用阶段条件价值函数、阶段奖励和重置课程训练多阶段移动操作策略。 | [原文](https://arxiv.org/abs/2610.36270) |

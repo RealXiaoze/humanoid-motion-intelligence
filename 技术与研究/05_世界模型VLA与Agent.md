@@ -6,7 +6,7 @@
 
 > 视觉语言理解、未来预测与任务决策，汇总相关论文、方法与项目。
 
-当前收录 **250** 篇论文／技术报告、**201** 个项目。
+当前收录 **258** 篇论文／技术报告、**201** 个项目。
 
 ## 本页导航
 
@@ -112,7 +112,7 @@
 
 根据观测与任务条件生成可执行动作或动作块；具体接口可增加本体状态，涵盖VLA、视觉运动模仿学习、跨本体策略与后训练。
 
-**104** 篇论文／报告 · **76** 个项目
+**106** 篇论文／报告 · **76** 个项目
 
 #### 论文与技术报告
 
@@ -164,8 +164,10 @@
 | [Robo-ValueRL：历史价值评估驱动的离线预训练与在线策略修正](论文逐篇解读/P468.md) | 历史条件价值估计把经验转为动作质量提示，训练单步去噪一致性VLA，再冻结基础策略并以价值筛选在线片段训练门控残差；芯片插入三轮更新由46%到86%，积木拆解宽松筛选一轮达到84%。 | [原文](https://arxiv.org/abs/2607.09866) · [代码](https://github.com/Open-X-Humanoid/Robo-ValueRL) · [项目页](https://gewu-lab.github.io/Robo-ValueRL/) |
 | [ROVE：结合人类干预的 VLA 强化学习](论文逐篇解读/P451.md) | 按rollout、接管适应和恢复阶段标注人类干预，以OVE状态价值和优势条件训练更新人形VLA；IRON实测三轮后擦白板成功率45%至80%，面包入吐司机56.7%至86.7%。 | [原文](https://arxiv.org/abs/2606.17011) · [项目页](https://xpeng-robotics.github.io/rove/) |
 | [RynnBrain 1.1：增强具身理解与跨本体动作策略](论文逐篇解读/P275.md) | 在具身时空基础模型中加入显式3D物体框和接触点监督，并以81维分组遮罩与RTC构建G1、Astribot、Tianji-Wuji跨本体flow-matching动作策略。 | [原文](https://arxiv.org/abs/2607.17977) · [代码](https://github.com/alibaba-damo-academy/RynnBrain) · [项目页](https://alibaba-damo-academy.github.io/RynnBrain.github.io) |
+| [SALA：用语义对齐的潜动作训练视觉语言动作策略](论文逐篇解读/P548.md) | 以真实机器人动作信号锚定人机潜动作的语义，使大规模第一视角视频可参与跨本体策略预训练。 | [原文](https://arxiv.org/abs/2611.17110) · [项目页](https://sala-vla.github.io/) |
 | [SAM3D-VLA：对象中心三维表征对齐](论文逐篇解读/P429.md) | 用子任务指令定位目标并通过SAM2掩码提取冻结SAM3D对象三维特征，训练时对齐π0中间视觉表征与对象形状/布局先验，部署保留原RGB语言到动作路径。 | [原文](https://arxiv.org/abs/2607.25912) |
 | [ABC：开放数据驱动的规模化行为克隆](论文逐篇解读/P321.md) | ABC发布双臂YAM的ABC-130K真实操作数据，并配套扩散Transformer与VLM扩散动作头、H200训练流程、MuJoCo遥操作及真机任务评估，形成规模化行为克隆实验栈。 | [原文](https://arxiv.org/abs/2606.27375) · [代码](https://github.com/amazon-far/abc) · [项目页](https://abc.bot/) |
+| [STVLA：在视觉语言动作策略中联合检索空间与历史](论文逐篇解读/P551.md) | 用显式场景空间表征检索与当前决策相关的历史观察，为视觉语言动作策略提供时序上下文。 | [原文](https://arxiv.org/abs/2611.16589v1) · [项目页](https://stvla.github.io/) |
 | [TANGO：从语言和第一视角图像预测人形全身导航动作](论文逐篇解读/P228.md) | 以仿真Plan–Edit–Track数据训练全身导航VLA，从语言和RGB历史预测人形关节动作，零样本部署到G1。 | [原文](https://arxiv.org/abs/2609.09158) |
 | [TemporalFlow-VLA：用物理时序监督学习长时操作历史](论文逐篇解读/P240.md) | 从机器人状态和几何构造仅用于训练的表面时序流监督，以短、长时间查询压缩执行历史并送入VLA动作专家，部署时无需几何重建。 | [原文](https://arxiv.org/abs/2608.26821) |
 | [The Gaussian Is Enough：大行为模型微调中的动作先验比较](论文逐篇解读/P351.md) | 该研究对七种动作先验、五档微调数据比例和三个行为模型开展仿真与硬件对照，发现通常高斯先验已足够，约5%示教数据时嵌入扰动先验可提高成功率。 | [原文](https://arxiv.org/abs/2609.27070) · [项目页](https://cxu-tri.github.io/non_gaussian_FT/) |
@@ -459,7 +461,7 @@
 
 理解场景与任务，组织空间记忆、任务分解、技能调用和导航决策。
 
-**37** 篇论文／报告 · **32** 个项目
+**42** 篇论文／报告 · **32** 个项目
 
 #### 论文与技术报告
 
@@ -470,8 +472,11 @@
 | [BrickCraft-Duo：双臂积木组装的技能学习与长程组合](论文逐篇解读/P354.md) | BrickCraft-Duo先用装配约束组织长程积木任务，再学习可复用单臂与双臂扩散技能，并通过双臂对称映射共享示范。系统把技能组合用于最多九步的真实装配，并以人在回路的针对性修正提高困难结构完成率。 | [原文](https://arxiv.org/abs/2609.28281) · [项目页](https://jichuan-yu.github.io/BrickCraft-Duo/) |
 | [Capek 0.5：面向执行的具身视觉语言模型](论文逐篇解读/P449.md) | 把空间、时间、动作引导和状态核验专家经TIES与路由式多教师蒸馏整合；35B-A3B版本相对匹配的Qwen3.6基座在34项对照中28项提升，并评测模拟具身任务。 | [原文](https://arxiv.org/abs/2608.06756) · [项目页](https://xpeng-robotics.github.io/capek-0.5/) |
 | [Dyna-2.1：分层控制的端到端工作流](论文逐篇解读/P394.md) | Dyna-2.1以VLM工作流编排、Dyna-2世界动作模型和100Hz强化学习全身控制器分层执行任务，通过URR轨迹接口连接通用动作与Taku本体控制。 | [原文](https://www.dyna.co/dyna-2.1) |
+| [Agentic Robotics：具身系统的任务编排与持续自主](论文逐篇解读/P555.md) | 梳理通用模型驱动的机器人任务执行，讨论从系统接口、长程评测到持续改进的研究路线。 | [原文](https://arxiv.org/abs/2611.18359) · [项目页](https://grid-robotics-official.github.io/agentic-robotics-roadmap) |
+| [ERA：利用可修订地图与主动观察的物体导航](论文逐篇解读/P553.md) | 让单目预测深度以带误差的观测参与地图和探索更新，减少错误几何让物体搜索提前终止的问题。 | [原文](https://arxiv.org/abs/2611.17730) |
 | [GLOW：把多模态生成接到机器人闭环执行](论文逐篇解读/P536.md) | 以真实和合成交互经验训练多模态自回归系统，并把输出接到动作执行。 | [原文](https://www.knowinai.com/tech.html) |
 | [Astra 具身评估：比较直接控制与分层协作](论文逐篇解读/P535.md) | 评估通用模型独立操作、调用低层策略和适应实机限制的表现。 | [原文](https://arxiv.org/abs/2610.22471) |
+| [HEIR：结合人类视角与注视线索理解交互意图](论文逐篇解读/P550.md) | 利用第一视角中的视线等可观测线索理解人的交互意图，评估对目标指代等任务的影响。 | [原文](https://arxiv.org/abs/2611.17238v1) · [项目页](https://heir-project.github.io/) |
 | [HoloAgent-0：具备三维空间记忆的统一具身智能体框架](论文逐篇解读/P082.md) | 以三维空间记忆、技能图和运行监控组织搜索、导航与移动操作，不直接控制关节。 | [原文](https://arxiv.org/abs/2606.23565) · [代码](https://github.com/HorizonRobotics/HoloAgent) · [项目页](https://horizonrobotics.github.io/robot_lab/holoagent) |
 | [HY-Embodied-0.5：面向具身任务的空间理解底座](论文逐篇解读/P289.md) | 以模态自适应MoT及视觉潜变量token构建空间感知VLM，训练覆盖定位、深度、分割和具身推理，并在扩展Action Expert的下游版本上验证双臂真机操作。 | [原文](https://arxiv.org/abs/2604.07430) · [代码](https://github.com/Tencent-Hunyuan/HY-Embodied) |
 | [Hy-Embodied-VLM-1.0：面向物理环境任务的视觉语言Agent](论文逐篇解读/P290.md) | 沿用HY-Embodied VLM骨干并按状态理解、状态转移、序列自适应推理组织监督，以可验证推理后训练驱动视觉语言导航和仿真Agent决策。 | [原文](https://arxiv.org/abs/2607.12894) · [代码](https://github.com/Tencent-Hunyuan/HY-Embodied) |
@@ -496,7 +501,9 @@
 | [RynnValue：以时间距离学习机器人任务价值](论文逐篇解读/P282.md) | 以任务语言、本体元数据和多帧观察估计逐帧剩余完成时间及相邻帧有符号时间位移，并辅助输出任务描述/匹配/成功判断；将时间距离势函数接入在线离线RL、价值筛选和冻结策略候选动作重排。 | [原文](https://arxiv.org/abs/2608.09853) · [代码](https://github.com/alibaba-damo-academy/RynnValue) · [项目页](https://alibaba-damo-academy.github.io/RynnValue.github.io) |
 | [Show-Harness：用语义动作接口让 VLM 闭环操作机械臂](论文逐篇解读/P210.md) | 以离散语义动作连接视觉语言模型和本体专用解释器，执行跨任务机械臂抓取放置。 | [原文](https://arxiv.org/abs/2609.10522) · [代码](https://github.com/showlab/Show-Harness) · [项目页](https://showlab.github.io/Show-Harness/) |
 | [Si₀：空间智能与具身推理模型](论文逐篇解读/P450.md) | 官方研究报告用受控消融分析空间感知与具身推理向VLA策略的迁移；RoboCasa模拟24任务各50 episodes，并在IRON原生传感器基准及五维开环动作MSE上验证轻量传感器适配。 | [原文](https://xpeng-robotics.github.io/si0/) |
+| [X-Nav：人形机器人室内外长程导航的数据与执行系统](论文逐篇解读/P552.md) | 将长程目标和室内外环境观察接入人形导航系统，在灵犀 X2 上验证跨空间的导航执行。 | [原文](https://arxiv.org/abs/2611.17598v1) |
 | [X-Planner：面向具身操作的事件结构规划](论文逐篇解读/P415.md) | 以 Task/Subtask/Action/Segment 层次组织具身轨迹，监督可读事件状态和带失败识别的滚动计划，并通过 Staircase 解码提供连续潜在 CoT；作为规划前端将事件条件传给固定 World-Action 模型，在双臂桌面机器人上以 Task Progress 评估。 | [原文](https://arxiv.org/abs/2609.25187) · [代码](https://github.com/X-Square-Robot/Xplanner) |
+| [XBot-Omni：联合语音、手势与表情的具身交互](论文逐篇解读/P556.md) | 以 Thinker–Talker–Actor 结合多模态理解、语音与机器人身体和面部表达，用于具身交互。 | [原文](https://arxiv.org/abs/2611.17160) · [项目页](https://xbot-omni.github.io/) |
 | [Astra：分层多模态移动机器人导航](论文逐篇解读/P456.md) | 以Astra-Global多模态地图定位和Astra-Local 4D体素规划/多传感器里程计组成分层移动导航系统；仓库训练后家庭零样本定位达81.8%，真实仓库与办公室任务成功率分别为84.2%和99.1%。 | [原文](https://arxiv.org/abs/2506.06205) · [项目页](https://astra-mobility.github.io/) |
 | [Hi Robot：层级化开放指令跟随](论文逐篇解读/P402.md) | 层级策略由高层VLM将开放式任务和途中用户反馈转为场景接地的低层语言子任务，再由π0 VLA输出动作块；高层以合成对话和标注技能监督，低层以流匹配学习动作，在桌面清理、三明治制作和杂货收纳上改善指令准确率及任务进度。 | [原文](https://arxiv.org/abs/2502.19417) · [项目页](https://pi.website/research/hirobot) |
 | [Robix：统一人机交互、推理与任务规划](论文逐篇解读/P457.md) | 以持续预训练、统一推理—动作序列监督微调和强化学习训练高层具身Agent，循环读取相机观察与用户话语并向低层VLA发原子指令；ByteMini实机平均任务进度92.5%。 | [原文](https://arxiv.org/abs/2509.01106) · [项目页](https://robix-seed.github.io/robix/) |
@@ -546,7 +553,7 @@
 
 综合训练平台、本体适配、推理部署、数据处理与模型评测工具。
 
-**14** 篇论文／报告 · **20** 个项目
+**15** 篇论文／报告 · **20** 个项目
 
 #### 论文与技术报告
 
@@ -559,6 +566,7 @@
 | [HIL-UMI：在UMI示教流上进行人机协同VLA后训练](论文逐篇解读/P352.md) | HIL-UMI在UMI人类演示流中并行比较π0.5动作分布并采集策略盲区，另以低优势进度片段修正价值估计，再用混合历史/新增数据做优势条件克隆。 | [原文](https://arxiv.org/abs/2609.20659) · [项目页](https://hil-umi.github.io/) |
 | [Action-JND：按动作可容忍扰动压缩视觉语言动作模型 Token](论文逐篇解读/P358.md) | Action-JND训练轻量逐Token容忍度估计器，预测视觉特征扰动在多大程度内仍能维持VLA动作响应；推理时将容忍度分数用于时序KV复用或直接剪枝。LIBERO上的OpenVLA实验在87.5%剪枝时报告42.00%平均成功率与30.16 ms延迟。 | [原文](https://arxiv.org/abs/2608.21247) |
 | [RTR：潜空间高频连续动作块与异步执行连续性](论文逐篇解读/P312.md) | 以连续VAE压缩60Hz高频动作块，并用Reuse-then-Refine重整异步推理后的拼接轨迹，改善xArm接触操作的动作平滑性、块间连续和执行时长。 | [原文](https://arxiv.org/abs/2605.24931) · [代码](https://github.com/tars-robotics/RTR) |
+| [PhysCapBench：评测视频描述中的物理过程](论文逐篇解读/P554.md) | 用接触、形变和因果等物理维度评估视频描述的质量，研究描述作为物理学习监督时保留了哪些信息。 | [原文](https://arxiv.org/abs/2611.16424) · [代码](https://github.com/hfwang2001/PhysCapBench) · [项目页](https://hfwang2001.github.io/physcapbench-site/) |
 | [SOP：把多机器人在线采集和VLA后训练连成系统](论文逐篇解读/P444.md) | SOP是多机器人在线后训练系统：并行actor将自主轨迹和人工介入上传在线缓冲区，云端learner混合离线数据更新共享VLA并异步分发；HG-DAgger与RECAP实机验证中，四actor配置在180分钟达到0.925成功率，达到0.8用时71.7分钟。 | [原文](https://arxiv.org/abs/2601.03044) · [项目页](https://finch.agibot.com/research/sop) |
 | [GPT-as-Policy：大模型数值动作能力的六域评测](论文逐篇解读/P374.md) | 在夹爪、灵巧手、移动操作、导航、行走和人形移动操作六域评估GPT-6 Astra直接数值动作控制及与低层策略或全身控制器协作的接口和效果；人形实验中13/30项任务的回报超过已发表基线。 | [原文](https://arxiv.org/abs/2609.38537) · [代码](https://github.com/anonymous-report-421/GPT-as-Policy) · [项目页](https://galaxygeneralrobotics.github.io/astra-policy/) |
 | [EffVLA：由动作头初始化、规模与延迟共同决定的高效 VLA](论文逐篇解读/P356.md) | EffVLA固定SigLIP2/Qwen2.5骨干与训练流程，系统比较动作头结构、损失、初始化、规模和推理轮数，并配对测量设备延迟。论文发现从语言主干复制末层初始化是跨规模最稳定的性能因素，并在LIBERO扰动集和SO-ARM101分拣任务验证迁移。 | [原文](https://arxiv.org/abs/2609.13984) · [代码](https://github.com/MindVLA-Team/EFFVLA) · [项目页](https://mindvla-team.github.io/EFFVLA) |
