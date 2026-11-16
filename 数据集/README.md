@@ -2,7 +2,7 @@
 
 > 汇总具身智能训练与评测相关的数据集、训练数据配方及仿真资产，涵盖人体动作、人类操作视频、机器人示范、重定向轨迹与合成数据，按数据来源与内容整理。
 
-当前收录：**55项数据集与相关数据资源**。
+当前收录：**56项数据集与相关数据资源**。
 
 ## 分类导航
 
@@ -12,7 +12,7 @@
 
 ## 人体动作与语言
 
-**10 项资源**
+**11 项资源**
 
 | 数据集 | 数据内容 | 本体／对象 | 训练用途 |
 | --- | --- | --- | --- |
@@ -26,6 +26,7 @@
 | <a id="d009"></a>[LaFAN1](https://github.com/ubisoft/ubisoft-laforge-animation-dataset) | 运动捕捉序列与动作过渡片段 | 人体 | 研究动作补间、动作生成与跟踪参考 |
 | <a id="d023"></a>[OMOMO](https://github.com/lijiaman/omomo_release) | 人体与物体动作、物体三维几何 | 人体／物体 | 学习人-物交互动作，研究重定向与移动操作 |
 | <a id="d049"></a>[HiPHI](https://huggingface.co/datasets/noitomrobotics/HiPHI) | 光学动捕人体BVH动作，交互子集含同步物体轨迹与OBJ网格 | 132名表演者；人体与40种交互物体 | 支持人形动作跟踪、重定向、全身控制与人体-物体交互建模。 |
+| <a id="d056"></a>[MotionDecode](https://huggingface.co/datasets/CMRobot/MotionDecode) | 青瞳视觉与 EnDecodeX 的人体动捕资源，包含骨架、手指运动与物体位姿等；数据仓库另列 G1 重定向 CSV。 | 人体光学动捕；Unitree G1 重定向轨迹 | 用于动作重定向、全身动作跟踪和模仿学习。[项目页](https://chingmudata.github.io/MotionDecode/)介绍多模态数据；[轨迹目录](https://huggingface.co/datasets/CMRobot/MotionDecode/tree/main/samples)列出 G1 CSV；原始多模态资源的获取以[青瞳视觉说明](https://www.chingmu.com/company-news/newsdetail_100023.shtml)及数据卡为准。 |
 
 <details>
 <summary>规模、格式与官方来源</summary>
@@ -99,6 +100,13 @@
 - **模态与格式**：光学MoCap；55关节BVH；物体6D轨迹与OBJ网格；文本与Frame-LU标签
 - **具体本体／对象**：人体；40种交互物体/12类别
 - **官方来源**：[数据卡／项目来源](https://huggingface.co/datasets/noitomrobotics/HiPHI)
+
+### MotionDecode
+
+- **规模**：项目介绍首期约1,000小时；数据卡标注约1,000小时G1重定向轨迹，samples目录约148 GB
+- **模态与格式**：人体骨架；手指动作；物体6D位姿；多视角视频与任务标签；数据仓库列有G1重定向CSV
+- **具体本体／对象**：人体光学动捕；Unitree G1重定向
+- **官方来源**：[数据卡／项目来源](https://huggingface.co/datasets/CMRobot/MotionDecode)
 
 </details>
 
