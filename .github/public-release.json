@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "generator": "build_public_release.py",
-  "content_file_count": 802,
+  "content_file_count": 809,
   "operational_file_count": 6,
   "files": [
     {
@@ -31,8 +31,8 @@
     },
     {
       "path": ".github/scripts/validate_public_tree.py",
-      "size": 26065,
-      "sha256": "d9aae93030643377f23543e0e7e490b94206b7381d8af33a6c016dad2c0d6d01"
+      "size": 26156,
+      "sha256": "dc10a011b1cb3a8264b31d98549a5e83bbdd49416bdfdebaf1b84398f46d9ca7"
     },
     {
       "path": ".github/workflows/public-release-check.yml",
@@ -56,13 +56,13 @@
     },
     {
       "path": "README.md",
-      "size": 30969,
-      "sha256": "65f6a5a238ea179eed440fdab31f51bf963581ed782c3b1a0397a3f32ca1e044"
+      "size": 31329,
+      "sha256": "78a9559cac4d5a687b47d33f51604695503f597ebe1e57e17addffa22ac1557f"
     },
     {
       "path": "全部资料目录.md",
-      "size": 82340,
-      "sha256": "4e452fe174770c2dc516eb489a3caaf72456eaec44d8c5e8dbb1cbed27bdd66e"
+      "size": 82977,
+      "sha256": "22af7cea8f2463faa30890468267349d43b9e571a5b5833538581b117910a005"
     },
     {
       "path": "公司与产品主表.md",
@@ -86,8 +86,8 @@
     },
     {
       "path": "技术与研究/01_动作数据与重定向.md",
-      "size": 36781,
-      "sha256": "3168ceef0f65b218793f8ee7edf31938811f3a98813e8ceece608784cff77ea5"
+      "size": 37108,
+      "sha256": "e0eac40a66764f0171b25c5073a869c9f59776f0e73e4031ddb3d03a71821472"
     },
     {
       "path": "技术与研究/02_Locomotion与运动先验.md",
@@ -96,23 +96,23 @@
     },
     {
       "path": "技术与研究/03_动作跟踪与全身控制.md",
-      "size": 37102,
-      "sha256": "522d9b8d4f88612431b52b0311a8319f271af1ae47452e03c4dbdfe1239fd31c"
+      "size": 37428,
+      "sha256": "0896908e7c58cd6b069298f865886d32332b1c366572978e940b435e8dd47861"
     },
     {
       "path": "技术与研究/04_LocoManip.md",
-      "size": 46907,
-      "sha256": "b1e4d1fcad0ddb6603ae01e6acf13ebed2efb16be5978c3c735dd470e1981eb5"
+      "size": 47285,
+      "sha256": "0fe1d7642a2816513a6ce95923a98e8ff062c9557685acf62b9751f6710e9f1b"
     },
     {
       "path": "技术与研究/05_世界模型VLA与Agent.md",
-      "size": 163145,
-      "sha256": "1d2ce7ccc7264ffe50ca98aff0ab312a30bb3c96bdf718953453b92a0f77802d"
+      "size": 164282,
+      "sha256": "be0e43a96c5c7b5a4aff0a68f0857b69b87064952c9ebd04f93f5c8a86d40cbc"
     },
     {
       "path": "技术与研究/06_工程与实机部署.md",
-      "size": 105977,
-      "sha256": "d8f84c58e0594708e90286240cd3686165b25480da9aa8e88d9a1de8f913a44a"
+      "size": 106561,
+      "sha256": "79d3607a4ce1ff92c66be65beaf7b7f266bf387a77800d8451484eb3957a1817"
     },
     {
       "path": "技术与研究/README.md",
@@ -121,8 +121,8 @@
     },
     {
       "path": "技术与研究/专题_触觉与接触智能.md",
-      "size": 3304,
-      "sha256": "c018d785f483ae5ae37a9870800d30b85d69647953d7bd419b909170c90eca40"
+      "size": 3463,
+      "sha256": "a98543a54b17d0d33a6da3f2155f4ba4ddd293dbffebde3a36ad6158f9f518cc"
     },
     {
       "path": "技术与研究/双轮足机器人训练开源方案表.md",
@@ -131,28 +131,28 @@
     },
     {
       "path": "技术与研究/研究方向_世界模型与通用动作策略.md",
-      "size": 119353,
-      "sha256": "c4dc66ab00c09379818964fc78e6970338bf92be333b43a77894c1d626b833d6"
+      "size": 120707,
+      "sha256": "deb5672905dfdf0cd7ba3b79b7d4897d956d047bb91bda02cd7995676bb83c6c"
     },
     {
       "path": "技术与研究/研究方向_任务规划与长程自主执行.md",
-      "size": 36667,
-      "sha256": "84d9ac11c741efdf9f1f80e9e0762204a16fb83e6aaa66f3f68e8d9598f88afe"
+      "size": 37319,
+      "sha256": "dd0cba6f843360f1063f445c852e36c31a70bc27e81718a2f013bd38efc56231"
     },
     {
       "path": "技术与研究/研究方向_动作数据与跨本体迁移.md",
-      "size": 50189,
-      "sha256": "101106620bed9a6b8736e5c6af51a4659740c14e75ebd48641c6fa7e56a706d5"
+      "size": 50794,
+      "sha256": "ada1f5f82075ab510cf89aa2a0956f89ba9f8a94df26a7492df15c8258de21dd"
     },
     {
       "path": "技术与研究/研究方向_物体交互与全身操作.md",
-      "size": 57949,
-      "sha256": "2820dc172fe1f07d5c2fd34e6ab742fa5b292d6ab785d4e5f0ba755eefc9b42c"
+      "size": 58603,
+      "sha256": "b623d80b320ff02e52c41fd6eee2e1fa737c25ac492214a2b481e2ff7c02c484"
     },
     {
       "path": "技术与研究/研究方向_运动控制与全身行为.md",
-      "size": 85859,
-      "sha256": "55193a6977bbcf35c39d778b04a58e38b80f85f5bc0cdeeaa3b0212197070a4d"
+      "size": 86460,
+      "sha256": "d0ce6f1480b3a54853ff92ad8ade19b7b5c0c72d046e99b3dbb2dc282cfd9b8c"
     },
     {
       "path": "技术与研究/许可/CC-BY-NC-SA-4.0.txt",
@@ -2925,9 +2925,44 @@
       "sha256": "e8a6bb40a4897c8b5fe2966ed7cad39377c09a22cf94abf5cc870abab7a1d13c"
     },
     {
+      "path": "技术与研究/论文逐篇解读/P557.md",
+      "size": 3340,
+      "sha256": "2948d51af2520f6ecf06b222c1a6ee729bc9c296e58e6edbf7b428d2180cb423"
+    },
+    {
+      "path": "技术与研究/论文逐篇解读/P558.md",
+      "size": 3443,
+      "sha256": "a7c22277b682097e6f1f60327ea387a51d3a8c3b5f287fbb70f1de47390023cd"
+    },
+    {
+      "path": "技术与研究/论文逐篇解读/P559.md",
+      "size": 3735,
+      "sha256": "1db78f3571970f71110c49ec155184d262cc8abc0c0a53dcd1526adf2df45d15"
+    },
+    {
+      "path": "技术与研究/论文逐篇解读/P560.md",
+      "size": 4864,
+      "sha256": "93f7845cc47123e9d1a584e74afddf15eaf9f1d85c7eb2664eb46e1196b98266"
+    },
+    {
+      "path": "技术与研究/论文逐篇解读/P561.md",
+      "size": 4447,
+      "sha256": "c6d536b16e4588d718a71e20d27dc6438669d847030e70b45104427634adb2d7"
+    },
+    {
+      "path": "技术与研究/论文逐篇解读/P562.md",
+      "size": 4669,
+      "sha256": "17b1149078f987c4fd4bd1a2fec47a3ea3b6e44c3d2a673bdf59f568b14b3c8c"
+    },
+    {
+      "path": "技术与研究/论文逐篇解读/P563.md",
+      "size": 4020,
+      "sha256": "0d22c79f27f6c9457a64333291128171f7be99f6f04dfd4589e4bde3d7af2597"
+    },
+    {
       "path": "技术与研究/论文逐篇解读/README.md",
-      "size": 139677,
-      "sha256": "ecb9a3fe8999c8c881f08d2d1db0470c3adeef2f02846ad95f537b1e44d5f18a"
+      "size": 141218,
+      "sha256": "13fc49d3c574fdf27b6b7cb51a02924c0a7ff2e323340c0351b4e7ca8b217184"
     },
     {
       "path": "技术与研究/论文逐篇解读/论文原图/P001_figure.png",

@@ -6,7 +6,7 @@
 
 > 移动、平衡、接触与操作协同，汇总相关论文、方法与项目。
 
-当前收录 **78** 篇论文／技术报告、**62** 个项目。
+当前收录 **79** 篇论文／技术报告、**62** 个项目。
 
 ## 本页导航
 
@@ -135,7 +135,7 @@
 
 联合移动、平衡、上肢与手部完成操作任务。
 
-**41** 篇论文／报告 · **32** 个项目
+**42** 篇论文／报告 · **32** 个项目
 
 #### 论文与技术报告
 
@@ -154,6 +154,7 @@
 | [HANDOFF：基于互补教师蒸馏的人形智能体任务空间全身控制](论文逐篇解读/P111.md) | 将互补移动、操作和恢复教师蒸馏为MoE策略，把低维任务空间命令转成人形全身动作。 | [原文](https://arxiv.org/abs/2606.06493) · [代码](https://github.com/lzyang2000/HANDOFF) · [项目页](https://lzyang2000.github.io/HANDOFF/) |
 | [HumanX：基于人类视频的敏捷可泛化人形交互技能](论文逐篇解读/P098.md) | 将人类视频恢复为人－物交互轨迹并扩增，再以统一模仿学习训练球类、搬运和交互技能。 | [原文](https://arxiv.org/abs/2602.02473) · [代码](https://github.com/wyhuai/HumanX) · [项目页](https://wyhuai.github.io/human-x/) |
 | [I-BFM：用奖励调用同一个全身策略，让机器人在接触失败后继续任务](论文逐篇解读/P543.md) | 以奖励推断为交互策略指定目标，用同一个全身策略处理搬运、推移和踢击，并根据接触变化调整动作。 | [原文](https://arxiv.org/abs/2610.06129) · [代码](https://github.com/Roboparty/I-BFM-Code) · [项目页](https://iamhardworking.github.io/I-BFM/) |
+| [Kimodo-Policy：利用动作生成先验实现闭环人形移动操作](论文逐篇解读/P559.md) | 将运动生成模型的运动学先验接入视觉语言动作策略，以全身运动参考组织移动操作。 | [原文](https://arxiv.org/abs/2611.11554v1) · [代码](https://github.com/kimodo-policy/kimodo-policy) · [项目页](https://kimodo-policy.github.io/) |
 | [KINO：用关键帧连接视觉语言规划与人形全身控制](论文逐篇解读/P224.md) | 以稀疏语义关键帧连接VLM分阶段规划与PPO全身策略，通过场景重定向和显著性采样完成G1抓取搬运。 | [原文](https://arxiv.org/abs/2609.18869) |
 | [LingBot-Touch：让不同触觉传感器给策略提供统一输入](论文逐篇解读/P516.md) | 统一压阻、磁性与视觉触觉表征，并将编码后的触觉 token 接入操作策略。 | [原文](https://arxiv.org/abs/2611.12806) · [项目页](https://technology.robbyant.com/lingbot-touch) |
 | [阶段条件策略优化：让一个策略依次完成移动操作各阶段](论文逐篇解读/P540.md) | 用阶段条件价值函数、阶段奖励和重置课程训练多阶段移动操作策略。 | [原文](https://arxiv.org/abs/2610.36270) |

@@ -6,7 +6,7 @@
 
 > 视觉语言理解、未来预测与任务决策，汇总相关论文、方法与项目。
 
-当前收录 **258** 篇论文／技术报告、**201** 个项目。
+当前收录 **261** 篇论文／技术报告、**201** 个项目。
 
 ## 本页导航
 
@@ -312,7 +312,7 @@
 
 在观测和任务条件下联合学习动作与未来世界，通过世界预测支持动作生成、候选评估或闭环规划；部分方法部署时仅运行动作分支。
 
-**57** 篇论文／报告 · **42** 个项目
+**59** 篇论文／报告 · **42** 个项目
 
 #### 论文与技术报告
 
@@ -323,6 +323,7 @@
 | [AR-WAM：视觉条件与Agent协作的世界动作策略](论文逐篇解读/P349.md) | AR-WAM以目标框和原子操作token取代策略端自然语言，联合输出可监督的目标理解、压缩未来场景latent与动作块；Agent通过detect/execute/query接口提供高层指令并管理长程记忆。 | [原文](https://arxiv.org/abs/2609.23578) |
 | [Being-H0.7：第一视角视频预训练的潜在世界动作模型](论文逐篇解读/P314.md) | 通过训练期未来观测后验与当前上下文先验的潜在表示对齐，学习未来感知动作推理；部署时先验分支直接生成动作块，支持多本体操作。 | [原文](https://arxiv.org/abs/2605.00078) · [代码](https://github.com/BeingBeyond/Being-H) · [项目页](https://research.beingbeyond.com/being-h07) |
 | [LingBot-VA 1.0：因果视频—动作联合建模与机器人控制](论文逐篇解读/P255.md) | 视频潜变量流与机器人动作流在双流Transformer中交替建模，模型既预测动作也预测动作条件下的未来画面；仓库开放权重、RoboTwin与LIBERO后训练数据、训练和推理脚本，可检查世界预测怎样与策略输出共享表示但保持独立输出。 | [原文](https://arxiv.org/abs/2601.21998) · [代码](https://github.com/Robbyant/lingbot-va) · [项目页](https://technology.robbyant.com/lingbot-va) |
+| [CloudRobo-WM：联合预测视觉、几何与机器人动作](论文逐篇解读/P561.md) | 用共享模型学习未来画面、几何和语义及本体动作，并通过有效性掩码兼容视角与标注不完整的训练数据。 | [原文](https://github.com/Barry-Liang/CloudRobo-WM/blob/main/Cloudrobo_WM_20261113.pdf) · [代码](https://github.com/Barry-Liang/CloudRobo-WM) · [项目页](https://www.huaweicloud.com/product/cloudrobo.html) |
 | [Cosmos Policy：基于视频扩散的机器人策略与规划](论文逐篇解读/P254.md) | 将Cosmos视频生成主干后训练为 visuomotor policy，并扩展未来观测和值预测以支持候选动作规划。 | [原文](https://arxiv.org/pdf/2601.16163) · [代码](https://github.com/NVlabs/cosmos-policy) · [项目页](https://research.nvidia.com/labs/dir/cosmos-policy/) |
 | [DELE-w0.5：用未来状态辅助训练，部署时直接生成动作](论文逐篇解读/P193.md) | 训练时联合动作与未来视觉潜变量，部署时移除未来分支以直接生成双臂操作动作。 | [原文](https://arxiv.org/abs/2608.22067) · [项目页](https://deepleap-x.com/research/dele-w0.5) |
 | [Delta-0：世界动作模型驱动的全身移动操作](论文逐篇解读/P249.md) | 将潜在世界动作模型与学习型全身控制器连接，以人体数据预训练、仿真评测和实机RL后训练完成家庭移动操作。 | [原文](https://deltai.com/en/blog/delta-0) |
@@ -366,6 +367,7 @@
 | [WholeBodyWAM：以统一全身控制语义扩展世界动作模型](论文逐篇解读/P226.md) | 保留预训练WAM视觉—操作先验，以56维统一全身控制语义和可操作性门控协调不同人形全身控制器。 | [原文](https://arxiv.org/abs/2609.16644) · [项目页](https://wholebodywam.github.io/) |
 | [DreamZero：作为零样本策略的世界动作模型](论文逐篇解读/P113.md) | 联合自回归生成未来视觉与机器人动作，并以新观测滚动校正，用作零样本操作策略。 | [原文](https://arxiv.org/abs/2602.15922) · [代码](https://github.com/dreamzero0/dreamzero) · [项目页](https://dreamzero0.github.io/) |
 | [World-Action Models 综述：从预测世界到生成可执行动作](论文逐篇解读/P211.md) | 从表示、转移建模、动作接口、架构、训练、数据和规模化整理机器人世界动作模型研究。 | [原文](https://arxiv.org/abs/2609.16074) · [项目页](https://rcl-robotics.github.io/Awesome-World-Action-Models/) |
+| [WorldBridge：通过视频与动作联合建模提升任务泛化](论文逐篇解读/P560.md) | 分开检验新任务的视频预测泛化和动作执行泛化，用视频与动作联合建模研究两者之间的转换。 | [原文](https://arxiv.org/abs/2610.40748v1) · [项目页](https://worldbridge-jd.github.io/) |
 | [XPACE：联合动作与未来世界建模](论文逐篇解读/P448.md) | 共享视频骨干联合预测机器人动作和未来视频，并作为动作条件模拟器合成偏离—恢复经验；IRON三项实机任务各20次，平均成功率68.3%、进度0.84。 | [原文](https://arxiv.org/abs/2609.17372) · [项目页](https://xpeng-robotics.github.io/xpace/) |
 | [Zero-WAM：让人类视频成为未见任务的上下文指令](论文逐篇解读/P186.md) | 把人类示范视频作为上下文任务条件，联合预测机器人未来视觉与动作而不更新模型参数。 | [原文](https://arxiv.org/abs/2608.26103) · [项目页](https://robbyant-research.github.io/Zero-WAM/) |
 | [ZimaBlue：让大规模无动作视频进入可部署的WAM](论文逐篇解读/P196.md) | 以因果视频预训练、视频动作中训练和目标机器人后训练，把第一视角视频用于通用操作策略。 | [原文](https://arxiv.org/abs/2609.00188) · [项目页](https://github.com/ZimaBlue-WAM/ZimaBlue) |
@@ -461,7 +463,7 @@
 
 理解场景与任务，组织空间记忆、任务分解、技能调用和导航决策。
 
-**42** 篇论文／报告 · **32** 个项目
+**43** 篇论文／报告 · **32** 个项目
 
 #### 论文与技术报告
 
@@ -481,6 +483,7 @@
 | [HY-Embodied-0.5：面向具身任务的空间理解底座](论文逐篇解读/P289.md) | 以模态自适应MoT及视觉潜变量token构建空间感知VLM，训练覆盖定位、深度、分割和具身推理，并在扩展Action Expert的下游版本上验证双臂真机操作。 | [原文](https://arxiv.org/abs/2604.07430) · [代码](https://github.com/Tencent-Hunyuan/HY-Embodied) |
 | [Hy-Embodied-VLM-1.0：面向物理环境任务的视觉语言Agent](论文逐篇解读/P290.md) | 沿用HY-Embodied VLM骨干并按状态理解、状态转移、序列自适应推理组织监督，以可验证推理后训练驱动视觉语言导航和仿真Agent决策。 | [原文](https://arxiv.org/abs/2607.12894) · [代码](https://github.com/Tencent-Hunyuan/HY-Embodied) |
 | [LAW：用子任务进展连接语言规划和世界动作模型](论文逐篇解读/P534.md) | 语言模型规划剩余子任务，评价并融合世界动作模型提出的动作。 | [原文](https://arxiv.org/abs/2610.23334) |
+| [LHNav：用异步任务调度和全身动作编码实现长程导航](论文逐篇解读/P562.md) | 以多频率的任务规划、视觉语言导航和全身控制连接长程人形导航，并构建受物理执行约束的动作训练数据。 | [原文](https://arxiv.org/abs/2611.12136v1) · [项目页](https://robbyant-research.github.io/LHNav/) |
 | [LightNav-0：以真实场景合成扩展零样本通用导航](论文逐篇解读/P426.md) | 真实导航数据采集成本高，场景和平台变化大，需要通过真实场景仿真扩展可训练经验，并在执行时把视觉语言理解转化为路径动作。 | [原文](https://lightorigins.cn/blog/lightnav-0) · [代码](https://github.com/lightorigins/LightNav-0) |
 | [DISCO：把连续动作树搜索蒸馏进整理策略](论文逐篇解读/P533.md) | 在仿真中搜索长程整理计划，再把搜索结果蒸馏到可直接部署的策略。 | [原文](https://arxiv.org/abs/2610.25785) |
 | [LT-Mem：为反复访问的场景保存对象状态与变化历史](论文逐篇解读/P375.md) | 将多次单目观察对齐到统一三维场景，以对象身份和变化频率维护当前状态、事件历史与统计记忆，支持物品移动、出现和消失等时序场景问答。 | [原文](https://arxiv.org/abs/2608.19059) · [项目页](https://lt-mem.github.io/) |
