@@ -2,7 +2,7 @@
 
 > 汇总具身智能训练与评测相关的数据集、训练数据配方及仿真资产，涵盖人体动作、人类操作视频、机器人示范、重定向轨迹与合成数据，按数据来源与内容整理。
 
-当前收录：**56项数据集与相关数据资源**。
+当前收录：**57项数据集与相关数据资源**。
 
 ## 分类导航
 
@@ -212,7 +212,7 @@
 
 ## 重定向与目标本体动作
 
-**8 项资源**
+**9 项资源**
 
 | 数据集 | 数据内容 | 本体／对象 | 训练用途 |
 | --- | --- | --- | --- |
@@ -224,6 +224,7 @@
 | <a id="d042"></a>[Weave reference motions and simulation rollouts](https://huggingface.co/datasets/appolyn/Weave) | 保留人—物交互的机器人参考动作、策略仿真执行轨迹与九种物体资产，包含身体、手部、物体状态及接触标签。 | Unitree G1与双Inspire灵巧手；人—物交互 | 用于人形全身移动操作策略学习、评测，以及带物理接触标注的人—物交互动作建模。 |
 | <a id="d043"></a>[HOI-Retarget Kinematic Robot-HOI References](https://huggingface.co/datasets/leggedrobotics/hoi-retarget) | SMPL-X人体姿态;物体网格与位姿轨迹;物体坐标系接触目标;机器人根姿态与关节位置;逐链接接触和足支撑标记;视频 | Unitree G1 29-DoF;Unitree H2 31-DoF;含同步双机器人协作片段 | 用于接触保持的人体到人形动作重定向、物体尺度扩增和跨物体交互参考构建；运动学轨迹可供下游模仿策略及动态精化使用。 |
 | <a id="d052"></a>[OpenLET 小脑动作数据集（LET-HumanMotion-Roban2）](https://openlet.openatom.tech/data/let-humanmotion-roban2) | 已重定向到鲁班机型并按120 fps重采样的全身动作，覆盖非交互、环境交互、物体交互、武术与舞蹈 | Roban鲁班人形机器人 | 用于全身动作跟踪、运控策略训练与运动能力评测。 |
+| <a id="d057"></a>[BONES-SEED](https://huggingface.co/datasets/bones-studio/seed) | 人体动捕和 G1 全身重定向轨迹，配自然语言描述与动作时间分段 | NVIDIA SOMA 人体骨架；Unitree G1 | G1 轨迹可直接作为全身动作跟踪与模仿学习的参考；人体轨迹和文本标注可用于动作重定向、文本到动作生成与检索。该数据集是 [SONIC 的训练数据来源之一](https://github.com/NVlabs/GR00T-WholeBodyControl/blob/main/docs/source/user_guide/training_data.md)。 |
 
 <details>
 <summary>规模、格式与官方来源</summary>
@@ -283,6 +284,13 @@
 - **模态与格式**：重定向全身动作轨迹；120 fps重采样
 - **具体本体／对象**：Roban鲁班人形机器人
 - **官方来源**：[数据卡／项目来源](https://openlet.openatom.tech/data/let-humanmotion-roban2)
+
+### BONES-SEED
+
+- **规模**：142,220 段（含镜像），约 288 小时，120 fps，522 名表演者
+- **模态与格式**：SOMA Uniform／Proportional BVH；兼容 MuJoCo 的 G1 CSV；JSON 动作描述与时间分段
+- **具体本体／对象**：NVIDIA SOMA 人体骨架；Unitree G1
+- **官方来源**：[数据卡／项目来源](https://huggingface.co/datasets/bones-studio/seed)
 
 </details>
 
