@@ -6,7 +6,7 @@
 
 > 移动、平衡、接触与操作协同，汇总相关论文、方法与项目。
 
-当前收录 **79** 篇论文／技术报告、**62** 个项目。
+当前收录 **84** 篇论文／技术报告、**62** 个项目。
 
 ## 本页导航
 
@@ -32,12 +32,13 @@
 
 利用视觉、物体状态与场景信息控制机器人交互。
 
-**18** 篇论文／报告 · **11** 个项目
+**20** 篇论文／报告 · **11** 个项目
 
 #### 论文与技术报告
 
 | 论文／报告 | 主要方法与用途 | 原文／代码 |
 | --- | --- | --- |
+| [Body Schema Policy：用身体结构连接视觉与全身动作](论文逐篇解读/P568.md) | 利用运动学树组织身体查询视觉与动作去噪以学习高效移动操作。 | [原文](https://arxiv.org/abs/2611.22713v1) |
 | [Dexterity-BEV：以鸟瞰空间对齐三维世界与操作动作](论文逐篇解读/P405.md) | 以多视角点云/顶点谱融合成共同BEV工作区，将机器人状态与SE(3)末端动作也映射到该坐标系，再由VLM条件下的flow-matching动作专家输出动作块；在LIBERO、RoboTwin 2.0和AgileX、DexForce W1、A1实机上测试。作者项目页是代码与资源入口，本登记不将其误标为DexForce公司GitHub。 | [原文](https://arxiv.org/abs/2606.02274) · [项目页](https://hnuzhy.github.io/projects/Dex-BEV) |
 | [EgoHumanoid：基于机器人无关第一视角示范的野外移动操作](论文逐篇解读/P047.md) | 将第一视角示范重投影并转为末端增量和移动原语，再以少量真机数据锚定移动操作策略。 | [原文](https://arxiv.org/abs/2602.10106) · [代码](https://github.com/OpenDriveLab/EgoHumanoid) · [项目页](https://opendrivelab.com/EgoHumanoid) |
 | [ForeTime-VLA：把未来动作线索蒸馏进因果抓取策略](论文逐篇解读/P200.md) | 从世界动作模型蒸馏因果未来潜变量与阶段信息，改善传送带抓取和接触时序控制。 | [原文](https://arxiv.org/abs/2608.20735) |
@@ -48,6 +49,7 @@
 | [Sony Ace：以事件视觉与强化学习应对高速对抗](论文逐篇解读/P482.md) | 以主动像素相机测位置、事件视觉估旋转，再用仿真训练的非对称Actor-Critic生成短时击球动作，并由约束优化筛除碰撞风险、生成复位轨迹。论文记录了与精英及职业球员的比赛结果，但样本和赛事规则限定了结论范围。 | [原文](https://www.nature.com/articles/s41586-026-10338-5) · [项目页](https://ace.ai.sony/) |
 | [Psi0：分阶段学习人形移动操作并接入全身控制](论文逐篇解读/P192.md) | 分阶段训练视觉语言动作模型与动作专家，并由低层控制器执行人形移动和灵巧操作。 | [原文](https://arxiv.org/abs/2603.12263) · [代码](https://github.com/physical-superintelligence-lab/Psi0) · [项目页](https://psi-lab.ai/Psi0/) |
 | [Reflex：从机载视觉学习人形反应式接箱](论文逐篇解读/P490.md) | 先学习特权状态接箱控制，再通过潜变量对齐及带相机自运动历史的RGB-D编码实现视觉反应控制。 | [原文](https://arxiv.org/abs/2610.12772) |
+| [RopeFormer：用多次交互适应绳索动力学](论文逐篇解读/P573.md) | 把前几次动作及绳索响应保留在策略上下文中，使冻结策略适应未知柔性物体动力学。 | [原文](https://arxiv.org/abs/2609.23432v1) · [项目页](https://ropeformer.github.io/) |
 | [SceneBot：接触提示的场景交互人形全身跟踪](论文逐篇解读/P094.md) | 从动作恢复场景并生成接触标签，以接触提示条件化人形跟踪器，区分支撑地面与交互对象。 | [原文](https://arxiv.org/abs/2606.27581) · [项目页](https://ericcsr.github.io/scenebot/) |
 | [SMASH：机载视觉与可扩展全身动作的人形乒乓球控制](论文逐篇解读/P474.md) | Motion-VAE扩展G1可执行击球动作，双机载相机与自适应滤波估计来球和机器人状态；机载感知真球测试20次回球12次。 | [原文](https://arxiv.org/abs/2604.01158) · [项目页](https://mmlab.hk/Smash/) |
 | [TouchGuide：用触觉引导推理时的接触操作](论文逐篇解读/P421.md) | 视觉运动策略先根据视觉观测生成粗略候选动作；任务专属接触物理模型融合视觉、触觉与候选动作，在扩散去噪或流匹配采样后期提供可行性梯度，引导动作贴合当前接触状态，无需重训基础策略。 | [原文](https://arxiv.org/abs/2601.20239) · [项目页](https://martelzhang.github.io/touchguide) |
@@ -79,7 +81,7 @@
 
 协调外力、柔顺控制、接触切换与负载变化。
 
-**19** 篇论文／报告 · **19** 个项目
+**21** 篇论文／报告 · **19** 个项目
 
 #### 论文与技术报告
 
@@ -92,7 +94,9 @@
 | [Play2Perfect：灵巧手预训练与精密装配微调](论文逐篇解读/P531.md) | 用多物体、多目标的强化学习预训练灵巧手，再针对插接微调。 | [原文](https://arxiv.org/abs/2606.26428) |
 | [SplitAdapter：基于因子化适配的负载感知人形移动操作](论文逐篇解读/P110.md) | 分别编码物体负载与本体动力学，再调制冻结策略层，适配人形搬运和Sim2Real任务。 | [原文](https://arxiv.org/abs/2606.03297) · [项目页](https://splitadapter.github.io/) |
 | [SteadyTray：以残差强化学习稳定人形托盘运输](论文逐篇解读/P377.md) | 冻结步态基座训练残差以稳定托盘负载，再蒸馏编码器接入相机物体位姿；G1仿真评估变速、推机器人与推物体，真机展示多类负载运输和扰动恢复。 | [原文](https://arxiv.org/abs/2603.10306) · [代码](https://github.com/AllenHuangGit/steadytray) · [项目页](https://steadytray.github.io/) |
+| [Uni-VLaT：让全身触觉参与人形动作决策](论文逐篇解读/P572.md) | 融合分布式全身触觉并预测未来多模态表征，适配预训练 VLA，为 SONIC 跟踪器提供接触感知动作。 | [原文](https://arxiv.org/abs/2609.35450v2) · [项目页](https://ggkiller-air.github.io/Uni-VLaT/) |
 | [VisForce：指尖力视觉对齐与目标条件灵巧操作](论文逐篇解读/P353.md) | VisForce将腕部图像上的当前指尖力线索与示范检索得到的目标力图像送入目标条件交叉注意力，再沿π0.5的动作生成路径输出手臂与手部增量动作。在UR10与RH56F1上评估力条件抓取、插入、倾倒、工具转移和受控滑移任务。 | [原文](https://arxiv.org/abs/2609.25785) |
+| [WiTac：用腕部视觉解释指尖接触](论文逐篇解读/P571.md) | 将指尖触觉、手部运动与腕部视觉融合为接触表示，为双臂 VLA 提供操作反馈。 | [原文](https://arxiv.org/abs/2611.21057v2) · [项目页](https://wrist-informed-tactile-representations.github.io/) |
 | [WT-UMI：把接触力纳入全身示范、规划与柔顺执行](论文逐篇解读/P140.md) | 以触觉和力监督修正人体示范的位姿与接触轨迹，再用导纳控制完成柔性及大件操作。 | [原文](https://arxiv.org/abs/2606.13232) · [项目页](https://wt-umi.github.io/WTUMI/) |
 | [CHIP：基于后见扰动的人形自适应柔顺控制](论文逐篇解读/P086.md) | 将后见扰动转成条件目标，使全身策略按任务调节末端顺应，支持开门、擦拭和推车。 | [原文](https://arxiv.org/abs/2512.14689) · [项目页](https://nvlabs.github.io/CHIP/) |
 | [DexNDM：用真实状态转移学习灵巧手的动力学残差](论文逐篇解读/P175.md) | 以仿真专家蒸馏通用策略，再用真机数据训练逐关节动力学和残差模型补偿手内旋转差异。 | [原文](https://arxiv.org/abs/2510.08556) · [项目页](https://meowuu7.github.io/DexNDM/) |
@@ -135,7 +139,7 @@
 
 联合移动、平衡、上肢与手部完成操作任务。
 
-**42** 篇论文／报告 · **32** 个项目
+**43** 篇论文／报告 · **32** 个项目
 
 #### 论文与技术报告
 
@@ -152,6 +156,7 @@
 | [FARO：面向可行性的机器人运动优化](论文逐篇解读/P239.md) | 围绕候选接触序列构建由便宜到昂贵的运动学与动力学可行性筛选层，并与接触模式树搜索结合以生成可执行的人形全身操作轨迹。 | [原文](https://arxiv.org/abs/2607.18362) · [项目页](https://atarilab.github.io/faro.io/) |
 | [From Hitter to Player：用落点命令分开训练击球执行与对抗策略](论文逐篇解读/P506.md) | 以落点坐标连接物理击球规划、29关节全身策略和高层选点；先适应连续回合，再冻结执行层学习对抗策略。 | [原文](https://arxiv.org/abs/2610.14067) · [项目页](https://mufanmufan.github.io/hitter-to-player/) |
 | [HANDOFF：基于互补教师蒸馏的人形智能体任务空间全身控制](论文逐篇解读/P111.md) | 将互补移动、操作和恢复教师蒸馏为MoE策略，把低维任务空间命令转成人形全身动作。 | [原文](https://arxiv.org/abs/2606.06493) · [代码](https://github.com/lzyang2000/HANDOFF) · [项目页](https://lzyang2000.github.io/HANDOFF/) |
+| [Heave-Ho：基于技能编排与分散式控制的多机搬运](论文逐篇解读/P569.md) | 以共享物体约束训练分散式全身跟踪残差，再通过视觉规划与语音同步把搬运技能串联为长程任务。 | [原文](https://arxiv.org/abs/2611.22275v2) · [代码](https://github.com/heaveho-humanoid/Heave-Ho) · [项目页](https://heaveho-humanoid.github.io/) |
 | [HumanX：基于人类视频的敏捷可泛化人形交互技能](论文逐篇解读/P098.md) | 将人类视频恢复为人－物交互轨迹并扩增，再以统一模仿学习训练球类、搬运和交互技能。 | [原文](https://arxiv.org/abs/2602.02473) · [代码](https://github.com/wyhuai/HumanX) · [项目页](https://wyhuai.github.io/human-x/) |
 | [I-BFM：用奖励调用同一个全身策略，让机器人在接触失败后继续任务](论文逐篇解读/P543.md) | 以奖励推断为交互策略指定目标，用同一个全身策略处理搬运、推移和踢击，并根据接触变化调整动作。 | [原文](https://arxiv.org/abs/2610.06129) · [代码](https://github.com/Roboparty/I-BFM-Code) · [项目页](https://iamhardworking.github.io/I-BFM/) |
 | [Kimodo-Policy：利用动作生成先验实现闭环人形移动操作](论文逐篇解读/P559.md) | 将运动生成模型的运动学先验接入视觉语言动作策略，以全身运动参考组织移动操作。 | [原文](https://arxiv.org/abs/2611.11554v1) · [代码](https://github.com/kimodo-policy/kimodo-policy) · [项目页](https://kimodo-policy.github.io/) |

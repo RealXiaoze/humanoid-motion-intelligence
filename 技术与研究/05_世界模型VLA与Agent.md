@@ -6,7 +6,7 @@
 
 > 视觉语言理解、未来预测与任务决策，汇总相关论文、方法与项目。
 
-当前收录 **261** 篇论文／技术报告、**201** 个项目。
+当前收录 **268** 篇论文／技术报告、**201** 个项目。
 
 ## 本页导航
 
@@ -39,7 +39,7 @@
 
 根据观测、历史和动作条件预测未来状态、视频或奖励，用于想象学习、规划和策略评估。动作条件也可用语言或潜变量表达。
 
-**31** 篇论文／报告 · **24** 个项目
+**33** 篇论文／报告 · **24** 个项目
 
 #### 论文与技术报告
 
@@ -58,8 +58,10 @@
 | [GigaWorld-1：以动作条件长程预测支持策略评测](论文逐篇解读/P271.md) | GigaWorld-1以历史观测、显式空间动作控制和任务条件自回归预测未来多视角视频；Wan初始化、层级历史记忆、相机几何控制和DMD2蒸馏服务长程rollout，并由WMBench评估其与真实策略结果的对齐。 | [原文](https://arxiv.org/abs/2607.02642) · [代码](https://github.com/open-gigaai/giga-world-1) · [项目页](https://open-gigaai.github.io/giga-world-1/) |
 | [LingBot-World 2.0：以相机与事件指令驱动长时程交互世界](论文逐篇解读/P266.md) | LingBot-World 2.0以初始画面、相机位姿和分块文本事件作为条件，自回归预测未来交互视频；MoBA因果注意力、少步蒸馏及Pilot/Director调度支持长时程实时世界交互。 | [原文](https://arxiv.org/abs/2607.07534) · [代码](https://github.com/Robbyant/lingbot-world-v2) · [项目页](https://technology.robbyant.com/lingbot-world-v2) |
 | [Qwen-RobotWorld：语言条件的具身未来视频预测](论文逐篇解读/P259.md) | 以自然语言动作意图统一描述不同机器人操作，并预测对应的未来视频状态，供生成评测与下游世界模型研究使用。 | [原文](https://arxiv.org/abs/2606.17030) · [项目页](https://qwen.ai/blog?id=qwen-robotworld) |
+| [Rollback：在世界模型中回溯决策并改进机器人策略](论文逐篇解读/P576.md) | 在可恢复的世界模型上下文中比较同一决策点的动作分支并以相对价值监督策略。 | [原文](https://arxiv.org/abs/2610.36068v1) · [项目页](https://rollback-wm.github.io/) |
 | [RynnWorld-4D：协同预测外观、几何与运动的具身世界模型](论文逐篇解读/P281.md) | 从RGB-D观察与任务文本协同生成未来RGB、深度和光流，通过逐帧跨模态注意力形成可还原3D场景流的4D表征；独立训练的RynnWorld-4D-Policy再用冻结预测表征产生动作。 | [原文](https://arxiv.org/abs/2607.06559) · [代码](https://github.com/alibaba-damo-academy/RynnWorld-4D) · [项目页](https://alibaba-damo-academy.github.io/RynnWorld-4D.github.io) |
 | [RynnWorld-Latent：让不同本体共用动作条件预测视频](论文逐篇解读/P539.md) | 用统一三维潜动作条件化未来视频生成，并构造可用于下游训练的动作视频数据。 | [原文](https://arxiv.org/abs/2610.36791) |
+| [Flip Test：用物理边界检验视频世界模型](论文逐篇解读/P577.md) | 以最小图像对和边界扫描检验生成结果是否随决定性物理状态变化。 | [原文](https://arxiv.org/abs/2611.19822v1) · [项目页](https://flip-test.github.io/) |
 | [GAWM：物理状态对齐的目标条件规划世界模型](论文逐篇解读/P437.md) | 以逆动力学和相邻潜变量到物理状态的对齐监督约束JEPA表示，在部署时用图像编码、动作条件潜动力学和CEM进行目标条件规划；四个仿真任务中状态对齐均优于仅逆动力学消融。 | [原文](https://arxiv.org/abs/2609.03565) · [代码](https://github.com/zsibot/gawm) |
 | [WALL-SS：让动作条件世界模型持续推演，并用于筛选机器人策略](论文逐篇解读/P187.md) | 以尺度对齐动作条件和时间尺度记忆进行长程视频推演，评估机器人世界模型及策略。 | [原文](https://arxiv.org/abs/2608.26239) · [代码](https://github.com/X-Square-Robot/wall-ss) |
 | [WorldOracle：用同一串动作对照预测与真实执行](论文逐篇解读/P522.md) | 固定初始观测和低层动作序列，对比模型预测与真实机器人执行。 | [原文](https://arxiv.org/abs/2610.18826v4) |
@@ -112,7 +114,7 @@
 
 根据观测与任务条件生成可执行动作或动作块；具体接口可增加本体状态，涵盖VLA、视觉运动模仿学习、跨本体策略与后训练。
 
-**106** 篇论文／报告 · **76** 个项目
+**109** 篇论文／报告 · **76** 个项目
 
 #### 论文与技术报告
 
@@ -128,6 +130,7 @@
 | [BridgeVLA++：让三维操作策略记住已经发生的交互](论文逐篇解读/P204.md) | 以二维热图生成粗到细动作，并用时间和空间记忆恢复遮挡目标几何以完成三维操作。 | [原文](https://arxiv.org/abs/2608.05042) · [代码](https://github.com/npucvr/BridgeVLA-Seq) · [项目页](https://bridgevla-plus.github.io/) |
 | [CLIFT：用真机奖励闭环适配人形 VLA](论文逐篇解读/P242.md) | 把部署后的真机轨迹转成优势标注的监督样本，经托管SFT接口迭代VLA，缓解权重封闭模型在接触操作中的任务适配不足。 | [原文](https://arxiv.org/abs/2607.29172) · [项目页](https://thomaschen98.github.io/clift/) |
 | [POT-VLA：用持久三维物体Token闭环验证人形移动操作](论文逐篇解读/P241.md) | 将RGB-D观测更新为带任务角色的持久三维物体记录，把同一物体记忆用于VLA动作条件和动作后几何谓词验证，支持失败后的局部恢复。 | [原文](https://arxiv.org/abs/2607.18016) |
+| [CoBoVLA：用离散编码分离指令理解与机器人动作](论文逐篇解读/P580.md) | 将指令步骤码与动作码分离，使语言理解、视觉规划和动作执行可分别诊断。 | [原文](https://arxiv.org/abs/2611.22395v1) |
 | [DriftingVLA：按动作维度漂移的原生单步 VLA](论文逐篇解读/P325.md) | 从噪声一次生成完整动作块，以PDTD对每个动作维的完整时序轨迹分别建立漂移几何，保留联合动作输出，在LIBERO、RoboTwin与双UR5真机验证精度和时延。 | [原文](https://arxiv.org/abs/2608.29749) |
 | [DualManip：语义推理与几何适应协同的动态操作](论文逐篇解读/P355.md) | DualManip用较慢的语义路径拆解任务并初始化交互点，再用实时RGB-D几何路径在物体移动或形变时更新模板对应关系和抓取接触位置；信息交互模块校验几何更新，必要时触发语义重规划。论文在六项真实操作任务中评估静态、单次变化和连续变化场景。 | [原文](https://arxiv.org/abs/2609.31112) · [项目页](https://lichengxi1.github.io/Dualmanip) |
 | [EATR-Stereo：让人形VLA按身体状态使用双目辅助证据](论文逐篇解读/P181.md) | 保留主视角Token并路由双目辅助特征，按身体历史调节视觉证据以支持遮挡下长程操作。 | [原文](https://arxiv.org/abs/2608.17453) |
@@ -167,6 +170,7 @@
 | [SALA：用语义对齐的潜动作训练视觉语言动作策略](论文逐篇解读/P548.md) | 以真实机器人动作信号锚定人机潜动作的语义，使大规模第一视角视频可参与跨本体策略预训练。 | [原文](https://arxiv.org/abs/2611.17110) · [项目页](https://sala-vla.github.io/) |
 | [SAM3D-VLA：对象中心三维表征对齐](论文逐篇解读/P429.md) | 用子任务指令定位目标并通过SAM2掩码提取冻结SAM3D对象三维特征，训练时对齐π0中间视觉表征与对象形状/布局先验，部署保留原RGB语言到动作路径。 | [原文](https://arxiv.org/abs/2607.25912) |
 | [ABC：开放数据驱动的规模化行为克隆](论文逐篇解读/P321.md) | ABC发布双臂YAM的ABC-130K真实操作数据，并配套扩散Transformer与VLM扩散动作头、H200训练流程、MuJoCo遥操作及真机任务评估，形成规模化行为克隆实验栈。 | [原文](https://arxiv.org/abs/2606.27375) · [代码](https://github.com/amazon-far/abc) · [项目页](https://abc.bot/) |
+| [ScaleVLA：将大规模视觉语言表征接入机器人动作生成](论文逐篇解读/P579.md) | 将冻结的大规模视觉语言表征映射到连续动作块并比较数据效率和泛化。 | [原文](https://arxiv.org/abs/2611.21607v1) · [代码](https://github.com/GalaxyGeneralRobotics/ScaleVLA) · [项目页](https://galaxygeneralrobotics.github.io/scalevla/) |
 | [STVLA：在视觉语言动作策略中联合检索空间与历史](论文逐篇解读/P551.md) | 用显式场景空间表征检索与当前决策相关的历史观察，为视觉语言动作策略提供时序上下文。 | [原文](https://arxiv.org/abs/2611.16589v1) · [项目页](https://stvla.github.io/) |
 | [TANGO：从语言和第一视角图像预测人形全身导航动作](论文逐篇解读/P228.md) | 以仿真Plan–Edit–Track数据训练全身导航VLA，从语言和RGB历史预测人形关节动作，零样本部署到G1。 | [原文](https://arxiv.org/abs/2609.09158) |
 | [TemporalFlow-VLA：用物理时序监督学习长时操作历史](论文逐篇解读/P240.md) | 从机器人状态和几何构造仅用于训练的表面时序流监督，以短、长时间查询压缩执行历史并送入VLA动作专家，部署时无需几何重建。 | [原文](https://arxiv.org/abs/2608.26821) |
@@ -178,6 +182,7 @@
 | [X-Tokenizer：将动作语义接入VLA预训练的分层编码器](论文逐篇解读/P293.md) | 用语义残差量化将跨本体连续delta动作分层为离散意图码和执行残差，并以动作掩码预测、冻结VLM对齐和下一帧特征预测塑造VLA表征。 | [原文](https://arxiv.org/abs/2606.14752) · [代码](https://github.com/X-Square-Robot/X-Tokenizer) · [项目页](https://x-square-robot.github.io/X-Tokenizer_projectPage/) |
 | [Xiaomi-Robotics-0：面向实时执行的双臂操作VLA](论文逐篇解读/P286.md) | 从图像、语言和本体状态生成双臂连续动作块，以流匹配和延迟前缀条件的异步拼接维持实时执行，并在仿真及LEGO分拣、毛巾折叠真机任务评测。 | [原文](https://arxiv.org/abs/2602.12684) · [代码](https://github.com/XiaomiRobotics/Xiaomi-Robotics-0) · [项目页](https://xiaomi-robotics-0.github.io/) |
 | [Xiaomi-Robotics-1：以十万小时真实轨迹扩展VLA](论文逐篇解读/P287.md) | 以超过10万小时UMI第一视角真实操作轨迹和自动状态变化标注预训练VLM—DiT连续动作策略，再通过跨本体后训练适配机器人操作。 | [原文](https://arxiv.org/abs/2607.15330) · [代码](https://github.com/XiaomiRobotics/Xiaomi-Robotics-1) · [项目页](https://robotics.xiaomi.com/xiaomi-robotics-1.html) |
+| [零样本组合泛化：用几何监督连接不同机器人与技能](论文逐篇解读/P584.md) | 利用可达性筛选与末端几何监督，将已知技能组合到缺少该技能示范的已知机器人。 | [原文](https://arxiv.org/abs/2611.22797v1) |
 | [π0.7：多模态上下文驱动的通用机器人策略](论文逐篇解读/P399.md) | 约5B参数的通用VLA通过任务/子任务文字、速度与质量元数据、控制模式和多视角子目标图像进行多模态上下文调节，以吸收不同机器人、混合质量自主数据和非机器人数据；在未见环境指令跟随与跨本体操作评测中展示组合泛化。 | [原文](https://arxiv.org/abs/2604.15483) · [项目页](https://pi.website/pi07) |
 | [τ₀-VLA：用世界模型搜索组织长任务与低层动作](论文逐篇解读/P201.md) | 结合执行记忆、世界模型引导测试时搜索和反思策略，处理长程家庭移动操作任务。 | [原文](https://arxiv.org/abs/2608.16885) · [代码](https://github.com/sii-research/tau-0-vla) · [项目页](https://tau0-vla.github.io/) |
 | [χ₀：驯服分布不一致性的资源感知鲁棒操作](论文逐篇解读/P407.md) | 为长时序衣物操作提出Model Arithmetic、人工阶段标注驱动的Stage Advantage及Train-Deploy Alignment，评测双臂衣物操作与延迟/实机执行。Kinetix AI官方研究页列出项目，论文与代码涉及HKU MMLab/OpenDriveLab合作；代码由OpenDriveLab维护。 | [原文](https://arxiv.org/abs/2602.09021) · [代码](https://github.com/OpenDriveLab/kai0) · [项目页](https://www.kinetixai.tech/en/research) |
@@ -312,7 +317,7 @@
 
 在观测和任务条件下联合学习动作与未来世界，通过世界预测支持动作生成、候选评估或闭环规划；部分方法部署时仅运行动作分支。
 
-**59** 篇论文／报告 · **42** 个项目
+**61** 篇论文／报告 · **42** 个项目
 
 #### 论文与技术报告
 
@@ -325,6 +330,7 @@
 | [LingBot-VA 1.0：因果视频—动作联合建模与机器人控制](论文逐篇解读/P255.md) | 视频潜变量流与机器人动作流在双流Transformer中交替建模，模型既预测动作也预测动作条件下的未来画面；仓库开放权重、RoboTwin与LIBERO后训练数据、训练和推理脚本，可检查世界预测怎样与策略输出共享表示但保持独立输出。 | [原文](https://arxiv.org/abs/2601.21998) · [代码](https://github.com/Robbyant/lingbot-va) · [项目页](https://technology.robbyant.com/lingbot-va) |
 | [CloudRobo-WM：联合预测视觉、几何与机器人动作](论文逐篇解读/P561.md) | 用共享模型学习未来画面、几何和语义及本体动作，并通过有效性掩码兼容视角与标注不完整的训练数据。 | [原文](https://github.com/Barry-Liang/CloudRobo-WM/blob/main/Cloudrobo_WM_20261113.pdf) · [代码](https://github.com/Barry-Liang/CloudRobo-WM) · [项目页](https://www.huaweicloud.com/product/cloudrobo.html) |
 | [Cosmos Policy：基于视频扩散的机器人策略与规划](论文逐篇解读/P254.md) | 将Cosmos视频生成主干后训练为 visuomotor policy，并扩展未来观测和值预测以支持候选动作规划。 | [原文](https://arxiv.org/pdf/2601.16163) · [代码](https://github.com/NVlabs/cosmos-policy) · [项目页](https://research.nvidia.com/labs/dir/cosmos-policy/) |
+| [CoT-WAM：用连续计划潜变量连接语义规划与世界动作模型](论文逐篇解读/P575.md) | 以受文本和目标图像监督的连续意图连接视觉语言模型与世界动作模型。 | [原文](https://arxiv.org/abs/2611.23803v1) |
 | [DELE-w0.5：用未来状态辅助训练，部署时直接生成动作](论文逐篇解读/P193.md) | 训练时联合动作与未来视觉潜变量，部署时移除未来分支以直接生成双臂操作动作。 | [原文](https://arxiv.org/abs/2608.22067) · [项目页](https://deepleap-x.com/research/dele-w0.5) |
 | [Delta-0：世界动作模型驱动的全身移动操作](论文逐篇解读/P249.md) | 将潜在世界动作模型与学习型全身控制器连接，以人体数据预训练、仿真评测和实机RL后训练完成家庭移动操作。 | [原文](https://deltai.com/en/blog/delta-0) |
 | [DexWorldModel：以因果潜变量世界模型自动学习具身任务](论文逐篇解读/P406.md) | 用DINOv3潜视觉状态与共享Mixture-of-Transformers联合生成未来状态和动作，以双态测试时记忆隔离真实历史与想象分支，并用SAI将部分去噪与实机执行重叠。EmbodiChain是配套仿真数据与场景生成项目；论文在RoboTwin仿真和四类零样本Sim2Real操作任务评测DexWorldModel。 | [原文](https://arxiv.org/abs/2604.16484) · [项目页](https://en.dexforce.com/core.html) |
@@ -369,6 +375,7 @@
 | [World-Action Models 综述：从预测世界到生成可执行动作](论文逐篇解读/P211.md) | 从表示、转移建模、动作接口、架构、训练、数据和规模化整理机器人世界动作模型研究。 | [原文](https://arxiv.org/abs/2609.16074) · [项目页](https://rcl-robotics.github.io/Awesome-World-Action-Models/) |
 | [WorldBridge：通过视频与动作联合建模提升任务泛化](论文逐篇解读/P560.md) | 分开检验新任务的视频预测泛化和动作执行泛化，用视频与动作联合建模研究两者之间的转换。 | [原文](https://arxiv.org/abs/2610.40748v1) · [项目页](https://worldbridge-jd.github.io/) |
 | [XPACE：联合动作与未来世界建模](论文逐篇解读/P448.md) | 共享视频骨干联合预测机器人动作和未来视频，并作为动作条件模拟器合成偏离—恢复经验；IRON三项实机任务各20次，平均成功率68.3%、进度0.84。 | [原文](https://arxiv.org/abs/2609.17372) · [项目页](https://xpeng-robotics.github.io/xpace/) |
+| [ZERITH V2.5：让视频预测表征服务机器人动作学习](论文逐篇解读/P574.md) | 用多噪声水平的预测任务适配视频模型，再联合训练动作策略，检验视频预训练对控制的收益。 | [原文](https://arxiv.org/abs/2611.23746v1) · [代码](https://github.com/ZERITH-ZLab/ZERITH-V2.5) · [项目页](https://www.zerith.com/blog/zerith-2-5/) |
 | [Zero-WAM：让人类视频成为未见任务的上下文指令](论文逐篇解读/P186.md) | 把人类示范视频作为上下文任务条件，联合预测机器人未来视觉与动作而不更新模型参数。 | [原文](https://arxiv.org/abs/2608.26103) · [项目页](https://robbyant-research.github.io/Zero-WAM/) |
 | [ZimaBlue：让大规模无动作视频进入可部署的WAM](论文逐篇解读/P196.md) | 以因果视频预训练、视频动作中训练和目标机器人后训练，把第一视角视频用于通用操作策略。 | [原文](https://arxiv.org/abs/2609.00188) · [项目页](https://github.com/ZimaBlue-WAM/ZimaBlue) |
 | [τ0-WM：联合生成动作、预测未来并在执行前评估候选](论文逐篇解读/P445.md) | 共享视频扩散骨干提供动作与未来联合预测、候选动作条件模拟器及任务进展估计；约27,300小时异构数据训练，并用RCS筛选和LAR重生成改进测试时动作。在不允许重试的纸巾/笔入盒评测中，RCS+LAR平均成功率0.60。 | [原文](https://arxiv.org/abs/2606.01027) · [代码](https://github.com/sii-research/tau-0-wm) · [项目页](https://finch.agibot.com/research/tau0-wm) |
